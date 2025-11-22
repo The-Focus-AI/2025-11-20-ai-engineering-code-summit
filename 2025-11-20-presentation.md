@@ -1,474 +1,252 @@
 # AI Engineering Code Summit 2025-11-20
+## Executive Presentation
 
 ---
 
-## The Verdict
+## Slide 1: The New Trust Challenge
 
-AI productivity gains are real—but determined by **foundation quality**, not AI quality.
+**Trust is the new bottleneck**
 
-Stanford's 120,000-developer study:
-- Clean codebases: **35-40% productivity gains**
-- Messy codebases: **0-10% gains**
+As economics shift, support teams, managers, and non-engineers all push code—transforming engineers into code reviewers who need deterministic validation at scale.
 
-**AI amplifies what you already have.**
+*Trust grows from observable behavior, not capabilities*
 
 ---
 
-## Three Forces Reshaping Development
+## Slide 2: The Economics Are Changing Who Writes Code
 
-1. **Who can code is expanding**
-   - Support teams → Engineering roles
-   - Managers committing code
-   - Day-one hire productivity
+**$100/day = One developer's annual salary in AI tokens**
 
-2. **Competitive advantage shifted**
-   - From model selection → environment design
-   - From prompt engineering → context management
+- Zapier support teams → 70% accuracy → moving into engineering roles
+- Every: 15 people, 4 products, 7-figure revenue → "Managers can commit code"
+- Tenex: Output-based compensation → $1M+ engineers
+- Travelopia: Legacy apps replaced in 4-6 weeks with half the team
 
-3. **Skill premium moved**
-   - From being clever → being communicative
-   - From tribal knowledge → codified prompts
+**Result:** Non-engineers become productive contributors
+
+**Challenge:** Code review velocity is now the critical constraint
 
 ---
 
-## Foundation Quality = AI Success
+## Slide 3: Code Review is the New Bottleneck
 
-### The Rich Get Richer Effect
+> "We spend more time reading code than writing it, and even more so now. Every software developer becomes a code reviewer."
+> — Max Kanat-Alexander, Capital One
 
-**Yegor Denisov-Blanch, Stanford**
-- 100,000+ engineers analyzed
-- Environment cleanliness predicts productivity
-- Token usage per model: "not great predictive"
+**The Crisis:**
+- 82% use AI assistants
+- 76% don't trust AI-generated code
+- Problem isn't buggier PRs—it's *volume* of PRs requiring review
 
-**The bifurcation:** Teams with clean code capture AI gains. Teams with technical debt amplify their problems.
+**The Gap:**
+- 93% of organizations stuck in "pilot purgatory" (McKinsey)
+- Gap isn't AI capability—it's review capacity and trust infrastructure
 
----
-
-## What's Good for Humans is Good for AI
-
-**Max Kanat-Alexander, Capital One**
-
-*[Earned applause]*
-
-The same infrastructure that makes human developers productive is exactly what AI agents need:
-- Better tooling
-- Comprehensive testing
-- Clear documentation
-- Standardized environments
-
-**"It did not attend your verbal meeting that has no transcript."**
+**The Foundation:**
+- Psychological safety = overwhelming predictor of team success (Google Project Aristotle)
+- Treat as systems problem, not people problem
 
 ---
 
-## The Real Bottleneck: Code Review at Volume
+## Slide 4: From Reactive to Proactive Agents
 
-**Itamar Friedman, Qodo**
+**Current reality:** "Reminding the husband to do the dishes"
+- Wait to be asked
+- Force constant context-switching
+- Require supervision
 
-- 82% of developers use AI assistants
-- 76% don't fully trust AI-generated code
+**The shift:** Google's Jules & Replit's autonomous agents
+- Observation: understand what you're working on
+- Timely action: know when to step in
+- Personalization: learn what you ignore
+- Seamless integration: reduce cognitive overhead
 
-**The crisis:** Not more bugs *per PR*, but *more PRs* requiring review.
-
-AI generates code fast. Messy codebases make review impossible.
-
-**Solution:** Autonomous testing + deterministic validation = trust at velocity
-
----
-
-## Who Can Code is Expanding
-
-### Zapier: Support → Engineering
-
-**Lisa Orr, Zapier**
-
-Support team members using Scout (Cursor + MCP):
-- **70% accuracy** on fixes
-- **Moving into engineering roles**
-- Doubled velocity: **3-4 fixes/week**
-
-*This would have been impossible 6 months ago.*
+**Impact:** 30%+ of Replit user features were broken because "users don't want to spend time doing testing"
+- Autonomous testing breaks feedback bottleneck
+- Prevents "accumulation of whatevers"
 
 ---
 
-## Managers Can Commit Code
+## Slide 5: What's Good for Humans is Good for AI
 
-**Dan Shipper, Every**
+> "Agents did not attend your verbal meeting that has no transcript."
+> — Max Kanat-Alexander, Capital One
 
-15 people. 6 business units. 4 software products. **7-figure revenue.**
+**Stop building for agents. Start fixing foundational problems:**
+- Standardize environments
+- Improve deterministic validation
+- Refactor for testability
+- Write down external context and intentions
 
-- Managers commit code (not just review)
-- Each app: 1 developer + AI agents in parallel
-- New hires productive **day one**
-- Developers contribute outside primary ownership
-
-**The secret:** Tacit knowledge codified into prompts
-
----
-
-## Million-Dollar Engineers
-
-**Arman Hezarkhani, Tenex**
-
-**Paid on output. Uncapped upside.**
-
-"We pay engineers based upon the story points they complete."
-
-Multiple engineers on track for **$1M+ annually**.
-
-When AI can 10x productivity, traditional salary models create perverse incentives—no economic reason to adopt AI.
+**Why this matters:**
+- Tribal knowledge blocks human onboarding AND AI integration
+- Better tooling, clear documentation, robust testing benefit everyone
+- When organizations approach AI as trust-building (not competency testing), resistance drops
 
 ---
 
-## The Resistance Pattern
+## Slide 6: Clean Code Amplifies AI Gains 4x
 
-**Gene Kim**
+**Stanford's 120,000-developer study:**
 
-Senior developers resisted DevOps. Now resisting AI.
+| Codebase Quality | AI Productivity Gains |
+|-----------------|----------------------|
+| Clean codebases | 35-40% |
+| Messy codebases | 0-10% |
 
-**Cisco:** Every senior developer must "vibe code an application to production"
-
-**The dividing line:** Not skill level—adaptability.
-
-**Justin Reock, DX:** "Treat software development as a systems problem, not a people's problem."
-
----
-
-## The Harness is Everything
-
-### OpenAI's Wake-Up Call
-
-**Bill Chen & Brian Fioca**
-
-"Hard to track the models and we aren't making the problem easier for anybody."
-
-Betting on specific models = obsolete.
-
-**The harness** = competitive advantage:
-- Prompts
-- Agent loops
-- Tools
-- Context management
-
-**"For some, the harness might be the special sauce of the product."**
+**"Rich gets richer effect"**
+- Technical debt doesn't just slow humans—it blocks AI entirely
+- Environment cleanliness = competitive advantage
+- Quality of AI usage > quantity of AI usage
 
 ---
 
-## Context Management = First-Class Discipline
+## Slide 7: The Harness is Where You Win
 
-**Codex processes dozens of trillions of tokens/week**
+> "Hard to track the models and we aren't making the problem easier for anybody."
+> — OpenAI's Bill Chen & Brian Fioca
 
-**The formula:** Steerability = intelligence + habit
+**The harness = competitive advantage:**
+- Critical abstraction layer between models and production
+- Encompasses prompts, agent loops, tools, context management
 
-**The challenge:**
-- Custom tools can be out of distribution
-- Prompts have poor portability
-- Latency forces careful context decisions
+**Key principle: "Steerability = intelligence + habit"**
+- Replit: Subagents with fresh context prevent "context pollution"
+- Anthropic: Memory + Context Editing for manual pruning
+- Browser Company: Prompt editors in dev tools → 10x iteration speed
 
-**The answer:** Build tools that handle context automatically. Design harnesses that steer better than prompt microtuning.
-
----
-
-## Fresh Context Prevents Pollution
-
-**Michele Catasta, Replit**
-
-22 million creators. 30%+ of features broken.
-
-**The architecture:**
-"Subagent invoked by the core loop with a task and fresh context."
-
-Prevents "context pollution"—gradual performance degradation as irrelevant information accumulates.
-
-Prevents "accumulation of whatevers" from frontier models.
+**Models will improve. Your architecture determines differentiation.**
 
 ---
 
-## Memory + Context Editing
+## Slide 8: The Greenfield vs Brownfield Gap
 
-**Katelyn Lesse, Anthropic**
+**Where AI delivers:**
+- Greenfield projects: 35-40% gains
+- Low-complexity tasks: 35-40% gains
 
-"Memory + Context Editing is the way to go."
+**Where AI struggles:**
+- Brownfield codebases: 0-10% gains
+- High-complexity work: 0-10% gains
 
-- **Memory tool:** Retrieves relevant context when needed
-- **Context Editing:** Manually clear unnecessary content
+**Bloomberg's warning:**
+> "2 engineers can create the tech debt of 50 engineers" — Lei Zhang
 
-**"Effective agentic systems require both expanding capabilities and managing constraints."**
-
----
-
-## The Trust Problem is a Context Problem
-
-**Qodo research:** Developers don't trust AI code because "they don't trust the context that the LLM has."
-
-Not about model capabilities—about whether the harness maintains relevant context while filtering noise.
-
-**Qodo's Context Engine:** Pulls from logs, history, PR comments
-
-**Browser Company:** Prompt editors in dev tools = **10x iteration speed**
+**The insight:** AI "changes the cost function of engineering"
+- Don't ask what AI can do
+- Ask what work developers don't want to do
 
 ---
 
-## From Clever to Communicative
+## Slide 9: The ROI Reality Check
 
-### The Skill Shift
+**93% stuck in "pilot purgatory"** (McKinsey)
 
-**Steve Yegge:** "If you are still using an IDE by Jan 1st you are a bad engineer."
-
-From "diver window" (one agent, deep) → "ant swarms" (parallel agents)
-
-Current tools = power tools requiring constant supervision
-
-**The new skill premium:**
-- Writing things down
-- Deterministic validation
-- Explicit documentation
-- Behavior design
-
----
-
-## Proactive vs Reactive
-
-**Kath Korevec, Google Labs**
-
-"Humans are unitaskers."
-
-Current tools force us to **manage AI assistants** rather than being **supported** by them.
-
-**Jules (Google's autonomous coding agent):**
-- Observes projects
-- Suggests next steps with context and rationale
-- Built a 6-foot animatronic Halloween head
-
-**From:** Waiting for perfect prompts
-**To:** Suggesting tasks with rationale
-
----
-
-## Model Behavior as Craft
-
-**Samir Mody, Browser Company**
-
-"We're in the early days of model behavior as a craft."
-
-Shift from functional → agentic behavior requires:
-- Behavior design
-- Measurement
-- Model steering
-
-Treating **how AI acts** as seriously as **how it performs**
-
----
-
-## The ROI Reality Check
-
-### Demo-to-Production Gap
-
-**Asaf Bord, Northwestern Mutual (Fortune 100)**
-
-"The gap between demo and production is so broad."
-
-**Four barriers:**
+**Northwestern Mutual's 4 barriers:**
 1. Unknown technology
 2. Messy real data
 3. Blind-trust bias
 4. Budget impact concerns
 
----
-
-## Pilot Purgatory
-
-**McKinsey research:**
-
-Only **7%** of organizations believe they're fully at scale with AI development tools.
-
-**93%** stuck in "pilot purgatory"—endless experimentation without production deployment.
+**The solution:**
+- Stop working with synthetic data
+- Use actual messy data to understand the mess
+- Bring stakeholders into research
+- Create organic evaluation sets from actual workflows
+- Deliver incremental ROI, step by step
 
 ---
 
-## The Complexity Gap
+## Slide 10: Unglamorous, High-ROI Use Cases
 
-**Stanford research:**
+**Bloomberg's approach:**
+- Uplift agents for handling tedious migrations
+- Incident response agents for parsing alert volumes
+- Focus: where developers don't want to work
 
-- Greenfield + low complexity: **35-40% gains**
-- Brownfield + high complexity: **0-10% gains**
+**The pattern:**
+- Not glamorous demos
+- Clear, measurable ROI
+- Builds trust through production results
+- Addresses actual pain points
 
-Brownfield = the meat and potatoes of enterprise development
-
----
-
-## Vibe Coding Risk
-
-**Lei Zhang, Bloomberg (9,000+ engineers)**
-
-"2 engineers can create the tech debt of 50 engineers."
-
-Usage dropped precipitously moving greenfield → brownfield.
-
-Not resistance—tools couldn't navigate tens of millions of lines of JavaScript and intricate internal libraries.
+**Question to ask:** What's now economically feasible that wasn't before?
 
 ---
 
-## The Trust-Building Playbook
+## Slide 11: What To Do
 
-**Northwestern Mutual's solution:**
+**1. Build trust infrastructure through psychological safety**
+- Systems problem, not people problem
+- Establish feedback loops explaining *why* approaches work/fail
+- Create deterministic validation processes
 
-1. **Stop using synthetic data** → Use actual messy data
-2. **Bring stakeholders into research** → Not isolation
-3. **Create organic evaluation sets** → From real workflows
+**2. Invest in code review velocity**
+- Autonomous testing isn't optional
+- Quality gates: "Don't accept PR without minimum testing"
+- Review capacity determines if you can capitalize on diverse contributors
 
-**Build trust incrementally through predictable behavior**
-
----
-
-## Getting a Lot of Little Things Right
-
-**McKinsey:**
-
-Not wholesale process overhauls.
-
-Numerous small interventions:
-- Shorter sprints
-- Smaller teams
-- Increased investment (greenfield + brownfield)
+**3. Rethink what's economically viable and who can build it**
+- 100x cost reduction = previously impossible projects now feasible
+- Support teams can ship code
+- Escape pilot purgatory through production deployment
 
 ---
 
-## Focus on Work Developers Hate
+## Slide 12: What To Do (continued)
 
-**Lei Zhang, Bloomberg**
+**4. Invest in code cleanliness NOW**
+- Document context (agents didn't attend your meetings)
+- Standardize environments
+- Refactor for testability
+- Unlocks 4x productivity gains for everyone
+- Fight the entropy
 
-AI "changes the cost function of engineering."
+**5. Build the harness, not model dependencies**
+- Context management (memory + editing)
+- Tool orchestration
+- Abstraction layers that survive model churn
+- Your special sauce = architecture, not model choice
 
-Don't ask what AI can do. Ask what work developers **don't want to do.**
-
-**High-ROI targets:**
-- Uplift agents (handling patches)
-- Incident response agents (parsing alert volumes)
-
-Unglamorous but measurable value.
-
----
-
-## The Economic Realignment
-
-**Gene Kim:**
-
-AI token costs: **$100/day** for output equivalent to developer's annual salary
-
-When costs drop **100x**, previously impossible projects become "annoying things that become free."
+**6. Start with unglamorous, high-ROI use cases**
+- Tasks developers actively dislike
+- Clear ROI paths
+- Build trust through results
 
 ---
 
-## Pricing in the New Era
+## Slide 13: The Bottom Line
 
-**Asaf Bord, Northwestern Mutual:**
+**AI isn't replacing software engineering fundamentals—it's exposing which organizations actually have them.**
 
-"How do we price software in this new era? **Usage price vs seats price.**"
+**The "rich gets richer" divide:**
+- Clean codebases: 35-40% gains
+- Messy codebases: 0-10% gains
 
-When one complex query consumes exponentially more resources than a thousand simple ones, flat-rate pricing becomes economically untenable.
+**Success requires:**
+- Clean code, clear processes, stakeholder trust
+- Deterministic validation at scale
+- Trust through observable, predictable behavior
 
----
-
-## Critical Takeaways: Engineering Leaders
-
-1. **Invest in cleanliness first**
-   - Standardize environments
-   - Improve deterministic validation
-   - Refactor for testability
-   - Document context and intentions
-
-2. **Build the harness, not model dependence**
-   - Context management
-   - Memory editing
-   - Subagent architecture
-   - Behavior steering
+**The organizations winning aren't racing to adopt every new model. They're methodically building foundations that allow AI tools to deliver measurable value.**
 
 ---
 
-## Critical Takeaways: Engineering Leaders
+## Slide 14: Key Takeaway
 
-3. **Automate quality gates**
-   - Testing = essential infrastructure
-   - More PRs without autonomous testing = drowning in review backlog
+> "What's good for humans is good for AI"
+> — Max Kanat-Alexander, Capital One
 
-4. **Start with work developers hate**
-   - Migrations, incident response, alerts
-   - Unglamorous, high-ROI use cases
-   - Build trust through measurable value
+Stop building for the agents.
+
+Start building systems that work for everyone.
 
 ---
 
-## Critical Takeaways: Organizations
+## Slide 15: Questions?
 
-1. **Build trust incrementally**
-   - Actual messy data (not synthetic)
-   - Stakeholders in research
-   - Organic evaluation sets
-
-2. **Treat as systems problem, not people problem**
-   - Psychological safety > individual competency
-   - Resistance = adaptability, not skill
-   - Make experimentation safe
-
----
-
-## Critical Takeaways: Organizations
-
-3. **Rethink incentives**
-   - Traditional salary models create no economic reason to adopt AI
-   - Consider output-based compensation
-   - Align incentives with AI-amplified productivity
-
-4. **Codify tribal knowledge**
-   - Tacit knowledge → explicit prompts
-   - What blocked newcomers blocks agents
-   - Write it down
-
----
-
-## The Bottom Line
-
-The organizations succeeding aren't racing to adopt every new model.
-
-They're methodically building foundations:
-- Clean code
-- Clear processes
-- Stakeholder trust
-
-**35-40% productivity gains are real—but only for those who create environments where AI agents can thrive.**
-
----
-
-## AI Amplifies Fundamentals
-
-**AI isn't replacing software engineering fundamentals.**
-
-**It's amplifying them.**
-
-The future belongs to organizations that understand this and act systematically.
-
----
-
-## What's Good for Humans is Good for AI
-
-**Max Kanat-Alexander, Capital One**
-
-The path to AI-augmented development runs directly through the fundamentals we've sometimes neglected:
-
-- Clean code
-- Comprehensive testing
-- Clear documentation
-- Predictable systems
-- Psychological safety
-
-**These aren't obstacles to AI adoption. They're prerequisites.**
-
----
-
-## Questions?
-
-Contact: [Your contact info]
+**Contact & Resources**
 
 Conference: AI Engineering Code Summit 2025-11-20
 
-Attendees: Anthropic, OpenAI, Google Labs, Replit, Bloomberg, Capital One, Stanford, McKinsey, and dozens more
+Organizations represented: Anthropic, OpenAI, Google Labs, Replit, Bloomberg, Capital One, Stanford, McKinsey, and dozens more

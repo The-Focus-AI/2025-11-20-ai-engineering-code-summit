@@ -12,9 +12,9 @@ This repository contains raw notes, analysis, and synthesis from the AI Engineer
 
 Use `/theme-summary` to generate concise executive summaries from detailed theme analyses:
 
-- **[2025-11-20-summary.md](2025-11-20-summary.md)** - 2-page executive summary (~2,300 words)
-- **[2025-11-20-presentation.md](2025-11-20-presentation.md)** - Slide deck (40+ slides, ready for styling with Marp/reveal.js)
-- **[2025-11-20-one-pager.md](2025-11-20-one-pager.md)** - Single page brief (~750 words)
+- **[2025-11-20-summary.md](2025-11-20-summary.md)** - Executive summary (~1,150 words, ~3 min read)
+- **[2025-11-20-presentation.md](2025-11-20-presentation.md)** - Slide deck (15 slides, ready for styling with Marp/reveal.js)
+- **[2025-11-20-one-pager.md](2025-11-20-one-pager.md)** - One-pager (~540 words, ~2 min read)
 
 ## Workflow: From Raw Notes to Executive Summary
 
@@ -143,9 +143,9 @@ This will:
 
 ### Executive Summaries
 
-- **[2025-11-20-summary.md](2025-11-20-summary.md)** - Day 1 executive summary (2 pages, ~2,300 words)
-- **[2025-11-20-presentation.md](2025-11-20-presentation.md)** - Day 1 slide deck (40+ slides)
-- **[2025-11-20-one-pager.md](2025-11-20-one-pager.md)** - Day 1 one-page brief (~750 words)
+- **[2025-11-20-summary.md](2025-11-20-summary.md)** - Day 1 executive summary (~1,150 words, ~3 min read)
+- **[2025-11-20-presentation.md](2025-11-20-presentation.md)** - Day 1 slide deck (15 slides)
+- **[2025-11-20-one-pager.md](2025-11-20-one-pager.md)** - Day 1 one-pager (~540 words, ~2 min read)
 
 ### Raw Notes (Top Level)
 
@@ -181,11 +181,11 @@ Creates strategic synthesis across multiple conference days:
 
 ### `/theme-summary`
 Generates concise executive summaries from detailed theme analyses:
-- Creates 2-page executive summary (~2,300 words)
-- Generates presentation slide deck (markdown, ready for styling)
-- Produces single-page brief (~750 words)
-- Focuses on insights, data points, and practical takeaways
-- Optimized for stakeholder sharing
+- Creates executive summary (~1,150 words, ~3 min read)
+- Generates presentation slide deck (15 slides, markdown, ready for styling)
+- Produces one-pager (~540 words, ~2 min read)
+- Focuses on pyramid structure: apex insight → supporting pillars → actionable takeaways
+- Optimized for stakeholder sharing and quick executive briefings
 
 ## Tips for Best Results
 
