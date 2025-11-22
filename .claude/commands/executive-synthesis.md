@@ -120,7 +120,7 @@ Wait for user approval/modifications.
 ### Step 5: Generate executive report
 Tell the user: "Writing comprehensive executive report..."
 
-Create a file named: `YYYY-MM-DD-executive-synthesis.md`
+Create a file named: `executive-synthesis.md`
 
 The report should:
 - Be written for executive/leadership audience (assume technical literacy but focus on strategic implications)
@@ -139,7 +139,7 @@ Length: 4,000-6,000 words depending on content depth.
 
 ### Step 6: Generate executive summary
 Extract and refine the executive summary into a separate standalone document:
-`YYYY-MM-DD-executive-summary.md`
+`executive-summary.md`
 
 This should be:
 - 1-2 pages maximum
@@ -217,7 +217,7 @@ Continue conversation to refine based on user needs.
 - What should leaders be doing now vs waiting to see?
 
 ## Deliverables
-1. `YYYY-MM-DD-executive-synthesis.md` - Full analysis report
-2. `YYYY-MM-DD-executive-summary.md` - Standalone executive summary
+1. `executive-synthesis.md` - Full analysis report (6,000-6,500 words)
+2. `executive-summary.md` - Standalone executive summary (1-2 pages)
 3. Interactive conversation to refine and explore themes
 4. Optional: Additional formats based on user needs
