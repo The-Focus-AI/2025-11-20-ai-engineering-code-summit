@@ -8,13 +8,21 @@ This repository contains raw notes, analysis, and synthesis from the AI Engineer
 - **Day 2 (Nov 21)**: [Theme Overview](2025-11-21-themes.md) - 5 major themes
 - **Executive Synthesis**: [Cross-conference insights](executive-synthesis.md) (run `/executive-synthesis` to generate)
 
-## Executive Summaries (Day 1)
+## Executive Summaries
 
 Use `/theme-summary` to generate concise executive summaries from detailed theme analyses:
+
+### Day 1 (November 20)
 
 - **[2025-11-20-summary.md](2025-11-20-summary.md)** - Executive summary (~1,150 words, ~3 min read)
 - **[2025-11-20-presentation.md](2025-11-20-presentation.md)** - Slide deck (15 slides, ready for styling with Marp/reveal.js)
 - **[2025-11-20-one-pager.md](2025-11-20-one-pager.md)** - One-pager (~540 words, ~2 min read)
+
+### Day 2 (November 21)
+
+- **[2025-11-21-summary.md](2025-11-21-summary.md)** - Executive summary (~1,074 words, ~5 min read)
+- **[2025-11-21-presentation.md](2025-11-21-presentation.md)** - Slide deck (20 slides, ready for styling with Marp/reveal.js)
+- **[2025-11-21-one-pager.md](2025-11-21-one-pager.md)** - One-pager (~528 words, ~2 min read)
 
 ## Workflow: From Raw Notes to Executive Summary
 
@@ -143,9 +151,15 @@ This will:
 
 ### Executive Summaries
 
-- **[2025-11-20-summary.md](2025-11-20-summary.md)** - Day 1 executive summary (~1,150 words, ~3 min read)
-- **[2025-11-20-presentation.md](2025-11-20-presentation.md)** - Day 1 slide deck (15 slides)
-- **[2025-11-20-one-pager.md](2025-11-20-one-pager.md)** - Day 1 one-pager (~540 words, ~2 min read)
+**Day 1:**
+- **[2025-11-20-summary.md](2025-11-20-summary.md)** - Executive summary (~1,150 words, ~3 min read)
+- **[2025-11-20-presentation.md](2025-11-20-presentation.md)** - Slide deck (15 slides)
+- **[2025-11-20-one-pager.md](2025-11-20-one-pager.md)** - One-pager (~540 words, ~2 min read)
+
+**Day 2:**
+- **[2025-11-21-summary.md](2025-11-21-summary.md)** - Executive summary (~1,074 words, ~5 min read)
+- **[2025-11-21-presentation.md](2025-11-21-presentation.md)** - Slide deck (20 slides)
+- **[2025-11-21-one-pager.md](2025-11-21-one-pager.md)** - One-pager (~528 words, ~2 min read)
 
 ### Raw Notes (Top Level)
 
