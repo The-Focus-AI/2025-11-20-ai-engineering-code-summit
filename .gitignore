@@ -1,1 +1,4 @@
 node_modules/
+# Input directory - ignore contents but keep directory
+photos/*
+!photos/.gitkeep
