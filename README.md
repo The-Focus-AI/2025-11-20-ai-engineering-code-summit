@@ -4,9 +4,17 @@ This repository contains raw notes, analysis, and synthesis from the AI Engineer
 
 ## Overview
 
-- **Day 1 (Nov 20)**: [Theme Overview](2025-11-20-themes.md) - 4 major themes
+- **Day 1 (Nov 20)**: [Theme Overview](2025-11-20-themes.md) - 6 major themes
 - **Day 2 (Nov 21)**: [Theme Overview](2025-11-21-themes.md) - 5 major themes
 - **Executive Synthesis**: [Cross-conference insights](executive-synthesis.md) (run `/executive-synthesis` to generate)
+
+## Executive Summaries (Day 1)
+
+Use `/theme-summary` to generate concise executive summaries from detailed theme analyses:
+
+- **[2025-11-20-summary.md](2025-11-20-summary.md)** - 2-page executive summary (~2,300 words)
+- **[2025-11-20-presentation.md](2025-11-20-presentation.md)** - Slide deck (40+ slides, ready for styling with Marp/reveal.js)
+- **[2025-11-20-one-pager.md](2025-11-20-one-pager.md)** - Single page brief (~750 words)
 
 ## Workflow: From Raw Notes to Executive Summary
 
@@ -129,9 +137,15 @@ This will:
 
 ### Analysis Documents (Top Level)
 
-- **[2025-11-20-themes.md](2025-11-20-themes.md)** - Day 1 deep dive (4 themes, ~6,500 words)
+- **[2025-11-20-themes.md](2025-11-20-themes.md)** - Day 1 deep dive (6 themes, ~6,500 words)
 - **[2025-11-21-themes.md](2025-11-21-themes.md)** - Day 2 deep dive (5 themes, ~6,500 words)
 - **[executive-synthesis.md](executive-synthesis.md)** - Executive summary across both days (run `/executive-synthesis`)
+
+### Executive Summaries
+
+- **[2025-11-20-summary.md](2025-11-20-summary.md)** - Day 1 executive summary (2 pages, ~2,300 words)
+- **[2025-11-20-presentation.md](2025-11-20-presentation.md)** - Day 1 slide deck (40+ slides)
+- **[2025-11-20-one-pager.md](2025-11-20-one-pager.md)** - Day 1 one-page brief (~750 words)
 
 ### Raw Notes (Top Level)
 
@@ -164,6 +178,14 @@ Creates strategic synthesis across multiple conference days:
 - Analyzes all theme overview documents
 - Identifies meta-patterns and convergence
 - Generates executive-level insights
+
+### `/theme-summary`
+Generates concise executive summaries from detailed theme analyses:
+- Creates 2-page executive summary (~2,300 words)
+- Generates presentation slide deck (markdown, ready for styling)
+- Produces single-page brief (~750 words)
+- Focuses on insights, data points, and practical takeaways
+- Optimized for stakeholder sharing
 
 ## Tips for Best Results
 
