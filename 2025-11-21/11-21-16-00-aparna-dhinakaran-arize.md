@@ -2,6 +2,8 @@
 
 **Speaker:** Aparna Dhinakaran, Co-founder & CPO, Arize
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/aparna-dhinakaran.md)
+
 **Bio:** Co-founder & CPO, Arize
 
 **Topic:** RL techniques for system-prompt learning that continuously tune agents from PR feedback and evaluations

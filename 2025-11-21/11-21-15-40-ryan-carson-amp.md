@@ -2,6 +2,8 @@
 
 **Speaker:** Ryan Carson, Amp
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/ryan-carson.md)
+
 **Bio:** Amp
 
 **Location:** AIE Expo

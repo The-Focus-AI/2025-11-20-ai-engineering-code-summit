@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Head of Technology Infrastructure at Bloomberg Engineering.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/lei-zhang.md)
+
 **Company:** Bloomberg is a major financial data and media company deploying AI at enterprise scale.
 
 **Focus:** Lessons from deploying AI tools across a large engineering org. Practical insights from a mature tech company.

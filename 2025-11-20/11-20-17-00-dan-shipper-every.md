@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Co-founder and CEO of Every. Prolific writer on AI transformation. Leads with just 15 people generating 7-figure revenue.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/dan-shipper.md)
+
 **Company:** Every publishes daily AI newsletters, ships multiple AI products, runs a consulting arm—all with virtually zero hand-written code by engineers. Uses AI agents in parallel.
 
 **Focus:** Radical AI-first operations. How to rethink workflows when agents become force multipliers. Applicable to both startups and legacy companies.

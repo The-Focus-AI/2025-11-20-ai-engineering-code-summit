@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Nathaniel Whittemore (NLW). Host of "The AI Daily Brief" podcast. Founder of Superintelligent (AI education platform).
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/nlw.md)
+
 **Company:** Super.ai provides intelligent document processing and workflow automation. Superintelligent teaches practical AI skills.
 
 **Focus:** Real-world AI consulting patterns and best practices. How businesses are actually adopting AI beyond the hype.

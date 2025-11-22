@@ -4,6 +4,8 @@
 
 **Speaker Bios:** Martin Harrysson is a Partner at McKinsey. Natasha Maniar is a Consultant/Analyst at McKinsey.
 
+**Speaker Profiles:** [Martin Harrysson](../speakers/martin-harrysson.md) | [Natasha Maniar](../speakers/natasha-maniar.md)
+
 **Company:** McKinsey is a global management consulting firm studying AI's impact on software development (120k dev study).
 
 **Focus:** Post-Agile methodologies in the age of AI agents. McKinsey is actively researching how teams should reorganize around AI.

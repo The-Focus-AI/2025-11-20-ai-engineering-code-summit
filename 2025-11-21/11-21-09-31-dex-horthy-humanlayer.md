@@ -2,6 +2,8 @@
 
 **Speaker:** Dex Horthy, CEO, HumanLayer
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/dex-horthy.md)
+
 **Bio:** CEO, HumanLayer
 
 **Topic:** Solving hard problems in complex production codebases where AI tools struggle

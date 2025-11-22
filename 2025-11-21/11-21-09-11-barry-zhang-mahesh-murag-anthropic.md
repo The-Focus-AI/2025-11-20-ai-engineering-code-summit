@@ -2,6 +2,8 @@
 
 **Speakers:** Barry Zhang & Mahesh Murag (both Members of Technical Staff, Anthropic)
 
+**Speaker Profiles:** [Barry Zhang](../speakers/barry-zhang.md) | [Mahesh Murag](../speakers/mahesh-murag.md)
+
 **Bio:** Members of Technical Staff, Anthropic
 
 **Topic:** How Skills are the solution for agents to work reliably in production by packaging procedural knowledge that agents can dynamically load

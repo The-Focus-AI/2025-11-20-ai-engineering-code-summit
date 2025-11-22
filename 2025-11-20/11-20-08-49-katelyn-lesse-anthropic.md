@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Head of API Engineering at Anthropic. Previously worked at Stripe and Betterment. Leading the Claude Developer Platform.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/katelyn-lesse.md)
+
 **Company:** Anthropic develops Claude, with capabilities including parallel tool execution, Model Context Protocol (MCP), and extended thinking with tool use.
 
 **Focus:** Understand how Anthropic's latest Claude APIs enable developers to build "unhobbled" autonomous agents that can work for hours on complex tasks. Pay attention to MCP and context management features.

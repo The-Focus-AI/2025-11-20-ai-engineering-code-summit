@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Managing Partner of Tenex. Previously founded multiple venture-backed AI companies, scaled Google Cloud AI to millions of developers, adjunct professor at Carnegie Mellon.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/arman-hezarkhani.md)
+
 **Company:** Tenex compensates engineers based on "story points" (completed output) rather than hours. Anticipates multiple engineers earning $1M+ annually.
 
 **Focus:** Revolutionary compensation model for the AI era. How output-based compensation directly incentivizes AI tool adoption and maximizes throughput.

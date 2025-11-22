@@ -2,6 +2,8 @@
 
 **Speaker:** swyx, Organizer, AI Engineer
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/swyx.md)
+
 **Bio:** Organizer, AI Engineer
 
 **Topic:** Opening remarks for Day 2

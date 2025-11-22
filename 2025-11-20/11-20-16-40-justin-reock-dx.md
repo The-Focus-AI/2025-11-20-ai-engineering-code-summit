@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Deputy CTO of DX. 20+ years in software roles. Author of "DX's Guide to AI Assisted Engineering." Platform engineering specialist.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/justin-reock.md)
+
 **Company:** DX (getdx.com) helps organizations optimize developer productivity and AI adoption.
 
 **Focus:** Leadership strategies for AI-enabled engineering orgs. How to establish best practices, guardrails, and psychological safety when using AI tools. Top-down enablement matters.

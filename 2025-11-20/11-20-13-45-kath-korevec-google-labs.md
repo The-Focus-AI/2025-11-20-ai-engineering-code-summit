@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Director of Product at Google Labs. Previously VP of Product at Vercel, Senior Director at GitHub. Deep DevEx expertise.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/kath-korevec.md)
+
 **Company:** Google Labs AIDA (AI Developer Assistants) team. Building Jules (autonomous coding agent) and Stitch.
 
 **Focus:** Moving beyond chat-based interaction. The vision is for agents to be proactive, ambient, integrated tools rather than reactive chat interfaces.

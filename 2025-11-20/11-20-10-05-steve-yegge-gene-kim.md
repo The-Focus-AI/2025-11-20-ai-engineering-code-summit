@@ -6,6 +6,8 @@
 
 **Speaker Bio (Gene Kim):** Thought leader from IT Revolution. Known for leadership and operations expertise.
 
+**Speaker Profiles:** [Steve Yegge](../speakers/steve-yegge.md) | [Gene Kim](../speakers/gene-kim.md)
+
 **Companies:** Sourcegraph/Amp builds enterprise coding agents. IT Revolution focuses on tech leadership and DevOps culture.
 
 **Focus:** Yegge's influential vision on how coding agents will fundamentally change developer tools. He advocates for "vibe coding" — letting agents handle the work while developers focus on high-level goals.

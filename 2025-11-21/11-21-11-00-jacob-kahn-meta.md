@@ -2,6 +2,8 @@
 
 **Speaker:** Jacob Kahn, Research Scientist, Meta
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/jacob-kahn.md)
+
 **Bio:** Research Scientist, Meta
 
 **Topic:** World-model approach to learning from code that incorporates data from program execution to implicitly predict behavior while generating code
@@ -45,5 +47,5 @@ https://ai.meta.com/research/publications/cwm-an-open-weights-llm-for-research-o
 * punches above its weight
 * traces code really well
 	* neural debugger?
-	* the halting problem ? <- can it solve it?
+	* the halting problem ? &lt;- can it solve it?
 		* "in some sense this is difficult to decide" which is a funny way of challenging turing

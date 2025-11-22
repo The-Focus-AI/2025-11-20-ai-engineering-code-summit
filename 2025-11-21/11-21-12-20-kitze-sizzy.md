@@ -2,6 +2,8 @@
 
 **Speaker:** Kitze, Founder, Sizzy
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/kitze.md)
+
 **Bio:** Founder, Sizzy
 
 **Topic:** LLM-driven "vibe coding" where developers collaborate with AI rather than syntax, exploring implications for frontend development

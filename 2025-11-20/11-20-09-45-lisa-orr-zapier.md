@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Lead Product Manager at Zapier. Former senior PM at Human API and Airship.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/lisa-orr.md)
+
 **Company:** Zapier automates workflows across apps. Recently launched Custom Actions that use AI to enhance automation capabilities.
 
 **Focus:** How support teams can leverage AI and automation to ship code. This is about enabling non-engineers to build.

@@ -2,6 +2,8 @@
 
 **Speaker:** Joel Becker, Researcher, METR
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/joel-becker.md)
+
 **Bio:** Researcher, METR
 
 **Topic:** Reconciling lab and field evidence on AI capabilities and what this means for automated AI R&D

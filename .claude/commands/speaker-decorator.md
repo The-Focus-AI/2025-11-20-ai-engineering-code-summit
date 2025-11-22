@@ -14,7 +14,8 @@ Research all speakers from the conference and create individual markdown files w
    - WRITE the results directly to `speakers/[speaker-slug].md`
 
 4. Launch ALL agents in PARALLEL in a single message
-5. After all agents complete, create a master `speakers/README.md` index file
+5. First check to see if there's an slug already
+6. After all agents complete, create a master `speakers/README.md` index file
 
 ## Agent Instructions Template
 

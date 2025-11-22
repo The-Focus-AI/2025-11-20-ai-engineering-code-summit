@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Executive Distinguished Engineer for Developer Experience at Capital One. Author of "Code Simplicity." Previously Technical Lead for Code Health at Google, on DevEx at LinkedIn.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/max-kanat-alexander.md)
+
 **Company:** Capital One uses OPA (Open Policy Agent) to bake compliance into deployment pipelines. Real-world enterprise DevEx challenges.
 
 **Focus:** How to create DX that supports agents while maintaining compliance, security, and developer autonomy. 20+ years in the field.

@@ -2,6 +2,8 @@
 
 **Speakers:** Will Hang & Cathy Zhou (both Members of Technical Staff, OpenAI)
 
+**Speaker Profiles:** [Will Hang](../speakers/will-hang.md) | [Cathy Zhou](../speakers/cathy-zhou.md)
+
 **Bio:** Members of Technical Staff, OpenAI
 
 **Topic:** Deep dive into OpenAI's approach to reinforcement fine-tuning for code models

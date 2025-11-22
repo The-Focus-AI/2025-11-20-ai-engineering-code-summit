@@ -4,6 +4,8 @@
 
 **Speaker Bio:** VP of AI at Replit. Previously Head of Applied Research at Google Labs and Google X. Ph.D. in Computer Science, former Stanford instructor.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/michele-catasta.md)
+
 **Company:** Replit is a web-based development platform with 22M+ creators. Replit Agent lets users create and deploy fully functional applications in minutes.
 
 **Focus:** The paradigm shift from AI copilots to autonomous agents. Catasta has been emphasizing how AI must move beyond support roles to truly autonomous task completion.

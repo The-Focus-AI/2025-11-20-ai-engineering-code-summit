@@ -2,6 +2,8 @@
 
 **Speaker:** Kevin Hou, Engineering, Google DeepMind
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/kevin-hou.md)
+
 **Bio:** Engineering, Google DeepMind
 
 **Topic:** Building Google Antigravity and discussing the future of agentic IDEs with Gemini 3

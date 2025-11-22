@@ -4,6 +4,8 @@
 
 **Speaker Bio:** GenAI Products Leader at Northwestern Mutual. Experience leading high-impact teams.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/asaf-bord.md)
+
 **Company:** Northwestern Mutual is a Fortune 100 financial company. GenBI combines Generative AI with Business Intelligence.
 
 **Focus:** Enterprise AI strategy: crawl → walk → run. Incremental ROI delivery. Building trust step-by-step in conservative environments.

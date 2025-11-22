@@ -2,6 +2,8 @@
 
 **Speaker:** Eno Reyes, CTO, Factory AI
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/eno-reyes.md)
+
 **Bio:** CTO, Factory AI
 
 **Topic:** Eight categories that determine if a codebase is agent-ready, and framework for making agents more productive

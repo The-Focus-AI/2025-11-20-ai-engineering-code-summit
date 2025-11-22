@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Co-founder of Qodo. Background in ML and software engineering. AI code quality expert.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/itamar-friedman.md)
+
 **Company:** Qodo provides AI-powered code review, testing, and quality assurance. Reports that 76% of developers don't fully trust AI-generated code.
 
 **Focus:** The gap between hype and reality in AI code quality. Qodo's 2025 report found 82% of developers use AI assistants, but code integrity remains a critical concern.

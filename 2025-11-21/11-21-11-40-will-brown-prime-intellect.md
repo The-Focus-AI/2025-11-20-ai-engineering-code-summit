@@ -2,6 +2,8 @@
 
 **Speaker:** Will Brown, Research Lead, Prime Intellect
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/will-brown.md)
+
 **Bio:** Research Lead, Prime Intellect
 
 **Topic:** Scaling reinforcement learning environments for training advanced AI coding models

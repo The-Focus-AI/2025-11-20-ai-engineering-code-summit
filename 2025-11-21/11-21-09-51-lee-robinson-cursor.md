@@ -2,6 +2,8 @@
 
 **Speaker:** Lee Robinson, Head of DX, Cursor
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/lee-robinson.md)
+
 **Bio:** Head of DX, Cursor
 
 **Topic:** Infrastructure, training, and evaluations used to build Cursor Composer, their first coding model

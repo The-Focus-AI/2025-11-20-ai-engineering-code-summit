@@ -2,6 +2,8 @@
 
 **Speaker:** Jake Nations, Engineering, Netflix
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/jake-nations.md)
+
 **Bio:** Engineering, Netflix
 
 **Topic:** Software crisis patterns, AI's role in accelerating them, and methodology for management

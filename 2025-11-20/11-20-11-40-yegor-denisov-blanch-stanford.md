@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Researcher with Stanford's Software Engineering Productivity Research Group. Background in business/MBA. Calibrated productivity models.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/yegor-denisov-blanch.md)
+
 **Company:** Stanford's research covers over 100,000 engineers across hundreds of companies, analyzing private code commits.
 
 **Focus:** Data-backed findings on where AI actually helps (greenfield/low complexity: 35-40% gains) vs. where it struggles (brownfield/high complexity: 0-10% gains). This is the definitive productivity study.

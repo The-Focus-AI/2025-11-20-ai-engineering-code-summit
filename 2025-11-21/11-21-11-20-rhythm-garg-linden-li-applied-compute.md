@@ -2,6 +2,8 @@
 
 **Speakers:** Rhythm Garg & Linden Li (both Co-founders, Applied Compute)
 
+**Speaker Profiles:** [Rhythm Garg](../speakers/rhythm-garg.md) | [Linden Li](../speakers/linden-li.md)
+
 **Bio:** Co-founders, Applied Compute
 
 **Topic:** RL mechanisms for building superhuman agents and discussing proprietary RL stack for efficient model training

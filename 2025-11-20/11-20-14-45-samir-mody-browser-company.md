@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Head of Engineering, AI at The Browser Company. Previously senior engineer at Instagram/Facebook (6 years).
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/samir-mody.md)
+
 **Company:** The Browser Company is being acquired by Atlassian ($610M). Developing Arc and Dia browsers with AI integration.
 
 **Focus:** UX/engineering lessons from rebuilding a beloved product (Arc) with AI. Understanding how AI agents integrate with user interfaces.

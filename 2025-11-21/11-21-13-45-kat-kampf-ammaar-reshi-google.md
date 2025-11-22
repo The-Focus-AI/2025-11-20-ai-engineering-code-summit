@@ -2,6 +2,8 @@
 
 **Speakers:** Kat Kampf & Ammaar Reshi (both Google)
 
+**Speaker Profiles:** [Kat Kampf](../speakers/kat-kampf.md) | [Ammaar Reshi](../speakers/ammaar-reshi.md)
+
 **Bio:** Kat Kampf - Product Manager, Google; Ammaar Reshi - Product & Design Lead, Google
 
 **Topic:** (tba on talk content)

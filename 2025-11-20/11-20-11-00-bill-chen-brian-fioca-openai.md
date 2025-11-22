@@ -4,6 +4,8 @@
 
 **Speaker Bios:** Bill Chen is Product Manager at OpenAI. Brian Fioca works in Engineering at OpenAI.
 
+**Speaker Profiles:** [Bill Chen](../speakers/bill-chen.md) | [Brian Fioca](../speakers/brian-fioca.md)
+
 **Company:** OpenAI creates GPT models and coding assistants, including advanced reasoning capabilities.
 
 **Focus:** How to build coding agents that remain reliable as models evolve. Critical for understanding production-grade agent architecture.

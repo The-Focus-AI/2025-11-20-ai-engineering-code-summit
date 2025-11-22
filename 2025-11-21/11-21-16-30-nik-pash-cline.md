@@ -2,6 +2,8 @@
 
 **Speaker:** Nik Pash, Creator, Cline
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/nik-pash.md)
+
 **Bio:** Creator, Cline
 
 **Topic:** Hard-won lessons from building large-scale coding agents at Cline—what failed, what survived, and future directions

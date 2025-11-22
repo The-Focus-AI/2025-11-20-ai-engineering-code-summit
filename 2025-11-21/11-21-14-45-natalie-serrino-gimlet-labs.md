@@ -2,6 +2,8 @@
 
 **Speaker:** Natalie Serrino, Founder, Gimlet Labs
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/natalie-serrino.md)
+
 **Bio:** Founder, Gimlet Labs
 
 **Topic:** AI-generated kernels for speeding up custom PyTorch code without human effort

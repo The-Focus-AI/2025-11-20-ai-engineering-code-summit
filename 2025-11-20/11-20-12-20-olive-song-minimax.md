@@ -4,6 +4,8 @@
 
 **Speaker Bio:** Represents MiniMax, a Chinese AI company.
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/olive-song.md)
+
 **Company:** MiniMax develops efficient AI models. M2 is claimed to run 2x faster than Claude Sonnet at 8% of the cost. Recently achieved top agentic evaluation scores.
 
 **Focus:** New frontier models emphasizing efficiency. M2 is particularly focused on agentic workloads.

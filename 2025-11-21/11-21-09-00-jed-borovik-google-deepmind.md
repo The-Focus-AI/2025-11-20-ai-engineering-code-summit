@@ -2,6 +2,8 @@
 
 **Speaker:** Jed Borovik, Jules lead, Google DeepMind
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/jed-borovik.md)
+
 **Bio:** Not provided
 
 **Topic:** Welcome to Day 2 of the AI Engineer Code Summit

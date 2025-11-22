@@ -2,6 +2,8 @@
 
 **Speaker:** Beyang Liu, Co-founder & CTO, Amp Code / Sourcegraph
 
+**Speaker Profile:** [Full Speaker Profile](../speakers/beyang-liu.md)
+
 **Bio:** Co-founder & CTO, Amp Code / Sourcegraph
 
 **Topic:** Introduction to Amp Code and its approach to AI-powered software development
