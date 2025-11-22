@@ -37,6 +37,9 @@ If no slides directory found, skip this step.
 ### Step 3: Launch speaker-extract agent
 Use the Task tool with subagent_type="general-purpose" and description="speaker-extract: Split conference notes into session files"
 
+Extract the date from the source file (e.g., "2025-11-20.md" → "2025-11-20").
+Create a directory named [DATE] (e.g., "2025-11-20/") if it doesn't exist.
+
 Give it this task:
 ```
 Read the conference notes at [FILE_PATH].
@@ -48,7 +51,7 @@ Split them into individual session files with this structure:
 - IMPORTANT: Include any ![](slides/...) image references that fall within that session's timeframe
 - Create a separate file called MM-DD-day-overview.md with any recurring themes or general notes from the top
 
-Save all files in the same directory as the source file.
+Save all files in the [DATE]/ directory (e.g., 2025-11-20/ for Day 1, 2025-11-21/ for Day 2).
 
 Return a summary of:
 - How many session files were created
@@ -67,7 +70,7 @@ Use the Task tool with subagent_type="general-purpose" and description="theme-ex
 
 Give it this task:
 ```
-Read all the session files created in [DIRECTORY].
+Read all the session files created in [DATE]/ directory (e.g., 2025-11-20/).
 
 Identify 4-6 major themes that emerged across the conference.
 
@@ -103,7 +106,7 @@ Use the Task tool with subagent_type="general-purpose" and description="Find add
 
 Give it this task:
 ```
-Review all the Day [N] session files from [DIRECTORY] again.
+Review all the session files from [DATE]/ directory again.
 
 We've already identified these major themes:
 [LIST THEMES FROM STEP 4]
@@ -174,7 +177,7 @@ Read these session files:
 Return ONLY the writeup text with markdown formatting and photo references.
 ```
 
-After all agents complete, collate their outputs into a single markdown file with date: "YYYY-MM-DD-conference-themes-overview.md" with:
+After all agents complete, collate their outputs into a single markdown file: "YYYY-MM-DD-themes.md" (saved at top level, e.g., "2025-11-20-themes.md") with:
 
 **Structure:**
 - Title with conference name and date
@@ -198,11 +201,13 @@ Tell the user:
 "Conference analysis complete!
 
 Created:
-- [N] session files (with photo references)
-- 1 day overview
-- YYYY-MM-DD-conference-themes-overview.md ([X] words, [N] themes)
+- [N] session files in [DATE]/ directory (with photo references)
+- 1 day overview in [DATE]/ directory
+- YYYY-MM-DD-themes.md at top level ([X] words, [N] themes)
 
-All files are in [DIRECTORY]"
+File structure:
+- Top level: 2025-MM-DD.md (raw notes), 2025-MM-DD-themes.md (analysis)
+- [DATE]/ directory: Individual session files and day overview"
 
 Ask: "Would you like me to generate LinkedIn posts from these themes?"
 

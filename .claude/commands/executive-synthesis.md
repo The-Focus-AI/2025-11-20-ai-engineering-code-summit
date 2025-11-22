@@ -14,14 +14,15 @@ This process analyzes all daily conference summaries to produce a comprehensive 
 ## Process
 
 ### Step 1: Discover and load all summaries
-Look for all conference summary files in the current directory:
-- Daily notes (YYYY-MM-DD.md)
-- Theme overviews (YYYY-MM-DD-conference-themes-overview.md)
+Look for all conference summary files:
+- Daily notes at top level (YYYY-MM-DD.md)
+- Theme overviews at top level (YYYY-MM-DD-themes.md)
+- Day directories (YYYY-MM-DD/) containing individual session files and day overviews
 - Any other relevant analysis files
 
-Read ALL of these files to build comprehensive understanding.
+Read ALL theme overview files (YYYY-MM-DD-themes.md) to build comprehensive understanding.
 
-Tell the user: "Found and loaded [N] conference summary files covering [date range]."
+Tell the user: "Found and loaded [N] theme overview files covering [date range]."
 
 ### Step 2: Interactive theme exploration
 Present an initial analysis to the user:

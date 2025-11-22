@@ -4,9 +4,9 @@ This repository contains raw notes, analysis, and synthesis from the AI Engineer
 
 ## Overview
 
-- **Day 1 (Nov 20)**: [Theme Overview](2025-11-20-conference-themes-overview.md) - 4 major themes
-- **Day 2 (Nov 21)**: [Theme Overview](2025-11-21-conference-themes-overview.md) - 5 major themes
-- **Executive Synthesis**: [Cross-conference insights](2025-11-20-executive-synthesis.md) (run `/executive-synthesis` to generate)
+- **Day 1 (Nov 20)**: [Theme Overview](2025-11-20-themes.md) - 4 major themes
+- **Day 2 (Nov 21)**: [Theme Overview](2025-11-21-themes.md) - 5 major themes
+- **Executive Synthesis**: [Cross-conference insights](executive-synthesis.md) (run `/executive-synthesis` to generate)
 
 ## Workflow: From Raw Notes to Executive Summary
 
@@ -77,9 +77,9 @@ The command will ask for:
 - Feedback on theme refinement (merge/split/adjust lead voices)
 
 **Output files:**
-- `MM-DD-HH-MM-speaker-name-company.md` - Individual session files with notes and slides
-- `MM-DD-day-overview.md` - High-level themes from that day
-- `YYYY-MM-DD-conference-themes-overview.md` - Detailed analysis (~6,000-7,000 words)
+- `YYYY-MM-DD/MM-DD-HH-MM-speaker-name-company.md` - Individual session files with notes and slides
+- `YYYY-MM-DD/MM-DD-day-overview.md` - High-level themes from that day
+- `YYYY-MM-DD-themes.md` - Detailed analysis at top level (~6,000-7,000 words)
 
 ### 4. Generate Executive Synthesis
 
@@ -90,25 +90,27 @@ After processing all conference days, create a cross-conference synthesis:
 ```
 
 This will:
-- Analyze all theme overview documents
+- Analyze all theme overview documents (YYYY-MM-DD-themes.md files)
 - Identify meta-patterns across the entire conference
 - Generate executive summary with strategic insights
-- Create synthesis document: `YYYY-MM-DD-executive-synthesis.md`
+- Create synthesis document: `executive-synthesis.md`
 
 ## Repository Structure
 
 ```
 .
 ├── README.md                                    # This file
-├── 2025-11-20.md                               # Day 1 raw notes
-├── 2025-11-21.md                               # Day 2 raw notes
-├── 2025-11-20-conference-themes-overview.md    # Day 1 analysis
-├── 2025-11-21-conference-themes-overview.md    # Day 2 analysis
-├── 2025-11-20-executive-synthesis.md           # Cross-conference synthesis
-├── 11-20-day-overview.md                       # Day 1 theme summary
-├── 11-21-day-overview.md                       # Day 2 theme summary
-├── 11-20-HH-MM-speaker-name-company.md         # Individual sessions (Day 1)
-├── 11-21-HH-MM-speaker-name-company.md         # Individual sessions (Day 2)
+├── 2025-11-20.md                               # Day 1 raw notes (top level)
+├── 2025-11-21.md                               # Day 2 raw notes (top level)
+├── 2025-11-20-themes.md                        # Day 1 analysis (top level)
+├── 2025-11-21-themes.md                        # Day 2 analysis (top level)
+├── executive-synthesis.md                       # Cross-conference synthesis (top level)
+├── 2025-11-20/                                 # Day 1 directory
+│   ├── 11-20-day-overview.md                   # Day 1 theme summary
+│   └── 11-20-HH-MM-speaker-name-company.md    # Individual sessions
+├── 2025-11-21/                                 # Day 2 directory
+│   ├── 11-21-day-overview.md                   # Day 2 theme summary
+│   └── 11-21-HH-MM-speaker-name-company.md    # Individual sessions
 ├── photos/                                      # Raw photos from conference
 ├── slides/                                      # Extracted slides with timestamps
 │   └── YYYY-MM-DD-HH-MM-gemini-edited.jpg
@@ -118,19 +120,29 @@ This will:
         └── executive-synthesis.md               # Cross-conference synthesis
 ```
 
+**Organization principle:**
+- **Top level**: Source notes (YYYY-MM-DD.md), theme analyses (YYYY-MM-DD-themes.md), executive synthesis
+- **Day directories** (YYYY-MM-DD/): Individual session files and day overview
+- **Supporting assets**: photos/ and slides/ directories
+
 ## Key Files
 
-### Analysis Documents
+### Analysis Documents (Top Level)
 
-- **[2025-11-20-conference-themes-overview.md](2025-11-20-conference-themes-overview.md)** - Day 1 deep dive (4 themes)
-- **[2025-11-21-conference-themes-overview.md](2025-11-21-conference-themes-overview.md)** - Day 2 deep dive (5 themes)
-- **[2025-11-20-executive-synthesis.md](2025-11-20-executive-synthesis.md)** - Executive summary across both days
+- **[2025-11-20-themes.md](2025-11-20-themes.md)** - Day 1 deep dive (4 themes, ~6,500 words)
+- **[2025-11-21-themes.md](2025-11-21-themes.md)** - Day 2 deep dive (5 themes, ~6,500 words)
+- **[executive-synthesis.md](executive-synthesis.md)** - Executive summary across both days (run `/executive-synthesis`)
 
-### Session Files
+### Raw Notes (Top Level)
 
-Individual session notes are named: `MM-DD-HH-MM-speaker-name-company.md`
+- **[2025-11-20.md](2025-11-20.md)** - Day 1 raw conference notes with timestamps
+- **[2025-11-21.md](2025-11-21.md)** - Day 2 raw conference notes with timestamps
 
-Example: `11-21-09-11-barry-zhang-mahesh-murag-anthropic.md`
+### Session Files (Day Directories)
+
+Individual session notes are in day directories: `YYYY-MM-DD/MM-DD-HH-MM-speaker-name-company.md`
+
+Example: [2025-11-21/11-21-09-11-barry-zhang-mahesh-murag-anthropic.md](2025-11-21/11-21-09-11-barry-zhang-mahesh-murag-anthropic.md)
 
 Each file contains:
 - Session time and speaker info
