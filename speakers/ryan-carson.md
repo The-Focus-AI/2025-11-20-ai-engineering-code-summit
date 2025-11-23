@@ -1,8 +1,9 @@
-# Ryan Carson
-
-**Company:** Amp / Sourcegraph ([https://ampcode.com](https://ampcode.com) | [https://sourcegraph.com](https://sourcegraph.com))
-**Role:** Developer Advocate / Engineering, Amp Code
-**Session:** From Chaos to Code — A 3-Step AI Developer Workflow with the AI-Dev-Tasks Repo ([../../2025-11-21/11-21-15-40-ryan-carson-amp.md](../../2025-11-21/11-21-15-40-ryan-carson-amp.md))
+---
+name: "Ryan Carson"
+company: "Amp / Sourcegraph ([https://ampcode.com](https://ampcode.com) | [https://sourcegraph.com](https://sourcegraph.com))"
+role: "Developer Advocate / Engineering, Amp Code"
+session: "From Chaos to Code — A 3-Step AI Developer Workflow with the AI-Dev-Tasks Repo ([../../2025-11-21/11-21-15-40-ryan-carson-amp.md](../../2025-11-21/11-21-15-40-ryan-carson-amp.md))"
+---
 
 ## Social & Professional Links
 

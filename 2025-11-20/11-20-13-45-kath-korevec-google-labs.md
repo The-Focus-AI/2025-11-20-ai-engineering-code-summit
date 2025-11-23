@@ -1,3 +1,14 @@
+---
+title: "Proactive Agents"
+speaker: "Kath Korevec"
+company: "Google Labs"
+track: "Leadership"
+topics:
+  - "Agents & Autonomy"
+  - "UX & Interaction"
+  - "Context & Memory"
+---
+
 # Kath Korevec (Google Labs) - Proactive Agents
 
 **Time:** 1:45 PM

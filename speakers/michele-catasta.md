@@ -1,9 +1,9 @@
 ---
-# Michele Catasta
-
-**Company:** Replit (https://replit.com/)
-**Role:** President & Head of AI
-**Session:** Autonomy Is All You Need (2025-11-20/11-20-09-25-michele-catasta-replit.md)
+name: "Michele Catasta"
+company: "Replit (https://replit.com/)"
+role: "President & Head of AI"
+session: "Autonomy Is All You Need (2025-11-20/11-20-09-25-michele-catasta-replit.md)"
+---
 
 ## Social & Professional Links
 - LinkedIn: https://www.linkedin.com/in/pirroh/

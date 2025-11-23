@@ -1,3 +1,13 @@
+---
+title: "Agent Reinforcement Fine Tuning"
+speaker: "Will Hang & Cathy Zhou"
+company: "OpenAI"
+track: "Engineering"
+topics:
+  - "Agents & Autonomy"
+  - "Data & Quality"
+---
+
 ## 12:00pm - 12:19pm | Agent Reinforcement Fine Tuning
 
 **Speakers:** Will Hang & Cathy Zhou (both Members of Technical Staff, OpenAI)

@@ -1,3 +1,13 @@
+---
+title: "Building in the Gemini Era with Google DeepMind"
+speaker: "Kat Kampf & Ammaar Reshi"
+company: "Google"
+track: "Engineering"
+topics:
+  - "UX & Interaction"
+  - "Agents & Autonomy"
+---
+
 ## 1:45pm - 2:04pm | Building in the Gemini Era with Google DeepMind
 
 **Speakers:** Kat Kampf & Ammaar Reshi (both Google)

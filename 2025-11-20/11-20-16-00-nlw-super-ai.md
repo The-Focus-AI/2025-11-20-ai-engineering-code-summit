@@ -1,3 +1,13 @@
+---
+title: "AI Consulting in Practice"
+speaker: "NLW"
+company: "Super.ai/Superintelligent"
+track: "Leadership"
+topics:
+  - "ROI & Economics"
+  - "SDLC & Process"
+---
+
 # NLW (Super.ai/Superintelligent) - AI Consulting in Practice
 
 **Time:** 4:00 PM

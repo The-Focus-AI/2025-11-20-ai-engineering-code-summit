@@ -1,3 +1,13 @@
+---
+title: "No Vibes Allowed: Solving Hard Problems in Complex Codebases"
+speaker: "Dex Horthy"
+company: "HumanLayer"
+track: "Engineering"
+topics:
+  - "Context & Memory"
+  - "SDLC & Process"
+---
+
 ## 9:31am - 9:50am | No Vibes Allowed: Solving Hard Problems in Complex Codebases
 
 **Speaker:** Dex Horthy, CEO, HumanLayer

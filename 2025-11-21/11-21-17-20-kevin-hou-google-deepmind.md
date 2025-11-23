@@ -1,3 +1,13 @@
+---
+title: "Defying Gravity"
+speaker: "Kevin Hou"
+company: "Google DeepMind"
+track: "Engineering"
+topics:
+  - "UX & Interaction"
+  - "Agents & Autonomy"
+---
+
 ## 5:20pm - 5:39pm | Defying Gravity
 
 **Speaker:** Kevin Hou, Engineering, Google DeepMind

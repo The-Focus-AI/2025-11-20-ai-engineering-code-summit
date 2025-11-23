@@ -1,3 +1,13 @@
+---
+title: "From Vibe Coding To Vibe Engineering"
+speaker: "Kitze"
+company: "Sizzy"
+track: "Engineering"
+topics:
+  - "UX & Interaction"
+  - "SDLC & Process"
+---
+
 ## 12:20pm - 12:39pm | From Vibe Coding To Vibe Engineering
 
 **Speaker:** Kitze, Founder, Sizzy

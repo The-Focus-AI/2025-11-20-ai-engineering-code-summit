@@ -1,3 +1,13 @@
+---
+title: "Amp Code: Next-Generation AI Coding"
+speaker: "Beyang Liu"
+company: "Amp Code / Sourcegraph"
+track: "Engineering"
+topics:
+  - "Agents & Autonomy"
+  - "UX & Interaction"
+---
+
 ## 2:25pm - 2:44pm | Amp Code: Next-Generation AI Coding
 
 **Speaker:** Beyang Liu, Co-founder & CTO, Amp Code / Sourcegraph

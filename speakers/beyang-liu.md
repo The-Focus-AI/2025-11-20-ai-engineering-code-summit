@@ -1,8 +1,9 @@
-# Beyang Liu
-
-**Company:** Amp Code / Sourcegraph ([https://ampcode.com](https://ampcode.com) | [https://sourcegraph.com](https://sourcegraph.com))
-**Role:** Co-founder & CTO, Amp Code
-**Session:** Amp Code: Next-Generation AI Coding ([../../2025-11-21/11-21-14-25-beyang-liu-amp-code.md](../../2025-11-21/11-21-14-25-beyang-liu-amp-code.md))
+---
+name: "Beyang Liu"
+company: "Amp Code / Sourcegraph ([https://ampcode.com](https://ampcode.com) | [https://sourcegraph.com](https://sourcegraph.com))"
+role: "Co-founder & CTO, Amp Code"
+session: "Amp Code: Next-Generation AI Coding ([../../2025-11-21/11-21-14-25-beyang-liu-amp-code.md](../../2025-11-21/11-21-14-25-beyang-liu-amp-code.md))"
+---
 
 ## Social & Professional Links
 - Twitter/X: [@beyang](https://twitter.com/beyang)

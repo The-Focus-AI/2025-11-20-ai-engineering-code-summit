@@ -1,3 +1,13 @@
+---
+title: "Using AI-Generated Kernels to Instantly Speed Up PyTorch"
+speaker: "Natalie Serrino"
+company: "Gimlet Labs"
+track: "Engineering"
+topics:
+  - "Infrastructure & Compute"
+  - "ROI & Economics"
+---
+
 ## 2:45pm - 3:04pm | Using AI-Generated Kernels to Instantly Speed Up PyTorch
 
 **Speaker:** Natalie Serrino, Founder, Gimlet Labs

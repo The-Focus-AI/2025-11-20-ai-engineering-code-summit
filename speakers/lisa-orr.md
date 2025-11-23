@@ -1,9 +1,9 @@
 ---
-# Lisa Orr
-
-**Company:** Zapier ([https://zapier.com/](https://zapier.com/))
-**Role:** Group Product Manager, AI Code Gen Team
-**Session:** Your Support Team Should Ship Code ([2025-11-20/11-20-09-45-lisa-orr-zapier.md](../2025-11-20/11-20-09-45-lisa-orr-zapier.md))
+name: "Lisa Orr"
+company: "Zapier ([https://zapier.com/](https://zapier.com/))"
+role: "Group Product Manager, AI Code Gen Team"
+session: "Your Support Team Should Ship Code ([2025-11-20/11-20-09-45-lisa-orr-zapier.md](../2025-11-20/11-20-09-45-lisa-orr-zapier.md))"
+---
 
 ## Social & Professional Links
 - LinkedIn: [https://www.linkedin.com/in/lisaorr/](https://www.linkedin.com/in/lisaorr/)

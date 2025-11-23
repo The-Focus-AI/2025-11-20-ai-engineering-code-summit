@@ -1,4 +1,6 @@
-# Kat Kampf
+---
+name: "Kat Kampf"
+---
 
 ## Google — Building in the Gemini Era
 

@@ -1,3 +1,13 @@
+---
+title: "Paying Engineers like Salespeople"
+speaker: "Arman Hezarkhani"
+company: "Tenex"
+track: "Leadership"
+topics:
+  - "ROI & Economics"
+  - "SDLC & Process"
+---
+
 # Arman Hezarkhani (Tenex) - Paying Engineers like Salespeople: How Tenex Rebuilt the Incentive Stack for Modern Engineering
 
 **Time:** 4:20 PM

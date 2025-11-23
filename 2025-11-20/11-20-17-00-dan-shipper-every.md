@@ -1,3 +1,14 @@
+---
+title: "How to Build an AI-Native Company"
+speaker: "Dan Shipper"
+company: "Every"
+track: "Leadership"
+topics:
+  - "Agents & Autonomy"
+  - "SDLC & Process"
+  - "ROI & Economics"
+---
+
 # Dan Shipper (Every) - How to Build an AI-Native Company (Even If Your Company Is 50 Years Old)
 
 **Time:** 5:00 PM

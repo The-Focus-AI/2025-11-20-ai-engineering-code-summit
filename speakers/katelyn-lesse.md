@@ -1,9 +1,9 @@
 ---
-# Katelyn Lesse
-
-**Company:** Anthropic (https://www.anthropic.com)
-**Role:** Head of API Engineering / Head of Engineering, Claude Developer Platform
-**Session:** Evolving Claude APIs for Agents (../../2025-11-20/11-20-08-49-katelyn-lesse-anthropic.md)
+name: "Katelyn Lesse"
+company: "Anthropic (https://www.anthropic.com)"
+role: "Head of API Engineering / Head of Engineering, Claude Developer Platform"
+session: "Evolving Claude APIs for Agents (../../2025-11-20/11-20-08-49-katelyn-lesse-anthropic.md)"
+---
 
 ## Social & Professional Links
 - LinkedIn: https://www.linkedin.com/in/katelynlesse/

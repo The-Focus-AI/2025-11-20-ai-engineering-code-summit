@@ -1,9 +1,9 @@
 ---
-# Lee Robinson
-
-**Company:** Cursor ([https://www.cursor.com](https://www.cursor.com))
-**Role:** Head of DX (Developer Experience)
-**Session:** Building a fast frontier model with RL ([../../2025-11-21/11-21-09-51-lee-robinson-cursor.md](../../2025-11-21/11-21-09-51-lee-robinson-cursor.md))
+name: "Lee Robinson"
+company: "Cursor ([https://www.cursor.com](https://www.cursor.com))"
+role: "Head of DX (Developer Experience)"
+session: "Building a fast frontier model with RL ([../../2025-11-21/11-21-09-51-lee-robinson-cursor.md](../../2025-11-21/11-21-09-51-lee-robinson-cursor.md))"
+---
 
 ## Social & Professional Links
 - LinkedIn: [Lee Robinson](https://www.linkedin.com/in/leerob/)

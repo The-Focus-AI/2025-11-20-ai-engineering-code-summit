@@ -1,3 +1,14 @@
+---
+title: "Small Bets, Big Impact: Building GenBI at a Fortune 100"
+speaker: "Asaf Bord"
+company: "Northwestern Mutual"
+track: "Leadership"
+topics:
+  - "ROI & Economics"
+  - "Trust & Safety"
+  - "Data & Quality"
+---
+
 # Asaf Bord (Northwestern Mutual) - Small Bets, Big Impact: Building GenBI at a Fortune 100
 
 **Time:** 2:05 PM

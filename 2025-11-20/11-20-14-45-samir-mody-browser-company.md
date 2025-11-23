@@ -1,3 +1,14 @@
+---
+title: "From Arc to Dia: Lessons Learned in Building AI Browser"
+speaker: "Samir Mody"
+company: "The Browser Company"
+track: "Leadership"
+topics:
+  - "UX & Interaction"
+  - "Trust & Safety"
+  - "SDLC & Process"
+---
+
 # Samir Mody (The Browser Company) - From Arc to Dia: Lessons Learned in Building AI Browser
 
 **Time:** 2:45 PM

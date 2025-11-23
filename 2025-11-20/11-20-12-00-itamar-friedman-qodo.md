@@ -1,3 +1,14 @@
+---
+title: "The State of AI Code Quality: Hype vs. Reality"
+speaker: "Itamar Friedman"
+company: "Qodo"
+track: "Leadership"
+topics:
+  - "Testing & Verification"
+  - "Trust & Safety"
+  - "Data & Quality"
+---
+
 # Itamar Friedman (Qodo) - The State of AI Code Quality: Hype vs. Reality
 
 **Time:** 12:00 PM

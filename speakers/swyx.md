@@ -1,4 +1,6 @@
-# Swyx (Shawn Wang)
+---
+name: "Swyx (Shawn Wang)"
+---
 
 ## AI Engineer — Community Founder, Podcast Host, Developer Advocate
 

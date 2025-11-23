@@ -1,4 +1,6 @@
-# Rhythm Garg
+---
+name: "Rhythm Garg"
+---
 
 ## Applied Compute — Co-Founder
 

@@ -1,3 +1,13 @@
+---
+title: "Enterprise-grade MCP"
+speaker: "Tobin South"
+company: "WorkOS"
+track: "Engineering"
+topics:
+  - "Agents & Autonomy"
+  - "Trust & Safety"
+---
+
 ## 10:40am - 11:00am | Enterprise-grade MCP
 
 **Speaker:** Tobin South, Head of AI Agents & MCP, WorkOS

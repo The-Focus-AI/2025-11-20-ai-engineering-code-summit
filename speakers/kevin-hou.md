@@ -1,9 +1,9 @@
 ---
-# Kevin Hou
-
-**Company:** Google DeepMind
-**Role:** Engineering, Google DeepMind
-**Session:** Closing Keynote - Defying Gravity (2025-11-21 5:20pm-5:39pm)
+name: "Kevin Hou"
+company: "Google DeepMind"
+role: "Engineering, Google DeepMind"
+session: "Closing Keynote - Defying Gravity (2025-11-21 5:20pm-5:39pm)"
+---
 
 ## Social & Professional Links
 - Google DeepMind: https://deepmind.google/

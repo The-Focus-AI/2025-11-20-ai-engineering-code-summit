@@ -1,9 +1,9 @@
 ---
-# Itamar Friedman
-
-**Company:** Qodo (formerly CodiumAI)
-**Role:** Co-founder & CEO
-**Session:** Testing with AI ([2025-11-20/11-20-12-00-itamar-friedman-qodo.md](../2025-11-20/11-20-12-00-itamar-friedman-qodo.md))
+name: "Itamar Friedman"
+company: "Qodo (formerly CodiumAI)"
+role: "Co-founder & CEO"
+session: "Testing with AI ([2025-11-20/11-20-12-00-itamar-friedman-qodo.md](../2025-11-20/11-20-12-00-itamar-friedman-qodo.md))"
+---
 
 ## Professional Links
 

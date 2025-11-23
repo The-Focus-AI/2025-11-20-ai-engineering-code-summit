@@ -1,8 +1,9 @@
-# Kath Korevec
-
-**Company:** Google Labs (https://labs.google/)
-**Role:** Director of Product - AI Developer Assistants (AIDA)
-**Session:** Proactive Agents: Moving Beyond Chat-Based AI ([session file](../../2025-11-20/11-20-13-45-kath-korevec-google-labs.md))
+---
+name: "Kath Korevec"
+company: "Google Labs (https://labs.google/)"
+role: "Director of Product - AI Developer Assistants (AIDA)"
+session: "Proactive Agents: Moving Beyond Chat-Based AI ([session file](../../2025-11-20/11-20-13-45-kath-korevec-google-labs.md))"
+---
 
 ## Social & Professional Links
 - LinkedIn: https://www.linkedin.com/in/kathleensimpson/

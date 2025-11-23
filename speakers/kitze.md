@@ -1,4 +1,6 @@
-# Kitze
+---
+name: "Kitze"
+---
 
 ## Founder, Sizzy — AI-Driven Browser for Developers
 

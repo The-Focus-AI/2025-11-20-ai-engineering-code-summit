@@ -1,9 +1,9 @@
 ---
-# Asaf Bord
-
-**Company:** Northwestern Mutual (https://www.northwesternmutual.com)
-**Role:** GenAI Products Leader
-**Session:** From Small Bets to Big Impact: Building GenBI at a Fortune 100 (2025-11-20/11-20-14-05-asaf-bord-northwestern-mutual.md)
+name: "Asaf Bord"
+company: "Northwestern Mutual (https://www.northwesternmutual.com)"
+role: "GenAI Products Leader"
+session: "From Small Bets to Big Impact: Building GenBI at a Fortune 100 (2025-11-20/11-20-14-05-asaf-bord-northwestern-mutual.md)"
+---
 
 ## Social & Professional Links
 - LinkedIn: https://www.linkedin.com/in/asafbord

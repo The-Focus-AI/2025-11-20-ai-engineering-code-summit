@@ -1,8 +1,9 @@
-# Gene Kim
-
-**Company:** IT Revolution (https://itrevolution.com)
-**Role:** Founder, multiple award-winning CTO, researcher, and bestselling author
-**Session:** 2026: The Year the IDE Died (2025-11-20/11-20-10-05-steve-yegge-gene-kim.md)
+---
+name: "Gene Kim"
+company: "IT Revolution (https://itrevolution.com)"
+role: "Founder, multiple award-winning CTO, researcher, and bestselling author"
+session: "2026: The Year the IDE Died (2025-11-20/11-20-10-05-steve-yegge-gene-kim.md)"
+---
 
 ## Social & Professional Links
 - LinkedIn: https://www.linkedin.com/in/realgenekim/

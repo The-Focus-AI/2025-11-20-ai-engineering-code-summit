@@ -1,8 +1,8 @@
 ---
-# Nik Pash
-
-**Title:** Creator & Developer, Cline
-**Session:** Hard-Won Lessons from Building Effective AI Coding Agents ([2025-11-21/11-21-16-30-nik-pash-cline.md](../2025-11-21/11-21-16-30-nik-pash-cline.md))
+name: "Nik Pash"
+title: "Creator & Developer, Cline"
+session: "Cline - More Connected, More Powerful (2025-11-21/11-21-16-30-nik-pash-cline.md)"
+---
 
 ## About Nik Pash
 

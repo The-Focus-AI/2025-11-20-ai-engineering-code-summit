@@ -1,3 +1,13 @@
+---
+title: "Hard-Won Lessons from Building Effective AI Coding Agents"
+speaker: "Nik Pash"
+company: "Cline"
+track: "Engineering"
+topics:
+  - "Agents & Autonomy"
+  - "Testing & Verification"
+---
+
 ## 4:30pm - 4:40pm | Hard-Won Lessons from Building Effective AI Coding Agents
 
 **Speaker:** Nik Pash, Creator, Cline

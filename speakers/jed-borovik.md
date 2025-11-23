@@ -1,4 +1,6 @@
-# Jed Borovik
+---
+name: "Jed Borovik"
+---
 
 ## Google DeepMind — Leading Jules Autonomous Coding Agent
 

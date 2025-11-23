@@ -1,3 +1,12 @@
+---
+title: "Opening Remarks"
+speaker: "swyx"
+company: "AI Engineer"
+track: "Engineering"
+topics:
+  - "UX & Interaction"
+---
+
 ## 9:06am - 9:10am | Opening Remarks
 
 **Speaker:** swyx, Organizer, AI Engineer

@@ -1,3 +1,12 @@
+---
+title: "Welcome to Day 2 of the AI Engineer Code Summit"
+speaker: "Jed Borovik"
+company: "Google DeepMind"
+track: "Engineering"
+topics:
+  - "Agents & Autonomy"
+---
+
 ## 9:00am - 9:05am | Welcome to Day 2 of the AI Engineer Code Summit
 
 **Speaker:** Jed Borovik, Jules lead, Google DeepMind

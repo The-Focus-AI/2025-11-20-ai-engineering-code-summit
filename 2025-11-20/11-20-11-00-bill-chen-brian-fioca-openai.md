@@ -1,3 +1,14 @@
+---
+title: "Future-Proof Coding Agents"
+speaker: "Bill Chen & Brian Fioca"
+company: "OpenAI"
+track: "Leadership"
+topics:
+  - "Agents & Autonomy"
+  - "Context & Memory"
+  - "Trust & Safety"
+---
+
 # Bill Chen & Brian Fioca (OpenAI) - Future-Proof Coding Agents: Building Reliable Systems That Outlast Model Cycles
 
 **Time:** 11:00 AM

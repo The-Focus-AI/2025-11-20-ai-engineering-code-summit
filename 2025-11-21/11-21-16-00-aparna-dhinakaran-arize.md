@@ -1,3 +1,13 @@
+---
+title: "Continual System-Prompt Learning for Code Agents"
+speaker: "Aparna Dhinakaran"
+company: "Arize"
+track: "Engineering"
+topics:
+  - "Agents & Autonomy"
+  - "Testing & Verification"
+---
+
 ## 4:00pm - 4:30pm | Continual System-Prompt Learning for Code Agents
 
 **Speaker:** Aparna Dhinakaran, Co-founder & CPO, Arize

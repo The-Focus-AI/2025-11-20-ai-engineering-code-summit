@@ -1,3 +1,13 @@
+---
+title: "Code World Model: Building World Models for Computation"
+speaker: "Jacob Kahn"
+company: "Meta"
+track: "Engineering"
+topics:
+  - "Agents & Autonomy"
+  - "Data & Quality"
+---
+
 ## 11:00am - 11:19am | Code World Model: Building World Models for Computation
 
 **Speaker:** Jacob Kahn, Research Scientist, Meta

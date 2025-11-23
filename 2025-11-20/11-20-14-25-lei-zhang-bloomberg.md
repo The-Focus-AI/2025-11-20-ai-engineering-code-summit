@@ -1,3 +1,14 @@
+---
+title: "What We Learned Deploying AI within Bloomberg's Engineering Organization"
+speaker: "Lei Zhang"
+company: "Bloomberg"
+track: "Leadership"
+topics:
+  - "SDLC & Process"
+  - "Infrastructure & Compute"
+  - "Trust & Safety"
+---
+
 # Lei Zhang (Bloomberg) - What We Learned Deploying AI within Bloomberg's Engineering Organization
 
 **Time:** 2:25 PM

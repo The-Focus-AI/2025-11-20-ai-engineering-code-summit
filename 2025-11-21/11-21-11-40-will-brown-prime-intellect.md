@@ -1,3 +1,13 @@
+---
+title: "RL Environments at Scale"
+speaker: "Will Brown"
+company: "Prime Intellect"
+track: "Engineering"
+topics:
+  - "Infrastructure & Compute"
+  - "Agents & Autonomy"
+---
+
 ## 11:40am - 11:59am | RL Environments at Scale
 
 **Speaker:** Will Brown, Research Lead, Prime Intellect

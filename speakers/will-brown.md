@@ -1,4 +1,6 @@
-# Will Brown
+---
+name: "Will Brown"
+---
 
 ## Prime Intellect — Research Lead
 

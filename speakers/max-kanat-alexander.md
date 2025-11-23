@@ -1,9 +1,9 @@
 ---
-# Max Kanat-Alexander
-
-**Company:** Capital One (https://www.capitalone.com)
-**Role:** Executive Distinguished Engineer for Developer Experience
-**Session:** Developer Experience in the Age of AI Coding Agents ([2025-11-20/11-20-15-05-max-kanat-alexander-capital-one.md](../2025-11-20/11-20-15-05-max-kanat-alexander-capital-one.md))
+name: "Max Kanat-Alexander"
+company: "Capital One (https://www.capitalone.com)"
+role: "Executive Distinguished Engineer for Developer Experience"
+session: "Developer Experience in the Age of AI Coding Agents ([2025-11-20/11-20-15-05-max-kanat-alexander-capital-one.md](../2025-11-20/11-20-15-05-max-kanat-alexander-capital-one.md))"
+---
 
 ## Social & Professional Links
 - LinkedIn: https://www.linkedin.com/in/mkanat/

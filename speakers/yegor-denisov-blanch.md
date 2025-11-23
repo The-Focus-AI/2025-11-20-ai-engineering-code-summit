@@ -1,9 +1,9 @@
 ---
-# Yegor Denisov-Blanch
-
-**Company:** Stanford University ([softwareengineeringproductivity.stanford.edu](https://softwareengineeringproductivity.stanford.edu/))
-**Role:** Researcher, Software Engineering Productivity Research Group
-**Session:** How to Quantify AI ROI in Software Engineering (120k Devs Study) ([2025-11-20/11-20-11-40-yegor-denisov-blanch-stanford.md](../../2025-11-20/11-20-11-40-yegor-denisov-blanch-stanford.md))
+name: "Yegor Denisov-Blanch"
+company: "Stanford University ([softwareengineeringproductivity.stanford.edu](https://softwareengineeringproductivity.stanford.edu/))"
+role: "Researcher, Software Engineering Productivity Research Group"
+session: "How to Quantify AI ROI in Software Engineering (120k Devs Study) ([2025-11-20/11-20-11-40-yegor-denisov-blanch-stanford.md](../../2025-11-20/11-20-11-40-yegor-denisov-blanch-stanford.md))"
+---
 
 ## Social & Professional Links
 - LinkedIn: [@ydenisov](https://www.linkedin.com/in/ydenisov/)

@@ -1,3 +1,13 @@
+---
+title: "Benchmarks vs economics: the AI capability measurement gap"
+speaker: "Joel Becker"
+company: "METR"
+track: "Engineering"
+topics:
+  - "Data & Quality"
+  - "ROI & Economics"
+---
+
 ## 5:00pm - 5:19pm | Benchmarks vs economics: the AI capability measurement gap
 
 **Speaker:** Joel Becker, Researcher, METR

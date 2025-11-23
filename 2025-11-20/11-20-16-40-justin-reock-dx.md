@@ -1,3 +1,14 @@
+---
+title: "Leadership in AI-Assisted Engineering"
+speaker: "Justin Reock"
+company: "DX"
+track: "Leadership"
+topics:
+  - "SDLC & Process"
+  - "Trust & Safety"
+  - "ROI & Economics"
+---
+
 # Justin Reock (DX) - Leadership in AI-Assisted Engineering
 
 **Time:** 4:40 PM

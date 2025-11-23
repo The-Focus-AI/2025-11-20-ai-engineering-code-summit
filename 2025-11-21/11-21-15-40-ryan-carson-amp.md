@@ -1,3 +1,12 @@
+---
+title: "From Chaos to Code — A 3-Step AI Developer Workflow"
+speaker: "Ryan Carson"
+company: "Amp"
+track: "Engineering"
+topics:
+  - "SDLC & Process"
+---
+
 ## 3:40pm | From Chaos to Code — A 3-Step AI Developer Workflow with the AI-Dev-Tasks Repo
 
 **Speaker:** Ryan Carson, Amp

@@ -1,9 +1,9 @@
 ---
-# Steve Yegge
-
-**Company:** Sourcegraph (https://sourcegraph.com)
-**Role:** Head of Engineering, Amp Lead
-**Session:** 2026: The Year the IDE Died (2025-11-20/11-20-10-05-steve-yegge-gene-kim.md)
+name: "Steve Yegge"
+company: "Sourcegraph (https://sourcegraph.com)"
+role: "Head of Engineering, Amp Lead"
+session: "2026: The Year the IDE Died (2025-11-20/11-20-10-05-steve-yegge-gene-kim.md)"
+---
 
 ## Social & Professional Links
 - LinkedIn: https://www.linkedin.com/in/steveyegge/

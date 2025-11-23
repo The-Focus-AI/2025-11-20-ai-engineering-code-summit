@@ -1,3 +1,13 @@
+---
+title: "Building Credit Systems for AI Products"
+speaker: "Mike Lacsamana"
+company: "Stigg"
+track: "Leadership"
+topics:
+  - "ROI & Economics"
+  - "Infrastructure & Compute"
+---
+
 # Mike Lacsamana (Stigg) - Building Credit Systems for AI Products
 
 **Time:** 10:40 AM

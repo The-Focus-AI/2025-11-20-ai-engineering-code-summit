@@ -1,3 +1,13 @@
+---
+title: "Moving away from Agile: What's Next?"
+speaker: "Martin Harrysson & Natasha Maniar"
+company: "McKinsey"
+track: "Leadership"
+topics:
+  - "SDLC & Process"
+  - "ROI & Economics"
+---
+
 # Martin Harrysson & Natasha Maniar (McKinsey) - Moving away from Agile: What's Next?
 
 **Time:** 11:20 AM

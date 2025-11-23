@@ -1,8 +1,9 @@
-# Mike Lacsamana
-
-**Company:** Stigg (https://www.stigg.io/)
-**Role:** Head of Solutions Engineering
-**Session:** Building Credit Systems for AI Products (2025-11-20/11-20-10-40-mike-lacsamana-stigg.md)
+---
+name: "Mike Lacsamana"
+company: "Stigg (https://www.stigg.io/)"
+role: "Head of Solutions Engineering"
+session: "Building Credit Systems for AI Products (2025-11-20/11-20-10-40-mike-lacsamana-stigg.md)"
+---
 
 ## Social & Professional Links
 - LinkedIn: https://www.linkedin.com/in/mikelacsy

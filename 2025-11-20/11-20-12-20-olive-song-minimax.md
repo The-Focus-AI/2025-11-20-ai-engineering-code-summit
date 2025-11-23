@@ -1,3 +1,13 @@
+---
+title: "Minimax M2"
+speaker: "Olive Song"
+company: "MiniMax"
+track: "Leadership"
+topics:
+  - "Agents & Autonomy"
+  - "Infrastructure & Compute"
+---
+
 # Olive Song (MiniMax) - Minimax M2
 
 **Time:** 12:20 PM

@@ -1,9 +1,9 @@
 ---
-# Dex Horthy
-
-**Company:** HumanLayer ([https://www.humanlayer.ai](https://www.humanlayer.ai))
-**Role:** Founder & CEO
-**Session:** No Vibes Allowed: Solving Hard Problems in Complex Codebases ([../2025-11-21/11-21-09-31-dex-horthy-humanlayer.md](../2025-11-21/11-21-09-31-dex-horthy-humanlayer.md))
+name: "Dex Horthy"
+company: "HumanLayer ([https://www.humanlayer.ai](https://www.humanlayer.ai))"
+role: "Founder & CEO"
+session: "No Vibes Allowed: Solving Hard Problems in Complex Codebases ([../2025-11-21/11-21-09-31-dex-horthy-humanlayer.md](../2025-11-21/11-21-09-31-dex-horthy-humanlayer.md))"
+---
 
 ## Social & Professional Links
 

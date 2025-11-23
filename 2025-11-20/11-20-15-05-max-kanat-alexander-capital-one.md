@@ -1,3 +1,14 @@
+---
+title: "Developer Experience in the Age of AI Coding Agents"
+speaker: "Max Kanat-Alexander"
+company: "Capital One"
+track: "Leadership"
+topics:
+  - "UX & Interaction"
+  - "Trust & Safety"
+  - "SDLC & Process"
+---
+
 # Max Kanat-Alexander (Capital One) - Developer Experience in the Age of AI Coding Agents
 
 **Time:** 3:05 PM

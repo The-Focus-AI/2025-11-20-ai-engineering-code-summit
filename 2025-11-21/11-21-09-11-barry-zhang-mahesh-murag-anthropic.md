@@ -1,3 +1,13 @@
+---
+title: "Don't Build Agents, Build Skills Instead"
+speaker: "Barry Zhang & Mahesh Murag"
+company: "Anthropic"
+track: "Engineering"
+topics:
+  - "Agents & Autonomy"
+  - "SDLC & Process"
+---
+
 ## 9:11am - 9:30am | Don't Build Agents, Build Skills Instead
 
 **Speakers:** Barry Zhang & Mahesh Murag (both Members of Technical Staff, Anthropic)

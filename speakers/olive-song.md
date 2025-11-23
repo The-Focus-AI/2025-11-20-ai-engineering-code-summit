@@ -1,9 +1,9 @@
 ---
-# Olive Song (Jiayuan Song)
-
-**Company:** MiniMax (https://www.minimax.io/)
-**Role:** LLM Algorithm Engineer
-**Session:** MiniMax M2 - Efficient Frontier Models ([11-20-12-20-olive-song-minimax.md](../2025-11-20/11-20-12-20-olive-song-minimax.md))
+name: "Olive Song (Jiayuan Song)"
+company: "MiniMax (https://www.minimax.io/)"
+role: "LLM Algorithm Engineer"
+session: "MiniMax M2 - Efficient Frontier Models ([11-20-12-20-olive-song-minimax.md](../2025-11-20/11-20-12-20-olive-song-minimax.md))"
+---
 
 ## Social & Professional Links
 - LinkedIn: [Jiayuan(Olive) Song](https://www.linkedin.com/in/olivesong/)

@@ -1,3 +1,13 @@
+---
+title: "Making Codebases 'Agent-Ready'"
+speaker: "Eno Reyes"
+company: "Factory AI"
+track: "Engineering"
+topics:
+  - "SDLC & Process"
+  - "Testing & Verification"
+---
+
 ## 2:05pm - 2:24pm | Making Codebases "Agent-Ready"
 
 **Speaker:** Eno Reyes, CTO, Factory AI

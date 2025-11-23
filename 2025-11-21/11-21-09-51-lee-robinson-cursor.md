@@ -1,3 +1,13 @@
+---
+title: "Building a fast frontier model with RL"
+speaker: "Lee Robinson"
+company: "Cursor"
+track: "Engineering"
+topics:
+  - "Infrastructure & Compute"
+  - "Data & Quality"
+---
+
 ## 9:51am - 10:10am | Building a fast frontier model with RL
 
 **Speaker:** Lee Robinson, Head of DX, Cursor

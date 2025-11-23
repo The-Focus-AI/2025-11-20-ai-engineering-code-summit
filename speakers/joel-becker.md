@@ -1,4 +1,6 @@
-# Joel Becker
+---
+name: "Joel Becker"
+---
 
 ## METR — AI Safety Researcher & Capability Evaluations Specialist
 

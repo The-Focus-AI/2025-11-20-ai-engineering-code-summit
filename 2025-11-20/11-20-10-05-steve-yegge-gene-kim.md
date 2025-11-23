@@ -1,3 +1,13 @@
+---
+title: "2026: The Year the IDE Died"
+speaker: "Steve Yegge & Gene Kim"
+company: "Sourcegraph/Amp & IT Revolution"
+track: "Leadership"
+topics:
+  - "UX & Interaction"
+  - "ROI & Economics"
+---
+
 # Steve Yegge (Sourcegraph/Amp) & Gene Kim (IT Revolution) - 2026: The Year the IDE Died
 
 **Time:** 10:05 AM

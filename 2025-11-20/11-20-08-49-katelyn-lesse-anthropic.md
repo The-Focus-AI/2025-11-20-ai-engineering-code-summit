@@ -1,3 +1,13 @@
+---
+title: "Evolving Claude APIs for Agents"
+speaker: "Katelyn Lesse"
+company: "Anthropic"
+track: "Leadership"
+topics:
+  - "Agents & Autonomy"
+  - "Context & Memory"
+---
+
 # Katelyn Lesse (Anthropic) - Evolving Claude APIs for Agents
 
 **Time:** 8:49 AM (approx)

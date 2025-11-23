@@ -1,3 +1,13 @@
+---
+title: "Autonomy Is All You Need"
+speaker: "Michele Catasta"
+company: "Replit"
+track: "Leadership"
+topics:
+  - "Agents & Autonomy"
+  - "Testing & Verification"
+---
+
 # Michele Catasta (Replit) - Autonomy Is All You Need
 
 **Time:** 9:25 AM

@@ -1,3 +1,13 @@
+---
+title: "Efficient Reinforcement Learning"
+speaker: "Rhythm Garg & Linden Li"
+company: "Applied Compute"
+track: "Engineering"
+topics:
+  - "Infrastructure & Compute"
+  - "Agents & Autonomy"
+---
+
 ## 11:20am - 11:39am | Efficient Reinforcement Learning
 
 **Speakers:** Rhythm Garg & Linden Li (both Co-founders, Applied Compute)

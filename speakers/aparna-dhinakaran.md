@@ -1,10 +1,9 @@
 ---
-# Aparna Dhinakaran
-
-**Company:** Arize AI (https://arize.com)
-**Role:** Co-founder & Chief Product Officer (CPO)
-**Session:** Continual System-Prompt Learning for Code Agents (2025-11-21/11-21-16-00-aparna-dhinakaran-arize.md)
-**Time:** 4:00pm - 4:30pm, November 21, 2025
+name: "Aparna Dhinakaran"
+company: "Arize AI (https://arize.com)"
+role: "Co-founder & Chief Product Officer (CPO)"
+session: "Continual System-Prompt Learning for Code Agents (2025-11-21/11-21-16-00-aparna-dhinakaran-arize.md)"
+---
 
 ## Social & Professional Links
 - Twitter/X: [@aparnadhinak](https://x.com/aparnadhinak)

@@ -1,4 +1,7 @@
-# Eiso Kant
+---
+name: "Eiso Kant"
+---
+
 ## Poolside — AI for Software Development
 
 ![Eiso Kant - CEO, Poolside](https://via.placeholder.com/400?text=Eiso+Kant)

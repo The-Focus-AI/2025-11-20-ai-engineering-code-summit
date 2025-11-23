@@ -1,3 +1,13 @@
+---
+title: "The Infinite Software Crisis"
+speaker: "Jake Nations"
+company: "Netflix"
+track: "Engineering"
+topics:
+  - "SDLC & Process"
+  - "Context & Memory"
+---
+
 ## 3:05pm - 3:24pm | The Infinite Software Crisis
 
 **Speaker:** Jake Nations, Engineering, Netflix

@@ -1,3 +1,13 @@
+---
+title: "Your Support Team Should Ship Code"
+speaker: "Lisa Orr"
+company: "Zapier"
+track: "Leadership"
+topics:
+  - "SDLC & Process"
+  - "UX & Interaction"
+---
+
 # Lisa Orr (Zapier) - Your Support Team Should Ship Code
 
 **Time:** 9:45 AM

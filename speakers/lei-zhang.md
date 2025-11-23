@@ -1,9 +1,9 @@
 ---
-# Lei Zhang
-
-**Company:** Bloomberg LP (https://www.bloomberg.com)
-**Role:** Senior Director of Generative AI & Head of Developer Experience
-**Session:** What We Learned Deploying AI within Bloomberg's Engineering Organization (2025-11-20/11-20-14-25-lei-zhang-bloomberg.md)
+name: "Lei Zhang"
+company: "Bloomberg LP (https://www.bloomberg.com)"
+role: "Senior Director of Generative AI & Head of Developer Experience"
+session: "What We Learned Deploying AI within Bloomberg's Engineering Organization (2025-11-20/11-20-14-25-lei-zhang-bloomberg.md)"
+---
 
 ## Social & Professional Links
 - LinkedIn: https://www.linkedin.com/in/lei-zhang-51b2686/

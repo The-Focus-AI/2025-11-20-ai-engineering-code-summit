@@ -1,3 +1,13 @@
+---
+title: "How to Quantify AI ROI in Software Engineering"
+speaker: "Yegor Denisov-Blanch"
+company: "Stanford"
+track: "Leadership"
+topics:
+  - "ROI & Economics"
+  - "Data & Quality"
+---
+
 # Yegor Denisov-Blanch (Stanford) - How to Quantify AI ROI in Software Engineering (120k Devs Study)
 
 **Time:** 11:40 AM
