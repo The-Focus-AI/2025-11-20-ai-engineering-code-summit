@@ -1,22 +1,21 @@
 ---
-name: "Rhythm Garg"
+name: Rhythm Garg
+company: Applied Compute
+company_url: https://appliedcompute.ai
+role: Co-founder
+session: Efficient Reinforcement Learning
+session_file: 2025-11-21/11-21-11-20-rhythm-garg-linden-li-applied-compute.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: null
 ---
-
-## Applied Compute — Co-Founder
-
-![Rhythm Garg](https://via.placeholder.com/150)
 
 ## Overview
 
 Rhythm Garg is a Co-founder at Applied Compute, a company focused on making reinforcement learning practical and efficient for production AI systems. At the AI Engineering Code Summit 2025, he presented alongside co-founder Linden Li on "Efficient Reinforcement Learning," detailing the proprietary RL stack and infrastructure that enables fast, cheap, and predictable training of superhuman AI agents.
-
-## Social Links
-
-Currently limited publicly available social media links. Additional research recommended for:
-- LinkedIn profile
-- Twitter/X handle
-- GitHub profile
-- Personal website or blog
 
 ## Background
 

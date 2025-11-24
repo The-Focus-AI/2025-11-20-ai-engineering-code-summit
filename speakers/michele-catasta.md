@@ -1,8 +1,16 @@
 ---
-name: "Michele Catasta"
-company: "Replit (https://replit.com/)"
-role: "President & Head of AI"
-session: "Autonomy Is All You Need (2025-11-20/11-20-09-25-michele-catasta-replit.md)"
+name: Michele Catasta
+company: Replit
+company_url: https://replit.com/
+role: President & Head of AI
+session: Autonomy Is All You Need
+session_file: 2025-11-20/11-20-09-25-michele-catasta-replit.md
+linkedin: https://www.linkedin.com/in/pirroh/
+twitter: @pirroh
+twitter_url: https://x.com/pirroh
+github: @pirroh
+github_url: https://github.com/pirroh
+website: null
 ---
 
 ## Social & Professional Links

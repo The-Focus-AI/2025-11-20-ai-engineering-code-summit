@@ -1,21 +1,21 @@
 ---
-name: "Joel Becker"
+name: Joel Becker
+company: METR
+company_url: https://www.metr.org
+role: Researcher - AI Safety & Capability Evaluations
+session: AI Capability Measurement and Real-World Performance
+session_file: 2025-11-21/11-21-17-00-joel-becker-metr.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: https://www.metr.org
 ---
-
-## METR — AI Safety Researcher & Capability Evaluations Specialist
-
-![METR - Model Evaluation & Threat Research](https://www.metr.org/favicon.ico)
 
 ## Overview
 
 Joel Becker is a researcher at METR (Model Evaluation & Threat Research), where he focuses on understanding and measuring AI capabilities through rigorous evaluation frameworks. His work bridges the critical gap between how AI models perform in controlled laboratory settings versus their real-world economic and operational performance—a distinction with profound implications for AI development, safety, and deployment decisions.
-
-## Social Links
-
-- **LinkedIn:** To be updated
-- **Twitter/X:** To be updated
-- **GitHub:** To be updated
-- **METR:** [metr.org](https://www.metr.org)
 
 ## Background
 

@@ -1,18 +1,21 @@
-# Dan Shipper
-## Every — AI and Writing
-
-![Dan Shipper - CEO and Founder of Every](https://pbs.twimg.com/profile_images/1445895671476666368/7L5fJjNK_400x400.jpg)
+---
+name: Dan Shipper
+company: Every
+company_url: https://every.to
+role: CEO and Co-founder
+session: Building AI-First Companies
+session_file: 2025-11-20/11-20-17-00-dan-shipper-every.md
+linkedin: null
+twitter: "@danshipper"
+twitter_url: https://twitter.com/danshipper
+github: null
+github_url: null
+website: https://every.to
+---
 
 ## Overview
 
 Dan Shipper is the CEO and co-founder of **Every**, a forward-thinking company that combines publishing, AI products, and consulting. He is a prolific writer on AI transformation, founder of the influential **Chain of Thought** newsletter, and creator of **Spiral**, an innovative writing tool designed for AI-native knowledge work. With just 15 full-time employees, Every generates 7-figure revenue across 6 business units and 4 software products—a testament to radical AI-first operations.
-
-## Social Links
-
-- **Twitter/X:** [@danshipper](https://twitter.com/danshipper)
-- **Website:** [everyai.com](https://everyai.com)
-- **Newsletter:** [Chain of Thought](https://www.chain.work/)
-- **Substack:** [Every Blog](https://every.com/)
 
 ## Background
 

@@ -1,17 +1,21 @@
-# Jake Nations
-
-## Netflix — The Infinite Software Crisis: AI, Complexity, and the Challenge of Scale
-
-![Jake Nations - Netflix Engineering](https://media.licdn.com/dms/image/v2/C4D03AQGc9Ys-lMBhEA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1234567890?e=1234567890&v=beta&t=default)
+---
+name: Jake Nations
+company: Netflix
+company_url: https://www.netflix.com
+role: Engineering Leader
+session: The Infinite Software Crisis - AI, Complexity, and the Challenge of Scale
+session_file: 2025-11-21/11-21-15-05-jake-nations-netflix.md
+linkedin: https://linkedin.com/in/jakenations
+twitter: "@jakenations"
+twitter_url: https://twitter.com/jakenations
+github: null
+github_url: null
+website: null
+---
 
 ## Overview
 
 Jake Nations is an engineering leader at Netflix focused on leveraging AI and ML systems at scale. He specializes in addressing fundamental software engineering challenges that emerge when AI is applied to massive, complex codebases. His talk centers on how AI accelerates existing software crises while requiring new methodologies for managing complexity in production systems.
-
-## Social Links
-
-- **LinkedIn:** [Jake Nations](https://linkedin.com/in/jakenations)
-- **Twitter/X:** [@jakenations](https://twitter.com/jakenations) (if available)
 
 ## Background
 

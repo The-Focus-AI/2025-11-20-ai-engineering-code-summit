@@ -1,284 +1,236 @@
 # AI Engineering Code Summit - Day 2
-## November 21, 2025
+## November 21, 2025 - Executive Presentation
 
 ---
 
-## The Core Insight
+## Slide 1: The War on Slop
 
-**AI makes coding dangerously easy, but easy isn't simple**
+**The path to "kino" (quality and craft) isn't through clever engineering**
 
-Success requires augmenting human thinking—not replacing it—through:
-- Deliberate context management
-- Prompt tuning to encode expertise
-- Verification-first design
+It requires:
+- Human thinking at the center
+- Environments as universal abstraction
+- Model capability over scaffolding
+- Open data to accelerate progress
 
-The organizations that master these will build quality. The rest will build slop at scale.
-
----
-
-## The War on Slop
-
-Swyx opened Day 2 declaring war on AI-generated mediocrity.
-
-But 25 sessions later, the real insight emerged:
-
-**The line between quality and slop isn't about AI capability—it's about whether we augment or outsource human thinking.**
+*Swyx declared war on "slop." 25 sessions later, the architecture of quality emerged.*
 
 ---
 
-## The Easy vs Simple Trap
+## Slide 2: DO NOT OUTSOURCE THE THINKING
 
-Jake Nations (Netflix): "I shipped code I didn't understand"
+> "AI can only amplify the thinking you've done" — Dex Horthy, HumanLayer
 
-Dex Horthy surveyed 100,000 developers:
-- Stuck in endless rework cycles
-- "Fixing the slop from last week"
-- Outsourcing thinking instead of augmenting it
+**The trap:** AI makes coding dangerously easy, but easy ≠ simple
 
-**Rich Hickey's warning applies**: Easy ≠ Simple
+**The reality:** 100,000 developers caught in rework cycles, "fixing the slop from last week"
 
-AI makes generating code trivially easy. But when systems become complex, everything touches everything.
+**Jake Nations (Netflix):** "I shipped code I didn't understand"
 
-Technical debt doesn't register as debt to AI—it just registers as code.
+When systems become complex, "everything touches everything else." Technical debt "doesn't register as debt—it just registers as code."
 
 ---
 
-## What Actually Matters
+## Slide 3: The 40% Context Threshold
 
-**The hard part was never typing the code.**
+**Beyond 40% context window utilization, AI output quality collapses**
 
-**It was knowing what to type.**
-
-That hasn't changed.
-
-Nations watched an AI agent struggle with a codebase where business logic and authentication were so intertwined "it couldn't find the path between them."
-
-We're not building faster. We're building incomprehensibility at scale.
-
----
-
-## Augmented Thinking: Three Core Techniques
-
-### 1. Context Management
-### 2. Prompt Tuning
-### 3. Verification-First Design
-
-These aren't optional extras. They're the foundation of building with AI.
-
----
-
-## Technique 1: Context Management
-
-**Beyond 40% context utilization, AI output quality collapses.**
-
-Dex Horthy's solution: **Intentional compaction**
-- Pre-research everything (architecture diagrams, design docs, Slack threads, runbooks)
+**Horthy's solution: "Intentional compaction"**
+- Pre-research comprehensively (architecture diagrams, design docs, Slack threads)
 - Compress into focused markdown
-- Plan in phases with human checkpoints
+- Phase-based workflows with human checkpoints
 
 **Netflix's 5M-line codebase approach:**
-Research → Compress into single document → Plan with exact specs → Implement
+Research → Compress to single doc → Plan with exact specs → Implement
 
-**Subagents exist for one purpose:** Context isolation, not capability compensation
-
----
-
-## Technique 2: Prompt Tuning
-
-**Aparna Dhinakaran (Arize): Continual system-prompt learning**
-
-Results with just 150 examples:
-- +6%, +15%, +5% improvements across benchmarks
-- Uses LLM evals to understand WHY agents fail
-- Encodes that learning into meta-prompts
-
-**The breakthrough:** Require explanations from judge LLMs
-- Transforms opaque scores into actionable feedback
-- Bridges accessible prompt engineering with powerful RL
-
-This is how you encode your expertise into agent behavior.
+**Red flag:** When AI responds "you're absolutely right," context is lost
 
 ---
 
-## Technique 3: Verification-First Design
+## Slide 4: Environments as Universal Abstraction
 
-**The tea kettle principle:**
+> "Environments are the webapps of research" — Will Brown, Prime Intellect
 
-**Good verifier:** Is it whistling? (outcome)
+**The convergence:** Benchmarks, RL training, Skills, artifacts = same pattern
+- Environment + starting state + verifier
+- Only difference: how rewards are used (measure vs. improve)
 
-**Bad verifier:** Is burner on high? Has 5 minutes elapsed? Is it on the front left burner? (process)
+**Eno Reyes & Nik Pash independently discovered this**
 
-Dex Horthy: "Hardness engineering"—deliberately make AI's job harder by forcing human thinking upfront.
-
-Design the outcome verifier FIRST. Then build the task.
-
----
-
-## Environments: The Universal Abstraction
-
-**Starting state + Harness + Verifier**
-
-This pattern unifies everything:
-- Benchmarks (measure)
-- RL training (improve)
-- Skills (progressive knowledge)
-- Artifacts (interactive verification)
-
-Eno Reyes (Factory AI) and Nik Pash (Cline) independently converged on this.
-
-Will Brown (Prime Intellect): **"Environments are the webapps of research"**
-
-They're democratizing AI engineering.
+**Tea kettle verification:**
+- Good: Is it whistling? (outcome-driven)
+- Bad: Is burner on high? 5 minutes elapsed? (process-driven)
 
 ---
 
-## The Spectrum of Specialization
+## Slide 5: The Evolutionary Chain
 
-Organizations have multiple paths to specialized agents:
+**Environments → Skills → Artifacts**
 
-**Continual prompt learning:** 150 examples → measurable improvements (accessible)
+**Anthropic's Skills:** Package institutional knowledge as progressively disclosed environments
 
-**ARFT:** 1,000 examples → 10-point improvements (OpenAI)
+**Google DeepMind's Artifacts:** "Dynamic representations" that become interactive verification spaces
 
-**Pipeline RL:** Fast, cheap, predictable training (Applied Compute)
+**Prime Intellect's Hub:** First-class entities for training and evaluation
 
-**Code World Models:** Learning from execution traces (Meta)
-
-**The pattern:** Smart models for planning → Fast specialized models for execution
+This abstraction unifies training, evaluation, and deployment into single framework
 
 ---
 
-## Real Results
+## Slide 6: RL Democratizes Specialization
 
-**Mako's GPU kernel agent:**
-72% gains over frontier models with 100 PyTorch examples
+**OpenAI's ARFT: 1,000 examples → 10-point improvements**
 
-**Cognition's code edit agent:**
-10-point improvement with 1,000 examples
+Success stories:
+- Cognition: 10-point gain with 1,000 examples
+- Mako: 72% improvement over frontier models with 100 PyTorch examples
+- Qodo: Stabilized agent behavior with ~1,000 question pairs
 
-**Arize prompt tuning:**
-+15% improvement with 150 examples
+**Applied Compute:** Pipeline RL makes training fast, cheap, predictable
 
-**The economics have shifted.** Organizations can create domain-specific agents that outperform frontier models with reasonable resources.
-
----
-
-## The New Bottleneck: Data
-
-Nik Pash's "truth nuke":
-
-**Production agents are collecting goldmine data but keeping it locked.**
-
-Millions of users generating quality trajectories daily—but it's behind closed doors.
-
-This chokes research progress.
-
-**Models improve when trained on hard problems.**
-
-The constraint isn't compute or clever engineering—it's collecting quality training data and having the courage to share it.
+**Meta's Code World Models:** Learn from execution traces (memory, bash, CI builds)
 
 ---
 
-## Cline-bench: Open Data as Infrastructure
+## Slide 7: The Specialization Spectrum
 
-Nik Pash's response: Open-source, real-world agent coding benchmark
+**From prompts to weights:**
 
-Built from opt-in user data. Converts production work into training data.
+- **Prompt tuning:** +6%, +15%, +5% with 150 examples (Arize)
+- **ARFT:** 10-point gains with 1,000 examples (OpenAI)
+- **Pipeline RL:** Production-scale training (Applied Compute)
+- **Execution-aware:** Code World Models (Meta)
 
-**The culture shift:** Treating data sharing as infrastructure, not competitive loss
+**Practical pattern:** Smart models for planning → fast specialized models for execution
 
-**The question:** Will we choose the open science path that accelerated deep learning, or proprietary moats that slow everyone down?
-
----
-
-## What To Do: Context Management
-
-- Pre-research comprehensively before engaging AI
-- Gather: architecture diagrams, Slack discussions, design docs, runbooks
-- Compress findings into focused markdown
-- Deploy subagents to isolate context domains (search, reasoning, refactoring)
-- Monitor context utilization—compress when approaching 40%
-
-**Design phase-based workflows:** Research → Plan → Implement
-**Human checkpoints at phase boundaries**
+Cursor's Composer, Amp's smart/rush dual system
 
 ---
 
-## What To Do: Prompt Tuning
+## Slide 8: Capability Beats Scaffolding
 
-- Collect feedback from PRs, code reviews, production failures
-- Use LLM evals to understand WHY agents fail on YOUR problems
-- Encode learning into system prompts and meta-prompts
-- Require explanations from judge LLMs for actionable feedback
-- Start with 100-150 examples for measurable gains
+> "Agents aren't bottlenecked by clever tricks anymore. Model strength is the main thing." — Nik Pash
 
-**This is how you capture organizational expertise.**
+**The evidence:** Terminus beats everything with minimal tool design
+- No clever tool calling
+- Just terminal, grep, filesystem
+- Minimalism wins
 
----
+**"I'm tired of all the little hacks"**
 
-## What To Do: Verification & Specialization
-
-**Verification:**
-- Start every task by defining outcome verifier FIRST
-- Make verifiers test results, not methods
-- Invest in eval engineering as heavily as model selection
-
-**Specialization:**
-- Map your top 3-5 high-value tasks to the right technique
-- Experiment with dual-model architectures (smart planning / fast execution)
-- Start accessible (prompt tuning) → explore deeper (ARFT, RL)
+Years of elaborate architectures, complex pipelines, sophisticated prompting = symptoms of compensating for model limitations
 
 ---
 
-## What To Do: Open Data
+## Slide 9: The Death of Clever Engineering
 
-If running production agents:
-- Implement opt-in trajectory collection (user consent)
-- Contribute anonymized data to open benchmarks
-- Recognize: collective progress benefits everyone more than proprietary moats slow everyone
+**Even sophisticated architectures exist for context management, not capability compensation**
 
-**The bottleneck has migrated.**
+Amp Code's subagents (Oracle, Finder, Librarian, Kraken):
+- Clean interfaces to specific capabilities
+- Avoid "context confusion" from too many tools
+- Should disappear when better models arrive
 
-From clever engineering → to data quality and openness
+**Joel Becker (METR):** "Everything traces back to environments they've been training against"
 
----
-
-## The Bottom Line
-
-**Never outsource the thinking.**
-
-AI is a tool for amplifying human expertise—not replacing it.
-
-Use AI for:
-- Research
-- Implementation
-- Execution speed
-
-Keep humans in charge of:
-- Architectural decisions
-- Problem understanding
-- Design choices
-
-**Red flag:** AI agreeing with everything = context is lost
+Good benchmarks test outcomes. Bad benchmarks encode process assumptions.
 
 ---
 
-## Building Quality in the Age of AI
+## Slide 10: Data is the New Bottleneck
 
-1. **Context management** - Pre-research, compress, isolate domains
-2. **Prompt tuning** - Encode expertise from failures into meta-prompts
-3. **Verification-first** - Design outcome tests before building
-4. **Environments everywhere** - Think in starting states + verifiers
-5. **Open data** - Share trajectories to accelerate collective progress
+**Pash's "truth nuke":**
+> "Agents are collecting good data but not sharing it. Keeping them closed slows down research."
 
-The war on slop is won through discipline, not just better models.
+**The reality:**
+- Every production AI agent sits on goldmine data
+- Millions of users generating quality trajectories daily
+- Almost none of it shared
+- Choking research progress
+
+**OpenAI ARFT proves:** 1,000 high-quality examples transform models
+
+But the data exists behind closed doors
 
 ---
 
-## Questions?
+## Slide 11: Cline-Bench & Open Science
 
-The technology is here.
-The principles are clear.
-What remains is execution.
+**Pash's response:** Open-source, real-world agent coding benchmark
 
-And that, as Nik Pash reminded us, requires courage.
+**Vision:** Opt-in user data → training data → collective progress
+
+**Will Brown's environments hub:** Infrastructure to turn trajectories into training environments
+
+**The stack is ready. What's missing is courage.**
+
+Will we choose:
+- Open science path that accelerated deep learning?
+- Proprietary moats that slow collective progress?
+
+---
+
+## Slide 12: What To Do - Human Control
+
+**1. Never outsource thinking**
+- Keep humans in charge of architectural decisions
+- Phase-based workflows: research → plan → implement
+- When AI "agrees with everything," context is lost
+
+**2. Master the 40% context threshold**
+- Pre-research comprehensively
+- Compress into focused markdown
+- Deploy subagents for context isolation
+- Monitor and compress aggressively above 40%
+
+---
+
+## Slide 13: What To Do - Verification & Specialization
+
+**3. Design verification-first**
+- Define outcome verifiers before writing code
+- Test results, not methods
+- Invest in eval engineering heavily
+
+**4. Explore the specialization spectrum**
+- Prompt tuning: 150 examples for quick wins
+- ARFT: 1,000 examples for deeper specialization
+- Pipeline RL: Production-scale training
+- Smart-for-planning, fast-for-execution architectures
+
+---
+
+## Slide 14: What To Do - Capability & Open Data
+
+**5. Invest in capability, not scaffolding**
+- Focus on improving base models
+- Better training data and evals
+- Not elaborate workarounds for limitations
+
+**6. Contribute to open data ecosystems**
+- Implement opt-in trajectory collection
+- Contribute anonymized data to benchmarks
+- Collective progress > proprietary moats
+
+**Models only get better when labs train on something hard**
+
+---
+
+## Slide 15: The Architecture of Kino
+
+**Five interconnected principles:**
+
+1. Human thinking at the center (context engineering, 40% threshold)
+2. Environments as universal abstraction (benchmarks = RL = Skills)
+3. Specialized models through RL (1,000 examples → 10 points)
+4. Capability over scaffolding (minimalism wins)
+5. Open data as infrastructure (courage to share)
+
+**The question:** Will we still understand our systems when AI writes most of our code?
+
+**The answer:** Yes, if we build the right infrastructure and make the right choices.
+
+---
+
+*Conference: AI Engineering Code Summit - Day 2, November 21, 2025*
+*Organizations: Anthropic, OpenAI, Google DeepMind, Meta, Netflix, and more*

@@ -1,8 +1,16 @@
 ---
-name: "Lee Robinson"
-company: "Cursor ([https://www.cursor.com](https://www.cursor.com))"
-role: "Head of DX (Developer Experience)"
-session: "Building a fast frontier model with RL ([../../2025-11-21/11-21-09-51-lee-robinson-cursor.md](../../2025-11-21/11-21-09-51-lee-robinson-cursor.md))"
+name: Lee Robinson
+company: Cursor
+company_url: https://www.cursor.com
+role: Head of DX (Developer Experience)
+session: Building a fast frontier model with RL
+session_file: 2025-11-21/11-21-09-51-lee-robinson-cursor.md
+linkedin: https://www.linkedin.com/in/leerob/
+twitter: @leeerob
+twitter_url: https://twitter.com/leeerob
+github: @leerob
+github_url: https://github.com/leerob
+website: https://leerob.io
 ---
 
 ## Social & Professional Links

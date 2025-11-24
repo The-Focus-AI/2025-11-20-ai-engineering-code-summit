@@ -1,7 +1,16 @@
 ---
-name: "Nik Pash"
-title: "Creator & Developer, Cline"
-session: "Cline - More Connected, More Powerful (2025-11-21/11-21-16-30-nik-pash-cline.md)"
+name: Nik Pash
+company: Cline
+company_url: https://github.com/cline/cline
+role: Creator & Developer
+session: Cline - More Connected, More Powerful
+session_file: 2025-11-21/11-21-16-30-nik-pash-cline.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: null
 ---
 
 ## About Nik Pash

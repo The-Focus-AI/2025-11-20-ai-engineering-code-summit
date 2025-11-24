@@ -1,4 +1,17 @@
-# Natasha Maniar
+---
+name: Natasha Maniar
+company: McKinsey & Company
+company_url: https://www.mckinsey.com
+role: Consultant
+session: Moving away from Agile - What's Next?
+session_file: 2025-11-20/11-20-11-20-martin-harrysson-natasha-maniar-mckinsey.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: null
+---
 
 ## Overview
 Natasha Maniar is a Consultant at McKinsey & Company, specializing in the intersection of artificial intelligence and software development. She co-presented the session "Moving away from Agile: What's Next?" at the AI Engineering Code Summit, focusing on how organizations should reorganize their development practices and roles in the age of AI agents.

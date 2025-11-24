@@ -1,8 +1,16 @@
 ---
-name: "Katelyn Lesse"
-company: "Anthropic (https://www.anthropic.com)"
-role: "Head of API Engineering / Head of Engineering, Claude Developer Platform"
-session: "Evolving Claude APIs for Agents (../../2025-11-20/11-20-08-49-katelyn-lesse-anthropic.md)"
+name: Katelyn Lesse
+company: Anthropic
+company_url: https://www.anthropic.com
+role: Head of API Engineering / Head of Engineering, Claude Developer Platform
+session: Evolving Claude APIs for Agents
+session_file: 2025-11-20/11-20-08-49-katelyn-lesse-anthropic.md
+linkedin: https://www.linkedin.com/in/katelynlesse/
+twitter: @katelyn_lesse
+twitter_url: https://x.com/katelyn_lesse
+github: @klesse413
+github_url: https://github.com/klesse413
+website: null
 ---
 
 ## Social & Professional Links

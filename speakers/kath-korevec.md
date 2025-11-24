@@ -1,8 +1,16 @@
 ---
-name: "Kath Korevec"
-company: "Google Labs (https://labs.google/)"
-role: "Director of Product - AI Developer Assistants (AIDA)"
-session: "Proactive Agents: Moving Beyond Chat-Based AI ([session file](../../2025-11-20/11-20-13-45-kath-korevec-google-labs.md))"
+name: Kath Korevec
+company: Google Labs
+company_url: https://labs.google/
+role: Director of Product - AI Developer Assistants (AIDA)
+session: Proactive Agents: Moving Beyond Chat-Based AI
+session_file: 2025-11-20/11-20-13-45-kath-korevec-google-labs.md
+linkedin: https://www.linkedin.com/in/kathleensimpson/
+twitter: @simpsoka
+twitter_url: https://x.com/simpsoka
+github: @simpsoka
+github_url: https://github.com/simpsoka
+website: https://www.kathy.pm/
 ---
 
 ## Social & Professional Links

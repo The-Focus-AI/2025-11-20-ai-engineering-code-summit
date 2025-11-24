@@ -1,14 +1,21 @@
-# Nathaniel Whittemore (NLW)
+---
+name: Nathaniel Whittemore (NLW)
+company: Superintelligent
+company_url: https://superintelligent.com
+role: Founder & Host of The AI Daily Brief
+session: AI Adoption and Enterprise Implementation Patterns
+session_file: 2025-11-20/11-20-16-00-nlw-super-ai.md
+linkedin: null
+twitter: "@nlw"
+twitter_url: https://twitter.com/nlw
+github: null
+github_url: null
+website: https://superintelligent.com
+---
 
 ## Overview
 
 Nathaniel Whittemore (NLW) is a prominent voice in AI adoption and thought leadership, known for his expertise in real-world enterprise AI implementation patterns. As host of "The AI Daily Brief" podcast and founder of Superintelligent, he combines content creation with practical AI education and consulting. His work focuses on bridging the gap between AI hype and actual business outcomes.
-
-## Social Links
-
-- **Twitter/X:** [@nlw](https://twitter.com/nlw)
-- **Podcast:** [The AI Daily Brief](https://podcasts.apple.com/us/podcast/the-ai-daily-brief-artificial-intelligence-news/id1680633614)
-- **YouTube:** [The AI Daily Brief](https://www.youtube.com/watch?v=DuNEyKayvvI)
 
 ## Background
 

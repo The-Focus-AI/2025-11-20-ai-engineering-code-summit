@@ -1,4 +1,17 @@
-# Linden Li
+---
+name: Linden Li
+company: Applied Compute
+company_url: https://appliedcompute.ai
+role: Co-founder
+session: Efficient Reinforcement Learning
+session_file: 2025-11-21/11-21-11-20-rhythm-garg-linden-li-applied-compute.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: null
+---
 
 ## Overview
 Linden Li is a co-founder of Applied Compute, a company focused on building practical reinforcement learning infrastructure for training AI agents at scale. He co-presented the session "Efficient Reinforcement Learning" at the AI Engineering Code Summit, exploring how organizations can implement RL mechanisms to build superhuman agents without the constraints of academic research environments.

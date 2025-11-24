@@ -1,4 +1,17 @@
-# Tobin South
+---
+name: Tobin South
+company: WorkOS
+company_url: https://workos.com
+role: Head of AI Agents & MCP
+session: Enterprise-Grade Model Context Protocol
+session_file: 2025-11-21/11-21-10-40-tobin-south-workos.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: null
+---
 
 ## Overview
 Tobin South is the Head of AI Agents & MCP (Model Context Protocol) at WorkOS, a leading enterprise B2B infrastructure platform. He specializes in building enterprise-grade Model Context Protocol servers with robust security, ensuring AI agents behave appropriately in production environments.

@@ -1,19 +1,21 @@
 ---
-name: "Kitze"
+name: Kitze
+company: Sizzy
+company_url: https://sizzy.co
+role: Founder
+session: AI-Driven Browser Development and Vibe Coding
+session_file: 2025-11-21/11-21-12-20-kitze-sizzy.md
+linkedin: null
+twitter: "@thekitze"
+twitter_url: https://twitter.com/thekitze
+github: null
+github_url: null
+website: https://sizzy.co
 ---
-
-## Founder, Sizzy — AI-Driven Browser for Developers
-
-![Kitze - Founder of Sizzy](https://avatars.githubusercontent.com/u/kitze?v=4)
 
 ## Overview
 
 Kitze is the founder of **Sizzy**, an innovative browser specifically designed for developers and creators working with AI. He is a developer tools creator with a strong social media presence, known for his engaging and energetic approach to discussing AI-driven development workflows. Kitze represents a new wave of builders who are rethinking developer tools and workflows in light of LLM capabilities, championing what he calls "vibe coding"—collaborative development with AI that prioritizes natural interaction over syntax precision.
-
-## Social Links
-
-- **Twitter/X:** [@thekitze](https://twitter.com/thekitze)
-- **Product:** [Sizzy](https://sizzy.co/)
 
 ## Background
 

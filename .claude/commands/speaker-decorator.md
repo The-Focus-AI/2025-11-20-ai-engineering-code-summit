@@ -36,6 +36,20 @@ Your task:
 Use this EXACT format for the file:
 
 ---
+name: [Full Name]
+company: [Company Name]
+company_url: [Company website URL]
+role: [Title/Role]
+session: [Session Title]
+session_file: [Relative path to session file]
+linkedin: [URL or null]
+twitter: [@handle or null]
+twitter_url: [Full Twitter URL or null]
+github: [@username or null]
+github_url: [Full GitHub URL or null]
+website: [Personal website URL or null]
+---
+
 # [Full Name]
 
 **Company:** [Company Name] ([website])
@@ -63,8 +77,6 @@ Use this EXACT format for the file:
 
 ## Research Notes
 [Additional context, recent projects, interesting findings]
-
----
 
 IMPORTANT:
 - Write ONLY to the specified file path

@@ -1,20 +1,21 @@
 ---
-name: "Kat Kampf"
+name: Kat Kampf
+company: Google
+company_url: https://www.google.com
+role: Product Manager
+session: Building in the Gemini Era with Google DeepMind
+session_file: 2025-11-21/11-21-13-45-kat-kampf-ammaar-reshi-google.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: null
 ---
-
-## Google — Building in the Gemini Era
-
-**Role:** Product Manager, Google
-**Co-Presenter:** Ammaar Reshi (Product & Design Lead, Google)
-**Company Focus:** Google DeepMind, Developer AI Products
 
 ## Overview
 
 Kat Kampf is a Product Manager at Google focused on developer-facing AI products and tools. She collaborates closely with Ammaar Reshi to shape the developer experience for Google's cutting-edge AI capabilities, particularly in the Gemini ecosystem. Together, they present a vision for how developers can leverage Google's latest AI models to build applications that were previously impossible to create.
-
-## Social Links
-
-Links to be added as they become available.
 
 ## Background
 

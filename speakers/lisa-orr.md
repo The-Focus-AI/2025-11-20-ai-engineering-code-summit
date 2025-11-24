@@ -1,8 +1,16 @@
 ---
-name: "Lisa Orr"
-company: "Zapier ([https://zapier.com/](https://zapier.com/))"
-role: "Group Product Manager, AI Code Gen Team"
-session: "Your Support Team Should Ship Code ([2025-11-20/11-20-09-45-lisa-orr-zapier.md](../2025-11-20/11-20-09-45-lisa-orr-zapier.md))"
+name: Lisa Orr
+company: Zapier
+company_url: https://zapier.com/
+role: Group Product Manager, AI Code Gen Team
+session: Your Support Team Should Ship Code
+session_file: 2025-11-20/11-20-09-45-lisa-orr-zapier.md
+linkedin: https://www.linkedin.com/in/lisaorr/
+twitter: @lisa_orr
+twitter_url: https://twitter.com/lisa_orr
+github: @lisafeets
+github_url: https://github.com/lisafeets
+website: https://www.lisafeets.com/
 ---
 
 ## Social & Professional Links

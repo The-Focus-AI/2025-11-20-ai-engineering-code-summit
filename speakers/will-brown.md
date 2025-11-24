@@ -1,22 +1,21 @@
 ---
-name: "Will Brown"
+name: Will Brown
+company: Prime Intellect
+company_url: https://primeintellect.ai
+role: Research Lead
+session: RL Environments at Scale
+session_file: 2025-11-21/11-21-11-40-will-brown-prime-intellect.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: null
 ---
-
-## Prime Intellect — Research Lead
-
-![Will Brown](https://via.placeholder.com/150)
 
 ## Overview
 
 Will Brown is the Research Lead at Prime Intellect, a company building a decentralized compute platform for distributed AI training at scale. At the AI Engineering Code Summit 2025, he presented on "RL Environments at Scale," discussing how to scale reinforcement learning environments for training advanced AI coding models using Prime Intellect's distributed infrastructure and open-source toolkit.
-
-## Social Links
-
-Currently limited publicly available social media links. Additional research recommended for:
-- LinkedIn profile
-- Twitter/X handle
-- GitHub profile
-- Personal website or blog
 
 ## Background
 

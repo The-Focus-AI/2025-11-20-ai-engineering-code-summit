@@ -1,15 +1,21 @@
-# Ammaar Reshi
-
-## Building in the Gemini Era with Google DeepMind
-### Product & Design Lead, Google
+---
+name: Ammaar Reshi
+company: Google
+company_url: https://www.google.com
+role: Product & Design Lead
+session: Building in the Gemini Era with Google DeepMind
+session_file: 2025-11-21/11-21-13-45-kat-kampf-ammaar-reshi-google.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: null
+---
 
 ## Overview
 
 Ammaar Reshi is a Product & Design Lead at Google DeepMind, focused on making AI accessible to everyone by democratizing software creation. He co-presented alongside Kat Kampf on the power of Gemini 3 Pro and AI Studio, showcasing how the latest generation of AI models enables non-traditional developers to build production-quality software without traditional coding expertise.
-
-## Social Links
-
-*Social links information to be updated*
 
 ## Background & Role
 

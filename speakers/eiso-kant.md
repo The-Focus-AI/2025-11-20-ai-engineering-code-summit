@@ -1,19 +1,21 @@
 ---
-name: "Eiso Kant"
+name: Eiso Kant
+company: Poolside
+company_url: https://poolside.ai
+role: CEO
+session: Building AGI for Software Development
+session_file: 2025-11-21/11-21-16-00-eiso-kant-poolside.md
+linkedin: https://www.linkedin.com/in/eiso-kant/
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: https://poolside.ai
 ---
-
-## Poolside — AI for Software Development
-
-![Eiso Kant - CEO, Poolside](https://via.placeholder.com/400?text=Eiso+Kant)
 
 ## Overview
 
 Eiso Kant is the CEO of **Poolside**, an AI company dedicated to building intelligent agents that can reason about and modify complex codebases. As one of the leading voices in autonomous AI coding agents, Eiso is pioneering approaches to achieving AGI-level capabilities for knowledge work, specifically focused on the challenges of software development and engineering at scale.
-
-## Social Links
-
-- **Company:** [Poolside](https://poolside.ai)
-- **LinkedIn:** [Eiso Kant](https://www.linkedin.com/in/eiso-kant/)
 
 ## Background
 

@@ -1,5 +1,16 @@
 ---
-name: "Swyx (Shawn Wang)"
+name: Swyx (Shawn Wang)
+company: AI Engineer
+company_url: https://aieng.dev
+role: Founder & Organizer
+session: Opening Remarks, Day 2
+session_file: 2025-11-21/11-21-09-06-swyx-opening-remarks.md
+linkedin: https://www.linkedin.com/in/swyx/
+twitter: @swyx
+twitter_url: https://twitter.com/swyx
+github: @swyx
+github_url: https://github.com/swyx
+website: https://www.swyx.io
 ---
 
 ## AI Engineer — Community Founder, Podcast Host, Developer Advocate

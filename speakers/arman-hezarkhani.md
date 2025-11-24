@@ -1,4 +1,17 @@
-# Arman Hezarkhani
+---
+name: Arman Hezarkhani
+company: Tenex
+company_url: https://tenex.com
+role: Managing Partner
+session: Rethinking Compensation for AI-Augmented Engineers
+session_file: 2025-11-20/11-20-16-20-arman-hezarkhani-tenex.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: null
+---
 
 ## Overview
 Arman Hezarkhani is the Managing Partner of Tenex, a company revolutionizing how engineering organizations structure compensation and incentives in the AI era. With a background founding multiple venture-backed AI companies, scaling Google Cloud AI to millions of developers, and teaching at Carnegie Mellon, Arman brings deep expertise in both AI and organizational economics.

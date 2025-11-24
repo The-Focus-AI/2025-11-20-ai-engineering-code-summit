@@ -1,21 +1,21 @@
 ---
-name: "Jed Borovik"
+name: Jed Borovik
+company: Google DeepMind
+company_url: https://deepmind.google
+role: Lead - Jules Autonomous Coding Agent
+session: Jules - Autonomous Coding Agent
+session_file: 2025-11-21/11-21-09-00-jed-borovik-google-deepmind.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: null
 ---
-
-## Google DeepMind — Leading Jules Autonomous Coding Agent
-
-![Jed Borovik - Google DeepMind](https://www.deepmind.google/favicon.ico)
 
 ## Overview
 
 Jed Borovik is the lead for Jules, an autonomous coding agent developed by Google DeepMind. He leads technical strategy and development for one of the most advanced proactive AI coding agents in production, representing the frontier of agentic AI systems for software development. His work bridges Google's AI research capabilities with practical developer tooling.
-
-## Social Links
-
-- **LinkedIn:** Not yet publicly listed
-- **Twitter/X:** Not yet publicly listed
-- **GitHub:** Not yet publicly listed
-- **Google DeepMind:** [deepmind.google](https://deepmind.google)
 
 ## Background
 

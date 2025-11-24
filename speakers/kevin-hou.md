@@ -1,8 +1,16 @@
 ---
-name: "Kevin Hou"
-company: "Google DeepMind"
-role: "Engineering, Google DeepMind"
-session: "Closing Keynote - Defying Gravity (2025-11-21 5:20pm-5:39pm)"
+name: Kevin Hou
+company: Google DeepMind
+company_url: https://deepmind.google
+role: Engineering, Google DeepMind
+session: Closing Keynote - Defying Gravity
+session_file: 2025-11-21/11-21-17-20-kevin-hou-google-deepmind.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: null
 ---
 
 ## Social & Professional Links

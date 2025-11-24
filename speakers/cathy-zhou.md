@@ -1,14 +1,21 @@
-# Cathy Zhou
-
-## OpenAI — Agent Reinforcement Fine Tuning
+---
+name: Cathy Zhou
+company: OpenAI
+company_url: https://www.openai.com
+role: Member of Technical Staff
+session: Agent Reinforcement Fine Tuning
+session_file: 2025-11-21/11-21-12-00-will-hang-cathy-zhou-openai.md
+linkedin: null
+twitter: null
+twitter_url: null
+github: null
+github_url: null
+website: null
+---
 
 ## Overview
 
 Cathy Zhou is a Member of Technical Staff at OpenAI, specializing in reinforcement fine-tuning (ARFT) for AI agents and code models. She is part of the fine-tuning team that pioneered the industry's first approach to allowing agents to access external tools and APIs during the training process, enabling more capable and specialized AI agents.
-
-## Social Links
-
-[Information to be updated]
 
 ## Background
 

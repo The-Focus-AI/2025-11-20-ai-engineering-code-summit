@@ -1,8 +1,16 @@
 ---
-name: "Bill Chen"
-company: "OpenAI ([https://www.openai.com](https://www.openai.com))"
-role: "Product Manager"
-session: "Future-Proof Coding Agents: Building Reliable Systems That Outlast Model Cycles ([../../2025-11-20/11-20-11-00-bill-chen-brian-fioca-openai.md](../../2025-11-20/11-20-11-00-bill-chen-brian-fioca-openai.md))"
+name: Bill Chen
+company: OpenAI
+company_url: https://www.openai.com
+role: Product Manager
+session: Future-Proof Coding Agents: Building Reliable Systems That Outlast Model Cycles
+session_file: 2025-11-20/11-20-11-00-bill-chen-brian-fioca-openai.md
+linkedin: https://www.linkedin.com/in/billchen99
+twitter: @realchillben
+twitter_url: https://x.com/realchillben
+github: null
+github_url: null
+website: null
 ---
 
 ## Social & Professional Links

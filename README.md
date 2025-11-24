@@ -14,15 +14,30 @@ Use `/theme-summary` to generate concise executive summaries from detailed theme
 
 ### Day 1 (November 20)
 
-- **[2025-11-20-summary.md](2025-11-20-summary.md)** - Executive summary (~1,150 words, ~3 min read)
+- **[2025-11-20-summary.md](2025-11-20-summary.md)** - Executive summary (~670 words, ~3 min read)
 - **[2025-11-20-presentation.md](2025-11-20-presentation.md)** - Slide deck (15 slides, ready for styling with Marp/reveal.js)
-- **[2025-11-20-one-pager.md](2025-11-20-one-pager.md)** - One-pager (~540 words, ~2 min read)
+- **[2025-11-20-one-pager.md](2025-11-20-one-pager.md)** - One-pager (~450 words, ~2 min read)
+
+**Individual Theme Files:**
+- [Trust, Role Changes, and Infrastructure](2025-11-20/themes/trust-role-changes-infrastructure.md)
+- [Context, Memory, and The Harness](2025-11-20/themes/context-memory-harness.md)
+- [SDLC Evolution: Amplified Practices](2025-11-20/themes/sdlc-evolution-amplified-practices.md)
+- [ROI Reality Check](2025-11-20/themes/roi-reality-check.md)
+- [Proactive vs Reactive UX](2025-11-20/themes/proactive-vs-reactive-ux.md)
+- [Economics of AI Engineering](2025-11-20/themes/economics-ai-engineering.md)
 
 ### Day 2 (November 21)
 
 - **[2025-11-21-summary.md](2025-11-21-summary.md)** - Executive summary (~1,074 words, ~5 min read)
 - **[2025-11-21-presentation.md](2025-11-21-presentation.md)** - Slide deck (20 slides, ready for styling with Marp/reveal.js)
 - **[2025-11-21-one-pager.md](2025-11-21-one-pager.md)** - One-pager (~528 words, ~2 min read)
+
+**Individual Theme Files:**
+- [Context Engineering & Human-AI Collaboration](2025-11-21/themes/context-engineering-human-ai-collaboration.md)
+- [Environments as Universal Abstraction](2025-11-21/themes/environments-universal-abstraction.md)
+- [Reinforcement Learning for Specialized Models](2025-11-21/themes/reinforcement-learning-specialized-models.md)
+- [Model Quality Over Scaffolding](2025-11-21/themes/model-quality-over-scaffolding.md)
+- [Data Collection & Quality as Bottleneck](2025-11-21/themes/data-collection-quality-bottleneck.md)
 
 ## Workflow: From Raw Notes to Executive Summary
 
@@ -123,10 +138,14 @@ This will:
 ├── executive-synthesis.md                       # Cross-conference synthesis (top level)
 ├── 2025-11-20/                                 # Day 1 directory
 │   ├── 11-20-day-overview.md                   # Day 1 theme summary
-│   └── 11-20-HH-MM-speaker-name-company.md    # Individual sessions
+│   ├── 11-20-HH-MM-speaker-name-company.md    # Individual sessions
+│   └── themes/                                 # Individual theme files
+│       └── theme-slug.md                       # Theme with frontmatter
 ├── 2025-11-21/                                 # Day 2 directory
 │   ├── 11-21-day-overview.md                   # Day 2 theme summary
-│   └── 11-21-HH-MM-speaker-name-company.md    # Individual sessions
+│   ├── 11-21-HH-MM-speaker-name-company.md    # Individual sessions
+│   └── themes/                                 # Individual theme files
+│       └── theme-slug.md                       # Theme with frontmatter
 ├── photos/                                      # Raw photos from conference
 ├── slides/                                      # Extracted slides with timestamps
 │   └── YYYY-MM-DD-HH-MM-gemini-edited.jpg
