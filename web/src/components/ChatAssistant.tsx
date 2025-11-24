@@ -98,7 +98,7 @@ export default function ChatAssistant() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 bg-void text-terminal-green border border-terminal-green p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all z-40 flex items-center gap-3 pr-6 group"
+          className="hidden fixed bottom-6 right-6 bg-void text-terminal-green border border-terminal-green p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all z-40 flex items-center gap-3 pr-6 group"
         >
           <Terminal className="w-5 h-5 animate-pulse" />
           <span className="font-mono font-bold tracking-widest text-xs">TERM_ACCESS</span>
