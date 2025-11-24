@@ -7,6 +7,8 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://the-focus-ai.github.io',
+  base: '/2025-11-20-ai-engineering-code-summit',
   vite: {
     plugins: [tailwindcss()],
     resolve: {
