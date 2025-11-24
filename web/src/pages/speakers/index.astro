@@ -1,0 +1,144 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Plus, Check } from 'lucide-react';
+import { SPEAKERS } from '../../constants';
+---
+
+<BaseLayout title="Personnel Roster - Horizon 2025">
+  <div class="min-h-[calc(100vh-8rem)] bg-paper max-w-6xl mx-auto border border-void shadow-[8px_8px_0px_0px_rgba(26,26,26,0.2)]">
+
+    <!-- Roster Header -->
+    <header class="p-8 border-b-4 border-void bg-white">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+        <div>
+          <span class="font-mono text-xs font-bold uppercase tracking-widest text-alert-red block mb-2">
+            CONFIDENTIAL // EYES ONLY
+          </span>
+          <h1 class="text-4xl md:text-5xl font-sans font-black text-void uppercase tracking-tight">
+            Personnel Roster
+          </h1>
+          <p class="font-mono text-sm mt-2 text-gray-600 max-w-xl">
+            List of key contributors and subject matter experts for Project Horizon.
+          </p>
+        </div>
+
+        <div class="border border-void p-2 bg-gray-100 font-mono text-xs text-center">
+          <div class="uppercase text-gray-500 mb-1">Total Units</div>
+          <div class="text-xl font-bold">{String(SPEAKERS.length).padStart(2, '0')}</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-void">
+      {SPEAKERS.map((speaker) => (
+        <a
+          href={`/speakers/${speaker.id}`}
+          class="bg-paper p-6 hover:bg-surface transition-colors flex flex-col sm:flex-row gap-6 group cursor-pointer"
+        >
+
+          <!-- Mugshot -->
+          <div class="shrink-0 w-32 h-40 bg-gray-200 border border-void relative">
+            <img
+              src={speaker.imageUrl}
+              alt={speaker.name}
+              class="w-full h-full object-cover bell-labs-photo"
+            />
+            <div class="absolute inset-0 bg-rand-blue/10 mix-blend-multiply pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 right-0 bg-void text-white text-[9px] font-mono text-center py-1">
+              REF: {speaker.id.toUpperCase()}
+            </div>
+          </div>
+
+          <!-- Details -->
+          <div class="flex-1 flex flex-col">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="font-sans font-bold text-xl uppercase mb-1 group-hover:text-rand-blue decoration-2 underline-offset-4 group-hover:underline">
+                  {speaker.name}
+                </h3>
+                <div class="inline-block bg-void text-white px-1 py-px text-[9px] font-mono uppercase mb-3">
+                  {speaker.role}
+                </div>
+              </div>
+
+              <button
+                class="save-speaker-btn border border-void w-8 h-8 flex items-center justify-center hover:bg-void hover:text-white transition-colors z-10"
+                data-speaker-id={speaker.id}
+                data-speaker-name={speaker.name}
+                onclick="event.preventDefault(); event.stopPropagation();"
+              >
+                <Plus className="w-4 h-4 save-icon" />
+                <Check className="w-4 h-4 saved-icon hidden" />
+              </button>
+            </div>
+
+            <p class="font-mono text-xs text-gray-800 leading-relaxed mb-4 flex-grow line-clamp-3">
+              {speaker.bio}
+            </p>
+
+            <div class="pt-3 border-t border-dashed border-gray-400 mt-auto flex justify-between items-center">
+              <span class="font-sans font-bold text-[10px] uppercase text-gray-500">
+                AFFILIATION: {speaker.company}
+              </span>
+              <span class="font-mono text-[9px] uppercase text-rand-blue font-bold group-hover:block hidden">
+                OPEN DOSSIER &rarr;
+              </span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  function updateSpeakerButtons() {
+    const saved = JSON.parse(localStorage.getItem('horizon_saved_research') || '[]');
+    document.querySelectorAll('.save-speaker-btn').forEach(btn => {
+      const speakerId = (btn as HTMLElement).dataset.speakerId;
+      const isSaved = saved.some((item: any) => item.id === speakerId);
+
+      const saveIcon = btn.querySelector('.save-icon');
+      const savedIcon = btn.querySelector('.saved-icon');
+
+      if (isSaved) {
+        btn.classList.add('bg-void', 'text-white');
+        saveIcon?.classList.add('hidden');
+        savedIcon?.classList.remove('hidden');
+      } else {
+        btn.classList.remove('bg-void', 'text-white');
+        btn.classList.add('text-void');
+        saveIcon?.classList.remove('hidden');
+        savedIcon?.classList.add('hidden');
+      }
+    });
+  }
+
+  document.querySelectorAll('.save-speaker-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const speakerId = (btn as HTMLElement).dataset.speakerId;
+      const speakerName = (btn as HTMLElement).dataset.speakerName;
+
+      const saved = JSON.parse(localStorage.getItem('horizon_saved_research') || '[]');
+      const existingIndex = saved.findIndex((item: any) => item.id === speakerId);
+
+      if (existingIndex >= 0) {
+        saved.splice(existingIndex, 1);
+      } else {
+        saved.push({
+          id: speakerId,
+          type: 'speaker',
+          title: speakerName,
+          timestamp: Date.now()
+        });
+      }
+
+      localStorage.setItem('horizon_saved_research', JSON.stringify(saved));
+      updateSpeakerButtons();
+      window.dispatchEvent(new Event('saved-items-updated'));
+    });
+  });
+
+  updateSpeakerButtons();
+</script>

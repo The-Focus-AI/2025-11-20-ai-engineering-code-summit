@@ -4,3 +4,15 @@ node = "latest"
 "npm:@anthropic-ai/claude-code" = "latest"
 "npm:@google/gemini-cli" = "latest"
 "npm:@openai/codex" = "latest"
+
+[tasks.dev]
+description = "Start development server"
+run = "cd web && npm run dev"
+
+[tasks.build]
+description = "Build website for production"
+run = "cd web && npm run build"
+
+[tasks.preview]
+description = "Preview production build"
+run = "cd web && npm run preview"

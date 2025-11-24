@@ -1,0 +1,101 @@
+---
+import { Folder } from 'lucide-react';
+
+const currentPath = Astro.url.pathname;
+const isHome = currentPath === '/';
+const isLeadership = currentPath.startsWith('/track/leadership');
+const isEngineering = currentPath.startsWith('/track/engineering');
+const isSpeakers = currentPath.startsWith('/speakers');
+---
+
+<nav class="sticky top-0 w-full z-50 bg-[#e8e6df] px-4 md:px-8 pt-4 print:hidden">
+  <div class="max-w-6xl mx-auto flex items-end border-b-2 border-void overflow-x-auto no-scrollbar">
+
+    <!-- Logo Tab -->
+    <a
+      href="/"
+      class="bg-void text-white px-4 py-2 mr-1 cursor-pointer hover:bg-rand-blue transition-colors flex items-center gap-2 shrink-0"
+    >
+      <div class="w-3 h-3 bg-alert-red rounded-full"></div>
+      <span class="font-sans font-bold tracking-tight">RAND_2025</span>
+    </a>
+
+    <!-- Nav Tabs -->
+    <a
+      href="/"
+      class={`px-4 md:px-6 py-2 border-t border-x border-void mr-[-1px] relative font-mono text-[10px] md:text-xs font-bold uppercase tracking-wider transition-all whitespace-nowrap ${
+        isHome
+          ? 'bg-paper text-void top-[2px] border-b-paper z-10'
+          : 'bg-[#d6d4ce] text-gray-600 hover:bg-white'
+      }`}
+    >
+      Summary
+    </a>
+
+    <a
+      href="/track/leadership"
+      class={`px-4 md:px-6 py-2 border-t border-x border-void mr-[-1px] relative font-mono text-[10px] md:text-xs font-bold uppercase tracking-wider transition-all whitespace-nowrap ${
+        isLeadership
+          ? 'bg-paper text-void top-[2px] border-b-paper z-10'
+          : 'bg-[#d6d4ce] text-gray-600 hover:bg-white'
+      }`}
+    >
+      Leadership
+    </a>
+
+    <a
+      href="/track/engineering"
+      class={`px-4 md:px-6 py-2 border-t border-x border-void mr-[-1px] relative font-mono text-[10px] md:text-xs font-bold uppercase tracking-wider transition-all whitespace-nowrap ${
+        isEngineering
+          ? 'bg-paper text-void top-[2px] border-b-paper z-10'
+          : 'bg-[#d6d4ce] text-gray-600 hover:bg-white'
+      }`}
+    >
+      Engineering
+    </a>
+
+    <a
+      href="/speakers"
+      class={`px-4 md:px-6 py-2 border-t border-x border-void mr-[-1px] relative font-mono text-[10px] md:text-xs font-bold uppercase tracking-wider transition-all whitespace-nowrap ${
+        isSpeakers
+          ? 'bg-paper text-void top-[2px] border-b-paper z-10'
+          : 'bg-[#d6d4ce] text-gray-600 hover:bg-white'
+      }`}
+    >
+      Personnel
+    </a>
+
+    <!-- Spacer -->
+    <div class="flex-grow min-w-[20px]"></div>
+
+    <!-- Right Tools -->
+    <div class="pb-2 flex items-center gap-4 shrink-0">
+      <button
+        id="research-button"
+        class="flex items-center gap-2 font-mono text-xs font-bold hover:text-rand-blue"
+      >
+        <Folder className="w-4 h-4" />
+        <span class="hidden md:inline">FILES (<span id="saved-count">0</span>)</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Handle research button click
+  document.getElementById('research-button')?.addEventListener('click', () => {
+    window.dispatchEvent(new CustomEvent('toggle-research'));
+  });
+
+  // Update saved count from localStorage
+  function updateSavedCount() {
+    const saved = localStorage.getItem('horizon_saved_research');
+    const count = saved ? JSON.parse(saved).length : 0;
+    const countEl = document.getElementById('saved-count');
+    if (countEl) countEl.textContent = count.toString();
+  }
+
+  updateSavedCount();
+  window.addEventListener('storage', updateSavedCount);
+  window.addEventListener('saved-items-updated', updateSavedCount);
+</script>

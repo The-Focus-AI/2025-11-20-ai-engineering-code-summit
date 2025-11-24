@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica", "Arial", sans-serif;
+  --font-mono: "Courier Prime", monospace;
+
+  --color-paper: #f3f2ea;
+  --color-void: #1a1a1a;
+  --color-rand-blue: #0055aa;
+  --color-alert-red: #d93025;
+  --color-surface: #e6e4dc;
+  --color-terminal-green: #00ff41;
+  --color-retro-blue: #0055aa;
+  --color-retro-red: #d93025;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body {
+  background-color: #f3f2ea;
+  color: #1a1a1a;
+}
+
+/* Halftone pattern for images */
+.halftone {
+  position: relative;
+}
+
+.halftone::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, #1a1a1a 1px, transparent 1.5px);
+  background-size: 4px 4px;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.crt-text-shadow {
+  text-shadow: 0px 0px 4px rgba(50, 255, 50, 0.5);
+}
+
+/* Bell Labs / 50s Professor Photo Effect */
+.bell-labs-photo {
+  filter: grayscale(100%) contrast(110%) brightness(0.95) sepia(10%);
+  transition: filter 0.3s ease;
+}
+
+.bell-labs-photo:hover {
+  filter: grayscale(0%) contrast(100%) brightness(1) sepia(0%);
+}
+
+/* CRT Effects for terminal */
+.scanlines {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(0, 0, 0, 0.05) 50%
+  );
+  background-size: 100% 4px;
+}
+
+.crt-flicker {
+  animation: flicker 0.15s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.98;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+/* Astro view transitions */
+@view-transition {
+  navigation: auto;
+}
