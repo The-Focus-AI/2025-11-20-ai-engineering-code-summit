@@ -43,7 +43,7 @@ const articlesWithTrack = allArticles.map((article: any) => {
     subtitle: article.data.key_insights?.[0] || '',
     authors: article.data.key_speakers || ['Various'],
     readTime: calculateReadingTime(article.body),
-    imageUrl: 'https://picsum.photos/seed/ai_art/1200/600',
+    imageUrl: article.data.header_image || 'https://picsum.photos/seed/ai_art/1200/600',
   };
 });
 

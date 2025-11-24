@@ -1,6 +1,7 @@
 ---
 title: "Environments as Universal Abstraction: The New Unit of Everything"
 order: 2
+header_image: /headers/environments-universal-abstraction.png
 topics:
   - "Environments"
   - "Verification"

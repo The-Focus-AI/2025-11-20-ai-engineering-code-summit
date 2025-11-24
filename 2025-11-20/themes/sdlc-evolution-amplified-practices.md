@@ -1,6 +1,7 @@
 ---
 title: "SDLC Evolution: Good Software Engineering Practices, Amplified"
 order: 3
+header_image: /headers/sdlc-evolution-amplified-practices.png
 topics:
   - "Code Quality"
   - "Testing & Validation"

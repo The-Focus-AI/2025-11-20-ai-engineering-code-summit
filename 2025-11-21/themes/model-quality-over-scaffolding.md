@@ -1,6 +1,7 @@
 ---
 title: "Model Quality Over Scaffolding: The Death of Clever Engineering"
 order: 4
+header_image: /headers/model-quality-over-scaffolding.png
 topics:
   - "Model Capability"
   - "Minimalism"

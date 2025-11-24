@@ -1,6 +1,7 @@
 ---
 title: "DO NOT OUTSOURCE THE THINKING: Context Engineering & Human-AI Collaboration"
 order: 1
+header_image: /headers/context-engineering-human-ai-collaboration.png
 topics:
   - "Context Engineering"
   - "Human-AI Collaboration"

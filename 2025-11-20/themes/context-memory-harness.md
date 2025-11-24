@@ -1,6 +1,7 @@
 ---
 title: "Context, Memory, and The Harness: Where Product Differentiation Really Happens"
 order: 2
+header_image: /headers/context-memory-harness.png
 topics:
   - "Context & Memory"
   - "Agent Architecture"

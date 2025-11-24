@@ -1,6 +1,7 @@
 ---
 title: "Data Collection & Quality as the New Bottleneck"
 order: 5
+header_image: /headers/data-collection-quality-bottleneck.png
 topics:
   - "Training Data"
   - "Open Science"

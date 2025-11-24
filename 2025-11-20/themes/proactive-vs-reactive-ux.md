@@ -1,6 +1,7 @@
 ---
 title: "Proactive vs Reactive: The UX Evolution"
 order: 5
+header_image: /headers/proactive-vs-reactive-ux.png
 topics:
   - "Agents & Autonomy"
   - "UX Design"

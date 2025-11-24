@@ -1,6 +1,7 @@
 ---
 title: "The Economics of AI Engineering: New Cost Structures & Compensation Models"
 order: 6
+header_image: /headers/economics-ai-engineering.png
 topics:
   - "Economics & Pricing"
   - "Compensation Models"

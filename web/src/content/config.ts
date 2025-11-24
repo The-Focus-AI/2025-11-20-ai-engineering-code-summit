@@ -31,6 +31,7 @@ const articles = defineCollection({
   schema: z.object({
     title: z.string(),
     order: z.number(),
+    header_image: z.string().optional(),
     topics: z.array(z.string()).optional(),
     key_speakers: z.array(z.string()).optional(),
     key_insights: z.array(z.string()).optional(),

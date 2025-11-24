@@ -37,7 +37,7 @@ const article = {
   order: articleEntry.data.order,
   author: articleEntry.data.key_speakers?.[0] || 'Various Speakers',
   readTime: '15 min read',
-  imageUrl: 'https://picsum.photos/seed/ai_art/1200/600'
+  imageUrl: articleEntry.data.header_image || 'https://picsum.photos/seed/ai_art/1200/600'
 };
 
 // Get all articles in same track for navigation
@@ -162,6 +162,19 @@ if (articleEntry.data.key_speakers && Array.isArray(articleEntry.data.key_speake
           </p>
         </div>
 
+        <!-- Figure -->
+        <div class="mb-12 border border-void p-1 bg-white">
+          <div class={`aspect-[2/1] relative overflow-hidden ${articleEntry.data.header_image ? '' : 'halftone grayscale contrast-125'}`}>
+            <img src={article.imageUrl} alt={article.title} class="w-full h-full object-cover" />
+          </div>
+          <div class="p-2 border-t border-void flex gap-4 items-start">
+            <span class="font-mono text-xs font-bold whitespace-nowrap">FIG. {article.order}.1</span>
+            <p class="font-mono text-[10px] uppercase text-gray-600 leading-tight">
+              Visual documentation.
+            </p>
+          </div>
+        </div>
+
         <!-- Contributors Section -->
         <div class="mb-12">
           <h4 class="font-sans font-bold text-base uppercase mb-2 flex items-center gap-2">
@@ -210,19 +223,6 @@ if (articleEntry.data.key_speakers && Array.isArray(articleEntry.data.key_speake
                 </div>
               </a>
             ))}
-          </div>
-        </div>
-
-        <!-- Figure -->
-        <div class="mb-12 border border-void p-1 bg-white">
-          <div class="aspect-[2/1] relative overflow-hidden halftone grayscale contrast-125">
-            <img src={article.imageUrl} alt={article.title} class="w-full h-full object-cover" />
-          </div>
-          <div class="p-2 border-t border-void flex gap-4 items-start">
-            <span class="font-mono text-xs font-bold whitespace-nowrap">FIG. {article.order}.1</span>
-            <p class="font-mono text-[10px] uppercase text-gray-600 leading-tight">
-              Visual documentation.
-            </p>
           </div>
         </div>
 

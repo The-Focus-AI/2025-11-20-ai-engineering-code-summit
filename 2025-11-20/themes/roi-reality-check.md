@@ -1,6 +1,7 @@
 ---
 title: "The ROI Reality Check: Where AI Actually Delivers (And Where It Falls Flat)"
 order: 4
+header_image: /headers/roi-reality-check.png
 topics:
   - "ROI & Metrics"
   - "Greenfield vs Brownfield"
