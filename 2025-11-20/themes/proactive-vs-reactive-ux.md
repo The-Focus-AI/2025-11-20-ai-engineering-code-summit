@@ -1,5 +1,6 @@
 ---
 title: "Proactive vs Reactive: The UX Evolution"
+order: 5
 topics:
   - "Agents & Autonomy"
   - "UX Design"

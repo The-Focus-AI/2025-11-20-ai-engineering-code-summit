@@ -18,25 +18,11 @@ topics:
 
 **Topic:** RL mechanisms for building superhuman agents and discussing proprietary RL stack for efficient model training
 
-![](slides/2025-11-21-11-19-gemini-edited.jpg)
-![](slides/2025-11-21-11-20-gemini-edited.jpg)
-![](slides/2025-11-21-11-21-gemini-edited.jpg)
+![](slides/2025-11-21-11-16-gemini-edited.jpg)
 ![](slides/2025-11-21-11-22-gemini-edited.jpg)
-![](slides/2025-11-21-11-23-gemini-edited.jpg)
 ![](slides/2025-11-21-11-24-gemini-edited.jpg)
-![](slides/2025-11-21-11-25-gemini-edited.jpg)
-![](slides/2025-11-21-11-26-gemini-edited.jpg)
-![](slides/2025-11-21-11-27-gemini-edited.jpg)
-![](slides/2025-11-21-11-28-gemini-edited.jpg)
-![](slides/2025-11-21-11-29-gemini-edited.jpg)
-![](slides/2025-11-21-11-30-gemini-edited.jpg)
-![](slides/2025-11-21-11-31-gemini-edited.jpg)
-![](slides/2025-11-21-11-32-gemini-edited.jpg)
-![](slides/2025-11-21-11-33-gemini-edited.jpg)
 ![](slides/2025-11-21-11-34-gemini-edited.jpg)
-![](slides/2025-11-21-11-35-gemini-edited.jpg)
-![](slides/2025-11-21-11-36-gemini-edited.jpg)
-![](slides/2025-11-21-11-37-gemini-edited.jpg)
+![](slides/2025-11-21-11-38-gemini-edited.jpg)
 
 ### Notes
 

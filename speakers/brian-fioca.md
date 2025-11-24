@@ -1,16 +1,16 @@
 ---
 name: Brian Fioca
 company: OpenAI
-company_url: https://openai.com
+company_url: "https://openai.com"
 role: Solutions Architect, Applied AI
-session: Future-Proof Coding Agents: Building Reliable Systems That Outlast Model Cycles
+session: "Future-Proof Coding Agents: Building Reliable Systems That Outlast Model Cycles"
 session_file: 2025-11-20/11-20-11-00-bill-chen-brian-fioca-openai.md
-linkedin: https://www.linkedin.com/in/brianfioca/
-twitter: @bfioca
-twitter_url: https://x.com/bfioca
-github: @bfioca-openai
-github_url: https://github.com/bfioca-openai
-website: https://fioca.com
+linkedin: "https://www.linkedin.com/in/brianfioca/"
+twitter: "@bfioca"
+twitter_url: "https://x.com/bfioca"
+github: "@bfioca-openai"
+github_url: "https://github.com/bfioca-openai"
+website: "https://fioca.com"
 ---
 
 ## Social & Professional Links

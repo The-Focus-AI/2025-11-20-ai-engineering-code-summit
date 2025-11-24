@@ -1,16 +1,16 @@
 ---
 name: Nathaniel Whittemore (NLW)
 company: Superintelligent
-company_url: https://superintelligent.com
+company_url: "https://superintelligent.com"
 role: Founder & Host of The AI Daily Brief
 session: AI Adoption and Enterprise Implementation Patterns
 session_file: 2025-11-20/11-20-16-00-nlw-super-ai.md
 linkedin: null
 twitter: "@nlw"
-twitter_url: https://twitter.com/nlw
+twitter_url: "https://twitter.com/nlw"
 github: null
 github_url: null
-website: https://superintelligent.com
+website: "https://superintelligent.com"
 ---
 
 ## Overview

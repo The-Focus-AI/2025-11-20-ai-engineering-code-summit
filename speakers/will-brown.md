@@ -1,16 +1,16 @@
 ---
 name: Will Brown
 company: Prime Intellect
-company_url: https://primeintellect.ai
+company_url: "https://primeintellect.ai"
 role: Research Lead
 session: RL Environments at Scale
 session_file: 2025-11-21/11-21-11-40-will-brown-prime-intellect.md
-linkedin: null
-twitter: null
-twitter_url: null
-github: null
-github_url: null
-website: null
+linkedin: willcb
+twitter: willccbb
+twitter_url: "https://x.com/willccbb"
+github: willccbb
+github_url: "https://github.com/willccbb"
+website: "https://willcb.com"
 ---
 
 ## Overview

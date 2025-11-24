@@ -1,16 +1,16 @@
 ---
 name: Asaf Bord
 company: Northwestern Mutual
-company_url: https://www.northwesternmutual.com
+company_url: "https://www.northwesternmutual.com"
 role: GenAI Products Leader
-session: From Small Bets to Big Impact: Building GenBI at a Fortune 100
+session: "From Small Bets to Big Impact: Building GenBI at a Fortune 100"
 session_file: 2025-11-20/11-20-14-05-asaf-bord-northwestern-mutual.md
-linkedin: https://www.linkedin.com/in/asafbord
+linkedin: "https://www.linkedin.com/in/asafbord"
 twitter: null
 twitter_url: null
 github: null
 github_url: null
-website: https://asafbord.wixsite.com/home
+website: "https://asafbord.wixsite.com/home"
 ---
 
 ## Social & Professional Links

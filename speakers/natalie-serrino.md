@@ -1,7 +1,7 @@
 ---
 name: Natalie Serrino
 company: Gimlet Labs
-company_url: https://gimletlabs.ai
+company_url: "https://gimletlabs.ai"
 role: Founder
 session: AI-Generated Kernels for PyTorch Optimization
 session_file: 2025-11-21/11-21-14-45-natalie-serrino-gimlet-labs.md

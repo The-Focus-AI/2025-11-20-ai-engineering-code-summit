@@ -19,14 +19,8 @@ topics:
 **Topic:** Software crisis patterns, AI's role in accelerating them, and methodology for management
 
 ![](slides/2025-11-21-15-03-gemini-edited.jpg)
-![](slides/2025-11-21-15-04-gemini-edited.jpg)
 ![](slides/2025-11-21-15-05-gemini-edited.jpg)
 ![](slides/2025-11-21-15-06-gemini-edited.jpg)
-![](slides/2025-11-21-15-07-gemini-edited.jpg)
-![](slides/2025-11-21-15-08-gemini-edited.jpg)
-![](slides/2025-11-21-15-09-gemini-edited.jpg)
-![](slides/2025-11-21-15-10-gemini-edited.jpg)
-![](slides/2025-11-21-15-11-gemini-edited.jpg)
 ![](slides/2025-11-21-15-12-gemini-edited.jpg)
 
 ### Notes

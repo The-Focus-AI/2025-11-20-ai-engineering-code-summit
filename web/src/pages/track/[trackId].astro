@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import { ARTICLES } from '../../constants';
+import { getCollection } from 'astro:content';
 import type { TrackType } from '../../types';
 
 export function getStaticPaths() {
@@ -14,17 +14,43 @@ export function getStaticPaths() {
 const { trackId } = Astro.params;
 const track = trackId?.toUpperCase() as TrackType;
 
-const articles = ARTICLES.filter(a => a.track === track).sort((a, b) => a.order - b.order);
+// Load articles from content collection
+const allArticles = await getCollection('articles');
+
+// Determine track from file path
+const articlesWithTrack = allArticles.map((article: any) => {
+  const isLeadership = article.id.includes('trust-role') ||
+                       article.id.includes('context-memory') ||
+                       article.id.includes('sdlc-evolution') ||
+                       article.id.includes('roi-reality') ||
+                       article.id.includes('proactive-vs') ||
+                       article.id.includes('economics-ai');
+
+  return {
+    id: article.id,
+    title: article.data.title,
+    order: article.data.order,
+    track: isLeadership ? 'LEADERSHIP' : 'ENGINEERING',
+    subtitle: article.data.key_insights?.[0] || '',
+    authors: article.data.key_speakers || ['Various'],
+    readTime: '15 min read',
+    imageUrl: 'https://picsum.photos/seed/ai_art/1200/600',
+  };
+});
+
+const articles = articlesWithTrack
+  .filter((a: any) => a.track === track)
+  .sort((a: any, b: any) => a.order - b.order);
 
 const getTrackDescription = () => {
   if (track === 'LEADERSHIP') {
-    return "Analysis of strategic decision-making in high-entropy environments. This section covers organizational psychology, economic circularity, and ethical governance of autonomous systems.";
+    return "AI isn't replacing software engineering fundamentals—it's amplifying them, making the difference between clean code and technical debt more consequential than ever before.";
   }
-  return "Technical specifications and infrastructure blueprints. Focusing on quantum coherence in logistics, bio-mimetic urban materials, and next-gen computational substrates.";
+  return "The war on 'slop' isn't won through clever engineering—it requires keeping human thinking at the center, treating environments as universal abstraction, and investing in model capability over scaffolding.";
 };
 ---
 
-<BaseLayout title={`${track} - Horizon 2025`}>
+<BaseLayout title={`${track} - AI Engineering Code Summit`}>
   <div class="w-full min-h-screen bg-paper animate-in fade-in duration-500 pb-20">
 
     <!-- Magazine Cover Header -->
@@ -87,7 +113,7 @@ const getTrackDescription = () => {
 
               <div class="pt-4 border-t border-dashed border-gray-300 flex justify-between items-end">
                 <div class="font-mono text-[10px] uppercase text-gray-500">
-                  <div class="mb-1">Auth: {article.author}</div>
+                  <div class="mb-1">Auth: {article.authors.map((a: string) => a.replace(/\s*\([^)]+\)\s*$/, '').trim()).join(', ')}</div>
                   <div>Time: {article.readTime}</div>
                 </div>
                 {isFeature && (

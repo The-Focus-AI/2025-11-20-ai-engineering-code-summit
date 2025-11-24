@@ -1,16 +1,16 @@
 ---
 name: Eiso Kant
 company: Poolside
-company_url: https://poolside.ai
+company_url: "https://poolside.ai"
 role: CEO
 session: Building AGI for Software Development
 session_file: 2025-11-21/11-21-16-00-eiso-kant-poolside.md
-linkedin: https://www.linkedin.com/in/eiso-kant/
+linkedin: "https://www.linkedin.com/in/eiso-kant/"
 twitter: null
 twitter_url: null
 github: null
 github_url: null
-website: https://poolside.ai
+website: "https://poolside.ai"
 ---
 
 ## Overview

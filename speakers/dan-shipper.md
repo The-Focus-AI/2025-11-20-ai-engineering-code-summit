@@ -1,16 +1,16 @@
 ---
 name: Dan Shipper
 company: Every
-company_url: https://every.to
+company_url: "https://every.to"
 role: CEO and Co-founder
 session: Building AI-First Companies
 session_file: 2025-11-20/11-20-17-00-dan-shipper-every.md
 linkedin: null
 twitter: "@danshipper"
-twitter_url: https://twitter.com/danshipper
+twitter_url: "https://twitter.com/danshipper"
 github: null
 github_url: null
-website: https://every.to
+website: "https://every.to"
 ---
 
 ## Overview

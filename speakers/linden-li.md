@@ -1,7 +1,7 @@
 ---
 name: Linden Li
 company: Applied Compute
-company_url: https://appliedcompute.ai
+company_url: "https://appliedcompute.ai"
 role: Co-founder
 session: Efficient Reinforcement Learning
 session_file: 2025-11-21/11-21-11-20-rhythm-garg-linden-li-applied-compute.md

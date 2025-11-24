@@ -22,23 +22,9 @@ topics:
 ![](slides/2025-11-21-09-10-gemini-edited.jpg)
 ![](slides/2025-11-21-09-11-gemini-edited.jpg)
 ![](slides/2025-11-21-09-12-gemini-edited.jpg)
-![](slides/2025-11-21-09-13-gemini-edited.jpg)
-![](slides/2025-11-21-09-14-gemini-edited.jpg)
-![](slides/2025-11-21-09-15-gemini-edited.jpg)
-![](slides/2025-11-21-09-16-gemini-edited.jpg)
 ![](slides/2025-11-21-09-17-gemini-edited.jpg)
-![](slides/2025-11-21-09-18-gemini-edited.jpg)
-![](slides/2025-11-21-09-19-gemini-edited.jpg)
 ![](slides/2025-11-21-09-20-gemini-edited.jpg)
-![](slides/2025-11-21-09-21-gemini-edited.jpg)
-![](slides/2025-11-21-09-22-gemini-edited.jpg)
-![](slides/2025-11-21-09-23-gemini-edited.jpg)
-![](slides/2025-11-21-09-24-gemini-edited.jpg)
-![](slides/2025-11-21-09-25-gemini-edited.jpg)
-![](slides/2025-11-21-09-26-gemini-edited.jpg)
 ![](slides/2025-11-21-09-27-gemini-edited.jpg)
-![](slides/2025-11-21-09-28-gemini-edited.jpg)
-![](slides/2025-11-21-09-29-gemini-edited.jpg)
 
 ### Notes
 

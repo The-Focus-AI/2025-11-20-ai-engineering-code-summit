@@ -6,6 +6,7 @@ const isHome = currentPath === '/';
 const isLeadership = currentPath.startsWith('/track/leadership');
 const isEngineering = currentPath.startsWith('/track/engineering');
 const isSpeakers = currentPath.startsWith('/speakers');
+const isAbout = currentPath === '/about';
 ---
 
 <nav class="sticky top-0 w-full z-50 bg-[#e8e6df] px-4 md:px-8 pt-4 print:hidden">
@@ -17,7 +18,7 @@ const isSpeakers = currentPath.startsWith('/speakers');
       class="bg-void text-white px-4 py-2 mr-1 cursor-pointer hover:bg-rand-blue transition-colors flex items-center gap-2 shrink-0"
     >
       <div class="w-3 h-3 bg-alert-red rounded-full"></div>
-      <span class="font-sans font-bold tracking-tight">RAND_2025</span>
+      <span class="font-sans font-bold tracking-tight">TheFocusAI</span>
     </a>
 
     <!-- Nav Tabs -->
@@ -63,6 +64,17 @@ const isSpeakers = currentPath.startsWith('/speakers');
       }`}
     >
       Personnel
+    </a>
+
+    <a
+      href="/about"
+      class={`px-4 md:px-6 py-2 border-t border-x border-void mr-[-1px] relative font-mono text-[10px] md:text-xs font-bold uppercase tracking-wider transition-all whitespace-nowrap ${
+        isAbout
+          ? 'bg-paper text-void top-[2px] border-b-paper z-10'
+          : 'bg-[#d6d4ce] text-gray-600 hover:bg-white'
+      }`}
+    >
+      About
     </a>
 
     <!-- Spacer -->

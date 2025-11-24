@@ -2,12 +2,11 @@ import React, { useState, useRef, useEffect } from 'react';
 import { X, Loader2, Terminal } from 'lucide-react';
 import { GoogleGenAI } from '@google/genai';
 import type { ChatMessage } from '../types';
-import { ARTICLES, SPEAKERS } from '../constants';
 
 export default function ChatAssistant() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: `SYSTEM READY.\nACCESSING CONFERENCE DATABASE...\n\nHello. I am the Horizon Interface. Ask me about speakers or topics.` }
+    { role: 'model', text: `SYSTEM READY.\nACCESSING CONFERENCE DATABASE...\n\nHello. I am the AI Engineering Code Summit Interface. Ask me about speakers or topics.` }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -32,9 +31,8 @@ export default function ChatAssistant() {
   }, []);
 
   const getContext = () => {
-    const articlesText = ARTICLES.map(a => `Title: ${a.title}\nAuthor: ${a.author}\nContent: ${a.content}`).join('\n\n');
-    const speakersText = SPEAKERS.map(s => `Name: ${s.name}\nRole: ${s.role}\nBio: ${s.bio}`).join('\n\n');
-    return `CONFERENCE DATA:\n\nARTICLES:\n${articlesText}\n\nSPEAKERS:\n${speakersText}`;
+    // TODO: Load context from content collections via API endpoint
+    return `AI Engineering Code Summit 2025 - November 20-21, San Francisco`;
   };
 
   const handleSend = async () => {

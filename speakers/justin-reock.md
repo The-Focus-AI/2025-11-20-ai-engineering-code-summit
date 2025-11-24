@@ -1,7 +1,7 @@
 ---
 name: Justin Reock
 company: DX
-company_url: https://getdx.com
+company_url: "https://getdx.com"
 role: Deputy CTO
 session: Leadership in AI-Assisted Engineering
 session_file: 2025-11-20/11-20-16-40-justin-reock-dx.md
@@ -10,7 +10,7 @@ twitter: null
 twitter_url: null
 github: null
 github_url: null
-website: https://getdx.com
+website: "https://getdx.com"
 ---
 
 ## Overview

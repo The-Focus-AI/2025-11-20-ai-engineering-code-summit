@@ -1,13 +1,13 @@
 ---
 name: Jake Nations
 company: Netflix
-company_url: https://www.netflix.com
+company_url: "https://www.netflix.com"
 role: Engineering Leader
 session: The Infinite Software Crisis - AI, Complexity, and the Challenge of Scale
 session_file: 2025-11-21/11-21-15-05-jake-nations-netflix.md
-linkedin: https://linkedin.com/in/jakenations
+linkedin: "https://linkedin.com/in/jakenations"
 twitter: "@jakenations"
-twitter_url: https://twitter.com/jakenations
+twitter_url: "https://twitter.com/jakenations"
 github: null
 github_url: null
 website: null

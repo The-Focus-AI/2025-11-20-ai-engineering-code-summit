@@ -19,20 +19,9 @@ topics:
 **Topic:** World-model approach to learning from code that incorporates data from program execution to implicitly predict behavior while generating code
 
 ![](slides/2025-11-21-11-04-gemini-edited.jpg)
-![](slides/2025-11-21-11-05-gemini-edited.jpg)
 ![](slides/2025-11-21-11-06-gemini-edited.jpg)
-![](slides/2025-11-21-11-07-gemini-edited.jpg)
-![](slides/2025-11-21-11-08-gemini-edited.jpg)
-![](slides/2025-11-21-11-09-gemini-edited.jpg)
-![](slides/2025-11-21-11-10-gemini-edited.jpg)
-![](slides/2025-11-21-11-11-gemini-edited.jpg)
 ![](slides/2025-11-21-11-12-gemini-edited.jpg)
-![](slides/2025-11-21-11-13-gemini-edited.jpg)
-![](slides/2025-11-21-11-14-gemini-edited.jpg)
-![](slides/2025-11-21-11-15-gemini-edited.jpg)
 ![](slides/2025-11-21-11-16-gemini-edited.jpg)
-![](slides/2025-11-21-11-17-gemini-edited.jpg)
-![](slides/2025-11-21-11-18-gemini-edited.jpg)
 
 ### Links
 

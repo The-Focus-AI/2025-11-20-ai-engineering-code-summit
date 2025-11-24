@@ -1,6 +1,10 @@
-# AI Engineering Code Summit 2025 - Conference Notes
+# The Architecture of Kino: AI Engineering Code Summit 2025
 
-This repository contains raw notes, analysis, and synthesis from the AI Engineering Code Summit held November 20-21, 2025.
+**From "slop" to quality: How 25 sessions revealed the path to thoughtful AI systems**
+
+This repository contains comprehensive notes, analysis, and synthesis from the AI Engineering Code Summit held November 20-21, 2025. Across two days and dozens of sessions from leaders at Anthropic, OpenAI, Google DeepMind, Meta, Netflix, and more, a clear architecture emerged: quality AI engineering requires human thinking at the center, environments as universal abstraction, specialized models through RL, capability over scaffolding, and open data as infrastructure.
+
+**About:** [about.md](about.md) - Conference details, author bio, and repository overview
 
 ## Overview
 

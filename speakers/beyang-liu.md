@@ -1,16 +1,16 @@
 ---
 name: Beyang Liu
 company: Amp Code / Sourcegraph
-company_url: https://ampcode.com
+company_url: "https://ampcode.com"
 role: Co-founder & CTO, Amp Code
-session: Amp Code: Next-Generation AI Coding
+session: "Amp Code: Next-Generation AI Coding"
 session_file: 2025-11-21/11-21-14-25-beyang-liu-amp-code.md
-linkedin: https://www.linkedin.com/in/beyang-liu/
-twitter: @beyang
-twitter_url: https://twitter.com/beyang
-github: @beyang
-github_url: https://github.com/beyang
-website: null
+linkedin: beyang-liu
+twitter: beyang
+twitter_url: "https://twitter.com/beyang"
+github: beyang
+github_url: "https://github.com/beyang"
+website: "https://beyang.org"
 ---
 
 ## Social & Professional Links

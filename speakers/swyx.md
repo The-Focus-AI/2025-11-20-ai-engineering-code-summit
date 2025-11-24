@@ -1,16 +1,20 @@
 ---
 name: Swyx (Shawn Wang)
 company: AI Engineer
-company_url: https://aieng.dev
+company_url: "https://aieng.dev"
 role: Founder & Organizer
 session: Opening Remarks, Day 2
 session_file: 2025-11-21/11-21-09-06-swyx-opening-remarks.md
-linkedin: https://www.linkedin.com/in/swyx/
-twitter: @swyx
-twitter_url: https://twitter.com/swyx
-github: @swyx
-github_url: https://github.com/swyx
-website: https://www.swyx.io
+linkedin: "https://www.linkedin.com/in/swyx/"
+twitter: "@swyx"
+twitter_url: "https://twitter.com/swyx"
+github: "@swyx"
+github_url: "https://github.com/swyx"
+website: "https://www.swyx.io"
+youtube: "@latentspacepod"
+youtube_url: "https://youtube.com/@latentspacepod"
+substack: "Latent.Space"
+substack_url: "https://www.latent.space/"
 ---
 
 ## AI Engineer — Community Founder, Podcast Host, Developer Advocate
@@ -19,7 +23,11 @@ website: https://www.swyx.io
 
 ## Overview
 
-Swyx (Shawn Wang) is the founder and organizer of **AI Engineer**, a thriving community and conference dedicated to practical AI engineering at scale. Beyond building the community, he is a prolific podcaster, influential developer advocate, and respected voice in the AI and software engineering communities. Known for his engaging content creation, live streaming, and thought leadership on AI development practices, swyx has built a substantial following across social media platforms and established himself as a key figure bridging AI research and practical engineering applications.
+Swyx (Shawn Wang) is the founder and organizer of **AI Engineer**, a thriving community and conference dedicated to practical AI engineering at scale. He is also the founder of **Smol AI Company**, which produces AI News, a widely-read AI industry newsletter that is 99% created by customizable research agents. Additionally, he co-hosts the **Latent Space** podcast with Alessio, which has become a Top 10 US Tech podcast with over 2 million readers and listeners in 2024.
+
+Beyond building these platforms, swyx is a prolific podcaster, influential developer advocate, and respected voice in the AI and software engineering communities. Known for his engaging content creation, live streaming, and thought leadership on AI development practices, swyx has built a substantial following across social media platforms and established himself as a key figure bridging AI research and practical engineering applications.
+
+As of 2025, swyx has also joined **Cognition AI**, the company behind Devin, while maintaining his independent work with AI Engineer and Latent Space.
 
 ## Social Links
 
@@ -27,7 +35,9 @@ Swyx (Shawn Wang) is the founder and organizer of **AI Engineer**, a thriving co
 - **GitHub:** [@swyx](https://github.com/swyx)
 - **Website:** [swyx.io](https://www.swyx.io)
 - **LinkedIn:** [Shawn Wang](https://www.linkedin.com/in/swyx/)
-- **Podcast:** AI Engineer Podcast
+- **YouTube:** [@latentspacepod](https://youtube.com/@latentspacepod)
+- **Substack:** [Latent.Space](https://www.latent.space/)
+- **Podcast:** Latent Space: The AI Engineer Podcast
 
 ## Background
 
@@ -41,16 +51,43 @@ Swyx brings a unique background combining:
 
 His career trajectory demonstrates a consistent focus on bringing people together around shared interests and elevating the discourse around emerging technologies.
 
-## Current Role: AI Engineer Community
+## Current Roles & Ventures
+
+Swyx is actively leading multiple ventures in the AI engineering space:
+
+### AI Engineer Community
 
 Swyx is the founder and primary organizer of **AI Engineer**, a community and annual conference dedicated to practical AI engineering:
 
-### Community Impact
-
 - **Annual Conference:** Hosts the AI Engineer Summit, attracting hundreds of practitioners, founders, and researchers
-- **Podcast Platform:** Produces regular episodes featuring leaders, builders, and innovators in the AI space
 - **Community Engagement:** Maintains active community channels for discussion, collaboration, and knowledge sharing
 - **Content Archive:** Creates extensive documentation and records of conference sessions for ongoing learning
+
+### Latent Space Podcast & Newsletter
+
+Co-hosted with Alessio, **Latent Space: The AI Engineer Podcast** has become one of the most influential AI engineering podcasts:
+
+- **Top 10 US Tech Podcast:** Over 2 million readers and listeners in 2024
+- **Multiple Platforms:** Available as audio podcast, YouTube video, and Substack newsletter
+- **High-Profile Guests:** Features founders and leaders from OpenAI, Anthropic, Google DeepMind, Meta, and other major AI companies
+- **Technical Deep Dives:** Covers foundation models, code generation, multimodality, AI agents, GPU infrastructure, and open source models
+- **Breaking News:** Regularly breaks news and conducts exclusive interviews with key figures in AI
+
+### Smol AI Company
+
+Founder of **Smol AI**, an LLM data pipeline company:
+
+- **AI News Newsletter:** Produces a widely-read AI industry newsletter that is 99% created by customizable research agents
+- **Funding:** Raised a $3 million pre-seed round
+- **Innovation:** Demonstrates practical application of AI agents for content curation and research automation
+
+### Cognition AI
+
+As of 2025, swyx has joined **Cognition AI**, the company behind Devin (the AI software engineer):
+
+- Maintains independent operation of AI Engineer and Latent Space
+- Role follows Cognition's $10 billion Series C funding round
+- Brings his expertise in developer experience and AI engineering to the team
 
 ### Philosophy & Vision
 
@@ -119,16 +156,18 @@ Swyx's position on slop reflects a deeper philosophy about AI engineering:
 
 ## Influence & Thought Leadership
 
-### Podcast & Content Platform
+### Latent Space: Essential AI Engineering Content
 
-As a prolific podcaster, swyx has built a platform for:
+The **Latent Space** podcast and newsletter have become essential resources for the AI engineering community:
 
-- Interviewing founders and researchers at the frontier of AI
-- Discussing practical engineering challenges and solutions
-- Exploring business models and organizational structures
-- Hosting live conversations with major figures in AI
+- **Reach:** Over 2 million readers and listeners in 2024, Top 10 US Tech podcast
+- **Exclusive Access:** Regular interviews with founders and researchers at OpenAI, Anthropic, Google DeepMind, Meta, and other frontier AI companies
+- **Practical Focus:** Discussing real engineering challenges, solutions, and production experiences
+- **Business & Technical:** Exploring both technical implementations and business models
+- **Multi-Format:** Available as podcast, YouTube video, and Substack newsletter
+- **Community Building:** Creating a shared knowledge base for AI engineers worldwide
 
-The podcast has become essential listening for engineers trying to stay current with rapid developments in the field.
+Notable guests have included leaders from OpenAI, Anthropic, Gemini, Meta (Soumith Chintala), Sierra (Bret Taylor), tiny (George Hotz), Databricks/MosaicML (Jon Frankle), Modular (Chris Lattner), and Answer.ai (Jeremy Howard).
 
 ### Developer Advocacy
 
@@ -155,10 +194,22 @@ Swyx represents the intersection of several important trends:
 
 ## Related Content
 
-- **AI Engineer Community:** [aieng.dev](https://aieng.dev/) or main community hub
-- **AI Engineer Summit:** Annual conference bringing together the community
-- **AI Engineer Podcast:** Regular episodes with guests and discussions
-- **Social Media:** Very active on Twitter/X with daily insights and commentary
+### Main Platforms
+
+- **AI Engineer Community:** [aieng.dev](https://aieng.dev/) - Main community hub
+- **AI Engineer Summit:** Annual conference bringing together the AI engineering community
+- **Latent Space Podcast:** [latent.space/podcast](https://www.latent.space/podcast) - Top 10 US Tech podcast
+- **Latent Space Newsletter:** [latent.space](https://www.latent.space/) - Substack newsletter
+- **Latent Space YouTube:** [youtube.com/@latentspacepod](https://youtube.com/@latentspacepod) - Video versions of episodes
+- **AI News by Smol AI:** [news.smol.ai](https://news.smol.ai/) - AI industry newsletter created by research agents
+- **Personal Website:** [swyx.io](https://www.swyx.io) - Blog and writings
+
+### Social Media
+
+- **Twitter/X:** [@swyx](https://twitter.com/swyx) - Very active with daily insights and commentary
+- **Latent Space Twitter:** [@latentspacepod](https://twitter.com/latentspacepod) - Podcast updates and discussions
+- **GitHub:** [@swyx](https://github.com/swyx) - Code and open source projects
+- **LinkedIn:** [Shawn Wang](https://www.linkedin.com/in/swyx/) - Professional network
 
 ## Conference Appearance
 
@@ -181,12 +232,21 @@ Swyx represents the intersection of several important trends:
 
 ## Legacy & Impact
 
-Swyx represents a new generation of community leaders and content creators who recognize that the most valuable work in emerging fields often happens in the spaces between institutions. By founding and maintaining the AI Engineer community, hosting its conference, and producing content that bridges research and practice, he has created infrastructure that helps thousands of engineers navigate the rapid evolution of AI capabilities.
+Swyx represents a new generation of community leaders and content creators who recognize that the most valuable work in emerging fields often happens in the spaces between institutions. Through his multiple ventures - AI Engineer community, Latent Space podcast, and Smol AI Company - he has created comprehensive infrastructure that helps millions of engineers navigate the rapid evolution of AI capabilities.
 
-His focus on quality, his willingness to name and challenge the proliferation of low-quality outputs, and his commitment to community standards position him as an important voice not just for what AI can do, but for how it should be developed and deployed responsibly.
+### Multi-Platform Impact
 
-The "war on slop" frames a crucial challenge facing the AI community: how to maintain standards, ensure quality, and focus on genuine innovation as the costs of generation continue to decline.
+- **Community Building:** Founded AI Engineer, creating a practitioner-focused community and conference that has become essential gathering place for the field
+- **Content Creation:** Built Latent Space into a Top 10 US Tech podcast with over 2 million listeners, providing high-quality technical content and exclusive interviews
+- **Innovation:** Demonstrated practical AI agent applications through Smol AI's AI-generated newsletter, proving the viability of autonomous research agents
+- **Industry Engagement:** Joined Cognition AI while maintaining independent platforms, bridging startup innovation with community needs
+
+### Quality Standards Advocate
+
+His focus on quality, his willingness to name and challenge the proliferation of low-quality outputs (the "war on slop"), and his commitment to community standards position him as an important voice not just for what AI can do, but for how it should be developed and deployed responsibly.
+
+The "war on slop" frames a crucial challenge facing the AI community: how to maintain standards, ensure quality, and focus on genuine innovation as the costs of generation continue to decline. Through his platforms, swyx continuously demonstrates what high-quality AI engineering content and community engagement look like.
 
 ---
 
-*Last Updated: November 22, 2025*
+*Last Updated: November 24, 2025*

@@ -1,16 +1,16 @@
 ---
 name: Tobin South
 company: WorkOS
-company_url: https://workos.com
+company_url: "https://workos.com"
 role: Head of AI Agents & MCP
 session: Enterprise-Grade Model Context Protocol
 session_file: 2025-11-21/11-21-10-40-tobin-south-workos.md
-linkedin: null
-twitter: null
-twitter_url: null
-github: null
-github_url: null
-website: null
+linkedin: tobinsouth
+twitter: TobinSouth
+twitter_url: "https://twitter.com/TobinSouth"
+github: tobinsouth
+github_url: "https://github.com/tobinsouth"
+website: "https://tobin.page"
 ---
 
 ## Overview

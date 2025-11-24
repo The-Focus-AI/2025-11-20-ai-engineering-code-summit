@@ -1,5 +1,6 @@
 ---
 title: "Reinforcement Learning for Specialized Models: The Economics of Domain Expertise"
+order: 3
 topics:
   - "Reinforcement Learning"
   - "Model Specialization"

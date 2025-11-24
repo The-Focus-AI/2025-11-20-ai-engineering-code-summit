@@ -1,30 +1,38 @@
 ---
 name: Eno Reyes
 company: Factory AI
-company_url: https://www.factory.ai
-role: CTO
+company_url: "https://www.factory.ai"
+role: Co-Founder & CTO
 session: Making Codebases Agent-Ready
 session_file: 2025-11-21/11-21-14-05-eno-reyes-factory-ai.md
-linkedin: null
-twitter: null
-twitter_url: null
-github: null
-github_url: null
+linkedin: enoreyes
+twitter: EnoReyes
+twitter_url: "https://x.com/EnoReyes"
+github: enoreyes
+github_url: "https://github.com/enoreyes"
 website: null
 ---
 
-## Overview
+Co-Founder and CTO at Factory, building autonomous AI agents (Droids) that automate the software development lifecycle. Pioneer in agent-ready codebase architecture and verification systems for reliable AI-driven development.
 
-Eno Reyes is the CTO of Factory AI, a company focused on optimizing industrial applications through AI-driven automation. He specializes in frameworks that prepare codebases for AI agents and improve agent productivity through systematic approaches to code organization, testing, and verification.
+## Building Software That Builds Software
 
-## Current Role: Factory AI CTO
+Eno co-founded Factory in 2023 with CEO Matan Grinberg to bring true autonomy to software engineering. At Factory, he leads the technical vision for:
 
-At Factory AI, Eno leads the technical vision for:
+- **Droids** - Autonomous software development agents that automate testing, debugging, refactoring, migrations, and maintenance work
+- **Agent-ready codebase framework** - Eight-category system for making codebases compatible with AI agents
+- **Verification and validation systems** - Infrastructure that ensures agent-generated code meets specifications
+- **Command Center** - Developer platform integrating OpenAI's reasoning models and Claude for software development
 
-- **AI-ready codebase architecture** - Framework for making software systems compatible with AI agents
-- **Industrial AI applications** - Applying AI agents to manufacturing and robotics contexts
-- **Agent productivity optimization** - Systematic approaches to enable faster, more reliable agent-driven development
-- **Verification and validation systems** - Building frameworks that ensure agent-generated code meets specifications
+## Background & Technical Foundation
+
+Before founding Factory, Eno built a deep foundation in machine learning and language models:
+
+- **Hugging Face** (2022-2023) - Machine Learning Engineer helping enterprises research and develop language models
+- **Microsoft** - Software Engineer building anomaly detection systems
+- **Princeton University** - Wrote thesis on deep learning and conducted research on computational models of human cognition
+
+Eno grew up in Atlanta and met his co-founder Matan at Princeton. They were 23 and 24 respectively when they started Factory.
 
 ## Core Expertise
 
@@ -87,42 +95,28 @@ Factory AI provides:
 - **Verification systems** that enable agents to validate their own work
 - **Measurable metrics** to track improvement
 
-## Industrial Applications Focus
+## About Factory
 
-While rooted in general software development principles, Eno applies these concepts to:
+Factory is building autonomous AI agents for software development. Founded in 2023 and backed by Sequoia Capital, Factory's platform includes:
 
-- **Manufacturing automation** - Optimizing production systems with AI agents
-- **Robotics control** - Agent-driven robotics for industrial applications
-- **Industrial IoT** - AI systems managing factory floor operations
-- **Automation workflows** - Orchestrating complex industrial processes
+- **Droids** - The world's first truly autonomous software development agents that handle testing, debugging, refactoring, migrations, and maintenance
+- **Command Center** - Development platform that integrates with GitHub, Slack, Linear, Notion, and Sentry
+- **Integration Partners** - Works with both OpenAI's reasoning models and Anthropic's Claude for optimal performance
 
-## Key Takeaways from Summit Talk
+Factory's mission is to automate tasks in the SDLC that developers don't want to do, enabling them to focus on creative problem-solving rather than maintenance work.
 
-1. **Verifiability drives productivity** - The framework for what constitutes "correct" determines how fast agents can iterate
-2. **Specification enables scale** - Clear specifications allow agents to work in parallel across defined constraints
-3. **Environment design matters** - The ability to reset and verify execution environments is foundational
-4. **Opinionation accelerates** - The more specific and opinionated your system is, the faster the development cycle
-5. **Feedback loops are critical** - Investment in measurement and feedback systems pays dividends
-6. **Organization is the bottleneck** - Your validation criteria are the limiting factor for agent productivity
+## Key Insights & Philosophy
 
-## Related Companies & Concepts
+**Verifiability is the Key**: Eno's central thesis is that the ability of agents to solve tasks is proportional to how verifiable those tasks are. Investment in environment feedback loops and verification systems drives organizational velocity.
 
-- **Factory AI** - Industrial AI and automation company
-- **Agent-Ready Code** - Codebases optimized for AI agent work
-- **Verifiable AI Systems** - Systems designed with clear verification boundaries
-- **Manufacturing AI** - AI applications in industrial and manufacturing contexts
+**OpEx as Input to Engineering**: "One opinionated engineer can change the velocity of the entire business." The more specific and opinionated your system is, the faster the development cycle becomes.
 
-## Key Quotes
-
-> "The ability to solve is proportional to how verifiable it is for the AI to solve"
-
-> "A sloppy test is better than no test"
-
-> "One opinionated engineer can change the velocity of the entire business"
-
-> "The limit is your organization's validation criteria"
-
-> "Invest in the environment feedback loop"
+**Core Principles**:
+- "A sloppy test is better than no test" - Agents can help set things up
+- "The limit is your organization's validation criteria"
+- Many tasks are easier to verify than to solve
+- Specification clarity enables agents to work in parallel
+- Measurable metrics track improvement objectively
 
 ## Conference Appearance
 

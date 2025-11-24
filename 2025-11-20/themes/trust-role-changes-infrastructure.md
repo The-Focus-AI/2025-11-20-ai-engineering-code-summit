@@ -1,5 +1,6 @@
 ---
 title: "Trust, Role Changes, and What's Good for Humans is Good for AI"
+order: 1
 topics:
   - "Trust & Infrastructure"
   - "Role Transformation"

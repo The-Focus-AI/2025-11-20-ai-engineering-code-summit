@@ -1,7 +1,7 @@
 ---
 name: Martin Harrysson
 company: McKinsey & Company
-company_url: https://www.mckinsey.com
+company_url: "https://www.mckinsey.com"
 role: Partner
 session: Moving away from Agile - What's Next?
 session_file: 2025-11-20/11-20-11-20-martin-harrysson-natasha-maniar-mckinsey.md

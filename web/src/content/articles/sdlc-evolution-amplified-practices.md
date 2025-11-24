@@ -1,0 +1,1 @@
+../../../../2025-11-20/themes/sdlc-evolution-amplified-practices.md

@@ -18,26 +18,9 @@ topics:
 
 **Topic:** Solving hard problems in complex production codebases where AI tools struggle
 
-![](slides/2025-11-21-09-30-gemini-edited.jpg)
-![](slides/2025-11-21-09-31-gemini-edited.jpg)
-![](slides/2025-11-21-09-32-gemini-edited.jpg)
-![](slides/2025-11-21-09-33-gemini-edited.jpg)
-![](slides/2025-11-21-09-34-gemini-edited.jpg)
+![](slides/2025-11-21-09-27-gemini-edited.jpg)
 ![](slides/2025-11-21-09-35-gemini-edited.jpg)
-![](slides/2025-11-21-09-36-gemini-edited.jpg)
 ![](slides/2025-11-21-09-37-gemini-edited.jpg)
-![](slides/2025-11-21-09-38-gemini-edited.jpg)
-![](slides/2025-11-21-09-39-gemini-edited.jpg)
-![](slides/2025-11-21-09-40-gemini-edited.jpg)
-![](slides/2025-11-21-09-41-gemini-edited.jpg)
-![](slides/2025-11-21-09-42-gemini-edited.jpg)
-![](slides/2025-11-21-09-43-gemini-edited.jpg)
-![](slides/2025-11-21-09-44-gemini-edited.jpg)
-![](slides/2025-11-21-09-45-gemini-edited.jpg)
-![](slides/2025-11-21-09-46-gemini-edited.jpg)
-![](slides/2025-11-21-09-47-gemini-edited.jpg)
-![](slides/2025-11-21-09-48-gemini-edited.jpg)
-![](slides/2025-11-21-09-49-gemini-edited.jpg)
 ![](slides/2025-11-21-09-50-gemini-edited.jpg)
 
 ### Links

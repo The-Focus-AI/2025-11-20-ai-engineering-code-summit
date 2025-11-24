@@ -1,5 +1,6 @@
 ---
 title: "Model Quality Over Scaffolding: The Death of Clever Engineering"
+order: 4
 topics:
   - "Model Capability"
   - "Minimalism"
@@ -21,13 +22,10 @@ key_insights:
 
 "Agents aren't bottlenecked by clever tricks anymore," declared Nik Pash, creator of Cline, in what may be the most consequential insight from the AI Engineering Code Summit. After years of elaborate tool architectures, complex agent frameworks, and sophisticated scaffolding systems, the industry is experiencing a fundamental realization: **the quality of the model is the main thing**. Everything else—the clever engineering, the intricate tool-calling patterns, the elaborate agent orchestration—is rapidly becoming noise.
 
-![](slides/2025-11-21-16-30-gemini-edited.jpg)
-
 The evidence is stark and undeniable. Terminus, with its minimal tool design and no clever tool calling whatsoever, still beats everything on the market. This isn't a fluke or an exception—it's a signal. "Capability beats scaffolding," Pash emphasized, and the data backs him up completely. The agents that win aren't the ones with the most sophisticated architectures; they're the ones running on the best base models. Period.
 
 This represents a profound shift in how we think about building AI coding tools. For years, engineers have focused on crafting elaborate systems—complex retrieval pipelines, sophisticated context management, clever tool-calling patterns, multi-agent orchestration. But Pash's experience at Cline reveals a different story: **minimalism wins**. The basic tools—terminal, grep, filesystem, native tool calling—are all you really need. The rest is distraction.
 
-![](slides/2025-11-21-16-33-gemini-edited.jpg)
 
 "I'm tired of all the little hacks," Pash confessed, expressing a sentiment that resonates across the industry. The endless tweaking, the prompt engineering tricks, the architectural workarounds—they're all symptoms of trying to compensate for model limitations. But as models improve, these hacks become unnecessary. Worse, they become technical debt that obscures what actually matters.
 
@@ -35,7 +33,6 @@ The speed-versus-intelligence tradeoff, however, reveals an important nuance. Le
 
 Amp Code, led by Beyang Liu, has formalized this approach with their dual-model system. Their "smart" agent—powered by Oracle, Librarian, and Finder subagents—handles careful reasoning and review. Their "rush" agent takes the quick path, trading some intelligence for speed. This isn't scaffolding for scaffolding's sake; it's recognizing that different tasks have different requirements. Sometimes you need deep reasoning; sometimes you just need fast execution.
 
-![](slides/2025-11-21-14-30-gemini-edited.jpg)
 
 But crucially, even Amp's sophisticated subagent architecture exists primarily to manage context, not to compensate for model weakness. Liu was explicit about avoiding "context confusion" from too many MCP tools, noting that "tool calls themselves eat up context." The subagents aren't clever tricks—they're clean interfaces to specific capabilities. The moment a better base model makes them unnecessary, they should disappear.
 

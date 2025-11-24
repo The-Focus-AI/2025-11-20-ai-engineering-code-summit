@@ -1,7 +1,7 @@
 ---
 name: Jacob Kahn
 company: Meta AI
-company_url: https://ai.meta.com
+company_url: "https://ai.meta.com"
 role: Research Scientist
 session: Code World Models - Building World Models for Computation
 session_file: 2025-11-21/11-21-11-00-jacob-kahn-meta.md

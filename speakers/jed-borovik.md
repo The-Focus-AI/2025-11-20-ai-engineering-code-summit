@@ -1,7 +1,7 @@
 ---
 name: Jed Borovik
 company: Google DeepMind
-company_url: https://deepmind.google
+company_url: "https://deepmind.google"
 role: Lead - Jules Autonomous Coding Agent
 session: Jules - Autonomous Coding Agent
 session_file: 2025-11-21/11-21-09-00-jed-borovik-google-deepmind.md

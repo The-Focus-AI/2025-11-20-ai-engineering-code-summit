@@ -1,7 +1,7 @@
 ---
 name: Arman Hezarkhani
 company: Tenex
-company_url: https://tenex.com
+company_url: "https://tenex.com"
 role: Managing Partner
 session: Rethinking Compensation for AI-Augmented Engineers
 session_file: 2025-11-20/11-20-16-20-arman-hezarkhani-tenex.md

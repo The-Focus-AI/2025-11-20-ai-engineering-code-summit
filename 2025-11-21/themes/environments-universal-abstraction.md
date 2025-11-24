@@ -1,5 +1,6 @@
 ---
 title: "Environments as Universal Abstraction: The New Unit of Everything"
+order: 2
 topics:
   - "Environments"
   - "Verification"
@@ -31,8 +32,6 @@ The insight crystalized when Eno Reyes, CTO of Factory AI, and Nik Pash, creator
 
 The power of this abstraction becomes clear through Pash's "tea kettle" verification example. Consider the task: boil water. A good verifier asks one question: **Is the kettle whistling?** This is pure outcome-driven verification—it doesn't care how you achieved the result. Bad verifiers, by contrast, ask process questions: Is the burner set to high? Has five minutes elapsed? Is the kettle on the front left burner? Did you filter the water? Is the lid positioned correctly?
 
-![](slides/2025-11-21-16-32-gemini-edited.jpg)
-
 This distinction between outcome-driven and process-driven verification is foundational. Reyes emphasized that "many tasks are much easier to verify than to solve," making verifiability the key constraint on AI capability. "The ability to solve is proportional to how verifiable it is for the AI to solve," he noted. The implication is profound: we should focus our engineering efforts on creating rigorous verification boundaries, not on micromanaging the process.
 
 ![](slides/2025-11-21-14-07-gemini-edited.jpg)
@@ -59,17 +58,11 @@ What makes this convergence so powerful is its universality. Brown demonstrated 
 
 Reyes made the business case explicit. At Factory AI, they've built their entire agent-ready framework around verifiability. "Invest in the environment feedback loop," he urged. "One opinionated engineer can change the velocity of the entire business." The limit isn't AI capability—it's "your organization's validation criteria." By specifying constraints through verifiable environments, companies can measure results through objective metrics rather than subjective assessment.
 
-![](slides/2025-11-21-14-21-gemini-edited.jpg)
-
 Pash's vision for Cline extends this to meta-automation. His team built an "RL environments factory" where subagents qualify tasks and generate verifiable environments from real-world coding work. "The bottleneck should shift from engineering to collecting quality tests," he argued. Cline-bench, their open-source benchmark, converts opt-in user data into training data, closing the loop from deployment back to training.
-
-![](slides/2025-11-21-16-35-gemini-edited.jpg)
 
 ## The New Unit of Everything
 
 This convergence reveals that environments are more than infrastructure—they're the fundamental unit for reasoning about AI systems. When Zhang and Murag declared "We think we've converged on the architecture to build agents," they were describing an agent loop that connects file systems, MCP servers, and Skills libraries. But underneath, it's all environments: verifiable boundaries where agents can act, learn, and improve.
-
-![](slides/2025-11-21-09-26-gemini-edited.jpg)
 
 Brown's assertion that "environments are the webapps of research" captures the democratizing potential. Just as web frameworks made application development accessible, environment hubs and verification toolkits are "increasing the accessibility of doing AI research." The vision is an "open superintelligent stack" where environments serve as the composable, shareable unit for collective progress.
 

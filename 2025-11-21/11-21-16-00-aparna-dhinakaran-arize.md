@@ -19,17 +19,13 @@ topics:
 **Topic:** RL techniques for system-prompt learning that continuously tune agents from PR feedback and evaluations
 
 ![](slides/2025-11-21-16-17-gemini-edited.jpg)
-![](slides/2025-11-21-16-18-gemini-edited.jpg)
 ![](slides/2025-11-21-16-19-gemini-edited.jpg)
 ![](slides/2025-11-21-16-20-gemini-edited.jpg)
 ![](slides/2025-11-21-16-21-gemini-edited.jpg)
 ![](slides/2025-11-21-16-22-gemini-edited.jpg)
 ![](slides/2025-11-21-16-23-gemini-edited.jpg)
 ![](slides/2025-11-21-16-24-gemini-edited.jpg)
-![](slides/2025-11-21-16-25-gemini-edited.jpg)
-![](slides/2025-11-21-16-26-gemini-edited.jpg)
 ![](slides/2025-11-21-16-27-gemini-edited.jpg)
-![](slides/2025-11-21-16-28-gemini-edited.jpg)
 
 ### Notes
 

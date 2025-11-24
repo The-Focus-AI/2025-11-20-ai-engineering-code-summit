@@ -1,9 +1,40 @@
 ---
 import { ArrowRight, Database, Zap, MapPin, Calendar } from 'lucide-react';
-import { APP_YEAR, CONFERENCE_DETAILS, ARTICLES } from '../constants';
+import { APP_YEAR, CONFERENCE_DETAILS } from '../constants';
+import { getCollection } from 'astro:content';
 
-const leadershipArticles = ARTICLES.filter(a => a.track === 'LEADERSHIP').sort((a,b) => a.order - b.order).slice(0, 4);
-const engineeringArticles = ARTICLES.filter(a => a.track === 'ENGINEERING').sort((a,b) => a.order - b.order).slice(0, 4);
+// Load articles from content collection
+const allArticles = await getCollection('articles');
+
+// Determine track from file path (2025-11-20 = Leadership, 2025-11-21 = Engineering)
+const articlesWithTrack = allArticles.map((article: any) => {
+  // Check which directory the symlink points to
+  const isLeadership = article.id.includes('trust-role') ||
+                       article.id.includes('context-memory') ||
+                       article.id.includes('sdlc-evolution') ||
+                       article.id.includes('roi-reality') ||
+                       article.id.includes('proactive-vs') ||
+                       article.id.includes('economics-ai');
+
+  return {
+    id: article.id,
+    title: article.data.title,
+    order: article.data.order,
+    track: isLeadership ? 'LEADERSHIP' : 'ENGINEERING',
+    subtitle: article.data.key_insights?.[0] || '',
+    topics: article.data.topics || [],
+  };
+});
+
+const leadershipArticles = articlesWithTrack
+  .filter((a: any) => a.track === 'LEADERSHIP')
+  .sort((a: any, b: any) => a.order - b.order)
+  .slice(0, 4);
+
+const engineeringArticles = articlesWithTrack
+  .filter((a: any) => a.track === 'ENGINEERING')
+  .sort((a: any, b: any) => a.order - b.order)
+  .slice(0, 4);
 ---
 
 <div class="w-full min-h-[calc(100vh-8rem)] max-w-7xl mx-auto bg-paper relative flex flex-col md:flex-row shadow-[10px_10px_0px_0px_rgba(0,0,0,0.1)] border border-void">
@@ -60,66 +91,66 @@ const engineeringArticles = ARTICLES.filter(a => a.track === 'ENGINEERING').sort
     <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-void border border-void">
 
       <!-- Leadership Track -->
-      <a href="/track/leadership" class="bg-white p-8 group hover:bg-[#f8f8f6] transition-colors relative">
+      <div class="bg-white p-8 hover:bg-[#f8f8f6] transition-colors relative">
         <div class="flex justify-between items-start mb-6">
           <h3 class="font-sans font-black text-3xl uppercase">Leadership</h3>
-          <Database className="w-6 h-6 text-gray-400 group-hover:text-rand-blue" />
+          <Database className="w-6 h-6 text-gray-400" />
         </div>
 
         <p class="font-mono text-xs mb-8 opacity-70 border-b border-dashed border-gray-400 pb-2">
-          Strategic alignment & circular economics.
+          AI rewards excellence and punishes mediocrity. Trust grows from infrastructure, not promises.
         </p>
 
         <!-- Detailed Theme List -->
         <div class="space-y-6">
-          {leadershipArticles.map(a => (
-            <div key={a.id} class="block">
-              <h4 class="font-sans font-bold text-sm uppercase flex items-center gap-2">
+          {leadershipArticles.map((a: any) => (
+            <a href={`/article/${a.id}`} class="block hover:bg-gray-50 -mx-2 px-2 py-1 transition-colors rounded">
+              <h4 class="font-sans font-bold text-sm uppercase flex items-center gap-2 hover:text-rand-blue">
                 <span class="text-alert-red font-mono text-[10px]">0{a.order}</span>
                 {a.title}
               </h4>
               <p class="font-mono text-[10px] text-gray-500 mt-1 pl-6 leading-tight truncate">
                 {a.subtitle}
               </p>
-            </div>
+            </a>
           ))}
         </div>
 
-        <div class="mt-8 flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-rand-blue group-hover:underline decoration-2 underline-offset-4">
+        <a href="/track/leadership" class="mt-8 flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-rand-blue hover:underline decoration-2 underline-offset-4">
           Access Division Files <ArrowRight className="w-4 h-4" />
-        </div>
-      </a>
+        </a>
+      </div>
 
       <!-- Engineering Track -->
-      <a href="/track/engineering" class="bg-white p-8 group hover:bg-[#f8f8f6] transition-colors relative">
+      <div class="bg-white p-8 hover:bg-[#f8f8f6] transition-colors relative">
         <div class="flex justify-between items-start mb-6">
           <h3 class="font-sans font-black text-3xl uppercase">Engineering</h3>
-          <Zap className="w-6 h-6 text-gray-400 group-hover:text-rand-blue" />
+          <Zap className="w-6 h-6 text-gray-400" />
         </div>
 
         <p class="font-mono text-xs mb-8 opacity-70 border-b border-dashed border-gray-400 pb-2">
-          Quantum logistics & bio-infrastructure.
+          The war on "slop" requires human thinking, environments as abstraction, and open data.
         </p>
 
         <!-- Detailed Theme List -->
         <div class="space-y-6">
-          {engineeringArticles.map(a => (
-            <div key={a.id} class="block">
-              <h4 class="font-sans font-bold text-sm uppercase flex items-center gap-2">
+          {engineeringArticles.map((a: any) => (
+            <a href={`/article/${a.id}`} class="block hover:bg-gray-50 -mx-2 px-2 py-1 transition-colors rounded">
+              <h4 class="font-sans font-bold text-sm uppercase flex items-center gap-2 hover:text-rand-blue">
                 <span class="text-alert-red font-mono text-[10px]">0{a.order}</span>
                 {a.title}
               </h4>
               <p class="font-mono text-[10px] text-gray-500 mt-1 pl-6 leading-tight truncate">
                 {a.subtitle}
               </p>
-            </div>
+            </a>
           ))}
         </div>
 
-        <div class="mt-8 flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-rand-blue group-hover:underline decoration-2 underline-offset-4">
+        <a href="/track/engineering" class="mt-8 flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-rand-blue hover:underline decoration-2 underline-offset-4">
           Access Division Files <ArrowRight className="w-4 h-4" />
-        </div>
-      </a>
+        </a>
+      </div>
 
     </div>
 

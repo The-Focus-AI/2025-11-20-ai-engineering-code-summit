@@ -1,7 +1,7 @@
 ---
 name: Kat Kampf
 company: Google
-company_url: https://www.google.com
+company_url: "https://www.google.com"
 role: Product Manager
 session: Building in the Gemini Era with Google DeepMind
 session_file: 2025-11-21/11-21-13-45-kat-kampf-ammaar-reshi-google.md

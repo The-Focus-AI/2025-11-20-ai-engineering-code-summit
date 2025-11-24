@@ -18,26 +18,13 @@ topics:
 
 **Topic:** Introduction to Amp Code and its approach to AI-powered software development
 
-![](slides/2025-11-21-14-24-gemini-edited.jpg)
+![](slides/2025-11-21-14-23-gemini-edited.jpg)
 ![](slides/2025-11-21-14-25-gemini-edited.jpg)
-![](slides/2025-11-21-14-26-gemini-edited.jpg)
 ![](slides/2025-11-21-14-27-gemini-edited.jpg)
-![](slides/2025-11-21-14-28-gemini-edited.jpg)
 ![](slides/2025-11-21-14-29-gemini-edited.jpg)
-![](slides/2025-11-21-14-30-gemini-edited.jpg)
-![](slides/2025-11-21-14-31-gemini-edited.jpg)
-![](slides/2025-11-21-14-32-gemini-edited.jpg)
-![](slides/2025-11-21-14-33-gemini-edited.jpg)
-![](slides/2025-11-21-14-34-gemini-edited.jpg)
 ![](slides/2025-11-21-14-35-gemini-edited.jpg)
 ![](slides/2025-11-21-14-36-gemini-edited.jpg)
-![](slides/2025-11-21-14-37-gemini-edited.jpg)
-![](slides/2025-11-21-14-38-gemini-edited.jpg)
-![](slides/2025-11-21-14-39-gemini-edited.jpg)
-![](slides/2025-11-21-14-40-gemini-edited.jpg)
-![](slides/2025-11-21-14-41-gemini-edited.jpg)
-![](slides/2025-11-21-14-42-gemini-edited.jpg)
-![](slides/2025-11-21-14-43-gemini-edited.jpg)
+![](slides/2025-11-21-14-45-gemini-edited.jpg)
 
 ### Notes
 

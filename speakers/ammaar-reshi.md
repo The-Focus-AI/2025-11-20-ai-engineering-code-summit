@@ -1,16 +1,16 @@
 ---
 name: Ammaar Reshi
 company: Google
-company_url: https://www.google.com
+company_url: "https://www.google.com"
 role: Product & Design Lead
 session: Building in the Gemini Era with Google DeepMind
 session_file: 2025-11-21/11-21-13-45-kat-kampf-ammaar-reshi-google.md
-linkedin: null
-twitter: null
-twitter_url: null
-github: null
-github_url: null
-website: null
+linkedin: ammaarsreshi
+twitter: ammaar
+twitter_url: "https://x.com/ammaar"
+github: ammaarreshi
+github_url: "https://github.com/ammaarreshi"
+website: "https://ammaar.me"
 ---
 
 ## Overview

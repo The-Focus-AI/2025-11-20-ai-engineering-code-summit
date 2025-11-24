@@ -1,7 +1,7 @@
 ---
 name: Barry Zhang
 company: Anthropic
-company_url: https://www.anthropic.com
+company_url: "https://www.anthropic.com"
 role: Member of Technical Staff
 session: "Don't Build Agents, Build Skills Instead"
 session_file: 2025-11-21/11-21-09-11-barry-zhang-mahesh-murag-anthropic.md

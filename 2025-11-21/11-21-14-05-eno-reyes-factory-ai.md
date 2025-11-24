@@ -18,25 +18,15 @@ topics:
 
 **Topic:** Eight categories that determine if a codebase is agent-ready, and framework for making agents more productive
 
-![](slides/2025-11-21-14-04-gemini-edited.jpg)
+![](slides/2025-11-21-14-03-gemini-edited.jpg)
 ![](slides/2025-11-21-14-05-gemini-edited.jpg)
 ![](slides/2025-11-21-14-06-gemini-edited.jpg)
 ![](slides/2025-11-21-14-07-gemini-edited.jpg)
-![](slides/2025-11-21-14-08-gemini-edited.jpg)
 ![](slides/2025-11-21-14-09-gemini-edited.jpg)
 ![](slides/2025-11-21-14-10-gemini-edited.jpg)
-![](slides/2025-11-21-14-11-gemini-edited.jpg)
 ![](slides/2025-11-21-14-12-gemini-edited.jpg)
-![](slides/2025-11-21-14-13-gemini-edited.jpg)
 ![](slides/2025-11-21-14-14-gemini-edited.jpg)
-![](slides/2025-11-21-14-15-gemini-edited.jpg)
-![](slides/2025-11-21-14-16-gemini-edited.jpg)
-![](slides/2025-11-21-14-17-gemini-edited.jpg)
-![](slides/2025-11-21-14-18-gemini-edited.jpg)
-![](slides/2025-11-21-14-19-gemini-edited.jpg)
 ![](slides/2025-11-21-14-20-gemini-edited.jpg)
-![](slides/2025-11-21-14-21-gemini-edited.jpg)
-![](slides/2025-11-21-14-22-gemini-edited.jpg)
 ![](slides/2025-11-21-14-23-gemini-edited.jpg)
 
 ### Notes

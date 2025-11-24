@@ -1,5 +1,6 @@
 ---
 title: "Data Collection & Quality as the New Bottleneck"
+order: 5
 topics:
   - "Training Data"
   - "Open Science"
@@ -27,8 +28,6 @@ This wasn't just provocative rhetoric. It was a call to arms backed by hard-won 
 ## The Great Bottleneck Migration
 
 For years, the AI engineering community has been locked in an arms race of clever tricks—sophisticated scaffolding, complex tool-calling architectures, elaborate prompting strategies. But Pash's experience building Cline revealed an uncomfortable truth: **agents aren't bottlenecked by clever tricks anymore. Model strength is the main thing.**
-
-![](slides/2025-11-21-16-30-gemini-edited.jpg)
 
 The data doesn't lie. Terminus still beats everything with a minimalist tool design—no clever tool calling, just basic tools like terminal, grep, and filesystem operations. Capability beats scaffolding. Minimalism wins. As Pash put it, he's "tired of all the little hacks." The engineering optimization game has reached diminishing returns.
 
@@ -74,7 +73,6 @@ What's missing is the culture shift.
 
 This isn't about a new benchmark or a clever technical trick. It's about recognizing that in 2025, **data is the constraint, and openness is the unlock**. Joel Becker's METR research on the gap between benchmarks and economic value highlighted a crucial point: we need better measurement of real-world capabilities, not just synthetic test performance.
 
-![](slides/2025-11-21-16-44-gemini-edited.jpg)
 
 Real-world agent trajectories are the ground truth. They capture the messy, complex, multi-step reasoning that actually moves the needle on economic value. And they're being generated, right now, at unprecedented scale—but locked away.
 

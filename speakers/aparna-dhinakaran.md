@@ -1,13 +1,13 @@
 ---
 name: Aparna Dhinakaran
 company: Arize AI
-company_url: https://arize.com
+company_url: "https://arize.com"
 role: Co-founder & Chief Product Officer (CPO)
 session: Continual System-Prompt Learning for Code Agents
 session_file: 2025-11-21/11-21-16-00-aparna-dhinakaran-arize.md
-linkedin: https://www.linkedin.com/in/aparnadhinakaran/
-twitter: @aparnadhinak
-twitter_url: https://x.com/aparnadhinak
+linkedin: "https://www.linkedin.com/in/aparnadhinakaran/"
+twitter: "@aparnadhinak"
+twitter_url: "https://x.com/aparnadhinak"
 github: null
 github_url: null
 website: null

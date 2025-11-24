@@ -19,11 +19,9 @@ topics:
 **Topic:** Scaling reinforcement learning environments for training advanced AI coding models
 
 ![](slides/2025-11-21-11-38-gemini-edited.jpg)
-![](slides/2025-11-21-11-39-gemini-edited.jpg)
 ![](slides/2025-11-21-11-40-gemini-edited.jpg)
 ![](slides/2025-11-21-11-41-gemini-edited.jpg)
 ![](slides/2025-11-21-11-42-gemini-edited.jpg)
-![](slides/2025-11-21-11-43-gemini-edited.jpg)
 ![](slides/2025-11-21-11-44-gemini-edited.jpg)
 
 ### Links

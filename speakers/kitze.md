@@ -1,16 +1,16 @@
 ---
 name: Kitze
 company: Sizzy
-company_url: https://sizzy.co
+company_url: "https://sizzy.co"
 role: Founder
 session: AI-Driven Browser Development and Vibe Coding
 session_file: 2025-11-21/11-21-12-20-kitze-sizzy.md
 linkedin: null
 twitter: "@thekitze"
-twitter_url: https://twitter.com/thekitze
+twitter_url: "https://twitter.com/thekitze"
 github: null
 github_url: null
-website: https://sizzy.co
+website: "https://sizzy.co"
 ---
 
 ## Overview

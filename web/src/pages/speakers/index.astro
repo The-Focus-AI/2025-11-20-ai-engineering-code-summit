@@ -1,7 +1,25 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { Plus, Check } from 'lucide-react';
-import { SPEAKERS } from '../../constants';
+import { getCollection } from 'astro:content';
+
+// Load speakers from content collection
+const speakersCollection = await getCollection('speakers');
+
+// Transform to match expected format and sort alphabetically
+const SPEAKERS = speakersCollection
+  .map((speaker: any) => ({
+    id: speaker.id,
+    name: speaker.data.name,
+    role: speaker.data.role,
+    company: speaker.data.company,
+    bio: speaker.body.split('\n\n')[0] || '', // First paragraph as bio excerpt
+    imageUrl: `/photos/${speaker.id}.jpg`, // Placeholder, can be updated
+    twitterUrl: speaker.data.twitter_url || undefined,
+    linkedinUrl: speaker.data.linkedin || undefined,
+    websiteUrl: speaker.data.website || undefined,
+  }))
+  .sort((a: any, b: any) => a.name.localeCompare(b.name));
 ---
 
 <BaseLayout title="Personnel Roster - Horizon 2025">

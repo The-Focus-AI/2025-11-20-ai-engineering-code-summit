@@ -1,7 +1,7 @@
 ---
 name: Joel Becker
 company: METR
-company_url: https://www.metr.org
+company_url: "https://www.metr.org"
 role: Researcher - AI Safety & Capability Evaluations
 session: AI Capability Measurement and Real-World Performance
 session_file: 2025-11-21/11-21-17-00-joel-becker-metr.md
@@ -10,7 +10,7 @@ twitter: null
 twitter_url: null
 github: null
 github_url: null
-website: https://www.metr.org
+website: "https://www.metr.org"
 ---
 
 ## Overview

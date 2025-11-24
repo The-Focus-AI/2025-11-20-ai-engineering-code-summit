@@ -18,17 +18,10 @@ topics:
 
 **Topic:** Hard-won lessons from building large-scale coding agents at Cline—what failed, what survived, and future directions
 
-![](slides/2025-11-21-16-29-gemini-edited.jpg)
-![](slides/2025-11-21-16-30-gemini-edited.jpg)
-![](slides/2025-11-21-16-31-gemini-edited.jpg)
-![](slides/2025-11-21-16-32-gemini-edited.jpg)
-![](slides/2025-11-21-16-33-gemini-edited.jpg)
-![](slides/2025-11-21-16-34-gemini-edited.jpg)
-![](slides/2025-11-21-16-35-gemini-edited.jpg)
+![](slides/2025-11-21-16-27-gemini-edited.jpg)
 ![](slides/2025-11-21-16-36-gemini-edited.jpg)
 ![](slides/2025-11-21-16-37-gemini-edited.jpg)
 ![](slides/2025-11-21-16-38-gemini-edited.jpg)
-![](slides/2025-11-21-16-39-gemini-edited.jpg)
 
 ### Notes
 
