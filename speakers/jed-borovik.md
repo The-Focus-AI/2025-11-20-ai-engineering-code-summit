@@ -1,166 +1,64 @@
 ---
 name: Jed Borovik
-company: Google DeepMind
-company_url: "https://deepmind.google"
-role: Lead - Jules Autonomous Coding Agent
-session: Jules - Autonomous Coding Agent
+company: Google Labs
+company_url: "https://labs.google"
+role: Product Lead - Jules Autonomous Coding Agent
+session: Welcome to Day 2 of the AI Engineer Code Summit
 session_file: 2025-11-21/11-21-09-00-jed-borovik-google-deepmind.md
-linkedin: null
-twitter: null
-twitter_url: null
-github: null
-github_url: null
+linkedin: jed-borovik-7b627883
+twitter: jedborovik
+twitter_url: "https://twitter.com/jedborovik"
+github: jedborovik
+github_url: "https://github.com/jedborovik"
 website: null
+image: "/photos/jed-borovik.jpg"
 ---
 
-## Overview
+Product Lead at Google Labs building Jules, an autonomous AI coding agent that operates asynchronously in cloud environments. Previously at Google Search, his journey into generative AI began with Stable Diffusion, leading him to spearhead one of the most ambitious coding agent projects in tech.
 
-Jed Borovik is the lead for Jules, an autonomous coding agent developed by Google DeepMind. He leads technical strategy and development for one of the most advanced proactive AI coding agents in production, representing the frontier of agentic AI systems for software development. His work bridges Google's AI research capabilities with practical developer tooling.
+## Champion of Autonomous Coding & Proactive Agents
+
+Jed Borovik leads development of Jules at Google Labs, representing a paradigm shift from chat-based assistants to truly autonomous agents that work independently on complex, multi-file tasks over hours or days. His philosophy: reduce developer cognitive load by building agents that understand context, generate their own tasks, and operate without constant human direction.
+
+## Current Work
+
+As Product Lead at Google Labs, Jed leads Jules, which integrates directly with GitHub workflows and runs on dedicated cloud infrastructure:
+
+- **Autonomous task execution** - Jules handles complex changes spanning multiple files without requiring real-time interaction
+- **Critic-augmented generation** - Internal peer review system that catches logic errors, missing edge cases, and inefficient algorithms before code reaches developers
+- **Context window scaling** - Pushing toward 2 million tokens for deep codebase understanding
+- **GitHub-native workflow** - Developers assign tasks using issue labels, eliminating context-switching
+
+Jules is powered by Gemini 2.5 Pro (with Gemini 3 Pro rolling out), leveraging advanced reasoning capabilities for architectural decision-making. The agent has completed over 140,000 code improvements during public beta.
 
 ## Background
 
-Jed Borovik works within Google DeepMind, Google's AI research division that combines the capabilities of DeepMind (acquired in 2014) with Google's research teams. He leads a critical initiative bridging fundamental AI research with developer-facing products.
+Previously worked at Google Search before transitioning to AI product development. Holds a degree from New York University (2010-2014). His discovery of Stable Diffusion sparked his realization about AI as a "new brush" for creation, leading him to Google Labs where he operates at the intersection of DeepMind's model development and product innovation.
 
-## Current Role: Jules Lead at Google DeepMind
+## Philosophy on Agent Development
 
-At Google DeepMind, Jed leads the **Jules** autonomous coding agent project:
+Jed's approach emphasizes simplification and autonomy:
 
-- **Jules** - An autonomous coding agent focused on proactive task generation and execution
-- **Proactive agents** that observe developer behavior and suggest improvements
-- **Code-to-system-awareness trajectory** - Expanding agent understanding from code-level to system-level context
-- **Ambient integration** into developer workflows with minimal context-switching
+**Autonomous over reactive** - As models improve, agents should proactively suggest work rather than wait for prompts. Jules observes developer patterns and generates tasks with explanations, learning what developers tend to ignore versus act on.
 
-## Key Vision & Philosophy
+**Infrastructure enables autonomy** - Running agents on dedicated cloud VMs allows for concurrent multi-file changes and long-running tasks without blocking developer machines.
 
-### Proactive Agent Architecture
+**Model capability over scaffolding** - Google simplified Jules' agent architecture as Gemini improved, trusting model reasoning over complex tool orchestration.
 
-Jed's work on Jules represents a fundamental shift in how agents interact with developers:
+**Coding agents as AGI pathway** - Believes coding represents both the most important AI application and the clearest path to AGI, given code's structured nature and verifiable outcomes.
 
-- **Observation-driven execution** - Agents that understand context before being asked
-- **Autonomous task generation** - Self-created prompts and suggested work items
-- **Rationale provision** - Explaining why specific tasks are being proposed
-- **Seamless integration** - Reducing the mental load of managing AI assistants
+## About Jules
 
-### Jules Development Approach
+Jules is Google's asynchronous autonomous coding agent, designed to handle everything from writing tests to fixing bugs to refactoring code. Key features:
 
-Jules demonstrates several breakthrough capabilities:
+- Works directly in GitHub (assign with "jules" label)
+- Audio changelogs for completed work
+- Critic system for self-review before human review
+- Secure cloud environment for execution
+- Context windows approaching 2M tokens
+- Powered by Gemini 2.5 Pro / 3 Pro
 
-**Autonomous Task Recognition:**
-- Automatically identifies optimization opportunities in code
-- Generates suggested tasks with context and rationale
-- Self-generates prompts for its own work without requiring explicit human prompts
-
-**Contextual Awareness:**
-- Understands project scope and developer intent
-- Learns developer preferences and patterns
-- Transitions from code-level awareness to broader system-awareness
-
-**Memory and Learning:**
-- Builds mechanisms for agents to write and retrieve their own memory
-- Learns what developers tend to ignore or deprioritize
-- Adapts behavior based on interaction history
-
-## Technical Insights
-
-### Agent Evolution: From Code to System Awareness
-
-Jules represents a progression in agent sophistication:
-
-- **Phase 1 (Current):** Code-awareness - Understanding file structures, function relationships, and code patterns
-- **Phase 2 (In Development):** System-awareness - Understanding architectural relationships, service dependencies, and cross-system impacts
-- **Future Direction:** Learning systems that enable agents to develop their own knowledge management approaches
-
-### The Mental Load Reduction Framework
-
-Jed's approach addresses a fundamental problem in developer productivity: the cognitive overhead of managing AI assistants. Rather than developers constantly context-switching to specify tasks, Jules:
-
-1. **Observes** the development context continuously
-2. **Generates** suggestions proactively with explanations
-3. **Adapts** based on what developers actually work on versus ignore
-4. **Integrates** seamlessly to reduce friction in the workflow
-
-### Integration with Gemini Models
-
-Jules leverages Google's Gemini model family:
-
-- Advanced instruction-following capabilities
-- Long-context understanding for complex codebases
-- Strong reasoning for architectural decision-making
-- Multimodal capabilities for design and visual system understanding
-
-## Key Insights from Summit Talk
-
-### Opening Keynote (November 21, 9:00-9:05 AM)
-
-Jed opened the second day of the AI Engineering Code Summit, setting context for 25 additional sessions on AI coding agent development. His remarks framed the summit's central question:
-
-- Focus on **what problems matter most in the field**
-- Address **why aren't more people working on these problems**
-- Emphasis on **code-building as the practical arena for AI agents**
-- Distinction between **AI leaders** vs. **AI engineers** vs. something new in between
-
-### The Jules Vision in Practice
-
-Based on related presentations from the AIDA team and Kevin Hou on Google's Antigravity IDE:
-
-- Jules surfaces suggested work with context and reasoning
-- Agents function as collaborative partners rather than task executors
-- Handles repetitive implementation while developers focus on architecture and creative decisions
-- Demonstrates proof-of-concept through real projects (e.g., firmware development, sensor integration)
-
-## Research Context
-
-### Google DeepMind's AI Agent Strategy
-
-Google DeepMind's agent portfolio includes:
-
-- **Jules** (Jed Borovik lead) - Autonomous coding agent for developers
-- **Antigravity IDE** (Kevin Hou) - Agent-first IDE with artifact-based interaction patterns
-- **Gemini 3 Pro** - Underlying model with enhanced agent capabilities, agentic tool calling, and instruction-following
-
-### Summit Themes Aligned with Jules
-
-The AI Engineering Code Summit 2025 revealed convergent themes that Jules addresses:
-
-1. **Context Engineering** - Jules manages context automatically, addressing the "dumb zone" problem (40% context utilization threshold)
-2. **Environments as Universal Abstraction** - Jules uses task environments and verification for autonomous work
-3. **Proactive vs. Reactive Paradigm** - Jules exemplifies the shift from chat-based to proactive agent interaction
-4. **Model Quality Over Scaffolding** - Jules leverages Gemini's capability rather than complex tool orchestration
-
-## Related Content
-
-- **Jules Lead:** Jed Borovik (Google DeepMind)
-- **AIDA Team Overview:** [Kath Korevec - Google Labs](./kath-korevec.md)
-- **Antigravity IDE:** [Kevin Hou - Google DeepMind](./kevin-hou.md)
-- **Google DeepMind:** [deepmind.google](https://deepmind.google)
-- **Gemini API:** [ai.google.dev](https://ai.google.dev)
-
-## Key Concepts from Research
-
-### Proactive Task Generation
-
-Jules addresses the "reminder problem" - developers shouldn't need to context-switch to manage AI. Instead:
-
-- Agents observe ongoing work
-- Suggest next steps with rationale
-- Execute while developers focus on high-level decisions
-- Learn from what developers accept vs. ignore
-
-### Mental Load as Design Constraint
-
-Jed's work treats cognitive load as a primary design target:
-
-- **Serial processing limitation** - Humans are "unitaskers"; agents should handle parallelization
-- **Context-switching cost** - Every explicit prompt to an agent is a context switch for the developer
-- **Learning curve** - Agents should adapt to developer preferences without requiring training
-
-### System Awareness Frontier
-
-Jules is expanding beyond code-level understanding:
-
-- **Architectural context** - Understanding service relationships and dependencies
-- **Business logic integration** - Connecting code changes to business outcomes
-- **System invariants** - Learning what must not break across the system
+Official resources: [jules.google](https://jules.google), [Documentation](https://jules.google/docs/), [Google Blog](https://blog.google/technology/google-labs/jules/)
 
 ## Conference Appearance
 
@@ -168,18 +66,10 @@ Jules is expanding beyond code-level understanding:
 **Date:** November 21, 2025
 **Time:** 9:00 AM - 9:05 AM
 **Session:** Welcome to Day 2 - Opening Remarks
-**Role:** Jules Lead, Google DeepMind
-**Focus:** Setting context for 25 sessions on AI coding agent development and engineering practices
 
-## Research Notes
+Jed opened the second day of the summit, framing the central questions for AI engineering: "What are the most important problems in your field? Why aren't you working on them?" He positioned code-building as the practical arena for AI agents and noted the emerging role between "AI leader" and "AI engineer."
 
-- Jed Borovik leads one of the most advanced autonomous coding agents currently in development
-- Jules represents a paradigm shift from "chat-based assistants" to "proactive collaborative agents"
-- The agent demonstrates breakthrough capabilities in task generation, context understanding, and seamless integration
-- Google DeepMind's approach prioritizes reducing developer cognitive load rather than maximizing feature breadth
-- Jules is positioned as a crucial bridge between AI research breakthroughs and practical developer productivity tools
-- The system's evolution toward "system awareness" suggests agents will handle increasingly complex architectural decisions
+## Media & Interviews
 
----
+Jed appeared on the Latent Space podcast with Swyx at GitHub Universe, discussing Jules' evolution, Google Labs' mission, challenges of managing 2M token context windows, and why coding agents represent the clearest path to AGI. The interview covered his journey from discovering Stable Diffusion to leading Google's autonomous coding initiative.
 
-*Last Updated: November 22, 2025*

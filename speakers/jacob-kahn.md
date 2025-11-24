@@ -2,213 +2,64 @@
 name: Jacob Kahn
 company: Meta AI
 company_url: "https://ai.meta.com"
-role: Research Scientist
+role: Research Manager
 session: Code World Models - Building World Models for Computation
 session_file: 2025-11-21/11-21-11-00-jacob-kahn-meta.md
-linkedin: null
-twitter: null
-twitter_url: null
-github: null
-github_url: null
-website: null
+linkedin: jacobdavidkahn
+twitter: jacob_d_kahn
+twitter_url: "https://twitter.com/jacob_d_kahn"
+github: jacobkahn
+github_url: "https://github.com/jacobkahn"
+website: "https://jacobkahn.me"
+image: "/photos/jacob-kahn.jpg"
 ---
 
-## Overview
+Research Manager at Meta AI leading FAIR's code generation research in North America, also serving as CS Faculty at the University of Pennsylvania. Creator of CWM (Code World Models), pioneering the use of execution traces and behavioral data in neural code generation.
 
-Jacob Kahn is a Research Scientist at Meta AI specializing in large-scale machine learning systems and code generation. At the AI Engineering Code Summit, he presented "Code World Models: Building World Models for Computation," introducing a paradigm shift in how neural networks learn from code by incorporating program execution traces rather than relying solely on syntax.
+## Pioneering Code Generation with World Models
 
-## Professional Background
+Jacob Kahn challenges conventional approaches to code generation by treating it as a world-modeling problem rather than pure syntax prediction. His work fundamentally rethinks how neural networks learn from code by incorporating program execution traces, bash outputs, and CI/CD results alongside source code.
 
-- **Current Role**: Research Scientist, Meta AI
-- **Focus Areas**:
-  - Code generation with world models
-  - Large-scale machine learning systems
-  - Program execution and tracing
-  - Learning from execution data
-  - Reinforcement learning for code optimization
-  - Neural debugging and code understanding
+## Current Work & Research
 
-## Research Vision
+Jacob leads FAIR's code generation research, focusing on the co-design of deep neural models and systems. His [CWM project](https://ai.meta.com/research/publications/cwm-an-open-weights-llm-for-research-on-code-generation-with-world-models/) introduces a 32B parameter model trained on execution data from GitHub repositories, achieving 65.8% on SWE-bench Verified, 68.6% on LiveCodeBench, and 96.6% on Math-500.
 
-Jacob's approach fundamentally challenges conventional code modeling. Rather than viewing code as static syntax, his research treats code generation as a world-modeling problem where neural networks learn implicit behavioral patterns from actual program execution data.
+The CWM approach incorporates:
+- Memory traces from program execution
+- Bash outputs and command results
+- CI/CD build success/failure patterns
+- Complete execution histories alongside code syntax
 
-## Code World Models (CWM): The Core Innovation
+This enables the model to develop what Jacob calls a "neural debugger" capability - implicit understanding of program behavior without actually running code.
 
-### Concept
+## Key Technical Innovations
 
-Code World Models represent a novel training methodology that incorporates execution traces—not just code syntax—into model training. This enables the model to build an implicit understanding of how code behaves at runtime.
+**Training methodology:** Rather than learning syntax patterns alone, CWM learns from how code actually behaves at runtime, creating an internalized simulator of program execution.
 
-### Key Technical Details
+**SWE-RL integration:** The model improves through reinforcement learning on failed agentic reasoning attempts, treating mistakes as valuable training signals rather than noise.
 
-**Model Specifications:**
-- **Size**: 32-billion parameter model
-- **Training Data**: GitHub repositories with execution traces
-- **Data Sources**:
-  - Memory traces from program execution
-  - Bash outputs and command results
-  - CI/CD build results and test runs
-  - Complete execution histories
+**Bash-centric design:** Emphasizes practical shell understanding over tool proliferation, with significant post-training scaling on real-world workflows.
 
-### What Makes CWM Different
+> "in some sense this is difficult to decide" - CWM's response when asked about the halting problem, demonstrating nuanced understanding of computational complexity beyond pattern matching.
 
-Traditional code generation models are trained exclusively on source code as static text. CWM incorporates:
+## Notable Publications
 
-1. **Execution Traces**: Complete record of program memory state changes
-2. **Output Captures**: Actual bash command outputs and results
-3. **CI/CD Integration**: Build success/failure patterns from GitHub repositories
-4. **Behavioral Data**: How code actually behaves when run, not theoretical syntax patterns
+- [CWM: An Open-Weights LLM for Research on Code Generation with World Models](https://ai.meta.com/research/publications/cwm-an-open-weights-llm-for-research-on-code-generation-with-world-models/) (2025)
+- [Code World Model Preparedness Report](https://ai.meta.com/research/publications/code-world-model-preparedness-report/) (2025)
+- [Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model](https://ai.meta.com/research/publications/transfusion-predict-the-next-token-and-diffuse-images-with-one-multi-modal-model/) (2024)
+- [Flashlight: Enabling Innovation in Tools for Machine Learning](https://ai.meta.com/research/publications/flashlight-enabling-innovation-in-tools-for-machine-learning/) (2022)
 
-### The "Neural Debugger" Capability
+Creator of [flashlight](https://github.com/flashlight/flashlight) (5.4k stars), a C++ standalone library for machine learning, and [wav2letter](https://github.com/flashlight/wav2letter) (6.4k stars), an automatic speech recognition toolkit.
 
-By learning from execution data, CWM develops an implicit understanding of program behavior analogous to a neural debugger. The model can:
+## Background
 
-- **Trace code execution** remarkably well without running it
-- **Imagine execution outcomes** without actual computation
-- **Predict runtime behavior** based on learned patterns
-- **Understand program semantics** at a behavioral level
+Holds M.S. and B.S. degrees in Computer Science from University of Pennsylvania's Management & Technology program, plus B.S. in Economics from Wharton School with focus on statistics and operations research. Previously led PennApps hackathon organization.
 
-This enables the model to "imagine" what code will do, functioning as an internalized simulator of program behavior.
-
-## Training Approach: SWE-RL Integration
-
-### Reinforcement Learning from Code
-
-Jacob's team employs SWE-RL (Software Engineering Reinforcement Learning) to further enhance CWM:
-
-- **Failed Reasoning Recovery**: Incorporates failed agentic reasoning attempts into training data
-- **Learning from Mistakes**: The model learns to recognize and recover from incorrect code generation attempts
-- **Iterative Improvement**: Each failure becomes a training signal for better future attempts
-
-### Architectural Philosophy
-
-Rather than proliferating tools, the approach emphasizes:
-
-- **Bash-centric workflows**: Heavy emphasis on bash understanding and command execution
-- **Significant post-training scaling**: Extensive RL on top of the base 32B model
-- **Practical tool integration**: Suite of tools selected strategically rather than comprehensively
-
-### Performance Characteristics
-
-- **Punches above its weight**: Despite being 32B parameters, performs remarkably well
-- **Traces code execution**: Demonstrates strong understanding of program behavior
-- **Practical for deployment**: Optimized for real-world use cases
-
-## Computational Philosophy
-
-### The Halting Problem Response
-
-When asked about the theoretical limits of CWM—specifically whether it could solve the halting problem—the model reportedly responded with remarkable nuance: "in some sense this is difficult to decide."
-
-This response is philosophically striking. Rather than a simple "no," the model acknowledged:
-- The genuine theoretical difficulty
-- The computational constraints involved
-- The nuanced nature of the problem itself
-
-This hints at deeper understanding beyond pattern matching—a genuine grasp of computational complexity.
-
-## Technical Contributions & Research
-
-### Open Research
-
-Meta has made CWM available as an open-weights model, enabling the broader research community to:
-- Experiment with execution-aware code generation
-- Develop new approaches to code understanding
-- Contribute to world-model-based reasoning
-
-### Publication
-
-**Title**: "CWM: An Open-Weights LLM for Research on Code Generation with World Models"
-
-**Link**: https://ai.meta.com/research/publications/cwm-an-open-weights-llm-for-research-on-code-generation-with-world-models/
-
-## Impact on Code Generation Research
-
-### Paradigm Shift
-
-Jacob's work represents a fundamental rethinking of code generation:
-
-**Old Paradigm**: Code is syntax to be predicted based on previous code
-- Source: Program text only
-- Training Signal: Code similarity
-- Model Output: Syntactically valid code
-- Verification: Post-generation testing
-
-**CWM Paradigm**: Code generation is behavior prediction based on execution understanding
-- Source: Code + execution traces + outputs
-- Training Signal: Behavioral correctness
-- Model Output: Behaviorally sound code
-- Verification: Implicit from learned execution model
-
-### Implications for AI-Assisted Development
-
-The CWM approach suggests:
-
-1. **Execution Data is Valuable**: Training data quality improves dramatically with real execution traces
-2. **Behavioral Understanding Matters**: Models that understand program behavior write better code
-3. **Scalability Without Tools**: Bash understanding and tool proliferation are separate concerns
-4. **Learning from Failure**: Failed attempts contain crucial information for improvement
-
-## Speaking Topics & Expertise
-
-- **"Code World Models: Building World Models for Computation"** - Inaugural presentation at AI Engineering Code Summit 2025
-- World models and computation
-- Learning from execution traces
-- Program behavior prediction
-- Neural approaches to debugging
-- Large-scale ML systems for code
-- Reinforcement learning for code optimization
-- Open-source model research and community contributions
-
-## Key Insights for Industry
-
-### For ML Engineers
-
-- Execution traces are an untapped training data source
-- Implicit world models can replace explicit tool specifications
-- Post-training on code failures significantly improves performance
-- 32B parameter models can achieve frontier-level reasoning on specialized domains
-
-### For Organization Builders
-
-- Capturing execution data enables better model training
-- Emphasis on bash/shell understanding over tool multiplication
-- Open-source research accelerates industry progress
-- Behavioral correctness is more important than syntactic perfection
-
-### For Research Directions
-
-- World models may be the key to more general code understanding
-- Learning from failure patterns drives significant improvements
-- Computational theory insights inform practical model design
-- Execution traces unlock new dimensions of code analysis
-
-## Key Takeaways
-
-1. **Execution Data Transforms Code Models**: Training on execution traces creates fundamentally better code generators
-2. **World Models for Code**: Implicit behavioral understanding outperforms explicit syntax matching
-3. **Learning from Mistakes**: Failed attempts are valuable training signals, not just noise
-4. **Practical Specialization Works**: 32B models can achieve exceptional performance through focused training
-5. **Open Source Advances Research**: Releasing models as open-weights accelerates community progress
-6. **Bash Understanding is Key**: Emphasizing practical, real-world execution patterns beats tool proliferation
-7. **Behavior Beats Syntax**: Code that works is better than code that parses
-
-## Research Themes Alignment
-
-Jacob's work aligns with major conference themes:
-
-- **Trust Through Understanding**: Models that understand execution behavior are more trustworthy
-- **Economics of Specialization**: Focused models trained on execution data outperform general models
-- **Learning from Failure**: Incorporating failed attempts into training drives improvement
-- **The Harness Matters**: World models are about building better abstractions and understanding, not adding tools
-
-## Summit Session Context
+## Conference Appearance
 
 **Event:** AI Engineering Code Summit 2025
 **Date:** November 21, 2025
 **Time:** 11:00 AM - 11:19 AM
-**Session:** "Code World Models: Building World Models for Computation"
-**Focus:** Learning from program execution traces, large-scale ML systems for code generation, neural approaches to code understanding
+**Session:** Code World Models: Building World Models for Computation
 
----
-
-*Last Updated: November 22, 2025*
+Jacob introduced the paradigm shift from syntax-based to behavior-based code generation, demonstrating how execution traces create fundamentally better code models. His presentation emphasized learning from failure patterns, the importance of bash understanding, and how 32B specialized models can achieve frontier-level performance through focused training on execution data.

@@ -2,120 +2,53 @@
 name: Mahesh Murag
 company: Anthropic
 company_url: "https://www.anthropic.com"
-role: Member of Technical Staff
+role: Member of Technical Staff, Applied AI
 session: "Don't Build Agents, Build Skills Instead"
 session_file: 2025-11-21/11-21-09-11-barry-zhang-mahesh-murag-anthropic.md
-linkedin: null
-twitter: null
-twitter_url: null
-github: null
-github_url: null
-website: null
+linkedin: maheshmurag
+twitter: MaheshMurag
+twitter_url: "https://x.com/maheshmurag"
+github: maheshmurag
+github_url: "https://github.com/maheshmurag"
+image: "/photos/mahesh-murag.jpg"
 ---
 
-## Overview
+Member of Technical Staff in Applied AI at Anthropic, creator of the [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol), and key contributor to [Claude Skills](https://www.anthropic.com/news/skills) and the Claude Agent SDK. Previously at Tecton, Scale AI, and Berkeley AI Research. UC Berkeley CS + Design.
 
-Mahesh Murag is a Member of Technical Staff at Anthropic, where he works on the Claude APIs and the Claude Agent SDK. He co-presented "Don't Build Agents, Build Skills Instead" at the AI Engineering Code Summit, sharing insights on how skills are the foundation for building reliable, production-grade AI agents.
+## Creator of Model Context Protocol
 
-## Professional Background
+Mahesh is the lead author of MCP, Anthropic's open standard for connecting AI assistants to external data sources and tools. Released in November 2024, MCP solves the MxN integration problem by standardizing how AI applications interact with external systems, replacing fragmented integrations with a universal protocol.
 
-- **Position**: Member of Technical Staff, Anthropic
-- **Focus Areas**:
-  - Claude APIs and Platform Development
-  - AI Agent Architecture
-  - Skills Framework for Agent Systems
-  - Production-Grade AI Systems
-  - Agent Reliability and Knowledge Packaging
+His viral [2-hour MCP workshop at AI Engineer Summit](https://www.classcentral.com/course/youtube-building-agents-with-model-context-protocol-full-workshop-with-mahesh-murag-of-anthropic-457629) accelerated industry adoption, with early integrations from Block, Apollo, Zed, Replit, Codeium, and Sourcegraph. See his [workshop-mcp-agent-example](https://github.com/maheshmurag/workshop-mcp-agent-example) repository for hands-on implementation patterns.
 
-## Key Concepts & Expertise
+## Skills Framework & Agent Architecture
 
-### Skills-Based Agent Architecture
+Key contributor to Anthropic's Skills framework, which packages procedural knowledge that agents dynamically load on-demand. Skills enable:
 
-Mahesh is a key contributor to Anthropic's vision of agent development through **skills** rather than monolithic agents. His work emphasizes:
+- **Progressive disclosure** - Start with minimal info, expand to full files and scripts as needed
+- **Institutional knowledge sharing** - Organizations package domain expertise as reusable skills
+- **Production reliability** - Tested procedures over unpredictable agent behavior
+- **Democratization** - Non-developers building high-value organizational skills
 
-- **Procedural Knowledge Packaging**: Skills encapsulate procedural knowledge that agents can dynamically load and utilize
-- **Reliable Agent Behavior**: Skills provide a structured approach to ensuring agents work reliably in production
-- **Progressive Disclosure**: Skills architecture allows for intelligent loading of capabilities on-demand, starting with basic information and expanding to full file content and scripts
-- **Institutional Knowledge**: Skills serve as a way to collect, organize, and share institutional knowledge across organizations
+Thousands of skills created in first 5 weeks. Enterprise deployments across Fortune 100 companies and FinTech organizations.
 
-### Claude Agent SDK
+## Philosophy: "Code is All You Need"
 
-Mahesh contributed to the design of the Claude Agent SDK, which provides:
-- Out-of-the-box agent capabilities with "code is all you need" philosophy
-- A general-purpose agent foundation that is more universal than initially expected
-- Integration with file systems and MCP (Model Context Protocol) servers
-- Support for extensive skill libraries (thousands created in early weeks)
+Mahesh's work emphasizes architectural simplicity: one general-purpose agent with modular skills beats complex multi-agent systems. The Skills framework represents what Anthropic believes is the "converged architecture" for production-grade AI agents.
 
-## Current Work & Contributions
+Key insight: "We think we've converged on the architecture to build agents" - combining file systems, MCP servers, and skill libraries into a complete agent picture. This enables domain-specific agents like Claude for Financial Services and Claude for Life Sciences.
 
-### Skills Ecosystem
+## Recent Work & Resources
 
-Mahesh is part of the team driving the adoption and expansion of the skills framework:
+- **[Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)** - Official Anthropic announcement
+- **[Code Execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp)** - Engineering deep-dive on building efficient agents
+- **[Introducing Agent Skills](https://www.anthropic.com/news/skills)** - Claude Skills announcement and architecture
+- **GitHub**: [workshop-mcp-agent-example](https://github.com/maheshmurag/workshop-mcp-agent-example) - MCP agent workshop materials
 
-- **Foundational Skills**: Document Skills (Anthropic), Scientific Skills (K-Dense AI), Browserbase automation, Notion integration
-- **Enterprise Skills**: Fortune 100 organizations and Enterprise FinTech companies deploying thousands of specialized skills
-- **Production-Grade Skills**: Increasingly complex, real-world skills complementing MCP tools
-- **Democratization**: Non-developer teams building high-value skills
+## Summit Session
 
-### Architecture & Vision
+**Event:** AI Engineering Code Summit 2025
+**Date:** November 21, 2025, 9:11 AM - 9:30 AM
+**Session:** Don't Build Agents, Build Skills Instead (co-presented with Barry Zhang)
 
-Key contributions to agent architecture include:
-
-- **Complete Agent Picture**: File systems, MCP servers, and skill libraries working together
-- **Domain-Specific Agents**: Claude for Financial Services, Claude for Life Sciences
-- **Testing & Evaluation**: Focus on ensuring skills and agents work reliably in production
-- **Knowledge Evolution**: Skills enabling Claude to create new skills, making memory more tangible and useful
-
-## Speaking Topics
-
-- **"Don't Build Agents, Build Skills Instead"** - The case for skills-based agent architecture over monolithic agent design
-- Building Reliable Agents with Skills
-- Packaging Procedural Knowledge for AI Systems
-- Production-Grade AI Agent Design
-
-## Presentation Insights
-
-In the "Don't Build Agents, Build Skills Instead" session, Mahesh shared:
-
-- **Gap Identification**: Still noticeable gaps with how agents work; need for better experiences and explanations
-- **"Code is All You Need"**: Multiple agents aren't necessary; the agent architecture is more universal than expected
-- **Skills as Files**: Using files as a mechanism to manage and organize agent capabilities
-- **Progressive Capability Loading**: Smart disclosure of capabilities, expanding as needed
-- **Rapid Adoption**: Thousands of skills created within the first five weeks of availability
-- **Emerging Trends**: Moving toward complex, production-grade skills complementing MCP tools
-- **Cross-Functional Building**: Non-developers contributing high-value skills to organizations
-
-## Key Insights & Philosophy
-
-Mahesh's work emphasizes:
-
-1. **Architectural Convergence**: "We think we've converged on the architecture to build agents" - the skills framework represents a mature understanding of how agents should work
-2. **Knowledge Sharing**: The huge value of skills is around sharing and execution; building and sharing skills makes agents more capable
-3. **Institutional Memory**: Skills make the concept of memory more tangible, enabling organizations to preserve and leverage institutional knowledge
-4. **Pragmatic Production Use**: Focus on real, production-grade challenges rather than theoretical agent capabilities
-5. **Continuous Evolution**: Skills evolve through testing, evaluation, and feedback in real-world deployment
-
-## Related Technologies & Concepts
-
-- **Claude APIs**: Anthropic's API platform for integrating Claude models
-- **Claude Agent SDK**: The underlying framework for building agents
-- **MCP (Model Context Protocol)**: Protocol for connecting agents to external tools and data sources
-- **Skills Framework**: Anthropic's approach to modular, reusable agent capabilities
-- **Procedural Knowledge**: Knowledge about how to do things, distinct from factual knowledge
-
-## Summit Session Context
-
-At the AI Engineering Code Summit 2025, Mahesh Murag co-presented alongside Barry Zhang (both Members of Technical Staff at Anthropic).
-
-**Session Details:**
-- **Title**: Don't Build Agents, Build Skills Instead
-- **Date**: November 21, 2025
-- **Time**: 9:11 AM - 9:30 AM
-- **Focus**: How skills solve the problem of agents working reliably in production by packaging procedural knowledge that agents can dynamically load
-- **Key Audience**: AI Engineers, Agent Developers, Technical Leadership
-
-**Core Message**: Move away from trying to build perfect, monolithic agents. Instead, embrace a modular architecture where agents access a rich library of skills that encapsulate proven procedures, institutional knowledge, and domain expertise. This approach is emerging as the converged architecture for production-grade AI systems.
-
----
-
-*Last Updated: 2025-11-22*
+Shared the case for skills-based architecture over monolithic agents, demonstrating how skills solve production reliability challenges through progressive capability loading and institutional knowledge packaging. Emphasized that skills make memory tangible and enable continuous knowledge evolution through testing and real-world deployment.

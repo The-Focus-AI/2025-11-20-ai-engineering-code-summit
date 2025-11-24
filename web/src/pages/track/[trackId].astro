@@ -14,6 +14,15 @@ export function getStaticPaths() {
 const { trackId } = Astro.params;
 const track = trackId?.toUpperCase() as TrackType;
 
+// Helper function to calculate reading time
+// Assumes average reading speed of 200 words per minute
+function calculateReadingTime(content: string): string {
+  const wordsPerMinute = 200;
+  const words = content.trim().split(/\s+/).length;
+  const minutes = Math.ceil(words / wordsPerMinute);
+  return `${minutes} min read`;
+}
+
 // Load articles from content collection
 const allArticles = await getCollection('articles');
 
@@ -33,7 +42,7 @@ const articlesWithTrack = allArticles.map((article: any) => {
     track: isLeadership ? 'LEADERSHIP' : 'ENGINEERING',
     subtitle: article.data.key_insights?.[0] || '',
     authors: article.data.key_speakers || ['Various'],
-    readTime: '15 min read',
+    readTime: calculateReadingTime(article.body),
     imageUrl: 'https://picsum.photos/seed/ai_art/1200/600',
   };
 });

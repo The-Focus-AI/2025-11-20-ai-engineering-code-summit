@@ -2,98 +2,48 @@
 name: Natasha Maniar
 company: McKinsey & Company
 company_url: "https://www.mckinsey.com"
-role: Consultant
+role: Business Analyst
 session: Moving away from Agile - What's Next?
 session_file: 2025-11-20/11-20-11-20-martin-harrysson-natasha-maniar-mckinsey.md
-linkedin: null
-twitter: null
-twitter_url: null
+linkedin: natasha-maniar-945276107
+twitter: ManiarNatasha
+twitter_url: "https://x.com/maniarnatasha"
 github: null
 github_url: null
-website: null
+website: "https://www.media.mit.edu/people/nmaniar/overview/"
+image: "/photos/natasha-maniar.jpg"
+decorated: true
 ---
 
-## Overview
-Natasha Maniar is a Consultant at McKinsey & Company, specializing in the intersection of artificial intelligence and software development. She co-presented the session "Moving away from Agile: What's Next?" at the AI Engineering Code Summit, focusing on how organizations should reorganize their development practices and roles in the age of AI agents.
+Business Analyst at McKinsey & Company specializing in AI's impact on software development. MIT Media Lab graduate (MEng & BS in Computer Science) who brings unique perspective combining AI research, human-computer interaction, and organizational transformation.
 
-## Professional Background
-- **Position**: Consultant/Analyst at McKinsey & Company
-- **Specialization**: AI's impact on software development methodologies and organizational structures
-- **Research Focus**:
-  - Post-Agile methodologies and frameworks
-  - AI-native roles and responsibilities in software development
-  - Organizational transformation in response to AI capabilities
-  - Change management and implementation strategies for AI-driven development
+## Current Work
 
-## Key Research & Projects
+At McKinsey, Natasha contributes to research and consulting on AI's transformation of software development practices. She co-authors research on post-Agile methodologies and advises enterprises on AI-native workflows. Her work includes "[Unlocking the value of AI in software development](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/unlocking-the-value-of-ai-in-software-development)" and "[How open source AI solutions are reshaping business](https://www.mckinsey.com/capabilities/quantumblack/our-insights/open-source-technology-in-the-age-of-ai)."
 
-### AI in Software Development Study
-As part of McKinsey's research initiative, Maniar contributes to a major study examining AI's impact on software development practices. Key findings from this research include:
-- Analysis of 120,000+ developers
-- Shift from traditional Agile to post-Agile methodologies
-- Emergence of AI-native roles and responsibilities
-- Organizational restructuring around AI capabilities
-- Change management as a critical factor in successful implementation
+## Background
 
-### Research Focus Areas
-1. **AI-Native Roles**: New types of positions emerging in software organizations:
-   - Spec-driven development replacing story-driven approaches
-   - Code generation from long PRDs (Product Requirements Documents)
-   - AI agent managers instead of specialized practitioners
+As a graduate student in the [Fluid Interfaces group](https://www.media.mit.edu/groups/fluid-interfaces/overview/) at MIT Media Lab, Natasha developed MemPal, a multimodal AI system helping older adults with independent living. Her research focused on wearable devices for cognitive support and human-centered AI design. [Paper available on ACM Digital Library](https://dl.acm.org/doi/10.1145/3708359.3712151).
 
-2. **Software Development Evolution ("Software X")**:
-   - Moving beyond traditional Agile frameworks
-   - Shift from "10x Engineer" to "10x Team" paradigm
-   - Reimagining the entire Software Development Lifecycle (SDLC/PDLC)
-   - Identifying and removing bottlenecks in task allocation
+## Philosophy on AI and Software Development
 
-3. **Organizational Adaptation**:
-   - Shorter sprint cycles
-   - Smaller, more numerous teams
-   - Increased investment in both greenfield and brownfield development
-   - Small, targeted interventions that create measurable impact
+Natasha's approach reflects her dual background in technical AI research and management consulting:
 
-4. **Change Management**:
-   - Emphasis on getting "small things right"
-   - Recognition that organizational transformation is a human-centric process
-   - Understanding that systemic change requires sustained effort over time
+**Human-Centered Transformation** - Technology adoption requires understanding organizational dynamics, not just technical capabilities.
 
-## Speaking Topics & Sessions
-- **"Moving away from Agile: What's Next?"** - Co-presented at AI Engineering Code Summit (November 20, 2025)
-  - Exploring post-Agile methodologies for the AI era
-  - How teams should reorganize around AI capabilities
-  - Practical frameworks for implementing AI-native development practices
-  - Change management strategies for successful adoption
+**Research-Grounded Practice** - Large-scale empirical studies provide evidence for how AI reshapes work, enabling more informed strategic decisions.
 
-## Key Insights & Philosophy
-Maniar's work emphasizes:
-1. **Paradigm Shift**: The entire software development framework requires reimagining for AI capabilities
-2. **Organizational Structure**: New roles and team structures are emerging that differ fundamentally from traditional Agile frameworks
-3. **Human-Centered Change**: Technology adoption requires sustained change management and cultural transformation
-4. **Empirical Research**: Grounding recommendations in large-scale research data from across the industry
-5. **Practical Implementation**: Focus on actionable, incremental changes rather than wholesale organizational overhauls
+**Beyond Agile** - AI agents fundamentally change task allocation, sprint cycles, and team structures—requiring new methodologies, not tweaks to existing frameworks.
 
-## Notable Contributions
-- Contributing to one of the largest industry studies on AI's impact on software development
-- Advancing understanding of post-Agile methodologies in the AI era
-- Identifying and articulating new job categories and roles emerging in AI-native organizations
-- Developing change management frameworks for organizations transitioning to AI-driven development
-- Bridging the gap between consulting insights and practical implementation
+## About McKinsey & Company
 
-## Company: McKinsey & Company
-McKinsey is a global management consulting firm actively researching and advising organizations on AI's impact across all business functions, with particular focus on software development. The firm:
-- Conducts large-scale research on technology trends and organizational impact
-- Works with leading companies on AI adoption and digital transformation
-- Publishes insights on emerging practices and methodologies
-- Advises on change management and organizational restructuring
+McKinsey is a global management consulting firm conducting large-scale research on AI's organizational impact. Through QuantumBlack (McKinsey's AI practice), the firm advises leading companies on AI adoption, software development transformation, and organizational restructuring for the AI era.
 
-## Summit Session Context
-At the AI Engineering Code Summit, Natasha Maniar co-presented with Martin Harrysson on "Moving away from Agile: What's Next?" This session represented McKinsey's latest thinking on how software development organizations must evolve to leverage AI effectively. The presentation covered:
-- The limitations of traditional Agile in an AI-driven context
-- New organizational structures and roles emerging in the market
-- Practical strategies for implementing AI-native development practices
-- Change management considerations for enterprise adoption
+## Conference Appearance
 
----
+**Event:** AI Engineering Code Summit 2025
+**Date:** November 20, 2025
+**Time:** 11:20 AM - 11:40 AM
+**Session:** Moving away from Agile - What's Next?
 
-*Last Updated: 2025-11-22*
+Co-presented with Martin Harrysson, exploring how organizations should reorganize development practices in the AI era. Drawing on McKinsey's research across thousands of developers, the session examined emerging AI-native roles, post-Agile methodologies, and practical change management strategies for enterprise adoption.

@@ -1,9 +1,9 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
-// Speakers collection - loads from ../../speakers/*.md (excluding README)
+// Speakers collection - loads from ./speakers/*.md (symlinked directory)
 const speakers = defineCollection({
-  loader: glob({ pattern: '**/[!R]*.md', base: '/Users/wschenk/The-Focus-AI/2025-11-20-ai-engineering-code-summit/speakers' }),
+  loader: glob({ pattern: '**/[!R]*.md', base: './src/content/speakers' }),
   schema: z.object({
     name: z.string(),
     company: z.string(),

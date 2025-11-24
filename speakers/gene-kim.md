@@ -1,35 +1,75 @@
 ---
-name: "Gene Kim"
-company: "IT Revolution (https://itrevolution.com)"
-role: "Founder, multiple award-winning CTO, researcher, and bestselling author"
-session: "2026: The Year the IDE Died (2025-11-20/11-20-10-05-steve-yegge-gene-kim.md)"
+name: Gene Kim
+company: IT Revolution
+company_url: "https://itrevolution.com"
+role: Founder & Multiple Award-Winning CTO
+session: "2026: The Year the IDE Died"
+session_file: 2025-11-20/11-20-10-05-steve-yegge-gene-kim.md
+linkedin: realgenekim
+twitter: RealGeneKim
+twitter_url: "https://x.com/realgenekim"
+github: realgenekim
+github_url: "https://github.com/realgenekim"
+website: "http://www.realgenekim.me"
+image: "/photos/gene-kim.jpg"
+decorated: true
 ---
 
-## Social & Professional Links
-- LinkedIn: https://www.linkedin.com/in/realgenekim/
-- Twitter/X: [@RealGeneKim](https://x.com/realgenekim)
-- GitHub: [@realgenekim](https://github.com/realgenekim)
-- Personal site: http://www.realgenekim.me/
-- The Idealcast Podcast: https://itrevolution.com/podcast/
+Wall Street Journal bestselling author and founder of IT Revolution, pioneering DevOps transformation and now leading the exploration of AI-assisted software development. Author of The Phoenix Project, The DevOps Handbook, Accelerate, and Wiring the Winning Organization—books that have collectively sold over 1 million copies.
 
-## About IT Revolution
-IT Revolution is a platform dedicated to helping technology leaders succeed through research, education, and community. Founded by Gene Kim, the organization is known for organizing the DevOps Enterprise Summit (now Enterprise Technology Leadership Summit) and amplifying best practices from high-performing IT organizations. IT Revolution publishes books, hosts The Idealcast podcast, and provides workshops on AI productivity and technology leadership.
+## Architect of the DevOps Movement
 
-## Speaker Background
-Gene Kim is a Wall Street Journal bestselling author who has been studying high-performing technology organizations since 1999. He is the founder and former CTO of Tripwire, an enterprise security software company where he served for 13 years. With expertise spanning DevOps culture, organizational transformation, and technology leadership, Gene has authored or co-authored six influential books that have collectively sold over 1 million copies. He is widely recognized as one of the most influential figures in the DevOps movement and is now focused on the intersection of AI productivity and organizational transformation.
+Gene Kim has been studying high-performing technology organizations since 1999, transforming how the industry thinks about software delivery, organizational design, and technology leadership. As founder and former CTO of Tripwire (13 years), he built enterprise security software while developing insights that would reshape modern software development practices.
 
-## Referenced Materials
-- **The Phoenix Project**: https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290 - A novel about IT and DevOps co-authored with Kevin Behr and George Spafford that introduced the Three Ways framework
-- **The DevOps Handbook (2nd Edition)**: https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404 - The definitive guide for implementing DevOps practices (published 2021, co-authored with Jez Humble, Patrick Debois, John Willis, and Nicole Forsgren)
-- **Accelerate**: https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339 - Award-winning book on the science of lean software and DevOps, co-authored with Nicole Forsgren and Jez Humble
-- **Wiring the Winning Organization**: https://itrevolution.com/product/wiring-the-winning-organization/ - Latest book co-authored with Dr. Steven Spear (2023), Shingo Publication Award winner focusing on organizational transformation
-- **Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond**: https://www.amazon.com/Vibe-Coding-Building-Production-Grade-Software/dp/1966280025 - Book co-authored with Steve Yegge and Dario Amodei (2024/2025) exploring AI-assisted software development
-- **DORA Report (Accelerate State of DevOps / State of AI-Assisted Software Development)**: https://cloud.google.com/devops/state-of-devops - Annual research report tracking DevOps practices and now AI-assisted development metrics
+## Current Focus: Vibe Coding & AI Productivity
 
-## Related Content
-- **The Idealcast**: https://itrevolution.com/podcast/ - Gene Kim's podcast featuring enterprise technology and business leaders (typically 90-minute episodes)
-- **DevOps Enterprise Summit / Enterprise Technology Leadership Summit**: Annual conference organized by Gene Kim since 2014
-- **Vibe Coding Workshop for Leaders**: https://itrevolution.com/articles/vibe-coding-workshop-for-leaders/ - Leadership workshop on AI-assisted development practices
+Gene is at the forefront of exploring how AI will transform software development and organizational structures. His latest work with Steve Yegge, [Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](https://itrevolution.com/product/vibe-coding-book/), captures the paradigm shift where AI generates code and humans supervise.
 
-## Research Notes
-Gene Kim is at the forefront of exploring how AI productivity will transform software development and organizations. His recent work emphasizes "vibe coding" - allowing AI systems to handle code generation while humans supervise and provide direction. At the 2025 AI Engineering Code Summit, he discussed how organizations are experiencing significant productivity gains (estimated 10x in some cases) by leveraging AI coding tools, and emphasized the importance of developers adapting to this paradigm shift. He highlighted case studies from enterprises like Booking.com, Capital One, Cisco, and Fidelity implementing AI-assisted development practices. His background in DevOps and organizational transformation provides unique insights into how this technology shift will reshape software engineering roles, organizational structures, and development practices. Key themes include: trust in AI-generated code as a critical factor for enterprise adoption, the need for developers to work more autonomously with AI assistance, and the emerging concept of "fingerspitzengefuhl" (intuitive understanding) in AI-human collaboration. Gene is also deeply involved in tracking trends through the annual DORA report (now focused on AI-assisted software development metrics) and continues to host The Idealcast podcast featuring leaders in technology transformation.
+Key areas of exploration:
+- **FAAFO Framework** - Faster, Ambitious, Autonomous, Fun, Optionality: [The Value of Vibe Coding](https://itrevolution.com/articles/the-value-of-vibe-coding-or-the-good-faafo/)
+- **Enterprise AI Adoption** - Tracking case studies from Booking.com, Capital One, Cisco, Fidelity on 10x productivity gains
+- **Trust & Fingerspitzengefuhl** - Building intuitive understanding of AI collaboration patterns
+- **The Vibe Coding Loop** - Iterative conversations resulting in workable code: [Article](https://itrevolution.com/articles/the-vibe-coding-loop/)
+
+## Key Publications & Resources
+
+**Books:**
+- [The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290) - Novel introducing the Three Ways framework
+- [The DevOps Handbook (2nd Ed.)](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404) - Definitive DevOps implementation guide
+- [Accelerate](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339) - Science of lean software and DevOps (with Dr. Nicole Forsgren & Jez Humble)
+- [Wiring the Winning Organization](https://itrevolution.com/product/wiring-the-winning-organization/) - Organizational transformation theory (with Dr. Steven Spear, 2023 Shingo Award winner)
+- [Vibe Coding](https://itrevolution.com/product/vibe-coding-book/) - AI-assisted software development with Steve Yegge
+
+**Articles & Research:**
+- [The Three Ways: Principles Underpinning DevOps](https://itrevolution.com/articles/the-three-ways-principles-underpinning-devops/)
+- [What is Vibe Coding? It's Not About Turning Off Your Brain](https://itrevolution.com/articles/what-is-vibe-coding-its-not-about-turning-off-your-brain/)
+- [DORA State of DevOps / State of AI-Assisted Software Development Report](https://cloud.google.com/devops/state-of-devops)
+- [IT Revolution Articles by Gene Kim](https://itrevolution.com/author/gene-kim/)
+
+**Podcast:**
+[The Idealcast](https://itrevolution.com/podcast/) - 90-minute conversations with enterprise technology and business leaders
+
+## IT Revolution
+
+IT Revolution is a platform helping technology leaders succeed through research, education, and community. The organization hosts the Enterprise Technology Leadership Summit (formerly DevOps Enterprise Summit), publishes influential books on technology leadership, and provides workshops on AI productivity and organizational transformation.
+
+## Philosophy on AI Transformation
+
+Gene's work emphasizes critical shifts in software development:
+
+**Developers as supervisors, not typists** - "Vibe coding" means AI writes code while humans provide direction and supervision—fundamentally changing the developer role.
+
+**Trust through experience** - AI trust increases with familiarity. Organizations need to build "fingerspitzengefuhl" (intuitive feel) for AI capabilities and limitations.
+
+**Economic accessibility** - At $100/day for unlimited AI model access, the economics of software development have fundamentally changed—making ambitious projects economically viable.
+
+**Organizational readiness** - Some senior developers resist adoption, but leading enterprises (Cisco, Capital One, Fidelity) are requiring production deployments to build organizational capability.
+
+## Conference Appearance
+
+**Event:** AI Engineering Code Summit 2025
+**Date:** November 20, 2025
+**Time:** 10:05 AM
+**Session:** 2026: The Year the IDE Died (with Steve Yegge)
+
+Gene presented alongside Steve Yegge on how coding agents will fundamentally transform developer tools. His portion focused on enterprise adoption patterns, the FAAFO framework for AI productivity gains, and case studies demonstrating 10x improvements. He emphasized that trust in AI systems grows with experience, and highlighted how leading organizations are mandating AI-assisted development to build organizational capability.

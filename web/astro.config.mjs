@@ -13,6 +13,13 @@ export default defineConfig({
       alias: {
         'slides': fileURLToPath(new URL('./public/slides', import.meta.url))
       }
+    },
+    server: {
+      watch: {
+        // Follow symlinks to watch the actual speakers directory
+        followSymlinks: true,
+        ignored: ['!**/speakers/**']
+      }
     }
   },
 

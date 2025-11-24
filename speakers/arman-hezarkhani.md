@@ -1,106 +1,61 @@
 ---
 name: Arman Hezarkhani
 company: Tenex
-company_url: "https://tenex.com"
+company_url: "https://tenex.co"
 role: Managing Partner
 session: Rethinking Compensation for AI-Augmented Engineers
 session_file: 2025-11-20/11-20-16-20-arman-hezarkhani-tenex.md
-linkedin: null
-twitter: null
-twitter_url: null
-github: null
-github_url: null
-website: null
+linkedin: ahez
+twitter: ArmanHezarkhani
+twitter_url: "https://twitter.com/ArmanHezarkhani"
+github: Ahezarkhani
+github_url: "https://github.com/Ahezarkhani"
+website: "https://armanh.com"
+image: "/photos/arman-hezarkhani.jpg"
+decorated: true
 ---
 
-## Overview
-Arman Hezarkhani is the Managing Partner of Tenex, a company revolutionizing how engineering organizations structure compensation and incentives in the AI era. With a background founding multiple venture-backed AI companies, scaling Google Cloud AI to millions of developers, and teaching at Carnegie Mellon, Arman brings deep expertise in both AI and organizational economics.
+Managing Partner at Tenex, pioneering output-based compensation models that incentivize AI tool adoption and maximize engineering throughput. Previously founded multiple venture-backed AI companies and scaled Google Cloud AI to millions of developers.
 
-## Professional Background
-- **Role**: Managing Partner at Tenex
-- **Previous Experience**:
-  - Founded multiple venture-backed AI companies
-  - Scaled Google Cloud AI to millions of developers
-  - Adjunct Professor at Carnegie Mellon University
-- **Focus Areas**:
-  - AI-driven compensation and incentive models
-  - Output-based pay structures
-  - Engineering productivity and tool adoption
-  - Business operations automation
-  - Sales transformation through AI
+## Revolutionary Compensation Architect
 
-## Tenex: The Company
+Arman Hezarkhani is reimagining how engineering organizations structure compensation and incentives in the AI era, drawing from a unique background spanning venture-backed AI startups, Google Cloud AI, and teaching at Carnegie Mellon University.
 
-Tenex is redefining engineering compensation for the AI age by introducing output-based payment models that incentivize adoption of AI tools and maximize engineering throughput.
+## Current Work
 
-### Core Innovation: Story Point-Based Compensation
-- Engineers are compensated based on **completed output (story points)** rather than hours worked
-- Introduces **uncapped upside** earning potential
-- Multiple engineers anticipated to earn **$1M+ annually**
-- Direct incentivization to work smarter, faster, and harder
+As Managing Partner at Tenex, Arman leads the development of revolutionary output-based compensation models that treat engineers like high-performing salespeople. His approach introduces story point-based payment with uncapped upside, where multiple engineers are anticipated to earn $1M+ annually by maximizing their use of AI tools and completing more work.
 
-### Compensation Model Evolution
-Tenex's approach contextualizes the evolution of engineer pay structures:
-1. Hourly labor
-2. Project-based pay
-3. Salary
-4. Salary + bonus
-5. Salary + bonus + equity
-6. **Output-based (Tenex model)**
+Arman writes on [Medium](https://medium.com/@armanh) and maintains a personal website at [armanh.com](https://armanh.com), sharing insights on AI transformation, compensation innovation, and engineering productivity.
 
-### Tenex Service Offerings
-1. **Product Requirements → Strategy** (external-facing service)
-   - Outputs a product roadmap
-2. **Architecture Design → AI Engineer** (external-facing service)
-   - Primary focus area using story point models
-   - Architecture design documents form the basis of payment
-   - Story points assigned upon completion and acceptance
+## Background
 
-### Key Risk Mitigation Strategies
-- **Inflated Story Points**: Strategy definition and code analysis prevents artificial point inflation
-- **Quality Concerns**: Rigorous 3-round quality assurance (internal and external QA)
-- **Talent Selection**: Hiring the right people is essential to the model's success
+Previously, Arman founded multiple venture-backed AI companies and played a key role in scaling Google Cloud AI to serve millions of developers. He has also served as an Adjunct Professor at Carnegie Mellon University, where he earned his degree in engineering. He is also the founder of [Parthean](https://www.parthean.com), a personal finance AI platform.
 
-## Speaking Topics
+## Philosophy on Compensation & Incentives
 
-### "Paying Engineers like Salespeople: How Tenex Rebuilt the Incentive Stack for Modern Engineering"
-Primary focus areas:
-- **AI Transformation**: How AI tools change incentive structures for engineering teams
-- **Sales Automation**: Lessons from compensation models in sales applied to engineering
-- **Business Operations**: Modernizing how engineering organizations compensate and motivate talent
-- Revolutionary compensation models for the AI era
-- How output-based compensation directly incentivizes AI tool adoption
-- Maximizing engineering throughput
+Arman's approach challenges traditional engineering compensation models:
 
-## Real-World Applications
+**Output over input** - Engineers should be compensated based on completed work (story points) rather than hours worked, creating direct incentives to work smarter, faster, and leverage AI tools.
 
-### Case Study: Billboard Company
-- **Challenge**: Content moderation automation
-- **Solution**: 2-week AI engineering engagement
-- **Result**: Automated moderator deployed
+**Uncapped upside** - Removing compensation ceilings attracts top talent and motivates engineers to maximize their productivity without artificial limits.
 
-### Case Study: Retail Technology
-- **Challenge**: Location-based analytics
-- **Solution**: On-device heat mapping model
-- **Result**: Real-time spatial analytics capability
+**AI as a multiplier** - Compensation structures should actively encourage AI tool adoption, treating these tools as force multipliers rather than threats to existing pay structures.
 
-## Philosophy & Vision
-Arman's approach emphasizes:
-1. **Alignment of Incentives**: Pay structure should reflect actual value creation
-2. **AI as a Multiplier**: Compensation models should encourage AI tool adoption
-3. **Unlimited Potential**: Remove compensation ceilings to attract top talent
-4. **Output Over Input**: Focus on results rather than hours worked
-5. **Team Motivation**: "Give your team a reason to go faster"
+**Alignment of incentives** - Pay structures should reflect actual value creation, borrowing proven models from sales compensation and applying them to engineering work.
 
-## Social & Online Presence
-- **Company Website**: https://tenex.co
-- **Twitter/X**: @ArmanHezarkhani
-- **Featured**: [Startup Hub AI News - Tenex: The 10x Shift in AI Engineering Compensation](https://www.startuphub.ai/ai-news/ai-video/2025/tenex-the-10x-shift-in-ai-engineering-compensation/)
-- **Video**: [YouTube Discussion](https://www.youtube.com/watch?v=qhibA4PsBvQ)
+## Tenex
 
-## Summit Session Context
-At the AI Engineering Code Summit (November 20, 2025), Arman Hezarkhani presented "Paying Engineers like Salespeople," exploring how traditional sales compensation models can be adapted for engineering in the AI era. This session was central to the "AI in Sales and Customer Success" track, demonstrating how AI transformation extends beyond customer-facing functions into internal organizational structures and incentive design.
+Tenex is an AI-first software consultancy co-founded by Arman Hezarkhani and Alex Lieberman (founder of Morning Brew). The company blends high-performance engineering with AI transformation consulting, offering services from product strategy to AI engineering using their revolutionary output-based compensation model. Tenex helps organizations modernize their operations through AI while simultaneously proving new models for engineering team structure and incentives.
+
+## Conference Appearance
+
+**Event:** AI Engineering Code Summit 2025
+**Date:** November 20, 2025
+**Time:** 4:20 PM - 4:40 PM
+**Session:** Paying Engineers like Salespeople: How Tenex Rebuilt the Incentive Stack for Modern Engineering
+
+Arman presented Tenex's revolutionary approach to engineering compensation, demonstrating how output-based payment models with uncapped upside directly incentivize AI tool adoption and maximize engineering throughput. His talk explored the evolution of compensation structures and practical implementation strategies, including risk mitigation for story point inflation and quality concerns.
 
 ---
 
-*Last Updated: 2025-11-22*
+*Last Updated: 2025-11-24*

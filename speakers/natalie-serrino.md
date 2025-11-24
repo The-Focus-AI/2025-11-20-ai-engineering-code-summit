@@ -2,158 +2,73 @@
 name: Natalie Serrino
 company: Gimlet Labs
 company_url: "https://gimletlabs.ai"
-role: Founder
+role: Co-Founder
 session: AI-Generated Kernels for PyTorch Optimization
 session_file: 2025-11-21/11-21-14-45-natalie-serrino-gimlet-labs.md
-linkedin: null
-twitter: null
-twitter_url: null
-github: null
-github_url: null
-website: null
+linkedin: natalieserrino
+twitter: nserrino
+twitter_url: "https://twitter.com/nserrino"
+github: nserrino
+github_url: "https://github.com/nserrino"
+website: "https://gimletlabs.ai"
+image: "/photos/natalie-serrino.jpg"
 ---
 
-## Overview
+Co-Founder of Gimlet Labs, building AI infrastructure that makes agentic workloads 10X more efficient. Previously Founding Engineer at Pixie Labs (acquired by New Relic) and Observe Inc. Brown University Computer Engineering graduate.
 
-Natalie Serrino is the Founder of Gimlet Labs, an innovative startup focused on using AI to automatically generate and optimize compute kernels for machine learning workloads. She specializes in eliminating performance bottlenecks in custom PyTorch code without requiring manual human optimization effort.
+## Making AI Workloads 10X More Efficient
 
-## Current Role: Gimlet Labs
+Natalie co-founded Gimlet Labs to solve the infrastructure crisis created by agentic AI systems. While traditional chat models are resource-intensive, agentic systems generate 5-15X more tokens and require heterogeneous compute orchestration across GPUs, memory-bound accelerators, and network-optimized nodes.
 
-### Focus Areas
+Gimlet's platform automatically decomposes AI workloads into stages and maps each to the optimal hardware—decoupling agentic systems from specific accelerators. The company offers both a hosted platform and kforge, a standalone toolkit for developers.
 
-Gimlet Labs tackles a critical challenge in AI infrastructure: **automatic kernel generation and optimization**. The company leverages AI to:
+## Research: AI-Generated Kernels
 
-- **Generate optimized compute kernels** that accelerate custom PyTorch operations
-- **Eliminate manual optimization bottlenecks** in ML pipelines
-- **Improve model inference performance** without changing application code
-- **Reduce engineering overhead** typically required for performance tuning
+Natalie co-authored groundbreaking research on [AI-generated Metal kernels for PyTorch](https://gimletlabs.ai/blog/ai-generated-metal-kernels), demonstrating that frontier models can automatically optimize GPU code for Apple devices. Key findings:
 
-### The Problem Being Solved
+- 1.87x speedup across 215 PyTorch modules using AI-generated kernels
+- Agentic swarm approach (Best of N) outperforms single-model generation
+- Context enhancement (CUDA references, Metal profiling) nearly triples performance gains
+- Some workloads achieved 4.65x speedups through kernel fusion
+- Requires zero kernel engineering expertise—works automatically on existing PyTorch code
 
-Machine learning engineers frequently encounter performance bottlenecks in custom PyTorch code. Traditional solutions require:
+This work validates Gimlet's core thesis: AI can automate performance optimization that previously required specialized GPU programming skills.
 
-- Deep expertise in GPU programming
-- Manual kernel optimization (CUDA, TensorRT, etc.)
-- Significant engineering time and specialized knowledge
-- Significant trial-and-error iteration
+## Background
 
-Gimlet Labs addresses this by **automating the entire kernel generation process with AI**.
+**Pixie Labs** (2019-2023) - Founding Engineer on Kubernetes observability platform acquired by New Relic. Built scalable monitoring infrastructure for cloud-native environments.
 
-## Technical Approach: AI-Generated Kernels
+**Observe Inc.** (2018-2019) - Founding Engineer on observability and data pipeline platform. Early expertise in large-scale data systems.
 
-### What is a Kernel?
+**Benchmark Capital** (2017-2018) - Entrepreneur in Residence, exploring startup opportunities in infrastructure and AI.
 
-In Gimlet Labs' context, a kernel is:
+**Trifacta** (2013-2017) - Senior Software Engineer on data transformation platform (acquired by Alteryx).
 
-- A **transformer architecture for generating inference systems**
-- Optimized compute code that runs on accelerators (GPUs, TPUs)
-- Custom implementations that improve performance for specific operations
-- Automatically generated and validated without manual intervention
+## Philosophy: Automated Performance Engineering
 
-### Key Innovation: Automated Optimization
+Natalie's work embodies a shift from manual GPU optimization to AI-driven automation. Rather than requiring deep CUDA/Metal expertise, her approach:
 
-The core offering enables:
+- Uses frontier models as kernel generation agents
+- Employs ensemble techniques for reliability
+- Validates correctness and performance automatically
+- Operates on existing codebases without framework changes
 
-1. **Automatic Detection** — Identify performance bottlenecks in PyTorch code
-2. **AI-Powered Generation** — Use machine learning models to generate optimized kernel code
-3. **Validation & Deployment** — Automatically verify correctness and performance improvements
-4. **Zero-Effort Speedup** — Achieve faster inference without human optimization effort
+This mirrors her broader vision at Gimlet Labs: abstract away infrastructure complexity, letting AI handle hardware optimization while developers focus on building agentic applications.
 
-## Business Impact
+## Key Publications
 
-### Speed & Performance
-
-- Instant acceleration of custom PyTorch operations
-- No rewriting of application code required
-- Significant inference speedup (exact metrics from talk pending)
-- Reduces time to optimize from weeks to minutes
-
-### Economics
-
-- Eliminates need for GPU kernel optimization experts
-- Reduces engineering time spent on performance tuning
-- Enables smaller teams to achieve enterprise-level optimization
-- Lowers infrastructure costs through better utilization
-
-## Technical Insights
-
-### Infrastructure & AI Focus
-
-Gimlet Labs represents a unique intersection of:
-
-- **AI Infrastructure** — Building tools for ML operations teams
-- **Performance Engineering** — Automating traditional optimization work
-- **GPU Computing** — Deep expertise in accelerator programming
-- **Code Generation** — Using AI models to generate kernel code
-
-### The Vision
-
-Rather than requiring engineers to understand low-level GPU programming, Gimlet Labs abstracts this complexity away. The AI system:
-
-- Understands the computation pattern
-- Generates correct kernel implementations
-- Optimizes for target hardware
-- Handles validation and deployment
-
-This represents a significant shift: **automating what was previously highly specialized manual work**.
-
-## Observability & Monitoring Context
-
-While the primary focus is kernel optimization, this work is closely related to:
-
-- **Performance Monitoring** — Understanding where bottlenecks exist
-- **Observability** — Tracking kernel performance characteristics
-- **ML Infrastructure** — Critical component of modern ML ops stacks
-- **Optimization Loops** — Continuous improvement of inference performance
-
-The success of Gimlet Labs depends on robust monitoring and observability to identify optimization opportunities and validate improvements.
-
-## Related Concepts
-
-### PyTorch Ecosystem
-
-Gimlet Labs builds on PyTorch's extensibility:
-- Custom CUDA kernels
-- Automatic differentiation
-- Distributed training optimization
-
-### GPU Optimization Landscape
-
-The company competes with/complements:
-- TensorRT (NVIDIA)
-- torch.compile (PyTorch)
-- DeepSpeed (Microsoft)
-- Custom kernel libraries
-
-### AI-Driven Development
-
-Gimlet Labs exemplifies a broader trend:
-- Using AI to automate complex engineering tasks
-- Code generation for performance-critical code
-- Reducing specialist skill requirements
-- Automating what was previously manual trial-and-error
-
-## Key Takeaway
-
-Natalie Serrino and Gimlet Labs are solving a real, immediate pain point: **AI can automatically optimize ML inference code, eliminating the need for specialized kernel programmers**. This is a practical application of AI-powered development where automation delivers tangible business value.
+- [AI-Generated Metal Kernels for PyTorch](https://gimletlabs.ai/blog/ai-generated-metal-kernels) - Demonstrates frontier models can write optimized GPU kernels, achieving 1.87x speedups across KernelBench
+- [Introducing Gimlet Labs](https://gimletlabs.ai/blog/introducing-gimlet-labs) - Company launch announcement explaining heterogeneous compute orchestration for agentic AI
 
 ## Conference Appearance
 
 **Event:** AI Engineering Code Summit 2025
 **Date:** November 21, 2025
 **Time:** 2:45 PM - 3:04 PM
-**Session:** "Using AI-Generated Kernels to Instantly Speed Up PyTorch"
-**Focus:** Demonstrating how AI can automatically generate and optimize compute kernels for custom PyTorch operations without human effort
+**Session:** Using AI-Generated Kernels to Instantly Speed Up PyTorch
 
-## Topics Covered in Presentation
-
-- What is a kernel: transformer architecture for generating inference systems
-- Automatic detection of performance bottlenecks
-- AI-powered kernel code generation
-- Validation and correctness checking
-- Deployment and performance measurement
-- Real-world use cases and results
+Demonstrated how AI can automatically generate and optimize compute kernels for custom PyTorch operations without manual engineering effort. Covered kernel generation using transformer architectures, validation approaches, and real-world performance improvements.
 
 ---
 
-*Last Updated: November 22, 2025*
+*Last Updated: November 24, 2025*

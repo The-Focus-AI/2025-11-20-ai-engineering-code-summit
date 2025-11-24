@@ -16,3 +16,8 @@ run = "cd web && npm run build"
 [tasks.preview]
 description = "Preview production build"
 run = "cd web && npm run preview"
+
+[tasks.preview-static-site]
+description = "Deploy to pgs.sh"
+depends = ["build"]
+run = "cd web && rsync -rv dist/ pgs.sh:/ai-engineering-code-summit/ && echo '\nDeployed to: https://combray-ai-engineering-code-summit.pgs.sh/'"

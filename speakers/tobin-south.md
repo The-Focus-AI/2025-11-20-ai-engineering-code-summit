@@ -11,100 +11,47 @@ twitter_url: "https://twitter.com/TobinSouth"
 github: tobinsouth
 github_url: "https://github.com/tobinsouth"
 website: "https://tobin.page"
+image: "/photos/tobin-south.jpg"
+decorated: true
 ---
 
-## Overview
-Tobin South is the Head of AI Agents & MCP (Model Context Protocol) at WorkOS, a leading enterprise B2B infrastructure platform. He specializes in building enterprise-grade Model Context Protocol servers with robust security, ensuring AI agents behave appropriately in production environments.
+Head of AI Agents & MCP at WorkOS and Research Fellow at Stanford's Loyal Agents Initiative. Recently completed PhD at MIT (2025) on "Private, Verifiable, and Auditable AI Systems." Leading enterprise AI security, identity management, and authentication infrastructure.
 
-## Professional Background
-- **Current Role**: Head of AI Agents & MCP, WorkOS
-- **Focus Areas**:
-  - Model Context Protocol (MCP) server architecture
-  - Enterprise-grade AI agent security
-  - AI agent safety and behavior governance
-  - B2B infrastructure and integration patterns
-  - Enterprise authentication and authorization
+## Pioneer of Security-First AI Agent Architecture
 
-## Organization: WorkOS
+## Current Work
 
-WorkOS is an enterprise B2B infrastructure company focused on providing essential authentication, authorization, and organizational management capabilities for SaaS applications. The company specializes in:
+At WorkOS, Tobin leads development of enterprise-grade MCP servers with SSO integrations, access controls, and delegated authority mechanisms. He's extending WorkOS's authentication infrastructure—used by thousands of B2B applications—to AI agents, ensuring production systems maintain security boundaries while leveraging model capabilities.
 
-- **Enterprise Authentication**: SAML, OAuth, and SSO integrations
-- **Directory Management**: User and identity management at scale
-- **B2B Infrastructure**: Building blocks for multi-tenant SaaS applications
-- **Developer-First APIs**: Simple, well-documented APIs for enterprise features
-- **Enterprise Security**: Compliance-focused infrastructure (SOC 2, HIPAA, etc.)
+As Research Fellow at Stanford HAI, he directs the [Loyal Agents Initiative](https://loyalagents.org/), a collaboration with Consumer Reports and MIT developing fiduciary duty frameworks and safety credentialing for AI agents.
 
-## Key Speaking Topics
+Key publications include [Identity Management for Agentic AI](https://openid.net/wp-content/uploads/2025/10/Identity-Management-for-Agentic-AI.pdf) (OpenID Foundation, Oct 2025) and his PhD dissertation [Private, Verifiable, and Auditable AI Systems](https://arxiv.org/abs/2509.00085), introducing zero-knowledge approaches for auditable LLM deployment.
 
-### Enterprise-Grade MCP at AI Engineering Code Summit (Nov 21, 2025)
+## Background
 
-**Session Title**: Enterprise-grade MCP
-**Time**: 10:40am - 11:00am
-**Topic**: Building effective MCP servers with enterprise-grade security and ensuring AI agents behave appropriately
+PhD from MIT (2025) on private, verifiable AI systems. Australian-American Fulbright Scholar. Lead author for privacy sections of the International AI Safety Report 2025. Active projects include ProcessEntropy (Python toolkit for AI security) and VerifiableEvals (zero-knowledge ML benchmarks).
 
-**Key Focus Areas**:
-- Model Context Protocol server implementation for enterprise environments
-- Security best practices for AI agent integrations
-- Enterprise authentication patterns with AI agents
-- Governance and behavioral constraints for production AI systems
-- Integration of B2B infrastructure with AI agent frameworks
+## Philosophy on AI Agent Security
 
-## Technical Expertise
+Tobin's approach challenges current agent implementations that lack proper identity and delegation:
 
-### Model Context Protocol (MCP)
-Tobin's expertise encompasses the full MCP lifecycle:
-- Server design and implementation
-- Tool and resource exposure patterns
-- Enterprise-grade authentication and authorization within MCP
-- Context window optimization for agent behavior
-- Security hardening for production deployments
+**Delegated authority over impersonation** - Agents must operate with explicit scopes, not user impersonation. True delegation requires "on-behalf-of" flows with provable authority.
 
-### Enterprise AI Integration
-- Building AI agents that respect enterprise security models
-- Compliance and governance considerations for AI in B2B contexts
-- User identity and access management with AI systems
-- Audit trails and observability for AI agent actions
-- Preventing agent misbehavior in production environments
+**Protocol-driven security** - MCP provides standardized boundaries for agent capabilities while enforcing organizational security models. Clean protocol design prevents configuration sprawl.
 
-## Key Insights & Philosophy
+**Verifiable systems** - Zero-knowledge cryptography enables auditable claims about AI behavior without exposing sensitive model internals or training data.
 
-Tobin's work emphasizes:
+**Privacy as infrastructure** - Building privacy, verifiability, and auditability into AI systems from first principles rather than treating them as afterthoughts.
 
-1. **Security First**: Enterprise deployments require security considerations that go beyond academic AI research. Every agent capability must be bounded by authentication, authorization, and audit trails.
+## WorkOS
 
-2. **Behavioral Governance**: The real challenge isn't building capable agents—it's ensuring they respect enterprise boundaries and act predictably within organizational constraints.
+WorkOS provides enterprise B2B authentication, authorization, and identity management for SaaS applications. Under Tobin's leadership, the company is extending this expertise to AI agents with enterprise-grade MCP infrastructure.
 
-3. **Protocol-Driven Architecture**: MCP provides a standardized way to expose capabilities to agents while maintaining security boundaries. Proper protocol design prevents sprawl and misconfiguration.
+## Conference Appearance
 
-4. **Context as Constraint**: Enterprise environments have complex identity and access patterns. MCP servers must translate organizational security models into boundaries that agents understand and respect.
+**Event:** AI Engineering Code Summit 2025
+**Date:** November 21, 2025
+**Time:** 10:40 AM - 11:00 AM
+**Session:** Enterprise-Grade Model Context Protocol
 
-5. **Production Maturity**: Enterprise adoption requires thinking beyond proof-of-concept. Observability, rate limiting, authentication, and failover must all be built in from the start.
-
-## Notable Contributions
-
-- Leading the adoption and implementation of MCP patterns in enterprise B2B infrastructure
-- Pioneering security-first approaches to AI agent design in regulated environments
-- Advancing the conversation on how authentication and authorization constraints translate to AI agent governance
-- Building bridges between enterprise infrastructure practices and emerging AI agent architectures
-
-## Summit Session Context
-
-At the AI Engineering Code Summit 2025, Tobin South presented during a critical moment for enterprise AI adoption. His session on enterprise-grade MCP came at a time when organizations are moving beyond experimentation and asking fundamental questions about production deployment. As the summit emphasized, trust becomes the new bottleneck when AI agents begin contributing code across organizations—support teams, managers, and AI systems all pushing code simultaneously. Tobin's focus on security, behavior governance, and enterprise-grade infrastructure directly addresses this challenge.
-
-The session positioned MCP as more than a communication protocol—it's a boundary enforcement mechanism that allows enterprises to safely expand who and what can contribute code while maintaining deterministic validation and trust infrastructure.
-
-## Key Summit Themes He Addresses
-
-**Theme 1: Trust Infrastructure for Diverse Contributors**
-When support teams, managers, and AI agents all contribute code, organizations need guaranteed behavior boundaries. Enterprise-grade MCP provides authentication, authorization, and audit foundations.
-
-**Theme 4: Capability Over Scaffolding**
-Rather than building complex orchestration, MCP provides clean protocol boundaries that let capability (the base model) shine while maintaining enterprise constraints.
-
-**Theme 5: Data Collection & Quality**
-Enterprise MCP servers provide structured data collection and observability about how agents interact with systems—critical infrastructure for understanding production AI behavior.
-
----
-
-*Last Updated: 2025-11-22*
+Tobin presented on building production MCP servers with enterprise security, covering authentication patterns, delegated authority mechanisms, and governance constraints. His talk addressed the critical challenge of moving AI agents from experimentation to production while maintaining trust and security boundaries.
