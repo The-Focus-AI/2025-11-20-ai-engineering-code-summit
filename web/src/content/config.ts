@@ -56,8 +56,30 @@ const sessions = defineCollection({
   })
 });
 
+// About page - single markdown file
+const about = defineCollection({
+  loader: glob({
+    pattern: 'about.md',
+    base: '..',
+    generateId: () => 'about'
+  }),
+  schema: z.object({
+    brand: z.string().optional(),
+    project: z.string().optional(),
+    doc_no: z.string().optional(),
+    event: z.string().optional(),
+    dates: z.string().optional(),
+    attended_dates: z.string().optional(),
+    location: z.string().optional(),
+    website: z.string().optional(),
+    format: z.string().optional(),
+    focus: z.string().optional(),
+  })
+});
+
 export const collections = {
   speakers,
   articles,
   sessions,
+  about,
 };

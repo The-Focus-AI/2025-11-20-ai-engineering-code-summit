@@ -3,6 +3,10 @@ import { ArrowRight, Database, Zap, MapPin, Calendar } from 'lucide-react';
 import { APP_YEAR, CONFERENCE_DETAILS } from '../constants';
 import { getCollection } from 'astro:content';
 
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL.slice(0, -1)
+  : import.meta.env.BASE_URL;
+
 // Load articles from content collection
 const allArticles = await getCollection('articles');
 
@@ -94,10 +98,11 @@ const engineeringArticles = articlesWithTrack
       <div class="border-l-4 border-alert-red pl-6 py-3 bg-[#f8f8f6]">
         <p class="font-sans font-bold text-sm uppercase tracking-wide text-gray-500 mb-2">Abstract</p>
         <p class="font-sans text-base leading-relaxed">
-          Two days of sessions from leaders at Anthropic, OpenAI, Meta, Netflix, Google DeepMind, and leading AI coding startups
-          revealed a clear architecture: <strong>quality AI engineering requires human thinking at the center, environments as
-          universal abstraction, specialized models through reinforcement learning, capability over scaffolding, and open data
-          as infrastructure.</strong>
+          Two days of sessions from experts at the frontier of real world AI engineering
+          revealed a clear architecture: <strong>the entire software development life cycle is going through a period of massive
+            transformation,
+            capability beats scaffolding, 
+            cleanliness beats cleverness, and human judgment remains the irreducible core.</strong>
         </p>
       </div>
 
@@ -105,14 +110,32 @@ const engineeringArticles = articlesWithTrack
       <div class="border border-void p-6 bg-white">
         <p class="font-sans font-bold text-sm uppercase tracking-wide text-gray-500 mb-3">State of the Field</p>
         <p class="font-sans text-sm leading-relaxed mb-4">
-          The AI engineering landscape is transitioning from "pilot purgatory" to production reality. Organizations
-          are discovering that model capability matters more than clever engineering tricks, that code quality determines
-          AI productivity gains, and that the abstraction layer—not the model itself—is where competitive advantage lives.
+          The AI engineering landscape is transitioning from "pilot purgatory" to production reality at various 
+          stages of maturity. Bottom up power-users are redefining what it means to be a software developer while
+          the perennial issues of software engineering - complexity and an "accumulations of whatevers" - have not
+          magically disappeared.  The software development lifecycle is fully experiencing AI-future shock.</p>
+        <p class="font-sans text-sm leading-relaxed mb-4">How much are we actually accomplishing?  
+          How much "productivity" is in fact mere reworking the slop that got churned out yesterday?
+          The answer seems to be based on the sophistication of your verification process, and the deeper and more
+          significant your validation process is the closer you get to this tantalizing idea of intelligent agents.
         </p>
-        <p class="font-sans text-sm leading-relaxed text-gray-600">
-          <em>[PLACEHOLDER: This section will expand with detailed synthesis from the comprehensive analysis,
-          one-pagers, and presentation materials—covering the architectural principles, implementation patterns,
-          and strategic implications discovered across 25+ sessions.]</em>
+        <p class="font-sans text-sm leading-relaxed mb-4">
+          Context management was a recurring theme: text files still reign supreme (now and forever), 
+          explicit planning or research phases,
+          either manual coaching or more of a built in framework such as Kiro Specs or Antigravity's Artifacts,
+          and subagents as a general pattern for managing context.  And they don't need to be
+          some elaborate memory thing.
+        </p>
+        <p class="font-sans text-sm leading-relaxed mb-4">
+          The models are so smart now that a lot of the specific tweaks of yester-month to get the harness tuned
+          seems unnecessary, with the Claude Code crew talking about getting "bash-pilled" and Terminus being the one 
+          tool needed for these agents to do anything.  
+          </p>
+          <p class="font-sans text-sm leading-relaxed mb-4">
+            Maybe a terminal and a filesystem is all you need.
+        </p>
+        <p class="font-sans text-sm leading-relaxed">
+          – <a href="/about" class="text-rand-blue underline hover:text-alert-red transition-colors">Will Schenk</a>
         </p>
       </div>
 
@@ -135,7 +158,7 @@ const engineeringArticles = articlesWithTrack
         <!-- Detailed Theme List -->
         <div class="space-y-6">
           {leadershipArticles.map((a: any) => (
-            <a href={`/article/${a.id}`} class="block hover:bg-gray-50 -mx-2 px-2 py-1 transition-colors rounded">
+            <a href={`${base}/article/${a.id}`} class="block hover:bg-gray-50 -mx-2 px-2 py-1 transition-colors rounded">
               <h4 class="font-sans font-bold text-sm uppercase flex items-center gap-2 hover:text-rand-blue">
                 <span class="text-alert-red font-mono text-[10px]">0{a.order}</span>
                 {a.title}
@@ -147,7 +170,7 @@ const engineeringArticles = articlesWithTrack
           ))}
         </div>
 
-        <a href="/track/leadership" class="mt-8 flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-rand-blue hover:underline decoration-2 underline-offset-4">
+        <a href={`${base}/track/leadership`} class="mt-8 flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-rand-blue hover:underline decoration-2 underline-offset-4">
           Access Division Files <ArrowRight className="w-4 h-4" />
         </a>
       </div>
@@ -166,7 +189,7 @@ const engineeringArticles = articlesWithTrack
         <!-- Detailed Theme List -->
         <div class="space-y-6">
           {engineeringArticles.map((a: any) => (
-            <a href={`/article/${a.id}`} class="block hover:bg-gray-50 -mx-2 px-2 py-1 transition-colors rounded">
+            <a href={`${base}/article/${a.id}`} class="block hover:bg-gray-50 -mx-2 px-2 py-1 transition-colors rounded">
               <h4 class="font-sans font-bold text-sm uppercase flex items-center gap-2 hover:text-rand-blue">
                 <span class="text-alert-red font-mono text-[10px]">0{a.order}</span>
                 {a.title}
@@ -178,7 +201,7 @@ const engineeringArticles = articlesWithTrack
           ))}
         </div>
 
-        <a href="/track/engineering" class="mt-8 flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-rand-blue hover:underline decoration-2 underline-offset-4">
+        <a href={`${base}/track/engineering`} class="mt-8 flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-rand-blue hover:underline decoration-2 underline-offset-4">
           Access Division Files <ArrowRight className="w-4 h-4" />
         </a>
       </div>

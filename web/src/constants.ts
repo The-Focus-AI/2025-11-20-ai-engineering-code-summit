@@ -6,5 +6,5 @@ export const CONFERENCE_DETAILS = {
   title: "AI Engineering Code Summit",
   location: "Midtown Manhattan, New York, NY",
   date: "November 20-21, 2025",
-  summary: "A gathering of AI engineering leaders from Anthropic, OpenAI, Meta, Netflix, and leading AI coding startups to explore what actually works at scale in production AI development."
-};
+  summary: "A select summit of leading coding agent builders and superusers: top AI engineers, engineering leaders (CTOs/VPs), and researchers advancing code generation and AI software engineering."
+}

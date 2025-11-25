@@ -1,11 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
-import { CONFERENCE_DETAILS } from '../constants';
+import { getCollection, render } from 'astro:content';
 
 const base = import.meta.env.BASE_URL.endsWith('/')
   ? import.meta.env.BASE_URL.slice(0, -1)
   : import.meta.env.BASE_URL;
+
+// Load about content from collection (reads from ../about.md)
+const aboutCollection = await getCollection('about');
+const aboutEntry = aboutCollection[0];
+const { Content } = await render(aboutEntry);
+const frontmatter = aboutEntry.data;
 ---
 
 <BaseLayout title="About - AI Engineering Code Summit">
@@ -18,7 +24,7 @@ const base = import.meta.env.BASE_URL.endsWith('/')
           href={`${base}/`}
           class="flex items-center gap-2 text-void hover:text-rand-blue transition-colors font-mono font-bold text-xs uppercase tracking-widest px-2"
         >
-          <ArrowLeft class="w-4 h-4" />
+          <ArrowLeft className="w-4 h-4" />
           Back to Summary
         </a>
       </div>
@@ -32,138 +38,60 @@ const base = import.meta.env.BASE_URL.endsWith('/')
           <h1 class="text-4xl md:text-6xl font-sans font-black text-void leading-none uppercase mb-6">
             About This Report
           </h1>
-          <p class="font-mono text-sm text-gray-600">
-            Comprehensive analysis and synthesis from the AI Engineer Code Summit 2025
-          </p>
+          {frontmatter.event && (
+            <p class="font-mono text-sm text-gray-600">
+              Comprehensive analysis and synthesis from the {frontmatter.event}
+            </p>
+          )}
         </div>
 
-        <!-- Content -->
-        <article class="prose prose-lg max-w-none prose-headings:font-sans prose-headings:font-black prose-headings:uppercase prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-4 prose-p:font-mono prose-p:text-lg prose-p:leading-8 prose-p:my-6 prose-ul:my-6 prose-li:my-3 prose-li:font-mono prose-li:text-lg prose-li:leading-8 prose-ol:my-6 prose-ol:my-3 prose-blockquote:border-l-4 prose-blockquote:border-rand-blue prose-blockquote:pl-6 prose-blockquote:py-4 prose-blockquote:my-10 prose-blockquote:font-sans prose-blockquote:text-xl prose-blockquote:leading-9 prose-blockquote:font-bold prose-blockquote:not-italic prose-a:text-rand-blue prose-a:font-semibold prose-a:no-underline hover:prose-a:underline">
-
-          <h2>The Conference</h2>
-          <p>
-            The <strong>AI Engineer Code Summit 2025</strong> took place November 19-22, 2025 in Midtown Manhattan, New York.
-            This report covers the Leadership Sessions (November 20) and Engineering Sessions (November 21).
-          </p>
-
-          <p>
-            This single-track, invite-only conference brought together top AI engineers building coding agents and
-            AI-powered development tools from leading organizations.
-          </p>
-
-          <div class="border-l-4 border-rand-blue pl-6 py-4 my-8 bg-gray-50">
-            <p class="font-sans font-bold text-base mb-2">Conference Website</p>
-            <a href="https://www.ai.engineer/code" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 font-mono text-sm">
-              ai.engineer/code <ExternalLink class="w-3 h-3" />
-            </a>
+        <!-- Conference Meta Box -->
+        {(frontmatter.dates || frontmatter.location || frontmatter.website) && (
+          <div class="border-l-4 border-rand-blue pl-6 py-4 my-8 bg-gray-50 not-prose">
+            <p class="font-sans font-bold text-base mb-3">Conference Details</p>
+            <div class="font-mono text-sm space-y-1 text-gray-700">
+              {frontmatter.dates && <p><strong>Dates:</strong> {frontmatter.dates}</p>}
+              {frontmatter.attended_dates && <p><strong>Attended:</strong> {frontmatter.attended_dates}</p>}
+              {frontmatter.location && <p><strong>Location:</strong> {frontmatter.location}</p>}
+              {frontmatter.format && <p><strong>Format:</strong> {frontmatter.format}</p>}
+              {frontmatter.website && (
+                <p>
+                  <strong>Website:</strong>{' '}
+                  <a href={frontmatter.website} target="_blank" rel="noopener noreferrer" class="text-rand-blue hover:underline inline-flex items-center gap-1">
+                    {frontmatter.website.replace('https://', '')} <ExternalLink className="w-3 h-3" />
+                  </a>
+                </p>
+              )}
+            </div>
           </div>
+        )}
 
-          <h2>Featured Organizations</h2>
-          <p>The summit included practitioners from:</p>
-          <ul>
-            <li><strong>OpenAI</strong> - Bill Chen, Brian Fioca, Will Hang, Cathy Zhou</li>
-            <li><strong>Anthropic</strong> - Barry Zhang, Mahesh Murag, Katelyn Lesse</li>
-            <li><strong>Google/DeepMind</strong> - Kat Kampf, Ammaar Reshi, Kevin Hou, Jed Borovik</li>
-            <li><strong>Meta</strong> - Jacob Kahn</li>
-            <li><strong>Netflix</strong> - Jake Nations</li>
-            <li><strong>Replit</strong> - Michele Catasta</li>
-            <li><strong>Factory AI</strong> - Eno Reyes</li>
-            <li>And many others from Cursor, Prime Intellect, Browser Company, McKinsey, Bloomberg, Capital One, Northwestern Mutual</li>
-          </ul>
-
-          <h2>What's Inside</h2>
-          <p>This report documents two days of intensive technical sessions analyzing:</p>
-          <ul>
-            <li>Agent architectures and production harnesses</li>
-            <li>Context management and memory systems</li>
-            <li>Trust and evaluation frameworks</li>
-            <li>Economics and ROI of AI engineering</li>
-            <li>Developer experience patterns</li>
-            <li>Infrastructure and tooling evolution</li>
-          </ul>
-
-          <h3>Key Outputs</h3>
-          <ul>
-            <li>40+ individual session notes with embedded slides</li>
-            <li>11 major themes identified across both days</li>
-            <li>13,000+ words of detailed analysis</li>
-            <li>50+ speaker profiles and research notes</li>
-          </ul>
-
-          <h2>How to Use This Report</h2>
-          <p>
-            This site is organized into two main tracks that mirror the conference structure:
-          </p>
-
-          <div class="not-prose grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-            <a href={`${base}/track/leadership`} class="border-2 border-void p-6 hover:bg-gray-50 transition-colors group">
-              <h3 class="font-sans font-black text-xl uppercase mb-2 group-hover:text-rand-blue">Leadership Track</h3>
-              <p class="font-mono text-xs text-gray-600">6 themes exploring organizational strategy, trust, economics, and the evolving role of software development in the AI era.</p>
-            </a>
-
-            <a href={`${base}/track/engineering`} class="border-2 border-void p-6 hover:bg-gray-50 transition-colors group">
-              <h3 class="font-sans font-black text-xl uppercase mb-2 group-hover:text-rand-blue">Engineering Track</h3>
-              <p class="font-mono text-xs text-gray-600">5 themes covering technical architecture, agent harnesses, code quality, observability, and infrastructure patterns.</p>
-            </a>
-          </div>
-
-          <p class="font-mono text-xs text-gray-500 border-t border-gray-300 pt-6">
-            Navigate using the tabs above to explore themes, speakers, and sessions. Use the FILES button to save items for later review.
-          </p>
-
-          <h2>Analysis Methodology</h2>
-          <p>
-            All analysis and synthesis in this report was generated using <strong>Claude Code</strong> with custom
-            conference analysis workflows. The process involved:
-          </p>
-          <ol>
-            <li>Session-by-session note transcription with slide integration</li>
-            <li>Thematic pattern identification across sessions</li>
-            <li>Cross-referencing speaker insights and key concepts</li>
-            <li>Synthesis of major themes with supporting evidence</li>
-            <li>Executive summary and presentation deck generation</li>
-          </ol>
-
-          <h2>About the Author</h2>
-          <p>
-            <strong>Will Schenk</strong> is a father, entrepreneur, technologist and aspiring woodsman living in the
-            woods of Northwest Connecticut with his wife Ksenia, four boys, and one baby girl.
-          </p>
-
-          <p>
-            In 2010, Will cofounded <a href="https://www.crunchbase.com/person/will-schenk" target="_blank" rel="noopener noreferrer">HappyFunCorp</a>,
-            a software development company focused on mobile product development. He stepped back from day-to-day operations
-            in January 2022 and sold the company later that year. He then took a professional break from technology, moved
-            to the woods to focus on family, and started Cornwall Market, a brick and mortar food market.
-          </p>
-
-          <p>
-            During his break, the world of generative AI emerged, drawing him back to the tech space. He founded
-            <a href="https://thefocus.ai/" target="_blank" rel="noopener noreferrer">The Focus AI</a> in November 2024,
-            working with clients to apply AI technology in real-world scenarios and exploring practical implementations
-            of AI in software development.
-          </p>
-
-          <div class="border border-gray-300 p-6 my-8 bg-white">
-            <p class="font-sans font-bold text-sm uppercase mb-3">Connect</p>
-            <ul class="space-y-1">
-              <li><a href="https://willschenk.com/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2">Website: willschenk.com <ExternalLink class="w-3 h-3" /></a></li>
-              <li><a href="https://github.com/wschenk" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2">GitHub: @wschenk <ExternalLink class="w-3 h-3" /></a></li>
-              <li><a href="https://x.com/wschenk" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2">Twitter/X: @wschenk <ExternalLink class="w-3 h-3" /></a></li>
-              <li><a href="https://www.linkedin.com/in/will-schenk-420266/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2">LinkedIn: Will Schenk <ExternalLink class="w-3 h-3" /></a></li>
-            </ul>
-          </div>
-
-          <div class="border-l-4 border-alert-red pl-6 py-4 my-8 bg-gray-50">
-            <p class="font-sans font-bold text-sm uppercase mb-2">Document Reference</p>
-            <p class="font-mono text-xs">
-              DOC. NO: RM-2025-HZ<br/>
-              PROJECT: AI Engineering Code Summit 2025<br/>
-              CLASSIFICATION: UNCLASSIFIED
-            </p>
-          </div>
-
+        <!-- Content from Markdown -->
+        <article class="prose prose-lg max-w-none
+          prose-headings:font-sans prose-headings:font-black prose-headings:uppercase prose-headings:tracking-tight
+          prose-h1:text-4xl prose-h1:mt-16 prose-h1:mb-8 prose-h1:border-b-2 prose-h1:border-void prose-h1:pb-4
+          prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-6
+          prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-4
+          prose-p:font-mono prose-p:text-base prose-p:leading-8 prose-p:my-5
+          prose-ul:my-6 prose-li:my-2 prose-li:font-mono prose-li:text-base prose-li:leading-7
+          prose-ol:my-6 prose-ol:list-decimal
+          prose-blockquote:border-l-4 prose-blockquote:border-rand-blue prose-blockquote:pl-6 prose-blockquote:py-4 prose-blockquote:my-10 prose-blockquote:font-sans prose-blockquote:text-xl prose-blockquote:leading-9 prose-blockquote:font-bold prose-blockquote:not-italic
+          prose-a:text-rand-blue prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+          prose-strong:font-bold
+          prose-hr:my-12 prose-hr:border-gray-300
+        ">
+          <Content />
         </article>
+
+        <!-- Document Reference Footer -->
+        <div class="border-l-4 border-alert-red pl-6 py-4 mt-16 bg-gray-50">
+          <p class="font-sans font-bold text-sm uppercase mb-2">Document Reference</p>
+          <p class="font-mono text-xs">
+            {frontmatter.doc_no && <>DOC. NO: {frontmatter.doc_no}<br/></>}
+            {frontmatter.event && <>PROJECT: {frontmatter.event}<br/></>}
+            CLASSIFICATION: UNCLASSIFIED
+          </p>
+        </div>
 
       </div>
     </div>
