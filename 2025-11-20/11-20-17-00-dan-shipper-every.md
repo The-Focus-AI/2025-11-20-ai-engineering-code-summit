@@ -9,8 +9,6 @@ topics:
   - "ROI & Economics"
 ---
 
-# Dan Shipper (Every) - How to Build an AI-Native Company (Even If Your Company Is 50 Years Old)
-
 **Time:** 5:00 PM
 
 **Speaker Bio:** Co-founder and CEO of Every. Prolific writer on AI transformation. Leads with just 15 people generating 7-figure revenue.

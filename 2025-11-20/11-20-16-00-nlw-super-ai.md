@@ -8,8 +8,6 @@ topics:
   - "SDLC & Process"
 ---
 
-# NLW (Super.ai/Superintelligent) - AI Consulting in Practice
-
 **Time:** 4:00 PM
 
 **Speaker Bio:** Nathaniel Whittemore (NLW). Host of "The AI Daily Brief" podcast. Founder of Superintelligent (AI education platform).

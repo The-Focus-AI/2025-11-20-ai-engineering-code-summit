@@ -8,8 +8,6 @@ topics:
   - "Testing & Verification"
 ---
 
-# Michele Catasta (Replit) - Autonomy Is All You Need
-
 **Time:** 9:25 AM
 
 **Speaker Bio:** VP of AI at Replit. Previously Head of Applied Research at Google Labs and Google X. Ph.D. in Computer Science, former Stanford instructor.

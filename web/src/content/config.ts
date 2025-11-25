@@ -35,6 +35,7 @@ const articles = defineCollection({
     topics: z.array(z.string()).optional(),
     key_speakers: z.array(z.string()).optional(),
     key_insights: z.array(z.string()).optional(),
+    edited: z.boolean().optional(),
   })
 });
 

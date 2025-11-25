@@ -8,8 +8,6 @@ topics:
   - "ROI & Economics"
 ---
 
-# Steve Yegge (Sourcegraph/Amp) & Gene Kim (IT Revolution) - 2026: The Year the IDE Died
-
 **Time:** 10:05 AM
 
 **Speaker Bio (Yegge):** 40+ years in tech industry. Now at Sourcegraph building AI developer tools (Amp). Writing "Vibe Coding: Building Production-Grade Software With GenAI."

@@ -9,8 +9,6 @@ topics:
   - "Data & Quality"
 ---
 
-# Asaf Bord (Northwestern Mutual) - Small Bets, Big Impact: Building GenBI at a Fortune 100
-
 **Time:** 2:05 PM
 
 **Speaker Bio:** GenAI Products Leader at Northwestern Mutual. Experience leading high-impact teams.

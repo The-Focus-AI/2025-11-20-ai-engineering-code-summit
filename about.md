@@ -17,6 +17,8 @@ This repository contains comprehensive notes, analysis, and synthesis from the *
 
 ## An experiment
 
+![Workflow Diagram](/images/workflow-diagram.png)
+
 In a spasm of uncharacterist orgnanizatioal enthusiasm, I took it upon myself to capture notes on every talk. It turned
 out to be an excellent way to keep engaged and locked in.
 

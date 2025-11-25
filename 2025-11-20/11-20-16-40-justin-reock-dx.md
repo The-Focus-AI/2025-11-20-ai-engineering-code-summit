@@ -9,8 +9,6 @@ topics:
   - "ROI & Economics"
 ---
 
-# Justin Reock (DX) - Leadership in AI-Assisted Engineering
-
 **Time:** 4:40 PM
 
 **Speaker Bio:** Deputy CTO of DX. 20+ years in software roles. Author of "DX's Guide to AI Assisted Engineering." Platform engineering specialist.

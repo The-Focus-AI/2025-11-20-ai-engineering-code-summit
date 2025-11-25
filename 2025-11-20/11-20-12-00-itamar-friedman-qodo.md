@@ -9,8 +9,6 @@ topics:
   - "Data & Quality"
 ---
 
-# Itamar Friedman (Qodo) - The State of AI Code Quality: Hype vs. Reality
-
 **Time:** 12:00 PM
 
 **Speaker Bio:** Co-founder of Qodo. Background in ML and software engineering. AI code quality expert.

@@ -9,8 +9,6 @@ topics:
   - "Trust & Safety"
 ---
 
-# Bill Chen & Brian Fioca (OpenAI) - Future-Proof Coding Agents: Building Reliable Systems That Outlast Model Cycles
-
 **Time:** 11:00 AM
 
 **Speaker Bios:** Bill Chen is Product Manager at OpenAI. Brian Fioca works in Engineering at OpenAI.

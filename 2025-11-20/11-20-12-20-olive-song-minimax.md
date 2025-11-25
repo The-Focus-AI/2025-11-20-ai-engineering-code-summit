@@ -8,8 +8,6 @@ topics:
   - "Infrastructure & Compute"
 ---
 
-# Olive Song (MiniMax) - Minimax M2
-
 **Time:** 12:20 PM
 
 **Speaker Bio:** Represents MiniMax, a Chinese AI company.

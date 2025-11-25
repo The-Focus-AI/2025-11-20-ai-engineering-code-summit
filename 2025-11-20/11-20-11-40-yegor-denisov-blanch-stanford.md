@@ -8,8 +8,6 @@ topics:
   - "Data & Quality"
 ---
 
-# Yegor Denisov-Blanch (Stanford) - How to Quantify AI ROI in Software Engineering (120k Devs Study)
-
 **Time:** 11:40 AM
 
 **Speaker Bio:** Researcher with Stanford's Software Engineering Productivity Research Group. Background in business/MBA. Calibrated productivity models.

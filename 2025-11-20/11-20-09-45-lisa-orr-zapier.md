@@ -8,8 +8,6 @@ topics:
   - "UX & Interaction"
 ---
 
-# Lisa Orr (Zapier) - Your Support Team Should Ship Code
-
 **Time:** 9:45 AM
 
 **Speaker Bio:** Lead Product Manager at Zapier. Former senior PM at Human API and Airship.

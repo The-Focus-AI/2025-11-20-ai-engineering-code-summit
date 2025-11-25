@@ -9,8 +9,6 @@ topics:
   - "Trust & Safety"
 ---
 
-# Lei Zhang (Bloomberg) - What We Learned Deploying AI within Bloomberg's Engineering Organization
-
 **Time:** 2:25 PM
 
 **Speaker Bio:** Head of Technology Infrastructure at Bloomberg Engineering.

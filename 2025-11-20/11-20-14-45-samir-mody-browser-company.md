@@ -9,8 +9,6 @@ topics:
   - "SDLC & Process"
 ---
 
-# Samir Mody (The Browser Company) - From Arc to Dia: Lessons Learned in Building AI Browser
-
 **Time:** 2:45 PM
 
 **Speaker Bio:** Head of Engineering, AI at The Browser Company. Previously senior engineer at Instagram/Facebook (6 years).

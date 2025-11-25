@@ -9,8 +9,6 @@ topics:
   - "SDLC & Process"
 ---
 
-# Max Kanat-Alexander (Capital One) - Developer Experience in the Age of AI Coding Agents
-
 **Time:** 3:05 PM
 
 **Speaker Bio:** Executive Distinguished Engineer for Developer Experience at Capital One. Author of "Code Simplicity." Previously Technical Lead for Code Health at Google, on DevEx at LinkedIn.

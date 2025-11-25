@@ -8,8 +8,6 @@ topics:
   - "Context & Memory"
 ---
 
-# Katelyn Lesse (Anthropic) - Evolving Claude APIs for Agents
-
 **Time:** 8:49 AM (approx)
 
 **Speaker Bio:** Head of API Engineering at Anthropic. Previously worked at Stripe and Betterment. Leading the Claude Developer Platform.

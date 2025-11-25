@@ -19,7 +19,6 @@ key_insights:
   - "A benchmark = environment + starting state + verifier (same as RL environments)"
   - "Good verifiers are outcome-driven (is kettle whistling?) not process-driven"
   - "Skills, artifacts, and environments form evolutionary chain for agent capabilities"
-edited: true
 ---
 
 # Environments as Universal Abstraction: The New Unit of Everything

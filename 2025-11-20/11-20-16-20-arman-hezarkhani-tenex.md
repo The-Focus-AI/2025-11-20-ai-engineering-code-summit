@@ -8,8 +8,6 @@ topics:
   - "SDLC & Process"
 ---
 
-# Arman Hezarkhani (Tenex) - Paying Engineers like Salespeople: How Tenex Rebuilt the Incentive Stack for Modern Engineering
-
 **Time:** 4:20 PM
 
 **Speaker Bio:** Managing Partner of Tenex. Previously founded multiple venture-backed AI companies, scaled Google Cloud AI to millions of developers, adjunct professor at Carnegie Mellon.

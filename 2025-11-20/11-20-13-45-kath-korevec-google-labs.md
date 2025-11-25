@@ -9,8 +9,6 @@ topics:
   - "Context & Memory"
 ---
 
-# Kath Korevec (Google Labs) - Proactive Agents
-
 **Time:** 1:45 PM
 
 **Speaker Bio:** Director of Product at Google Labs. Previously VP of Product at Vercel, Senior Director at GitHub. Deep DevEx expertise.

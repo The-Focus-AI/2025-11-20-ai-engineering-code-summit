@@ -8,8 +8,6 @@ topics:
   - "ROI & Economics"
 ---
 
-# Martin Harrysson & Natasha Maniar (McKinsey) - Moving away from Agile: What's Next?
-
 **Time:** 11:20 AM
 
 **Speaker Bios:** Martin Harrysson is a Partner at McKinsey. Natasha Maniar is a Consultant/Analyst at McKinsey.
