@@ -25,7 +25,7 @@ const speakers = defineCollection({
 const articles = defineCollection({
   loader: glob({
     pattern: '*.md',
-    base: '/Users/wschenk/The-Focus-AI/2025-11-20-ai-engineering-code-summit/web/src/content/articles',
+    base: './src/content/articles',
     generateId: ({ entry }: any) => entry
   }),
   schema: z.object({
@@ -44,7 +44,7 @@ const articles = defineCollection({
 const sessions = defineCollection({
   loader: glob({
     pattern: '2025-11-2[0-9]/11-2[0-9]-[0-9][0-9]-[0-9][0-9]-*.md',
-    base: '/Users/wschenk/The-Focus-AI/2025-11-20-ai-engineering-code-summit',
+    base: '..',
     generateId: ({ entry }: any) => entry.replace(/\//g, '--')
   }),
   schema: z.object({
