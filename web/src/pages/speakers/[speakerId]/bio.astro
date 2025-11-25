@@ -3,6 +3,10 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { ArrowLeft, FileText, Bookmark, Check, Linkedin, Twitter, Github, Globe } from 'lucide-react';
 import { getCollection, getEntry, render } from 'astro:content';
 
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL.slice(0, -1)
+  : import.meta.env.BASE_URL;
+
 export async function getStaticPaths() {
   const speakers = await getCollection('speakers');
   return speakers.map((speaker: any) => ({

@@ -3,6 +3,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { ArrowLeft, ArrowRight, Bookmark, MessageSquare, Plus, Check } from 'lucide-react';
 import { getCollection, getEntry, render } from 'astro:content';
 
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL.slice(0, -1)
+  : import.meta.env.BASE_URL;
+
 export async function getStaticPaths() {
   const allArticles = await getCollection('articles');
   return allArticles.map(article => ({
@@ -64,7 +68,7 @@ const idx = trackArticles.findIndex((a: any) => a.id === articleId);
 const prevArticle = idx > 0 ? trackArticles[idx - 1] : undefined;
 const nextArticle = idx < trackArticles.length - 1 ? trackArticles[idx + 1] : undefined;
 
-const trackUrl = `/track/${track.toLowerCase()}`;
+const trackUrl = `${base}/track/${track.toLowerCase()}`;
 
 // Get speakers who contributed to this article with their session info
 const contributors: any[] = [];
@@ -188,7 +192,7 @@ if (articleEntry.data.key_speakers && Array.isArray(articleEntry.data.key_speake
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             {contributors.map(speaker => (
               <a
-                href={`/speakers/${speaker.id}`}
+                href={`${base}/speakers/${speaker.id}`}
                 class="border border-gray-300 bg-white p-5 hover:border-void hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)] transition-all cursor-pointer group"
               >
                 <div class="flex gap-4 mb-3">
@@ -234,7 +238,7 @@ if (articleEntry.data.key_speakers && Array.isArray(articleEntry.data.key_speake
         <!-- Bottom Navigation -->
         <div class="mt-20 flex justify-between items-center pt-8 border-t-4 border-void">
           {prevArticle ? (
-            <a href={`/article/${prevArticle.id}`} class="text-left group">
+            <a href={`${base}/article/${prevArticle.id}`} class="text-left group">
               <span class="block font-mono text-[10px] text-gray-400 uppercase mb-1">Previous Section</span>
               <div class="flex items-center gap-2 font-sans font-bold uppercase text-void group-hover:text-rand-blue">
                 <ArrowLeft className="w-4 h-4" /> {prevArticle.title}
@@ -245,7 +249,7 @@ if (articleEntry.data.key_speakers && Array.isArray(articleEntry.data.key_speake
           )}
 
           {nextArticle ? (
-            <a href={`/article/${nextArticle.id}`} class="text-right group">
+            <a href={`${base}/article/${nextArticle.id}`} class="text-right group">
               <span class="block font-mono text-[10px] text-gray-400 uppercase mb-1">Proceed to Section 0{nextArticle.order}</span>
               <div class="flex items-center gap-2 font-sans font-bold uppercase text-void group-hover:text-rand-blue">
                 {nextArticle.title} <ArrowRight className="w-4 h-4" />

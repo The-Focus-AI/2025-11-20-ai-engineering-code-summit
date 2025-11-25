@@ -2,6 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { CONFERENCE_DETAILS } from '../constants';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL.slice(0, -1)
+  : import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="About - AI Engineering Code Summit">
@@ -11,7 +15,7 @@ import { CONFERENCE_DETAILS } from '../constants';
       <!-- Toolbar -->
       <div class="sticky top-0 z-40 bg-paper border-b border-void p-3 flex justify-between items-center print:hidden border-x border-void mx-[-1px]">
         <a
-          href="/"
+          href={`${base}/`}
           class="flex items-center gap-2 text-void hover:text-rand-blue transition-colors font-mono font-bold text-xs uppercase tracking-widest px-2"
         >
           <ArrowLeft class="w-4 h-4" />
@@ -92,12 +96,12 @@ import { CONFERENCE_DETAILS } from '../constants';
           </p>
 
           <div class="not-prose grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-            <a href="/track/leadership" class="border-2 border-void p-6 hover:bg-gray-50 transition-colors group">
+            <a href={`${base}/track/leadership`} class="border-2 border-void p-6 hover:bg-gray-50 transition-colors group">
               <h3 class="font-sans font-black text-xl uppercase mb-2 group-hover:text-rand-blue">Leadership Track</h3>
               <p class="font-mono text-xs text-gray-600">6 themes exploring organizational strategy, trust, economics, and the evolving role of software development in the AI era.</p>
             </a>
 
-            <a href="/track/engineering" class="border-2 border-void p-6 hover:bg-gray-50 transition-colors group">
+            <a href={`${base}/track/engineering`} class="border-2 border-void p-6 hover:bg-gray-50 transition-colors group">
               <h3 class="font-sans font-black text-xl uppercase mb-2 group-hover:text-rand-blue">Engineering Track</h3>
               <p class="font-mono text-xs text-gray-600">5 themes covering technical architecture, agent harnesses, code quality, observability, and infrastructure patterns.</p>
             </a>

@@ -3,6 +3,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { Plus, Check } from 'lucide-react';
 import { getCollection } from 'astro:content';
 
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL.slice(0, -1)
+  : import.meta.env.BASE_URL;
+
 // Load speakers from content collection
 const speakersCollection = await getCollection('speakers');
 
@@ -51,7 +55,7 @@ const SPEAKERS = speakersCollection
     <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-void">
       {SPEAKERS.map((speaker) => (
         <a
-          href={`/speakers/${speaker.id}`}
+          href={`${base}/speakers/${speaker.id}`}
           class="bg-paper p-6 hover:bg-surface transition-colors flex flex-col sm:flex-row gap-6 group cursor-pointer"
         >
 
