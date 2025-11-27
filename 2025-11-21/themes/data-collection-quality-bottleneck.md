@@ -18,67 +18,51 @@ key_insights:
   - "1000 examples can yield 10-point improvements - data quality >> data quantity"
   - "Cline-bench: open-source real-world agent coding benchmark from opt-in user data"
   - "Environments hub democratizes AI research like webapps democratized software"
+edited: true
 ---
 
-# Data Collection & Quality as the New Bottleneck
+"1000 examples can yield 10-point improvements" — OpenAI. 1,000 trajectories of code edit planning yielded a 10-point improvement — Cognition. 100 PyTorch examples got up to a 72% improvement over frontier models — Mako. 150 system-prompt iterations yielded up to a 15% improvement on benchmarks — Arize. Across the board, quality training data for post-training tuning is yielding outsized gains.
 
-Nik Pash didn't come to the AI Engineering Code Summit to make friends. The creator of Cline, one of the most widely-adopted AI coding agents, delivered what he called a "truth nuke"—and the shockwave is still reverberating through the research community. His message was simple, direct, and impossible to ignore: **the agents that are out there are collecting good data but not sharing it. Keeping datasets closed slows down research.**
+OpenAI's [ARFT approach](https://platform.openai.com/docs/guides/reinforcement-fine-tuning) requires four things: well-specified tasks, evals that mirror production, performance that scales with tries, and unhackable rewards. That last one is tricky—Mako's model initially gamed the system until they added judge LLMs. But when the reward function is right, the payoff is transformative.
 
-This wasn't just provocative rhetoric. It was a call to arms backed by hard-won lessons from the trenches of building production AI coding agents. And it marked a fundamental shift in where the real bottleneck lies in advancing AI capabilities.
+So small datasets work. The question is: where do you get quality training data?
 
-## The Great Bottleneck Migration
+## Model Strength Over Clever Tricks
 
-For years, the AI engineering community has been locked in an arms race of clever tricks—sophisticated scaffolding, complex tool-calling architectures, elaborate prompting strategies. But Pash's experience building Cline revealed an uncomfortable truth: **agents aren't bottlenecked by clever tricks anymore. Model strength is the main thing.**
-
-The data doesn't lie. Terminus still beats everything with a minimalist tool design—no clever tool calling, just basic tools like terminal, grep, and filesystem operations. Capability beats scaffolding. Minimalism wins. As Pash put it, he's "tired of all the little hacks." The engineering optimization game has reached diminishing returns.
-
-The bottleneck has migrated. The new constraint isn't how cleverly you can orchestrate model calls—it's **collecting quality training data at scale**. And this is where OpenAI's Agent Reinforcement Fine-Tuning (ARFT) results become revelatory.
-
-## The 1000-Example Revolution
-
-Will Hang and Cathy Zhou from OpenAI's fine-tuning team dropped a stat that should make every AI engineer sit up straight: **1000 examples can yield 10-point improvements**. Not 10,000 examples. Not 100,000. One thousand high-quality examples.
-
-![](slides/2025-11-21-11-40-gemini-edited.jpg)
-
-The ARFT case studies proved the principle across domains. Cognition's code editing agent saw dramatic gains from just 1000 trajectories, each in its own VM. Qodo's code review agent transformed with around 1000 question pairs. The pattern was consistent: **data quality really matters**—far more than quantity.
-
-But here's the kicker: OpenAI's partners are collecting this data. Cline's millions of users are generating these trajectories. Every AI coding agent in production is sitting on a goldmine of real-world interaction data. And almost none of it is being shared.
-
-This is Pash's "truth nuke" moment. The data exists. It's being collected right now, in production, at scale. But it's locked behind closed doors, siloed in proprietary systems, hoarded as competitive moats. And it's choking off the research community's ability to make collective progress.
-
-## Cline-Bench: Open Science as Competitive Advantage
-
-Pash's response is Cline-bench—a real-world agent coding benchmark built on the principles of open source and open science. The vision is audacious in its simplicity: convert real engineering work into open training data.
-
-![](slides/2025-11-21-16-37-gemini-edited.jpg)
-
-Cline-bench can run openly from opt-in users, capturing authentic coding trajectories as they happen. The goal is to create a feedback loop where production usage directly feeds research advancement, which in turn improves the agents that users rely on. It's a call for contribution: use it on your open source software, share the resulting data, lift all boats together.
-
-The technical foundation is solid. As Pash explained, benchmarks and RL environments are fundamentally the same thing—a starting state, an environment, and a verifier. The only real difference is how rewards are used: one measures, one improves. Cline has built an "RL environments factory" with sub-agents that can qualify tasks and generate outcome-driven verifiers.
-
-The tea kettle example crystallized good verifier design. Goal: boil water. Test: is it whistling? Pure outcome-driven verification that doesn't care about the path—not whether the burner is set to high, not whether five minutes elapsed, just whether the outcome was achieved. This is the key to reliable scoring and effective training.
-
-## The Democratization Stack
-
-Pash's vision dovetails perfectly with Will Brown's work at Prime Intellect on the "environments hub"—a platform for creating, sharing, and running RL training environments. Brown framed it perfectly: **"environments are the webapps of research."** Just as the web democratized software distribution, the environments hub aims to democratize AI research itself.
+[Nik Pash](https://pashpashpash.substack.com), creator of [Cline](https://github.com/cline/cline), put it bluntly: "Agents aren't bottlenecked by clever tricks anymore. Model strength is the main thing." The evidence? Terminus beats everything with minimal tool design—just terminal, grep, filesystem. No clever tool calling. "I'm tired of all the little hacks," Pash said. (In the Claude Agent SDK workshop on Saturday, the refrain was that the team was "bash-pilled"—just give the model a shell and step away.)
 
 ![](slides/2025-11-21-11-42-gemini-edited.jpg)
 
-Prime Intellect's thesis is that scaling AI isn't just about compute—it's about scaling talent. Increase the pool. Increase accessibility. Give people the tools to train models and contribute to collective understanding. Their Verifiers toolkit (https://github.com/PrimeIntellect-ai/verifiers) provides the scaffolding for anyone to build RL environments, no PhD required.
+Years of elaborate scaffolding were symptoms of compensating for model limitations. As models improve, those hacks become unnecessary. The bottleneck shifts upstream—to training data.
 
-The stack is coming together: Cline-bench generates real-world coding trajectories. Prime Intellect's environments hub provides the infrastructure to turn those trajectories into training environments. OpenAI's ARFT methodology proves that small, high-quality datasets can yield massive improvements. The pieces are all there.
+## Verification is the Unlock
 
-What's missing is the culture shift.
+Pash: "A benchmark is an environment, a starting state, and a verifier." Same as an RL environment. The only difference? One measures, one improves. Build good verifiers and you get both evaluation and training.
 
-## A Movement, Not a Feature
+The tea kettle example nails it. Goal: boil water. The kettle whistles when it's boiling. Good verifier: is it whistling? Bad verifiers: Is the burner on high? Has five minutes elapsed? Is the lid positioned correctly? Outcome-driven verification doesn't care how you got there—just whether you did.
 
-This isn't about a new benchmark or a clever technical trick. It's about recognizing that in 2025, **data is the constraint, and openness is the unlock**. Joel Becker's METR research on the gap between benchmarks and economic value highlighted a crucial point: we need better measurement of real-world capabilities, not just synthetic test performance.
+## Real-world Trajectories are the Gold
 
+Real-world agent trajectories are the ground truth. [Joel Becker](https://joel-becker.com) of [METR](https://www.metr.org) has studied the gap between benchmarks and economic impact. Synthetic tests don't predict real-world value. Production trajectories do—they capture the messy multi-step reasoning that actually matters.
 
-Real-world agent trajectories are the ground truth. They capture the messy, complex, multi-step reasoning that actually moves the needle on economic value. And they're being generated, right now, at unprecedented scale—but locked away.
+This data is being generated right now, at scale. Cline alone has millions of users. Every AI coding agent in production sits on real-world interaction data. Almost none of it is shared.
 
-Pash's truth nuke is a challenge to the entire AI engineering community: **are we serious about advancing agent capabilities, or are we content to let competitive dynamics slow down collective progress?** Will we choose the open science path that accelerated deep learning research, or the proprietary data moats that defined the pre-transformer era?
+## Cline-bench
 
-The answer will determine how quickly we get to truly capable AI coding agents. Cline-bench is Pash's bet on openness. The question is whether the rest of the community will follow. Because as he made clear: models only get better when labs train on something hard. And right now, the hardest, most valuable training data is sitting unused in production agent logs.
+![](slides/2025-11-21-16-37-gemini-edited.jpg)
 
-The bottleneck has shifted. The solution is clear. The call to action is issued. What remains is execution—and courage.
+Pash's answer: [Cline-bench](https://github.com/cline/cline-bench). Open source, open science. It captures coding trajectories from opt-in users and converts them to training data. "Use it on your open source software," he said. "Lift all boats together."
+
+## The Environments Hub
+
+This dovetails with [Will Brown](https://willcb.com)'s work at [Prime Intellect](https://www.primeintellect.ai/). "Environments are the webapps of research," he said. His environments hub provides infrastructure to turn trajectories into training environments anyone can use. Their environments hub lets anyone create, share, and run RL training environments.
+
+![](slides/2025-11-21-11-40-gemini-edited.jpg)
+
+Prime Intellect's thesis: scaling AI means scaling talent, not just compute. Increase the pool. Increase accessibility. Their [Verifiers toolkit](https://github.com/PrimeIntellect-ai/verifiers) provides scaffolding for anyone to build RL environments.
+
+## The Open Science Call
+
+The pieces are in place. Small datasets yield big gains. Verification is understood. Infrastructure exists. But Pash delivered a "truth nuke": agents are collecting good data and not sharing it. Keeping datasets closed slows down research.
+
+Models only get better when trained on something hard. The hardest data—real-world production trajectories—is sitting unused. Pash's bet is on openness. The question is whether the rest of the community will follow.

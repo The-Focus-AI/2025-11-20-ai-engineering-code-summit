@@ -22,8 +22,6 @@ key_insights:
 edited: true
 ---
 
-# Environments as Universal Abstraction: The New Unit of Everything
-
 A fundamental architectural insight emerged across multiple sessions: environments have become the universal unit of abstraction for AI engineering. As Will Brown, Research Lead at [Prime Intellect](https://www.primeintellect.ai/), put it: "Environments are the webapps of research." This is a clarifying shift in how we think about training, evaluation, deployment, and iteration of AI systems.
 
 ![](slides/2025-11-21-11-44-gemini-edited.jpg)

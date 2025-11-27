@@ -22,8 +22,6 @@ key_insights:
 edited: true
 ---
 
-# Context, Memory, and The Harness: Where Product Differentiation Really Happens
-
 Itamar Friedman from https://www.qodo.ai/ presented data showing that 76% of developers don't fully trust AI-generated code. "They don't trust the context that the LLM has." This isn't about model capabilities — it's about whether the harness can maintain enough relevant context while filtering out noise. Qodo's response was to build their Context Engine, which pulls in logs, history, and PR comments to give models the right information at the right time.
 
 ![](slides/2025-11-20-12-02-gemini-edited.jpg)

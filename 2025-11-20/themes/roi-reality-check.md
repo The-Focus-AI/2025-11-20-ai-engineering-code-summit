@@ -22,8 +22,6 @@ key_insights:
 edited: true
 ---
 
-# The ROI Reality Check: Where AI Actually Delivers (And Where It Falls Flat)
-
 According to Stanford researcher Yegor Denisov-Blanch, who analyzed over 100,000 engineers across hundreds of companies as part of the [Software Engineering Productivity Research Group](https://softwareengineeringproductivity.stanford.edu/) the actual productivity looks nothing like the demos.  And for the orgs that have it figured out, the differences between organizations effectively adopting AI and those lagging behind is getting wider and wider.
 
 ![](slides/2025-11-20-11-41-gemini-edited.jpg)
