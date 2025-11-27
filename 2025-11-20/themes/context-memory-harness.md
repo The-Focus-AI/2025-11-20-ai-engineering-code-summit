@@ -15,9 +15,9 @@ key_speakers:
   - "Itamar Friedman (Qodo)"
   - "Samir Mody (Browser Company)"
 key_insights:
+  - "76% of developers don't trust AI code because they don't trust the context"
   - "The harness is the competitive advantage - models commoditize, abstraction layers don't"
   - "OpenAI processes dozens of trillions of tokens per week through their harness"
-  - "76% of developers don't trust AI code because they don't trust the context"
   - "Steerability = intelligence + habit - the harness drives steering better than prompts"
 edited: true
 ---

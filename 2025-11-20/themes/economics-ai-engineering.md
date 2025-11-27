@@ -14,7 +14,7 @@ key_speakers:
   - "Asaf Bord (Northwestern Mutual)"
   - "Steve Yegge"
 key_insights:
-  - "AI can generate developer's annual salary in tokens for $100/day - economics collapse"
+  - "AI can generate developer's annual salary in tokens for $100/day"
   - "Tenex pays engineers like salespeople: output-based, uncapped, multiple on track for $1M+"
   - "AI changes the cost function of engineering - previous cost-per-feature calculations obsolete"
   - "When costs drop 100x, 'annoying things become free'"

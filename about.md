@@ -9,69 +9,36 @@ location: "Midtown Manhattan, New York, NY"
 website: "https://www.ai.engineer/code"
 format: "Single-track, invite-only conference"
 focus: "Top AI engineers building coding agents and AI-powered development tools"
+diagram: "/images/workflow-diagram.png"
 ---
 
 # AI Engineering Code Summit 2025 - Analysis & Insights
 
 This repository contains comprehensive notes, analysis, and synthesis from the **AI Engineer Code Summit 2025** held November 19-22, 2025 in Midtown Manhattan, New York. These notes cover the Leadership Sessions (Nov 20) and Engineering Sessions (Nov 21).
 
-## An experiment
+## Notes
 
-![Workflow Diagram](/images/workflow-diagram.png)
+Most of this was based on my note taking and phone-photo snapping work on side at the conference.  I wrote down the quotes as they happened but I wasn't able to verify anything.  From my notes, I used claude to expand, contract, expand again, and contract again the content.  Look through for themes, tweaking the ideas, and then reorganizing things into sections.
 
-In a spasm of uncharacterist orgnanizatioal enthusiasm, I took it upon myself to capture notes on every talk. It turned
-out to be an excellent way to keep engaged and locked in.
+I designes the basic side using aistudio, copied it over into my claude manage repo, and iterated on the designs.  I used nano-banana to process the conference photos -- [vibe coded an image processor](https://github.com/The-Focus-AI/nano-banana-cli) which also can double as a Claude Code skill -- and generate the diagrams for the posts.
 
-First I used Coment went to [https://www.ai.engineer/schedule] and asked it to:
+After choosing all of the themes, I then went back and rewrote all of the articles because boy does AI generated prose really.  Its not this but its that.  Sigh.
 
-> go through each of the schedules talks today and give me a brief bio of who is speaking, what their company does, and what to focus on
-
-I then copied that resulting markdown into my daily Obsidian note, and I started typing furiously.  Typing with
-complete disregard for what keys I was mashing, not even attemption to correct spelling, just capturing whatever stuck out.
-
-I was also snapping photos on my phone.
-
-## nano-banana
-
-At some point I thought you know I'm at an AI conference, lets do some image manipulating, 
-so /while I was taking notes/ I also fired up [claude code](https://www.claude.com/product/claude-code) and 
-[vibe coded an image processor](https://github.com/The-Focus-AI/nano-banana-cli) to 
-[extract slides from an image](https://github.com/The-Focus-AI/nano-banana-cli/blob/main/prompts/slide-extractor.md), 
-also looking in the metadata to rename the file as a date with a time stamp.
-
-## mash them together
-
-At the end of each day, I asked [claude](https://www.claude.com/product/claude-code) to intereest the image slides
-into the right section of the file -- the talks had the time in there -- and that's how we get
+## Raw notes
 
 - [2025-11-20.md](https://github.com/The-Focus-AI/2025-11-20-ai-engineering-code-summit/blob/main/2025-11-20.md)
 - [2025-11-21.md](https://github.com/The-Focus-AI/2025-11-20-ai-engineering-code-summit/blob/main/2025-11-21.md) 
 
-## post processing
+## Some of the prompts that got us here:
 
-Now I started asking claude to figure out how to program itself.
+- [conference-analsys.md](https://github.com/The-Focus-AI/2025-11-20-ai-engineering-code-summit/blob/main/.claude/commands/conference-analysis.md)
+- [theme-summary.md](https://github.com/The-Focus-AI/2025-11-20-ai-engineering-code-summit/blob/main/.claude/commands/theme-summary.md)
+- [speaker-decorator.md](https://github.com/The-Focus-AI/2025-11-20-ai-engineering-code-summit/blob/main/.claude/commands/speaker-decorator.md)
+- [tighten-prose.md](https://github.com/The-Focus-AI/2025-11-20-ai-engineering-code-summit/blob/main/.claude/commands/tighten-prose.md)
 
-### Prompt: [conference-analsys.md](https://github.com/The-Focus-AI/2025-11-20-ai-engineering-code-summit/blob/main/.claude/commands/conference-analysis.md)
+But ultimately, you just gotta type everything in from scratch.
 
-This was something like 
-
-> i want to build a command that helps me make sense of the themes in this talk, ask me questions about what i want one at time until you know what to do.
-
-I use that pattern a lot, one question at a time.  I used to say something like 
-"ask me the question that will give you the most important information first" but now it just knows.
-
-
-### Prompt: [theme-summary.md](https://github.com/The-Focus-AI/2025-11-20-ai-engineering-code-summit/blob/main/.claude/commands/theme-summary.md)
-
-> refine the themes even more, making them into a pyrmind, first a summary, then a one pager,and then a presentation
-
-The problem is that prose it produces is so stultifyingly boring, but this was
-and interesting thought process to fiddling with the information architecture.
-
-This helped figure out which talk really had to do with which theme for example.
-
-### Prompt: [speaker-decorator.md](https://github.com/The-Focus-AI/2025-11-20-ai-engineering-code-summit/blob/main/.claude/commands/speaker-decorator.md)
-
+## A discouse
 This is a fun one that you does a bunch of biographical research on people, what
 they're known for, their socials etc.  I also use it to download their photos. 
 You can run it using something like
@@ -104,21 +71,4 @@ themes and overall structure.  Starting with the exective summary, and then the 
 ## Tokens
 
 
-
-## About the Author
-
-**Will Schenk** is a father, entrepreneur, technologist and aspiring woodsman living in the woods of Northwest Connecticut with his wife Ksenia, four boys, and one baby girl.
-
-In 2010, Will cofounded [HappyFunCorp](https://www.crunchbase.com/person/will-schenk), a software development company focused on mobile product development. He stepped back from day-to-day operations in January 2022 and sold the company later that year. He then took a professional break from technology, moved to the woods to focus on family, and started [Cornwall Market](https://willschenk.com/), a brick and mortar food market. He's also the cofounder of [Tezlab](https://willschenk.com/), a mobile app helping users understand how to use their Tesla and Rivian vehicles.
-
-During his break, the world of generative AI emerged, drawing him back to the tech space. He founded [The Focus AI](https://thefocus.ai/) in November 2024, working with clients to apply AI technology in real-world scenarios and exploring practical implementations of AI in software development.
-
-Will maintains a personal blog at [willschenk.com](https://willschenk.com/) where he writes lab notes, how-to guides, and thought fragments about technology, programming, and life in Connecticut.
-
-**Links:**
-- Website: [willschenk.com](https://willschenk.com/)
-- GitHub: [@wschenk](https://github.com/wschenk)
-- Twitter/X: [@wschenk](https://x.com/wschenk)
-- LinkedIn: [Will Schenk](https://www.linkedin.com/in/will-schenk-420266/)
-- Company: [The Focus AI](https://thefocus.ai/)
 

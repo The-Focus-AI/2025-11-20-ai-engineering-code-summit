@@ -15,10 +15,11 @@ key_speakers:
   - "Martin Harrysson (McKinsey)"
   - "Natasha Maniar (McKinsey)"
 key_insights:
+  - "AI doesn't eliminate need for good process - it makes good process more valuable"
   - "Clean code amplifies AI gains 4x: 35-40% productivity with clean codebases vs 0-10% with messy ones"
   - "Environment cleanliness predicts AI productivity far better than token usage"
   - "Code review is the new bottleneck - more PRs, not buggier PRs"
-  - "AI doesn't eliminate need for good process - it makes good process more valuable"
+
 edited: true
 ---
 

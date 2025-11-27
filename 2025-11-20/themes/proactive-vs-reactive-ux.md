@@ -14,9 +14,9 @@ key_speakers:
   - "Dan Shipper (Every)"
   - "Samir Mody (Browser Company)"
 key_insights:
+  - "Goal is reducing mental load, not just adding speed"
   - "Current tools are 'fundamentally reactive' - forcing constant context-switching"
   - "Proactive agents: observation, timely action, personalization, seamless integration"
-  - "Goal is reducing mental load, not just adding speed"
   - "AI permits engineers to work with fractured attention productively"
 edited: true
 ---

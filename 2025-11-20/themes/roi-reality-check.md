@@ -15,8 +15,8 @@ key_speakers:
   - "Martin Harrysson (McKinsey)"
   - "Natasha Maniar (McKinsey)"
 key_insights:
-  - "AI delivers 35-40% gains on greenfield/low-complexity, but 0-10% on brownfield/high-complexity"
   - "93% of organizations stuck in 'pilot purgatory' - only 7% believe they're at scale"
+  - "AI delivers 35-40% gains on greenfield/low-complexity, but 0-10% on brownfield/high-complexity"
   - "Gap between demo and production is 'so broad' in risk-averse environments"
   - "2 engineers can create tech debt of 50 engineers through vibe coding"
 edited: true

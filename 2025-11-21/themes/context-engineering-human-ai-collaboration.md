@@ -12,7 +12,7 @@ key_speakers:
   - "Dex Horthy (HumanLayer)"
   - "Beyang Liu (Amp Code)"
 key_insights:
-  - "DO NOT OUTSOURCE THE THINKING - AI can only amplify the thinking you've done"
+  - "AI can only amplify the thinking you've already done"
   - "Around 40% context window utilization you see diminishing returns - 'the dumb zone'"
   - "Easy doesn't equal simple - AI makes coding easy but systems complex"
   - "Subagents are for controlling context, not adding features"

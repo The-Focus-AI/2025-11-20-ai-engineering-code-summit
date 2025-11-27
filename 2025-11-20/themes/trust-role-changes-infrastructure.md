@@ -16,7 +16,6 @@ key_speakers:
   - "Kath Korevec (Google Labs)"
 key_insights:
   - "What's good for humans is good for AI - same infrastructure investments benefit both"
-  - "Zapier support team members moved into engineering roles with 70% accuracy using AI tools"
   - "Trust grows from predictable behavior, which requires solid infrastructure"
   - "Psychological safety is the overwhelming predictor of team success"
 edited: true

@@ -75,6 +75,29 @@ const about = defineCollection({
     website: z.string().optional(),
     format: z.string().optional(),
     focus: z.string().optional(),
+    diagram: z.string().optional(),
+  })
+});
+
+// Bio/Author page - single markdown file
+const bio = defineCollection({
+  loader: glob({
+    pattern: 'bio.md',
+    base: '..',
+    generateId: () => 'bio'
+  }),
+  schema: z.object({
+    name: z.string(),
+    title: z.string().optional(),
+    company: z.string().optional(),
+    company_url: z.string().optional(),
+    tagline: z.string().optional(),
+    services: z.array(z.string()).optional(),
+    website: z.string().optional(),
+    github: z.string().optional(),
+    twitter: z.string().optional(),
+    linkedin: z.string().optional(),
+    diagram: z.string().optional(),
   })
 });
 
@@ -83,4 +106,5 @@ export const collections = {
   articles,
   sessions,
   about,
+  bio,
 };

@@ -10,6 +10,12 @@ const aboutEntry = aboutCollection[0];
 const { Content: AboutContent } = await render(aboutEntry);
 const aboutFrontmatter = aboutEntry.data;
 
+// Load bio collection
+const bioCollection = await getCollection('bio');
+const bioEntry = bioCollection[0];
+const { Content: BioContent } = await render(bioEntry);
+const bioData = bioEntry.data;
+
 // Leadership article IDs
 const leadershipIds = ['trust-role', 'context-memory', 'sdlc-evolution', 'roi-reality', 'proactive-vs', 'economics-ai'];
 
@@ -358,6 +364,15 @@ for (const article of allArticles) {
       color: var(--void);
     }
 
+    .toc-insight {
+      display: block;
+      font-size: 0.85rem;
+      font-style: italic;
+      color: #555;
+      margin-top: 0.25em;
+      line-height: 1.4;
+    }
+
     /* Section article list */
     .section-toc {
       margin: 2em 0;
@@ -540,7 +555,8 @@ for (const article of allArticles) {
       #toc,
       #leadership,
       #engineering,
-      #about {
+      #about,
+      #author {
         page-break-before: always;
       }
 
@@ -576,7 +592,8 @@ for (const article of allArticles) {
       #toc,
       #leadership,
       #engineering,
-      #about {
+      #about,
+      #author {
         page-break-before: always;
       }
 
@@ -675,7 +692,12 @@ for (const article of allArticles) {
         <div class="toc-section-title">Leadership Track</div>
         <ol>
           {leadershipArticles.map((a: any) => (
-            <li><a href={`#article-${a.id}`}>{a.data.title}</a></li>
+            <li>
+              <a href={`#article-${a.id}`}>{a.data.title}</a>
+              {a.data.key_insights?.[0] && (
+                <span class="toc-insight">{a.data.key_insights[0]}</span>
+              )}
+            </li>
           ))}
         </ol>
       </div>
@@ -683,7 +705,12 @@ for (const article of allArticles) {
         <div class="toc-section-title">Engineering Track</div>
         <ol>
           {engineeringArticles.map((a: any) => (
-            <li><a href={`#article-${a.id}`}>{a.data.title}</a></li>
+            <li>
+              <a href={`#article-${a.id}`}>{a.data.title}</a>
+              {a.data.key_insights?.[0] && (
+                <span class="toc-insight">{a.data.key_insights[0]}</span>
+              )}
+            </li>
           ))}
         </ol>
       </div>
@@ -691,6 +718,7 @@ for (const article of allArticles) {
         <div class="toc-section-title">Appendix</div>
         <ol>
           <li><a href="#about">About This Report</a></li>
+          <li><a href="#author">About the Author</a></li>
         </ol>
       </div>
     </div>
@@ -716,7 +744,12 @@ for (const article of allArticles) {
       <p class="section-abstract">AI rewards excellence and punishes mediocrity. Trust grows from infrastructure, not promises.</p>
       <ol>
         {leadershipArticles.map((a: any) => (
-          <li><a href={`#article-${a.id}`}>{a.data.title}</a></li>
+          <li>
+            <a href={`#article-${a.id}`}>{a.data.title}</a>
+            {a.data.key_insights && a.data.key_insights.length > 0 && (
+              <span class="toc-insight">{a.data.key_insights.join(' · ')}</span>
+            )}
+          </li>
         ))}
       </ol>
     </div>
@@ -787,7 +820,12 @@ for (const article of allArticles) {
       <p class="section-abstract">The war on "slop" requires human thinking, environments as abstraction, and open data.</p>
       <ol>
         {engineeringArticles.map((a: any) => (
-          <li><a href={`#article-${a.id}`}>{a.data.title}</a></li>
+          <li>
+            <a href={`#article-${a.id}`}>{a.data.title}</a>
+            {a.data.key_insights && a.data.key_insights.length > 0 && (
+              <span class="toc-insight">{a.data.key_insights.join(' · ')}</span>
+            )}
+          </li>
         ))}
       </ol>
     </div>
@@ -852,6 +890,13 @@ for (const article of allArticles) {
       <h2>About This Report</h2>
     </div>
 
+    {aboutFrontmatter.diagram && (
+      <figure style="margin: 2em 0;">
+        <img src={aboutFrontmatter.diagram} alt="Report workflow diagram" />
+        <figcaption style="font-size: 0.85rem; color: #666; text-align: center; margin-top: 0.5em;">How this report was created</figcaption>
+      </figure>
+    )}
+
     {(aboutFrontmatter.dates || aboutFrontmatter.location || aboutFrontmatter.website) && (
       <aside>
         <h3>Conference Details</h3>
@@ -880,6 +925,61 @@ for (const article of allArticles) {
 
     <div class="section-footer">
       <span>About This Report</span>
+      <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
+    </div>
+  </section>
+
+  <!-- Author Section -->
+  <section id="author">
+    <div class="section-header">
+      <p class="meta">Appendix</p>
+      <h2>About the Author</h2>
+    </div>
+
+    {bioData.diagram && (
+      <figure style="margin: 2em 0;">
+        <img src={bioData.diagram} alt="Author diagram" />
+      </figure>
+    )}
+
+    <aside>
+      <h3>Author Information</h3>
+      <dl>
+        <dt>Name</dt><dd>{bioData.name}</dd>
+        {bioData.title && bioData.company && <><dt>Role</dt><dd>{bioData.title}, {bioData.company}</dd></>}
+        {bioData.tagline && <><dt>Focus</dt><dd>{bioData.tagline}</dd></>}
+        {bioData.website && <><dt>Website</dt><dd><a href={`https://${bioData.website}`}>{bioData.website}</a></dd></>}
+        {bioData.company_url && <><dt>Company</dt><dd><a href={bioData.company_url}>{bioData.company_url}</a></dd></>}
+      </dl>
+    </aside>
+
+    {bioData.services && bioData.services.length > 0 && (
+      <aside style="margin-top: 1.5em;">
+        <h3>Services</h3>
+        <ul>
+          {bioData.services.map((service: string) => (
+            <li>{service}</li>
+          ))}
+        </ul>
+      </aside>
+    )}
+
+    <div class="about-body">
+      <BioContent />
+    </div>
+
+    <footer>
+      <p>
+        {bioData.twitter && <>Twitter/X: <a href={`https://x.com/${bioData.twitter}`}>@{bioData.twitter}</a></>}
+        {bioData.twitter && bioData.github && <> · </>}
+        {bioData.github && <>GitHub: <a href={`https://github.com/${bioData.github}`}>@{bioData.github}</a></>}
+        {(bioData.twitter || bioData.github) && bioData.linkedin && <> · </>}
+        {bioData.linkedin && <>LinkedIn: <a href={`https://linkedin.com/in/${bioData.linkedin}`}>{bioData.name}</a></>}
+      </p>
+    </footer>
+
+    <div class="section-footer">
+      <span>About the Author</span>
       <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
     </div>
   </section>
