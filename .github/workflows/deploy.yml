@@ -43,6 +43,8 @@ jobs:
       - name: Build site
         working-directory: ./web
         run: pnpm run build
+        env:
+          DEPLOY: github-pages
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -9,6 +9,7 @@ interface Props {
 }
 
 const { title = 'Horizon 2025 Report' } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <!DOCTYPE html>
@@ -16,6 +17,7 @@ const { title = 'Horizon 2025 Report' } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href={base} />
     <title>{title}</title>
   </head>
   <body class="min-h-screen font-sans antialiased selection:bg-rand-blue selection:text-white">

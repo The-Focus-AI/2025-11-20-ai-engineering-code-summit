@@ -3,10 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { getCollection, render } from 'astro:content';
 
-const base = import.meta.env.BASE_URL.endsWith('/')
-  ? import.meta.env.BASE_URL.slice(0, -1)
-  : import.meta.env.BASE_URL;
-
 // Load about content from collection (reads from ../about.md)
 const aboutCollection = await getCollection('about');
 const aboutEntry = aboutCollection[0];
@@ -21,7 +17,7 @@ const frontmatter = aboutEntry.data;
       <!-- Toolbar -->
       <div class="sticky top-0 z-40 bg-paper border-b border-void p-3 flex justify-between items-center print:hidden border-x border-void mx-[-1px]">
         <a
-          href={`${base}/`}
+          href="./"
           class="flex items-center gap-2 text-void hover:text-rand-blue transition-colors font-mono font-bold text-xs uppercase tracking-widest px-2"
         >
           <ArrowLeft className="w-4 h-4" />

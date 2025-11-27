@@ -3,10 +3,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { ArrowLeft, Bookmark, Calendar, Clock } from 'lucide-react';
 import { getCollection, getEntry, render } from 'astro:content';
 
-const base = import.meta.env.BASE_URL.endsWith('/')
-  ? import.meta.env.BASE_URL.slice(0, -1)
-  : import.meta.env.BASE_URL;
-
 export async function getStaticPaths() {
   const allSessions = await getCollection('sessions');
   // Filter out non-session files (lunch, expo, afterparty, etc.) and sessions with no ID
@@ -70,7 +66,7 @@ const relatedArticles = allArticles
       <!-- Toolbar -->
       <div class="sticky top-0 z-40 bg-paper border-b border-void p-3 flex justify-between items-center print:hidden border-x border-void mx-[-1px]">
         <a
-          href={`${base}/sessions`}
+          href="sessions"
           class="flex items-center gap-2 text-void hover:text-rand-blue transition-colors font-mono font-bold text-xs uppercase tracking-widest px-2"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -149,7 +145,7 @@ const relatedArticles = allArticles
             <div class="space-y-3">
               {relatedArticles.map(article => (
                 <a
-                  href={`${base}/article/${article.id}`}
+                  href={`article/${article.id}`}
                   class="block border border-gray-300 bg-white p-4 hover:border-void hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)] transition-all cursor-pointer group"
                 >
                   <div class="flex items-center justify-between">

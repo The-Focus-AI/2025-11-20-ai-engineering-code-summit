@@ -13,11 +13,6 @@ run = "cd web && npm run dev"
 description = "Build website for production"
 run = "cd web && npm run build"
 
-[tasks.preview]
-description = "Preview production build"
-run = "cd web && npm run preview"
-
-[tasks.preview-static-site]
-description = "Deploy to pgs.sh"
-depends = ["build"]
-run = "cd web && rsync -rv dist/ pgs.sh:/ai-engineering-code-summit/ && echo '\nDeployed to: https://combray-ai-engineering-code-summit.pgs.sh/'"
+[tasks.thefocus]
+description = "Build and deploy to thefocus-landing"
+run = "cd web && DEPLOY=thefocus npm run build && rsync -rv --delete dist/ ../../thefocus-landing/public/reports/aiecode-2025-11/"
