@@ -1,0 +1,898 @@
+---
+import { getCollection, render } from 'astro:content';
+import { CONFERENCE_DETAILS, APP_YEAR } from '../constants';
+
+// Load all collections
+const allArticles = await getCollection('articles');
+const allSpeakers = await getCollection('speakers');
+const aboutCollection = await getCollection('about');
+const aboutEntry = aboutCollection[0];
+const { Content: AboutContent } = await render(aboutEntry);
+const aboutFrontmatter = aboutEntry.data;
+
+// Leadership article IDs
+const leadershipIds = ['trust-role', 'context-memory', 'sdlc-evolution', 'roi-reality', 'proactive-vs', 'economics-ai'];
+
+// Determine track from article ID
+function getTrack(articleId: string): 'LEADERSHIP' | 'ENGINEERING' {
+  return leadershipIds.some(id => articleId.includes(id)) ? 'LEADERSHIP' : 'ENGINEERING';
+}
+
+// Process articles with track info
+const articlesWithTrack = allArticles.map((article: any) => ({
+  ...article,
+  track: getTrack(article.id)
+}));
+
+// Group and sort articles by track
+const leadershipArticles = articlesWithTrack
+  .filter((a: any) => a.track === 'LEADERSHIP')
+  .sort((a: any, b: any) => a.data.order - b.data.order);
+
+const engineeringArticles = articlesWithTrack
+  .filter((a: any) => a.track === 'ENGINEERING')
+  .sort((a: any, b: any) => a.data.order - b.data.order);
+
+// Build speakers lookup
+const speakersMap = new Map(allSpeakers.map((s: any) => [s.data.name, s]));
+
+// Helper to get speakers for an article
+function getSpeakersForArticle(article: any) {
+  const keySpeakers = article.data.key_speakers || [];
+  return keySpeakers.map((name: string) => {
+    const cleanName = name.replace(/\s*\([^)]+\)\s*$/, '').trim();
+    return speakersMap.get(cleanName);
+  }).filter(Boolean);
+}
+
+// Helper to get primary social link for a speaker (prefer X, then LinkedIn)
+function getSpeakerLink(speaker: any): string | null {
+  if (speaker.data.twitter_url) return speaker.data.twitter_url;
+  if (speaker.data.twitter) return `https://x.com/${speaker.data.twitter}`;
+  if (speaker.data.linkedin) return `https://linkedin.com/in/${speaker.data.linkedin}`;
+  return null;
+}
+
+// Render all articles
+const renderedArticles = new Map();
+for (const article of allArticles) {
+  const { Content } = await render(article);
+  renderedArticles.set(article.id, Content);
+}
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{CONFERENCE_DETAILS.title} {APP_YEAR} - Full Report</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+  <style>
+    /* Colors */
+    :root {
+      --blue: #0055aa;
+      --red: #d93025;
+      --void: #1a1a1a;
+    }
+
+    /* Base styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    body {
+      font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: 2rem;
+      color: var(--void);
+      background: #fff;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      line-height: 1.1;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 1.2em;
+    }
+
+    /* Links */
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Lists */
+    ul, ol {
+      margin-bottom: 1.2em;
+      padding-left: 1.5em;
+    }
+
+    li {
+      margin-bottom: 0.4em;
+    }
+
+    /* Blockquotes */
+    blockquote {
+      border-left: 3px solid var(--blue);
+      padding-left: 1.2em;
+      margin: 1.5em 0;
+      font-style: italic;
+      color: #333;
+    }
+
+    /* Images */
+    img {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      margin: 1.5em 0;
+    }
+
+    /* Figures */
+    figure {
+      margin: 1.5em 0;
+    }
+
+    figure img {
+      margin: 0;
+    }
+
+    /* Code */
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.85em;
+      background: #f4f4f4;
+      padding: 0.15em 0.4em;
+      border-radius: 3px;
+    }
+
+    pre {
+      background: #f4f4f4;
+      padding: 1em;
+      overflow-x: auto;
+      margin: 1.5em 0;
+      border-radius: 4px;
+    }
+
+    pre code {
+      background: none;
+      padding: 0;
+    }
+
+    /* Horizontal rules */
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 2.5em 0;
+    }
+
+    /* Meta text - small uppercase labels */
+    .meta {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.75rem;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* Info box - red left border */
+    .info-box {
+      border-left: 4px solid var(--red);
+      padding-left: 1.5em;
+      margin: 2em 0;
+    }
+
+    /* Address */
+    address {
+      font-style: normal;
+      margin: 1em 0;
+      color: #444;
+    }
+
+    /* Aside - for abstracts and expert lists */
+    aside {
+      background: #f8f8f6;
+      padding: 1.2em 1.5em;
+      margin: 1.5em 0;
+      border-left: 3px solid var(--blue);
+    }
+
+    aside h3, aside h4 {
+      margin-top: 0;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+    }
+
+    aside p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Definition lists */
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      font-weight: 600;
+      margin-top: 0.5em;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    dt:first-child {
+      margin-top: 0;
+    }
+
+    dd {
+      margin-left: 0;
+      margin-bottom: 0.3em;
+      color: #333;
+    }
+
+    /* Page header - huge type, left aligned */
+    .page-header {
+      margin-bottom: 2em;
+    }
+
+    .page-header .meta {
+      margin-bottom: 0.5em;
+    }
+
+    .page-header h1 {
+      margin: 0;
+      font-size: 5rem;
+      line-height: 0.95;
+    }
+
+    .page-header .subtitle {
+      font-size: 2rem;
+      color: var(--blue);
+      margin: 0.25em 0 0 0;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+    }
+
+    /* Section header - for track pages */
+    .section-header {
+      margin-bottom: 2em;
+    }
+
+    .section-header h2 {
+      margin: 0;
+      font-size: 3.5rem;
+      line-height: 0.95;
+    }
+
+    .section-header .tagline {
+      font-style: italic;
+      margin-top: 0.5em;
+      font-size: 1.1rem;
+    }
+
+    /* Table of Contents - Two Columns */
+    .toc-columns {
+      column-count: 2;
+      column-gap: 3rem;
+      column-rule: 1px solid #ddd;
+      margin-top: 1.5em;
+    }
+
+    .toc-section {
+      break-inside: avoid;
+      margin-bottom: 1.5em;
+    }
+
+    /* Appendix section spans full width */
+    .toc-appendix {
+      column-span: all;
+      margin-top: 1.5em;
+      padding-top: 1em;
+      border-top: 1px solid #ddd;
+    }
+
+    .toc-section-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5em;
+    }
+
+    .toc-columns ol {
+      list-style: decimal;
+      padding-left: 1.5em;
+      margin: 0;
+    }
+
+    .toc-columns li {
+      margin-bottom: 0.75em;
+      font-size: 1rem;
+      padding-left: 0.5em;
+    }
+
+    .toc-columns li a {
+      color: var(--void);
+    }
+
+    /* Section article list */
+    .section-toc {
+      margin: 2em 0;
+      padding: 1.5em 2em;
+      background: #f8f8f6;
+    }
+
+    .section-toc h3 {
+      margin: 0 0 0.5em 0;
+      font-size: 1.75rem;
+    }
+
+    .section-toc .section-abstract {
+      margin-bottom: 1.5em;
+      font-style: italic;
+      color: #444;
+    }
+
+    .section-toc ol {
+      list-style: decimal;
+      padding-left: 1.5em;
+      margin: 0;
+    }
+
+    .section-toc li {
+      margin-bottom: 0.75em;
+      padding-left: 0.5em;
+    }
+
+    .section-toc li a {
+      color: var(--void);
+    }
+
+    /* Article styling */
+    article {
+      margin: 2em 0;
+    }
+
+    article header {
+      margin-bottom: 1.5em;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #eee;
+    }
+
+    article header .meta {
+      margin-bottom: 0.5em;
+    }
+
+    article header h3 {
+      margin: 0;
+      font-size: 3.5rem;
+      line-height: 1;
+    }
+
+    article header .key-insight {
+      margin-top: 0.75em;
+      font-weight: 500;
+    }
+
+    /* Multi-column layout for article content */
+    .article-body {
+      column-count: 2;
+      column-gap: 2.5rem;
+      column-rule: 1px solid #ddd;
+    }
+
+    .article-body p,
+    .article-body ul,
+    .article-body ol,
+    .article-body blockquote {
+      break-inside: avoid;
+    }
+
+    .article-body h1,
+    .article-body h2,
+    .article-body h3,
+    .article-body h4 {
+      break-after: avoid;
+      column-span: all;
+    }
+
+    .article-body img {
+      break-inside: avoid;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 3em;
+      padding-top: 1.5em;
+      border-top: 1px solid #ddd;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Section footer - appears at bottom of each section */
+    .section-footer {
+      margin-top: 3em;
+      padding-top: 1em;
+      border-top: 1px solid #ddd;
+      font-size: 0.75rem;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* State of the field - two column layout */
+    .state-of-field {
+      column-count: 2;
+      column-gap: 2.5rem;
+      column-rule: 1px solid #ddd;
+    }
+
+    .state-of-field p {
+      break-inside: avoid;
+    }
+
+    /* About section - two column layout */
+    .about-body {
+      column-count: 2;
+      column-gap: 2.5rem;
+      column-rule: 1px solid #ddd;
+    }
+
+    .about-body p,
+    .about-body ul,
+    .about-body ol,
+    .about-body blockquote {
+      break-inside: avoid;
+    }
+
+    .about-body h1,
+    .about-body h2,
+    .about-body h3,
+    .about-body h4 {
+      break-after: avoid;
+      column-span: all;
+    }
+
+    /* ============================================
+       PRINT STYLES
+       ============================================ */
+    @media print {
+      @page {
+        size: letter;
+        margin: 0.75in 0.75in 1in 0.75in;
+        @bottom-center {
+          content: counter(page);
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+          font-size: 9pt;
+          color: #666;
+        }
+      }
+
+      /* Title page - no page number */
+      @page title-page {
+        @bottom-center { content: none; }
+      }
+
+      #title {
+        page: title-page;
+      }
+
+      html {
+        font-size: 11pt;
+      }
+
+      body {
+        max-width: none;
+        padding: 0;
+      }
+
+      /* Hide section footers in print - we have page numbers now */
+      .section-footer {
+        display: none;
+      }
+
+      /* Page breaks - each major section starts on new page */
+      #toc,
+      #leadership,
+      #engineering,
+      #about {
+        page-break-before: always;
+      }
+
+      /* Each article on its own page */
+      article {
+        page-break-before: always;
+        page-break-inside: avoid;
+      }
+
+      /* First article in section doesn't need page break */
+      .section-toc + article {
+        page-break-before: auto;
+      }
+
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+
+      /* Hide hr in print */
+      hr {
+        display: none;
+      }
+
+      /* Ensure images don't break across pages */
+      figure, img {
+        page-break-inside: avoid;
+      }
+    }
+
+    /* Screen-only styles */
+    @media screen {
+      /* Page breaks simulation */
+      #toc,
+      #leadership,
+      #engineering,
+      #about {
+        page-break-before: always;
+      }
+
+      article {
+        page-break-inside: avoid;
+      }
+
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Title Page -->
+  <header id="title">
+    <div class="page-header">
+      <p class="meta">{aboutFrontmatter.brand} · {CONFERENCE_DETAILS.date} · {CONFERENCE_DETAILS.location}</p>
+      <h1>{CONFERENCE_DETAILS.title}</h1>
+      <p class="subtitle">Full Report {APP_YEAR}</p>
+    </div>
+
+    <div class="info-box">
+      <p>{CONFERENCE_DETAILS.summary}</p>
+    </div>
+
+    <div class="info-box" style="margin-top: 2em;">
+      <p>
+        <strong>Abstract:</strong> Two days of sessions from experts at the frontier of real world AI engineering
+        revealed a clear architecture: the entire software development life cycle is going through a period of massive
+        transformation, capability beats scaffolding, cleanliness beats cleverness, and human judgment remains the irreducible core.
+      </p>
+    </div>
+
+    <p class="meta" style="margin-top: 3em;">Prepared by Will Schenk · <a href="https://thefocus.ai">thefocus.ai</a></p>
+  </header>
+
+  <hr />
+
+  <!-- Executive Summary -->
+  <section id="executive-summary">
+    <div class="section-header">
+      <p class="meta">Section 01</p>
+      <h2>Executive Summary</h2>
+    </div>
+
+    <h3>State of the Field</h3>
+    <div class="state-of-field">
+      <p>
+        The AI engineering landscape is transitioning from "pilot purgatory" to production reality at various
+        stages of maturity. Bottom up power-users are redefining what it means to be a software developer while
+        the perennial issues of software engineering - complexity and an "accumulations of whatevers" - have not
+        magically disappeared. The software development lifecycle is fully experiencing AI-future shock.
+      </p>
+      <p>
+        How much are we actually accomplishing? How much "productivity" is in fact mere reworking the slop that got churned out yesterday?
+        The answer seems to be based on the sophistication of your verification process, and the deeper and more
+        significant your validation process is the closer you get to this tantalizing idea of intelligent agents.
+      </p>
+      <p>
+        Context management was a recurring theme: text files still reign supreme (now and forever),
+        explicit planning or research phases,
+        either manual coaching or more of a built in framework such as Kiro Specs or Antigravity's Artifacts,
+        and subagents as a general pattern for managing context. And they don't need to be
+        some elaborate memory thing.
+      </p>
+      <p>
+        The models are so smart now that a lot of the specific tweaks of yester-month to get the harness tuned
+        seems unnecessary, with the Claude Code crew talking about getting "bash-pilled" and Terminus being the one
+        tool needed for these agents to do anything.
+      </p>
+      <p>
+        Maybe a terminal and a filesystem is all you need.
+      </p>
+      <p><em>— Will Schenk</em></p>
+    </div>
+
+    <div class="section-footer">
+      <span>Executive Summary</span>
+      <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- Table of Contents -->
+  <nav id="toc">
+    <div class="section-header">
+      <p class="meta">Navigation</p>
+      <h2>Contents</h2>
+    </div>
+    <div class="toc-columns">
+      <div class="toc-section">
+        <div class="toc-section-title">Leadership Track</div>
+        <ol>
+          {leadershipArticles.map((a: any) => (
+            <li><a href={`#article-${a.id}`}>{a.data.title}</a></li>
+          ))}
+        </ol>
+      </div>
+      <div class="toc-section">
+        <div class="toc-section-title">Engineering Track</div>
+        <ol>
+          {engineeringArticles.map((a: any) => (
+            <li><a href={`#article-${a.id}`}>{a.data.title}</a></li>
+          ))}
+        </ol>
+      </div>
+      <div class="toc-appendix">
+        <div class="toc-section-title">Appendix</div>
+        <ol>
+          <li><a href="#about">About This Report</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section-footer">
+      <span>Table of Contents</span>
+      <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
+    </div>
+  </nav>
+
+  <hr />
+
+  <!-- Leadership Track -->
+  <section id="leadership">
+    <div class="section-header">
+      <p class="meta">Track 01 · {leadershipArticles.length} Articles</p>
+      <h2>Leadership Track</h2>
+      <p class="tagline">AI rewards excellence and punishes mediocrity. Trust grows from infrastructure, not promises.</p>
+    </div>
+
+    <div class="section-toc">
+      <h3>In This Section</h3>
+      <p class="section-abstract">AI rewards excellence and punishes mediocrity. Trust grows from infrastructure, not promises.</p>
+      <ol>
+        {leadershipArticles.map((a: any) => (
+          <li><a href={`#article-${a.id}`}>{a.data.title}</a></li>
+        ))}
+      </ol>
+    </div>
+
+    {leadershipArticles.map((article: any) => {
+      const ArticleContent = renderedArticles.get(article.id);
+      const speakers = getSpeakersForArticle(article);
+      return (
+        <article id={`article-${article.id}`}>
+          <header>
+            <p class="meta">Leadership · Section {article.data.order}</p>
+            <h3>{article.data.title}</h3>
+            {article.data.key_insights?.[0] && (
+              <p class="key-insight"><strong>Key Insight:</strong> {article.data.key_insights[0]}</p>
+            )}
+          </header>
+
+          {article.data.header_image && (
+            <figure>
+              <img src={article.data.header_image} alt={article.data.title} />
+            </figure>
+          )}
+
+          {speakers.length > 0 && (
+            <aside>
+              <h4>Featured Experts</h4>
+              <p>
+                {speakers.map((s: any, i: number) => {
+                  const link = getSpeakerLink(s);
+                  return (
+                    <>
+                      {i > 0 && ' · '}
+                      {link ? <a href={link}>{s.data.name}</a> : s.data.name}
+                      {' '}({s.data.company})
+                      {s.data.website && <> [<a href={s.data.website}>web</a>]</>}
+                    </>
+                  );
+                })}
+              </p>
+            </aside>
+          )}
+
+          <div class="article-body">
+            <ArticleContent />
+          </div>
+
+          <hr />
+        </article>
+      );
+    })}
+
+    <div class="section-footer">
+      <span>Leadership Track</span>
+      <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
+    </div>
+  </section>
+
+  <!-- Engineering Track -->
+  <section id="engineering">
+    <div class="section-header">
+      <p class="meta">Track 02 · {engineeringArticles.length} Articles</p>
+      <h2>Engineering Track</h2>
+      <p class="tagline">The war on "slop" requires human thinking, environments as abstraction, and open data.</p>
+    </div>
+
+    <div class="section-toc">
+      <h3>In This Section</h3>
+      <p class="section-abstract">The war on "slop" requires human thinking, environments as abstraction, and open data.</p>
+      <ol>
+        {engineeringArticles.map((a: any) => (
+          <li><a href={`#article-${a.id}`}>{a.data.title}</a></li>
+        ))}
+      </ol>
+    </div>
+
+    {engineeringArticles.map((article: any) => {
+      const ArticleContent = renderedArticles.get(article.id);
+      const speakers = getSpeakersForArticle(article);
+      return (
+        <article id={`article-${article.id}`}>
+          <header>
+            <p class="meta">Engineering · Section {article.data.order}</p>
+            <h3>{article.data.title}</h3>
+            {article.data.key_insights?.[0] && (
+              <p class="key-insight"><strong>Key Insight:</strong> {article.data.key_insights[0]}</p>
+            )}
+          </header>
+
+          {article.data.header_image && (
+            <figure>
+              <img src={article.data.header_image} alt={article.data.title} />
+            </figure>
+          )}
+
+          {speakers.length > 0 && (
+            <aside>
+              <h4>Featured Experts</h4>
+              <p>
+                {speakers.map((s: any, i: number) => {
+                  const link = getSpeakerLink(s);
+                  return (
+                    <>
+                      {i > 0 && ' · '}
+                      {link ? <a href={link}>{s.data.name}</a> : s.data.name}
+                      {' '}({s.data.company})
+                      {s.data.website && <> [<a href={s.data.website}>web</a>]</>}
+                    </>
+                  );
+                })}
+              </p>
+            </aside>
+          )}
+
+          <div class="article-body">
+            <ArticleContent />
+          </div>
+
+          <hr />
+        </article>
+      );
+    })}
+
+    <div class="section-footer">
+      <span>Engineering Track</span>
+      <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-header">
+      <p class="meta">Appendix</p>
+      <h2>About This Report</h2>
+    </div>
+
+    {(aboutFrontmatter.dates || aboutFrontmatter.location || aboutFrontmatter.website) && (
+      <aside>
+        <h3>Conference Details</h3>
+        <dl>
+          {aboutFrontmatter.event && <><dt>Event</dt><dd>{aboutFrontmatter.event}</dd></>}
+          {aboutFrontmatter.dates && <><dt>Dates</dt><dd>{aboutFrontmatter.dates}</dd></>}
+          {aboutFrontmatter.attended_dates && <><dt>Attended</dt><dd>{aboutFrontmatter.attended_dates}</dd></>}
+          {aboutFrontmatter.location && <><dt>Location</dt><dd>{aboutFrontmatter.location}</dd></>}
+          {aboutFrontmatter.format && <><dt>Format</dt><dd>{aboutFrontmatter.format}</dd></>}
+          {aboutFrontmatter.website && <><dt>Website</dt><dd><a href={aboutFrontmatter.website}>{aboutFrontmatter.website}</a></dd></>}
+        </dl>
+      </aside>
+    )}
+
+    <div class="about-body">
+      <AboutContent />
+    </div>
+
+    <footer>
+      <p>
+        {aboutFrontmatter.doc_no && <>Document No: {aboutFrontmatter.doc_no}</>}
+        {aboutFrontmatter.doc_no && aboutFrontmatter.brand && <> · </>}
+        {aboutFrontmatter.brand && <>Published by {aboutFrontmatter.brand}</>}
+      </p>
+    </footer>
+
+    <div class="section-footer">
+      <span>About This Report</span>
+      <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
+    </div>
+  </section>
+
+<script>
+  // Remove Astro's width/height attributes from images so CSS can control sizing
+  document.querySelectorAll('img').forEach(img => {
+    img.removeAttribute('width');
+    img.removeAttribute('height');
+    // Force style recalc
+    img.style.width = '100%';
+    img.style.height = 'auto';
+  });
+</script>
+</body>
+</html>

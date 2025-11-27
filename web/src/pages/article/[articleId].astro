@@ -166,10 +166,44 @@ if (articleEntry.data.key_speakers && Array.isArray(articleEntry.data.key_speake
             </div>
           </div>
 
-          <p class="text-base md:text-lg font-mono leading-relaxed text-void mb-8 max-w-2xl">
+          <p class="text-base md:text-lg font-mono leading-relaxed text-void mb-4 max-w-2xl">
             <span class="font-bold mr-2">ABSTRACT:</span>
             {article.subtitle}
           </p>
+
+          <p class="font-mono text-sm text-gray-500">
+            By <a href="about" class="text-rand-blue hover:underline font-semibold">Will Schenk</a>
+          </p>
+        </div>
+
+        <!-- Top Navigation -->
+        <div class="mb-12 flex justify-between items-center pt-4 pb-4 border-y border-gray-300">
+          {prevArticle ? (
+            <a href={`article/${prevArticle.id}`} class="text-left group max-w-[45%]">
+              <span class="block font-mono text-[10px] text-gray-400 uppercase mb-1">Previous</span>
+              <div class="flex items-center gap-2 font-mono text-sm text-void group-hover:text-rand-blue truncate">
+                <ArrowLeft className="w-3 h-3 flex-shrink-0" /> <span class="truncate">{prevArticle.title}</span>
+              </div>
+            </a>
+          ) : (
+            <div></div>
+          )}
+
+          {nextArticle ? (
+            <a href={`article/${nextArticle.id}`} class="text-right group max-w-[45%]">
+              <span class="block font-mono text-[10px] text-gray-400 uppercase mb-1">Next</span>
+              <div class="flex items-center gap-2 font-mono text-sm text-void group-hover:text-rand-blue justify-end">
+                <span class="truncate">{nextArticle.title}</span> <ArrowRight className="w-3 h-3 flex-shrink-0" />
+              </div>
+            </a>
+          ) : (
+            <a href={trackUrl} class="text-right group">
+              <span class="block font-mono text-[10px] text-gray-400 uppercase mb-1">End of Track</span>
+              <div class="flex items-center gap-2 font-mono text-sm text-void group-hover:text-alert-red">
+                Return to Index <ArrowRight className="w-3 h-3" />
+              </div>
+            </a>
+          )}
         </div>
 
         <!-- Figure -->

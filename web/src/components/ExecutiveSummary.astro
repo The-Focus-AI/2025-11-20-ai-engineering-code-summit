@@ -28,13 +28,11 @@ const articlesWithTrack = allArticles.map((article: any) => {
 
 const leadershipArticles = articlesWithTrack
   .filter((a: any) => a.track === 'LEADERSHIP')
-  .sort((a: any, b: any) => a.order - b.order)
-  .slice(0, 4);
+  .sort((a: any, b: any) => a.order - b.order);
 
 const engineeringArticles = articlesWithTrack
   .filter((a: any) => a.track === 'ENGINEERING')
-  .sort((a: any, b: any) => a.order - b.order)
-  .slice(0, 4);
+  .sort((a: any, b: any) => a.order - b.order);
 ---
 
 <div class="w-full min-h-[calc(100vh-8rem)] max-w-7xl mx-auto bg-paper relative flex flex-col md:flex-row shadow-[10px_10px_0px_0px_rgba(0,0,0,0.1)] border border-void">
