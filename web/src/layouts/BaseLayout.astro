@@ -3,6 +3,8 @@ import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
 import ResearchSidebar from '../components/ResearchSidebar';
 import ChatAssistant from '../components/ChatAssistant';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
+import NewsletterPopup from '../components/NewsletterPopup.astro';
 
 interface Props {
   title?: string;
@@ -28,8 +30,11 @@ const base = import.meta.env.BASE_URL;
         <slot />
       </main>
 
+      <NewsletterSignup />
+
       <ResearchSidebar client:load />
       <ChatAssistant client:load />
+      <NewsletterPopup />
     </div>
   </body>
 </html>
