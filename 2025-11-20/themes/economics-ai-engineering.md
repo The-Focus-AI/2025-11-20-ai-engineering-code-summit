@@ -18,32 +18,37 @@ key_insights:
   - "Tenex pays engineers like salespeople: output-based, uncapped, multiple on track for $1M+"
   - "AI changes the cost function of engineering - previous cost-per-feature calculations obsolete"
   - "When costs drop 100x, 'annoying things become free'"
+edited: true
 ---
 
-# The Economics of AI Engineering: New Cost Structures & Compensation Models
+Am I selling myself short on tokens?  I'll regularly hit usage limits, which is insane considering I have Claude Max ($100/month + overage), Cursor Pro+ ($60/month + overage), Kiro Pro+ ($40/month) on the consumer side (plus OpenAI, Github, xAI, Google, Genspark, Midjourney), and then my API usage over Gemini is $300+/month, OpenAI $200+/month, OpenRouter $60+/month.  A good chunk of this is client work, but I'm walking away thinking I'm under valuing the benefits.
 
-When AI can generate the same token output as a developer's annual salary for $100 per day, the fundamental economics of software engineering collapse. This isn't a hypothetical scenario—it's the lived reality described by Gene Kim at the AI Engineering Code Summit, and it's forcing a radical rethinking of how we price products, compensate engineers, and calculate the true cost of development.
+Gene Kim shared a striking calculation at the AI Engineering Code Summit: $100 per day in AI tokens generates output comparable to a developer's annual productivity. When costs collapse that dramatically, everything changes—pricing, compensation, cost structures.  Once we hit a certain level of productivity things change.
 
-Arman Hezarkhani, Managing Partner at Tenex, is pioneering what may be the most radical response to this economic shift: paying engineers like salespeople. "We pay engineers based upon the story points they complete," Hezarkhani explains. "Paid on output. Uncapped upside. Incentivized to work smarter, faster, harder." At Tenex, engineers are compensated for completed work rather than hours logged, with multiple engineers on track to earn over $1M annually—compensation levels traditionally reserved for top sales performers or executives.
+"Claude Code ain't it," says Steve Yegge, followed by proud confession of a 14 hour a day obsession. The tools aren't perfect but they are obviously productive. IDE users versus Agent users? "10x productive by any measure," he argues. We are no longer hand-assembling code. Craftsmen doing beautiful handwork while factories produce a thousand times more.
 
-![](slides/2025-11-20-16-30-gemini-edited.jpg)
+Kim's framework for embracing this shift: FAAFO. Faster—obvious. Ambitious—"impossible becomes passive, annoying things become free." Alone—build more autonomously, smaller teams. Fun—enjoy the work again. Options—more swings at bat. When costs drop 100x, the calculation changes on every project you've ever shelved.
 
-The logic is elegantly simple: if AI tools can 10x developer productivity, why should engineers be paid the same whether they embrace those tools or not? Traditional salary models create a perverse incentive structure where developers have no economic reason to adopt AI assistance. Output-based compensation flips this entirely. "Give your team a reason to go faster," Hezarkhani urges. When every story point completed translates directly to compensation, engineers become highly motivated to leverage every productivity enhancement available—especially AI coding assistants that can dramatically accelerate throughput.
+Booking.com: productivity elevated org-wide. Travelopitia: legacy apps replaced in 4-6 weeks, half the team. Cisco: every senior manager must vibe-code something to production. Everyone needs hands-on experience with this because everything is changing.
 
-![](slides/2025-11-20-16-34-gemini-edited.jpg)
-
-Tenex's model addresses common concerns through rigorous quality gates. To prevent story point inflation, strategy teams define scope upfront. To ensure quality doesn't suffer from speed, every deliverable undergoes three rounds of internal and external QA. And to avoid gaming the system, Tenex focuses on hiring engineers who understand that sustainable high performance, not corner-cutting, drives long-term earnings. The results speak for themselves: one billboard company client received a fully automated moderation system in two weeks; a retail technology client got on-device heat mapping models deployed in record time.
-
-This compensation revolution reflects a deeper economic transformation. As Lei Zhang, Head of Technology Infrastructure at Bloomberg, notes: AI "**changes the cost function of engineering**." When Bloomberg's 9,000+ engineers can suddenly accomplish tasks that previously required weeks of manual effort, the traditional cost-per-feature calculation becomes obsolete. But this also creates new challenges. Zhang observed that AI coding tool usage "dropped really quickly once we moved back from greenfield" projects, highlighting the disconnect between AI demos and messy production reality. His team's solution? Focus AI on tasks developers actively dislike—uplift agents for tedious migrations, incident response agents for alert overload—rather than trying to automate creative work.
+"Vibe coding," Lei Zhang wryly notes, "is where 2 engineers can create the tech debt of 50 engineers." He's Head of Technology Infrastructure at Bloomberg. AI tool usage dropped fast once teams moved from greenfield projects back to their massive brownfield codebase, which granted is tens of millions of lines of JavaScript, not exactly a challenge in anyone's comfort zone. Usage of AI coding tools "dropped really quickly once we moved back from greenfield," so there's lots of opportunity.
 
 ![](slides/2025-11-20-14-27-gemini-edited.jpg)
 
-The pricing implications extend beyond internal engineering costs to how software companies charge customers. Asaf Bord, GenAI Products Leader at Northwestern Mutual, directly addresses this shift: "How do we price software in this new era? Usage price vs seats price." The traditional seat-based model assumes fixed value per user, but AI's variable costs—token consumption, compute resources, API calls—create wildly different cost structures depending on actual usage. When a single complex query might consume exponentially more resources than a thousand simple ones, flat-rate pricing becomes economically untenable.
+The fix? "What work do our developers not want to do?" Zhang asked. Migrations. Incident response. Understanding contributing factors across overwhelming alerts. Bloomberg built agents for exactly these tasks—uplift agents that handle patches with rationale, incident agents that surface context. AI for the grind, not the glory.
+
+The deeper shift: AI "changes the cost function of engineering," Zhang notes. The old cost-per-feature calculations, be it in time or mental anguish, are meaningless in the new shifting world. What was too expensive to build last quarter might be trivial now. Previous calculations don't hold. Recalculate everything.
 
 ![](slides/2025-11-20-14-11-gemini-edited.jpg)
 
-Steve Yegge, who spends 14 hours daily using Claude Code despite claiming "Claude code ain't it," provides perhaps the starkest framing of the economic discontinuity. Cursor users versus Copilot users are "10x productive by any measure," he argues. This isn't incremental improvement—it's the difference between Swiss watchmakers and automated factories. When productivity gaps reach 10x, compensation models built on time-based salary simply can't capture the value creation differential.
+Asaf Bord, GenAI Products Leader at Northwestern Mutual, poses the business question: "How do we price software in this new era? Usage price vs seats price." Seat-based models assume fixed value per user. But AI's variable costs—token consumption, compute, API calls—blow up that assumption. One complex query might consume more resources than a thousand simple ones.
 
-Gene Kim drives the point home with his FAAFO framework (Faster, Ambitious, Alone, Fun, Options): when costs drop 100x, previously impossible projects become "annoying things that become free." Enterprise examples abound: Booking.com elevating developer productivity across the organization, Travelopitia replacing legacy applications in 4-6 weeks with half the team size, Cisco requiring every senior developer to "vibe code" an application to production to build trust in the new paradigm.
+![](slides/2025-11-20-16-30-gemini-edited.jpg)
 
-The economics are undeniable. The question is whether traditional tech companies can adapt their compensation, pricing, and cost models fast enough—or whether startups like Tenex, unburdened by legacy structures, will capture the value creation this shift enables. As Hezarkhani's million-dollar engineers demonstrate, those who align incentives with the new economic reality won't just survive the transition—they'll thrive in it.
+Arman Hezarkhani at Tenex takes this logic to compensation, and pays engineers like salespeople. "We pay engineers based upon the story points they complete," he explains. "Paid on output. Uncapped upside. Incentivized to work smarter, faster, harder." Multiple engineers are on track to earn over $1M annually—compensation levels usually reserved for top salespeople or executives.
+
+![](slides/2025-11-20-16-34-gemini-edited.jpg)
+
+Output-based pay only works with rigorous verification. Not coincidental: AI Engineering only works with rigorous verification. Tenex's approach: strategy defines scope (no point inflation), three rounds of QA (internal and external), and hiring for sustainable performers.
+
+$100 a day. $3,000 a month. It's a rounding error compared to developer salaries. The economics have shifted. Pricing models need to follow. Compensation models need to follow. Companies that align incentives with the new reality—output-based pay, usage-based pricing, rigorous verification—won't just survive the transition. They'll define it.
