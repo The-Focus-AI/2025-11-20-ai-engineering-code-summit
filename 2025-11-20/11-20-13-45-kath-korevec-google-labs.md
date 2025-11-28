@@ -21,8 +21,53 @@ topics:
 
 ## Slides
 
-![](slides/2025-11-20-13-15-gemini-edited.jpg)
-![](slides/2025-11-20-13-58-gemini-edited.jpg)
+### Slide: 13-15
+![Slide](../slides/2025-11-20-13-15-gemini-edited.jpg)
+
+**Key Point:** This appears to be a gratitude wall or community board where conference attendees shared what they're grateful for, creating a moment of human connection and reflection during the technical conference.
+
+**Literal Content:**
+- Dark green/gray chalkboard-style background
+- Handwritten text in various locations answering "What are you grateful for?"
+- Responses include:
+  - "I recovered from cancer"
+  - "My family"
+  - "Life, Health, Peace"
+  - "friendship"
+  - "nature"
+  - "opportunity"
+  - "My Daughter"
+  - "CAFFEINE, DUH!"
+  - "Jesus" (circled with heart)
+  - "my first NYC marathon with my family"
+  - "TRAVEL"
+  - "¡VIVA ESPAÑA!"
+  - "God's Grace n' Mercy!"
+  - "Days in NYC w/ my love life"
+  - Various doodles and small illustrations
+
+### Slide: 13-58
+![Slide](../slides/2025-11-20-13-58-gemini-edited.jpg)
+
+**Key Point:** Demo of an AI coding assistant that can automatically identify and execute development tasks from a backlog, showing features like finding bugs, writing code, and documentation, with the ability to track and execute multiple refactoring and implementation tasks.
+
+**Literal Content:**
+- Left side: Large text "DEMO" on dark background
+- Right side: Purple gradient interface showing:
+  - Repository: "robattract-ai/aeth-python" (main branch)
+  - "Start" button with play icon
+  - Three action options: "Find and fix a bug", "Write code", "Document my code"
+  - Section: "Recommended for robattract-ai/aeth-python"
+  - List of tasks with play buttons and status indicators:
+    - Remove LRO Polling Workaround in Express Mode
+    - Remove Streamlit Timeout Workaround (with checkmark)
+    - Implement Flash Reason in Claude Integration
+    - Refactor Tool Appending Logic
+    - Refactor Unitary to Streaming Content Translation
+    - Add Support for Service Account Credential Exchange
+    - Refactor Tool Declaration Merging
+    - Implement Cancellation Logic for A2A Agent Executor
+    - Implement Server-Side Filtering for Memory Search
 
 ## Notes
 

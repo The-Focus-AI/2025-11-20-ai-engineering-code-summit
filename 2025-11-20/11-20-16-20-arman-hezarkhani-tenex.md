@@ -24,12 +24,6 @@ topics:
 - https://tenex.co
 - https://x.com/ArmanHezarkhani
 
-## Slides
-
-![](slides/2025-11-20-16-30-gemini-edited.jpg)
-![](slides/2025-11-20-16-34-gemini-edited.jpg)
-![](slides/2025-11-20-16-38-gemini-edited.jpg)
-
 ## Notes
 
 * Pay engineers like sales guys
@@ -61,3 +55,49 @@ topics:
 	* Rushes and quality drops -> 3 rounds of internal and external QA
 	* Get sharp employees -> Hire the right people
 * "Give your team a reason to go faster"
+
+## Slides
+
+### Slide: 2025-11-20-16-30
+![Slide](../slides/2025-11-20-16-30-gemini-edited.jpg)
+
+**Key Point:** A real-world retail AI implementation achieved measurable business impact (5%+ revenue increase) by deploying edge AI solutions that compress large models for sensor hardware, prioritize security, and integrate seamlessly with existing infrastructure.
+
+**Literal Content:**
+- Client story about "THE RETAIL TECHNOLOGY COMPANY"
+- Three sections:
+  - THE COMPANY: Describes a retail tech company connecting physical and digital stores through store analytics and customer engagement
+  - THE WORK: Details building a Store Intelligence (SaaS) platform with edge AI, compressed teacher/student models, encrypted data streaming, and a single reporting API
+  - Result highlighted: "5%+ ANNUALIZED Y1 IN-STORE REVENUE UPLIFT"
+- Footer shows TENEX.CO and IX logo
+
+### Slide: 2025-11-20-16-34
+![Slide](../slides/2025-11-20-16-34-gemini-edited.jpg)
+
+**Key Point:** Promoting a strategic resource (likely a whitepaper or guide) aimed at C-suite executives for developing AI strategy - the basketball court-like diagram suggests a "playbook" approach to AI implementation.
+
+**Literal Content:**
+- Title: "The AI strategy playbook for senior executives"
+- Red square containing a simple geometric diagram (resembling a basketball court or strategic planning diagram with a circle and lines)
+- QR code on the right side
+
+### Slide: 2025-11-20-16-38
+![Slide](../slides/2025-11-20-16-38-gemini-edited.jpg)
+
+**Key Point:** Shows statistical analysis of different AI adoption strategies and their effectiveness/impact, with the Bayesian posterior distributions indicating uncertainty ranges and likely outcomes for each approach.
+
+**Literal Content:**
+- Title: "Bayesian Posterior Distributions of AI Adoption Strategies"
+- URL: https://dora.dev/research/ai-gen-ai-report/
+- Chart with ridge plots (violin plots) showing distributions for various AI adoption strategies:
+  - time to learn
+  - clear AI policies
+  - device deployment fillers
+  - transparent about AI risks
+  - mandatory trainings
+  - invest in employee development
+  - AI adoption goals
+  - guidelines to integrate privacy risks
+  - safeguard against sec and privacy breaches
+  - resources to learn about AI
+- Each has purple and orange overlapping distributions centered around 0

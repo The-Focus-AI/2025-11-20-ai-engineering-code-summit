@@ -23,8 +23,39 @@ topics:
 
 ## Slides
 
-![](slides/2025-11-20-14-25-gemini-edited.jpg)
-![](slides/2025-11-20-14-27-gemini-edited.jpg)
+### Slide: 14-25
+![Slide](../slides/2025-11-20-14-25-gemini-edited.jpg)
+
+**Key Point:** The slide predicts five major industry trends toward more specialized, integrated, and usage-based AI implementations with better governance and security built into the models themselves.
+
+**Literal Content:**
+- Title: "Where is the Industry Going?"
+- Five trends listed:
+  1. LLM-Ready Data Fabric - Agent-readable schemas, lineage, usage hints
+  2. Specialist-First Model Grid - Tiny expert models → routed to large generalists on demand
+  3. Invisible Copilots - One-click LLM actions inside Slack / CRM / BI
+  4. Secure Models from Within - Safety scores from weights & logprobs, not outer wrappers
+  5. Usage Based Pricing Models - Fewer workers → Fewer Seats → Licensing focused in usage
+
+### Slide: 14-27
+![Slide](../slides/2025-11-20-14-27-gemini-edited.jpg)
+
+**Key Point:** This slide showcases Bloomberg's massive scale of operations, emphasizing their workforce, engineering capabilities, and enormous data processing capacity that positions them as a major player in AI/ML applications.
+
+**Literal Content:**
+- Title: "Bloomberg by the numbers"
+- Left column (people):
+  - Globe icon: 26,000+ employees, worldwide
+  - Building icon: 9,000+ engineers
+  - News icon: 2,900+ journalists and analysts
+  - Database icon: 2,000+ data specialists
+  - Robot icon: 400+ employees working on AI and ML applications
+- Right column (data):
+  - Chart icon: 600+ billion ticks per day, from every asset class & market
+  - Building/people icon: 96,000 companies. 2M+ entities. 3.3M bios of executives, leaders & govt officials
+  - News icon: 1.5 million news articles ingested per day, from 175,000+ vetted sources
+  - Location icon: 100+ Alternative Data sources across multiple sectors
+- Footer: "TechAtBloomberg.com" and Bloomberg Engineering logo
 
 ## Notes
 

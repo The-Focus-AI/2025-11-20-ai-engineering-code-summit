@@ -21,11 +21,6 @@ topics:
 
 **Reference:** [LinkedIn Profile](https://www.linkedin.com/in/samir-mody)
 
-## Slides
-
-![](slides/2025-11-20-14-43-gemini-edited.jpg)
-![](slides/2025-11-20-14-52-gemini-edited.jpg)
-
 ## Notes
 
 * What we learned going from Arc to Dia around AI
@@ -85,3 +80,31 @@ topics:
 
 * Technology shift -> Product Company -> Evolution Company
 * When you recognize that it tech shifts, you have to embrace it with conviction
+
+## Slides
+
+### Slide: 2025-11-20-14-43
+![Slide](../slides/2025-11-20-14-43-gemini-edited.jpg)
+
+**Key Point:** The slide uses Brian Eno's quote to make a philosophical point about how AI/automation shifts the challenge from technical skill to strategic judgement and decision-making about what to build.
+
+**Literal Content:**
+- Dark background with colorful gradient at bottom
+- Quote: "The great benefit of computer sequencers is that they remove the issue of skill, and replace it with the issue of judgement." (word "judgement" highlighted in green)
+- "..."
+- "So the question becomes not whether you can do it or not, because any drudge can do it if they're prepared to sit in front of the computer for a few days, the question then is, 'Of all the things you can now do, which do you choose to do?'"
+- Attribution: "— Brian Eno"
+- Source: "Interview in 'The Wire' with Paul Schütze (1995)"
+
+### Slide: 2025-11-20-14-52
+![Slide](../slides/2025-11-20-14-52-gemini-edited.jpg)
+
+**Key Point:** The slide illustrates a development methodology that progresses from prototyping and internal testing (dogfooding) through evaluation and human-in-the-loop refinement before shipping features.
+
+**Literal Content:**
+- Pink background
+- Title: "For certain features, we can put it all together"
+- Diagram showing workflow progression (left to right):
+  - Left circle (pink outline) contains two blue circles labeled "Dogfood" and "Prototype" with circular arrows
+  - Arrow points to middle section (pink outline) with three orange circles: "Dogfood", "GEPA / Human hill-climb", and "Collect Evals" with circular arrows
+  - Arrow points to right green circle labeled "Ship"

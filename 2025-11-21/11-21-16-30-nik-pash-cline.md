@@ -72,3 +72,49 @@ topics:
 	- make them training data
 	- call for contribution
 	- use it on your open source software
+
+## Slides
+
+### Slide: 16-36
+![Slide](../slides/2025-11-21-16-36-gemini-edited.jpg)
+
+**Key Point:** Illustrates common testing anti-patterns by showing how tests can be overly prescriptive, focusing on implementation details rather than the actual functional outcome, which leads to brittle tests that miss the real requirements.
+
+**Literal Content:**
+- Title: "Bad tests (over-prescriptive, miss the point)"
+- Seven examples of problematic test scenarios using a kettle/water boiling analogy:
+  - "Is the burner set to high?" - Tests implementation not outcome
+  - "Has 5 minutes elapsed?" - Prescriptive timing vs actual state
+  - "Is the kettle on the front-left burner?" - Structural constraint that doesn't matter
+  - "Did you use filtered water?" - Style choice, not functional requirement
+  - "Is the lid positioned exactly perpendicular?" - Over-specified mechanics
+  - "Is the kettle made of stainless steel not copper?" - Prescribing HOW vs WHAT
+  - "Did you fill it to exactly 2 cups?" - Testing method, not result
+
+### Slide: 16-37
+![Slide](../slides/2025-11-21-16-37-gemini-edited.jpg)
+
+**Key Point:** Chronicles the journey of automating the creation of reinforcement learning environments for Cline, showing dramatic time reductions (from 16 hours to 3 hours) through progressive automation, with about 80% now automated.
+
+**Literal Content:**
+- Title: "Path to automation: Cline's RL Env Factory"
+- Left side shows progression:
+  - "Work on cline-bench started out manual"
+  - "Time to first RL environment ~ 16 hours of my time"
+  - "Second RL environment - 4 hours"
+  - "Environments 3 through 8 - 3 hours"
+  - "There is still some manual human involvement that can be automated away"
+  - "As things get more automated, the bottleneck becomes collecting more high quality engineering tasks through the Cline Provider"
+- Right side lists points about visibility, system completion, and building automation
+- Bottom states: "STATUS: VERY PROMISING"
+
+### Slide: 16-38
+![Slide](../slides/2025-11-21-16-38-gemini-edited.jpg)
+
+**Key Point:** Criticizes the lack of transparency in the AI agent industry, pointing out that while companies collect extensive failure data to improve their systems, they don't share these real-world failure cases publicly, creating an information asymmetry.
+
+**Literal Content:**
+- Three italicized statements with company names redacted (shown as black boxes):
+- "When [REDACTED]'s agent fails on a task, they capture it. When [REDACTED]'s agent hits a wall, they log it."
+- "When [REDACTED] needs to tune their system prompt, they have millions of real failure cases."
+- "And none of them will show you a single one."

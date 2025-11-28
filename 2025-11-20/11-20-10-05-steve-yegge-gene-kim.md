@@ -22,11 +22,79 @@ topics:
 
 ## Slides
 
-![](slides/2025-11-20-10-01-gemini-edited.jpg)
-![](slides/2025-11-20-10-04-gemini-edited.jpg)
-![](slides/2025-11-20-10-05-gemini-edited.jpg)
-![](slides/2025-11-20-10-06-gemini-edited.jpg)
-![](slides/2025-11-20-10-10-gemini-edited.jpg)
+### Slide: 10-01
+![Slide](../slides/2025-11-20-10-01-gemini-edited.jpg)
+
+**Key Point:** This is a provocative talk title suggesting that current AI coding tools like Claude Code won't be the final form of development tools, inviting speculation about the near-future evolution of AI-powered development environments.
+
+**Literal Content:**
+- Purple/lavender background
+- Title: "What Will Dev Tools Look Like in 2026?"
+- Subtitle: "Hint: It's not Claude Code!"
+- Presenter: Steve Yegge, Engineer, Sourcegraph
+- AI Engineering Summit 2025
+- Background shows futuristic workspace with chair, monitors, and code displays
+
+### Slide: 10-04
+![Slide](../slides/2025-11-20-10-04-gemini-edited.jpg)
+
+**Key Point:** Uses the historical "Quartz Crisis" (when quartz watches disrupted mechanical watchmaking) as an analogy for how AI will rapidly automate traditional software development, dismissing resistance from veteran developers like Linus Torvalds as similar to past craftspeople resisting technological change.
+
+**Literal Content:**
+- Title: "The New Quartz Crisis"
+- Image of mechanical watch showing intricate gears and mechanisms
+- Three text blocks:
+  1. "Building software is like building mechanical watches: an old, elegant, handcrafted discipline"
+  2. "Linus Torvalds: One of the world's best 'watchmakers' - He says vibe coding isn't good for 'real' work - Same argument from the draftsmen, watchmakers, photographers."
+  3. "Building software the old way will be automated away - and it won't take 10-20 years this time - it will take 1-2 years"
+
+### Slide: 10-05
+![Slide](../slides/2025-11-20-10-05-gemini-edited.jpg)
+
+**Key Point:** Argues that for widespread adoption, AI coding tools need user-friendly graphical interfaces rather than CLI-based approaches. Critiques tools like Claude Code for being too hands-on and not evolving toward more helpful, autonomous UI-based models that can work with less supervision.
+
+**Literal Content:**
+- Title: "Adoption Depends on Having UI"
+- Left side: Screenshot of a UI dashboard showing "CODE REVIEWER" and various metrics/tasks
+- Right side text:
+  - "We've established that CLI agents are too hard for most devs."
+  - "We clearly need a UI."
+  - "We also need to lift people up."
+  - Bullets about Claude Code:
+    - "Claude Code shows your nose in everything."
+    - "You have to watch everything it does."
+    - "We need helpers -- models!"
+  - "But coding agents aren't heading in this direction."
+  - "Instead, they're doubling down on the CLI."
+  - "How much has Claude Code changed since February?"
+
+### Slide: 10-06
+![Slide](../slides/2025-11-20-10-06-gemini-edited.jpg)
+
+**Key Point:** Coding agents should follow an ant colony model with many specialized small agents handling different complexity tasks, rather than using one large expensive model for all tasks regardless of complexity. This advocates for task decomposition and routing to appropriately-sized models.
+
+**Literal Content:**
+- Title: "Coding Agents Should be like Ants"
+- Image of ants working together carrying geometric shapes
+- Bullet points explaining the problem:
+  - "One huge problem with coding agents is their granularity: You send all tasks, even cheap ones, to the expensive model."
+  - Examples: "please analyze this codebase for flaws" → expensive
+  - "is my .gitignore file still there?" → also expensive!
+  - "Instead of an ant colony, Anthropic built a huge, muscular ant."
+  - "There's a better solution: Make small ants."
+
+### Slide: 10-10
+![Slide](../slides/2025-11-20-10-10-gemini-edited.jpg)
+
+**Key Point:** AI represents a transformational shift far exceeding previous technology revolutions (agile, cloud, CI/CD), requiring fundamental organizational restructuring to capture its value, similar to how previous tech breakthroughs reshaped entire economies.
+
+**Literal Content:**
+- Title: "Our Belief and Observations"
+- Three bullet points:
+  - "AI will reshape technology organizations — 100x larger than the impact of agile, cloud, CI/CD, mobile, etc."
+  - "These technology breakthroughs reshape organizations... the entire economy re-organizes itself to take advantage of these new modes of production"
+  - "We are starting to see amazing case studies hinting at what the future may look like"
+- Twitter handle: @RealGeneKim
 
 ## Steve Yegge
 

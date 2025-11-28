@@ -19,12 +19,6 @@ topics:
 
 **Focus:** How to create DX that supports agents while maintaining compliance, security, and developer autonomy. 20+ years in the field.
 
-## Slides
-
-![](slides/2025-11-20-15-16-gemini-edited.jpg)
-![](slides/2025-11-20-15-17-gemini-edited.jpg)
-![](slides/2025-11-20-15-18-gemini-edited.jpg)
-
 ## Notes
 
 * Since we are adopting the new shiny really fast now, different than we used to do, the future is really hard to predict
@@ -54,3 +48,39 @@ topics:
 	* Write down external context and intentions
 	* **What's good for humans is good for AI *applause***
 	* When we invest in this we will help the humans no matter what
+
+## Slides
+
+### Slide: 2025-11-20-15-16
+![Slide](../slides/2025-11-20-15-16-gemini-edited.jpg)
+
+**Key Point:** The slide emphasizes the importance of maintaining high standards in code review processes, including encouraging quality reviews, maintaining high bars, and using reviews as a teaching tool for junior engineers.
+
+**Literal Content:**
+- Title: "Code Review Quality"
+- Three bullet points:
+  - "You have to encourage great reviews"
+  - "That hold a high bar and reject code that doesn't meet it"
+  - "Where junior engineers learn about coding and reviewing by getting reviews from seniors."
+
+### Slide: 2025-11-20-15-17
+![Slide](../slides/2025-11-20-15-17-gemini-edited.jpg)
+
+**Key Point:** The slide warns about a negative feedback loop where AI agents trained on bad code produce low-quality reviews, which further degrade the codebase, creating a vicious cycle of declining code quality.
+
+**Literal Content:**
+- Dark background
+- Title: "The Vicious Cycle"
+- Flow diagram showing:
+  - "Bad Codebase" (code file icon) → "AI Agent" (robot icon) → "Many Low-Quality Reviews" (stamp icons) → "Worse Codebase" (code file icon)
+  - Arrow loops back from "Worse Codebase" to "AI Agent"
+
+### Slide: 2025-11-20-15-18
+![Slide](../slides/2025-11-20-15-18-gemini-edited.jpg)
+
+**Key Point:** The slide presents the positive alternative where good codebases and great tools enable AI agents to provide strong reviews, which leads to increased development velocity—a virtuous cycle.
+
+**Literal Content:**
+- Dark background
+- Flow diagram showing:
+  - "Good Codebase" (code file icon) and "Great Tools" (wrench icon) → "AI Agent" (robot icon) → "Strong Reviews" (magnifying glass icon) → "Velocity" (fast-forward and lightning bolt icons)

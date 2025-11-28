@@ -28,3 +28,17 @@ topics:
 * code building
 * the theme is AI coding
 * "ai leader" or "ai engineer" or something in between
+
+## Slides
+
+### Slide: 2025-11-21-08-23
+![Slide](../slides/2025-11-21-08-23-gemini-edited.jpg)
+
+**Key Point:** This appears to be a conference sponsor advertisement or snack break slide promoting date-based wellness bars - not directly related to the technical conference content.
+
+**Literal Content:**
+- Decorative rose pattern background
+- "DATE-BASED WELLNESS BARS" as main headline
+- Three circular badges: Sugar Free, Vegan, Gluten Free
+- Two QR codes
+- "EDENSSWEETS.COM" and "@EDENSSWEETIDEAS" social media handle

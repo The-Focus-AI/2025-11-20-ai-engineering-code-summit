@@ -23,9 +23,52 @@ topics:
 
 ## Slides
 
-![](slides/2025-11-20-10-22-gemini-edited.jpg)
-![](slides/2025-11-20-10-25-gemini-edited.jpg)
-![](slides/2025-11-20-11-15-gemini-edited.jpg)
+### Slide: 10-22
+![Slide](../slides/2025-11-20-10-22-gemini-edited.jpg)
+
+**Key Point:** Trust in AI grows through predictability and understanding, allowing users to delegate larger tasks with less oversight. The concept of "fingerspitzengefühl" (intuitive feel) becomes important in human-AI collaboration for navigating complex situations.
+
+**Literal Content:**
+- Title: "Gene's Hopes And Favorite Findings"
+- DORA logo in top right
+- Pink background
+- Three bullet points:
+  - "Observation: as I've worked with AI more, I trust the AI to do larger tasks"
+  - "One strange definition of trust: to what degree do can I predict how another party will act and react — the more I trust the other party, I can make bigger requests, with fewer words, with less feedback"
+  - "The notion of *fingerspitzengefühl*: person's instinctive ability to handle complex, uncertain situations with intuition, tact, and sensitivity (thank you Idan Gazit, GitHub)"
+
+### Slide: 10-25
+![Slide](../slides/2025-11-20-10-25-gemini-edited.jpg)
+
+**Key Point:** This is a resource slide offering extensive materials on DevOps, AI development, and organizational transformation, inviting attendees to email for access to Gene Kim's research and publications.
+
+**Literal Content:**
+- Title: "Want More Learn More?"
+- Left side lists resources including:
+  - Excerpts of Vibe Coding and *Wiring the Winning Organization*
+  - Updates on benchmarking GenAI and developers
+  - Best talks from ETLS Community
+  - PDF and audio excerpts from *The Unicorn Project*
+  - Eight excerpts from *Beyond The Phoenix Project* audio series w/John Willis
+  - 140 page excerpts from *The DevOps Handbook* and *The Phoenix Project*
+  - Videos and slides from DevOps Enterprise 2014-2019
+  - One hour excerpt of *The Phoenix Project* audiobook
+- Contact information: "realgenekim@SendYourSlides.com" with subject "vibe"
+- @RealGeneKim handle
+
+### Slide: 11-15
+![Slide](../slides/2025-11-20-11-15-gemini-edited.jpg)
+
+**Key Point:** OpenAI is presenting three architectural patterns for integrating Codex as a sub-agent: direct SDK integration, MCP-based tool exposure in agent frameworks, and IDE wrapper integration through Zed ACP. This demonstrates multiple integration strategies for different use cases.
+
+**Literal Content:**
+- Title: "Sub-agent patterns"
+- Pink background
+- Three numbered sections:
+  - "01 Codex SDK" - "Codex can be called through a Typescript library, programmatically via exec, or as a GitHub Action."
+  - "02 Agents SDK + MCP" - "You can expose Codex via MCP as a tool in Agents SDK, as well as give it MCP hooks to call back to your API"
+  - "03 Zed ACP" - "Instead of building a harness in your IDE, wrap Codex and pass through UI/UX"
+- Footer: "OpenAI | Confidential and proprietary."
 
 ## Notes
 

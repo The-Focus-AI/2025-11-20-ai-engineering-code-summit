@@ -20,9 +20,46 @@ topics:
 
 ## Slides
 
-![](slides/2025-11-20-08-49-gemini-edited.jpg)
-![](slides/2025-11-20-08-50-gemini-edited.jpg)
-![](slides/2025-11-20-09-08-gemini-edited.jpg)
+### Slide: 08-49
+![Slide](../slides/2025-11-20-08-49-gemini-edited.jpg)
+
+**Key Point:** This is the opening keynote slide introducing the conference theme about AI's role in the future of software development.
+
+**Literal Content:**
+- Dark blue background with white text
+- "CODE SUMMIT" header
+- "Keynote: The Future of AI in Code"
+- Network diagram icon with code brackets in center
+- Speaker: "Duane Moore"
+- Organization: "Jemaith and in Islett"
+
+### Slide: 08-50
+![Slide](../slides/2025-11-20-08-50-gemini-edited.jpg)
+
+**Key Point:** Showcases the major corporate sponsors and technology partners supporting the AI Engineering Code Summit, representing diverse industries from finance to tech to consulting.
+
+**Literal Content:**
+- Brown/tan background
+- Company logos including: Cerebras, ux+, workato, OpenAI, McKinsey & Company
+- DATADOG, AWS, gimlet, DX, Capital One
+- Northwestern Mutual, OpenHands, HumanLayer, METR
+- qodo, cline, manus, MINIMAX, NETFLIX
+- Temporal, Applied Compute (highlighted with red box), Bloomberg, Robinhood
+- Tenex, PREFECT
+
+### Slide: 09-08
+![Slide](../slides/2025-11-20-09-08-gemini-edited.jpg)
+
+**Key Point:** Introduces the three core pillars of Anthropic's Claude Developer Platform: leveraging Claude's AI capabilities, managing context effectively, and providing Claude with computer access for autonomous work.
+
+**Literal Content:**
+- Pink/rose background
+- Title: "How the Claude Developer Platform maximizes intelligence"
+- Three boxes with icons:
+  1. Lightbulb icon - "Harness Claude's capabilities"
+  2. Magnifying glass/network icon - "Manage Claude's context"
+  3. Code window icon - "Give Claude a computer & let it cook"
+- "ANTHROPIC" footer with page number 3
 
 ## Notes
 

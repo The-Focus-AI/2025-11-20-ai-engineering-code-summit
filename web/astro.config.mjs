@@ -1,9 +1,21 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import { fileURLToPath } from 'url';
+import { visit } from 'unist-util-visit';
 
 import tailwindcss from '@tailwindcss/vite';
 import react from '@astrojs/react';
+
+// Remark plugin to fix relative slide paths in markdown
+function remarkFixSlidePaths() {
+  return (tree) => {
+    visit(tree, 'image', (node) => {
+      if (node.url && node.url.includes('../slides/')) {
+        node.url = node.url.replace('../slides/', '/slides/');
+      }
+    });
+  };
+}
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,6 +25,9 @@ export default defineConfig({
     : process.env.DEPLOY === 'thefocus'
       ? '/reports/aiecode-2025-11/'
       : '/',
+  markdown: {
+    remarkPlugins: [remarkFixSlidePaths],
+  },
   vite: {
     plugins: [tailwindcss()],
     resolve: {

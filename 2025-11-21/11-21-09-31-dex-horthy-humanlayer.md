@@ -74,3 +74,39 @@ https://github.com/humanlayer/humanlayer
 * hardness engineering as a subset of ctxe
 * hard part will be term work flow and update sdlc
 * hiring to build an idea
+
+## Slides
+
+### Slide: 2025-11-21-09-35
+![Slide](../slides/2025-11-21-09-35-gemini-edited.jpg)
+
+**Key Point:** Demonstrates the significant adoption and growth of their open-source prompt library, using GitHub stars as a metric to show thousands of users have adopted their OSS prompts over approximately one year.
+
+**Literal Content:**
+- Left side: "Star History" graph showing humanlayer/humanlayer GitHub stars growth from October 2023 to October (current), showing exponential growth from ~1K to 7K stars
+- Right side (on black background): "1000s of folks are using our OSS prompts"
+- Footer: "no vibes allowed | @dexhorthy"
+- Code Summit branding
+
+### Slide: 2025-11-21-09-37
+![Slide](../slides/2025-11-21-09-37-gemini-edited.jpg)
+
+**Key Point:** Appears to be a title or transition slide emphasizing their data-driven, evidence-based approach ("no vibes allowed") - likely reinforcing the theme that their work is based on measurable results rather than hype or speculation.
+
+**Literal Content:**
+- Large text: "no vibes allowed | @dexhorthy"
+- Code Summit branding
+
+### Slide: 2025-11-21-09-50
+![Slide](../slides/2025-11-21-09-50-gemini-edited.jpg)
+
+**Key Point:** Illustrates a structured, human-in-the-loop development process with three distinct phases (Research, Planning, Implementation), each requiring human review and incorporating revision cycles - emphasizing the importance of human oversight in AI-assisted development rather than fully autonomous coding.
+
+**Literal Content:**
+- Three parallel workflow diagrams showing:
+  - **Phase 1 Research**: Research → Research Document → Human Review (with Revisions feedback loop)
+  - **Phase 2 Planning**: Planning → Implementation Plan → Human Review (with Revisions feedback loop)
+  - **Phase 3 Impl**: Impl → Clean Code → Human Review (with Revisions feedback loop)
+- Author attribution: "JAKE NATIONS, SEP 04, 2025"
+- Reference: "https://www.arthropod.software/p/vibe-coding-our-way-to-disaster"
+- Footer: "no vibes allowed | @dexhorthy"

@@ -63,3 +63,39 @@ topics:
 		* too many samples
 			* no good either
 	* delicate balanced and they seemed to know
+
+## Slides
+
+### Slide: 2025-11-21-11-22
+![Slide](../slides/2025-11-21-11-22-gemini-edited.jpg)
+
+**Key Point:** Academic research introducing PipelineRL, a method for improving the efficiency of on-policy reinforcement learning when generating long sequences, positioning it as a contribution to both research and practical implementation.
+
+**Literal Content:**
+- Title: "PipelineRL: Faster On-policy Reinforcement Learning for Long Sequence Generation"
+- Authors listed: Alexandre Piché, Elissa Kanooloo, Rafael Pardinas, Xingyu Chen, Dzmitry Bahdanau
+- Affiliations: Armanadies AI Research team
+- ArXiv reference: arXiv:2309.16128v2 [cs.LG]
+- Abstract section with technical details about reinforcement learning for sequence generation
+
+### Slide: 2025-11-21-11-24
+![Slide](../slides/2025-11-21-11-24-gemini-edited.jpg)
+
+**Key Point:** Explaining the fundamental tradeoff in reinforcement learning - there's "no free lunch" when it comes to optimizing policies. The mathematical progression shows how policy gradient methods become more complex when dealing with off-policy learning.
+
+**Literal Content:**
+- Title: "No free lunch"
+- Three mathematical formulas showing expectation equations with policy gradients
+- Progressive complexity in the formulas, introducing importance sampling weights
+
+### Slide: 2025-11-21-11-34
+![Slide](../slides/2025-11-21-11-34-gemini-edited.jpg)
+
+**Key Point:** Explaining key constraints when optimizing the layout of training and inference infrastructure - balancing token throughput between training and inference, and ensuring staleness doesn't exceed acceptable limits.
+
+**Literal Content:**
+- Pink background
+- Title: "Figuring out the optimal layout"
+- Section titled "Invariants:"
+  1. Training token consumption rate == Inference token production rate (with mathematical formula)
+  2. Max theoretical staleness does not exceed what our ML can handle (with formula for max_staleness)

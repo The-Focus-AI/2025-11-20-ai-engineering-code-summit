@@ -25,12 +25,6 @@ topics:
 - https://getdx.com/research/measuring-ai-code-assistants-and-agents/
 - https://getdx.com/guide/ai-assisted-engineering/
 
-## Slides
-
-![](slides/2025-11-20-17-08-gemini-edited.jpg)
-
-![](../assets/guide-to-ai-assisted-engineering.pdf)
-
 ## Notes
 
 * What is their PDF?
@@ -63,3 +57,20 @@ topics:
 	* Read the code, get the specs, gather additional context, and generate development specs
 * Zapier unblocks devs and as a result they are hiring more people
 * Spotify - uses agents to diagnose and help SRE
+
+## Slides
+
+### Slide: 2025-11-20-17-08
+![Slide](../slides/2025-11-20-17-08-gemini-edited.jpg)
+
+**Key Point:** Bold predictions about the transformative impact of full AI adoption in engineering - suggesting dramatic productivity multipliers, individual capability enhancement, and compounding benefits that are not yet widely understood even in tech hubs like San Francisco.
+
+**Literal Content:**
+- Dark slide with white text listing 5 numbered points:
+  1. 10x difference when you hit 100% AI adoption.
+  2. A single engineer should be able to build and maintain a complex, production product.
+  3. Compounding engineering makes each feature easier to build.
+  4. There are many non-obvious second-order effects once you adopt it.
+  5. Many people in SF don't know this yet.
+
+![](../assets/guide-to-ai-assisted-engineering.pdf)

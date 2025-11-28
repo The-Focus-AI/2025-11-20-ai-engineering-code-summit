@@ -21,8 +21,32 @@ topics:
 
 ## Slides
 
-![](slides/2025-11-20-14-11-gemini-edited.jpg)
-![](slides/2025-11-20-14-19-gemini-edited.jpg)
+### Slide: 14-11
+![Slide](../slides/2025-11-20-14-11-gemini-edited.jpg)
+
+**Key Point:** The slide outlines a comprehensive strategy for building organizational trust when implementing AI/LLM systems through careful rollout planning, sandboxing, reusing certified content, and managing expectations.
+
+**Literal Content:**
+- Title: "Building Trust: Turning Bias-Land into Safe Ground"
+- Two-column table with "What We Do" (checkmark icon) and "Why It Builds Trust" (key icon)
+- Four strategies listed:
+  1. Sandbox Development (PII-masked; Separate account, new models) → Experiments isolated; No Prod impact
+  2. Crawl → Walk → Run Rollout (Data-savvy SMEs → Managers → Execs) → Early critics surface issues; later users inherit stability
+  3. Reuse Certified Content First (Pre-cached queries & reports) → Prevents hallucinations and "shadow" reports
+  4. Expectation Alignment (Cut 80% lookup drudgery, not analyst jobs) → Clear scope and pace = fewer surprises
+- Watermarked text in background: "Knowledge", "Policy", "Responsiveness", "Confidence & Fluency", "Verbosity"
+
+### Slide: 14-19
+![Slide](../slides/2025-11-20-14-19-gemini-edited.jpg)
+
+**Key Point:** The slide addresses why simply giving an LLM direct database access is insufficient, highlighting scalability, understanding, and governance challenges that require more sophisticated solutions.
+
+**Literal Content:**
+- Title: "Can't We Just Ask ChatGPT to Query the Warehouse?"
+- Three points with red X icons:
+  1. "Schema dump is not scalable" - Massive schemas overwhelm context windows, drive up cost, require constant sync.
+  2. "Schema doesn't guarantee understanding" - LLMs can't infer joins, decode shorthand, or align vague questions to exact fields.
+  3. "Governance is non-negotiable" - Must enforce access rights, prefer certified reports, and use consistent taxonomy.
 
 ## Notes
 

@@ -24,7 +24,20 @@ topics:
 
 ## Slides
 
-![](slides/2025-11-20-12-30-gemini-edited.jpg)
+### Slide: 12-30
+![Slide](../slides/2025-11-20-12-30-gemini-edited.jpg)
+
+**Key Point:** MiniMax's M2 model can scale across multiple specialized agents (research, web development, reporting) working collaboratively, while remaining cost-effective for long-running agentic tasks.
+
+**Literal Content:**
+- Title: "M2 Scales and Collaborate in Multi-Agent Systems"
+- Three columns showing different agent types:
+  - "Research Agent" (left): Screenshot of a research interface with conversation and data
+  - "Web Development Agent" (center): Dashboard showing "Run dashboard" with sections for Research, Web Development Agent, and Report Agent
+  - "Report Agent" (right): Screenshot of a detailed report document
+- Bottom text: "Small & Cost-effective to run long agentic tasks"
+- QR code in center labeled "MiniMax Agent"
+- MiniMax logo and "Intelligence with Everyone" tagline
 
 ## Notes
 
