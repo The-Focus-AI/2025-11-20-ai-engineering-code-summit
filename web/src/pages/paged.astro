@@ -73,11 +73,76 @@ for (const article of allArticles) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{CONFERENCE_DETAILS.title} {APP_YEAR} - Full Report</title>
+  <title>{CONFERENCE_DETAILS.title} {APP_YEAR} - Paged Preview</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
-  <style is:global>
+
+  <!-- Paged.js -->
+  <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+
+  <style>
+    /* Paged.js interface styles */
+    @media screen {
+      body {
+        background: #e0e0e0;
+      }
+      .pagedjs_pages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+      }
+      .pagedjs_page {
+        background: white;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    /* Running headers - these get picked up by paged.js */
+    .running-section { string-set: section content(text); }
+    .running-article { string-set: article content(text); }
+
+    /* Hide standalone running elements (not inside h2/h3) */
+    .section-header > .running-article,
+    #title > .running-section,
+    #title > .running-article {
+      position: absolute;
+      visibility: hidden;
+      height: 0;
+    }
+
+    /* Page setup for paged.js */
+    @page {
+      size: letter;
+      margin: 0.75in 0.75in 1in 0.75in;
+      @bottom-left {
+        content: "TheFocus AI  |  " string(section) "  |  " string(article);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 7pt;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      @bottom-right {
+        content: counter(page) " / " counter(pages);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 9pt;
+        color: #666;
+      }
+    }
+
+    /* Title page - no footer */
+    @page title-page {
+      @bottom-left { content: none; }
+      @bottom-right { content: none; }
+    }
+
+    #title {
+      page: title-page;
+    }
+
     /* Colors */
     :root {
       --blue: #0055aa;
@@ -91,17 +156,15 @@ for (const article of allArticles) {
     }
 
     html {
-      font-size: 18px;
-      line-height: 1.7;
+      font-size: 11pt;
+      line-height: 1.6;
     }
 
     body {
       font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-      max-width: 60rem;
-      margin: 0 auto;
-      padding: 2rem;
       color: var(--void);
-      background: #fff;
+      margin: 0;
+      padding: 0;
     }
 
     /* Typography */
@@ -109,62 +172,32 @@ for (const article of allArticles) {
       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       font-weight: 900;
       line-height: 1.1;
-      margin-top: 1.5em;
-      margin-bottom: 0.5em;
+      margin-top: 1em;
+      margin-bottom: 0.4em;
       letter-spacing: -0.03em;
       text-transform: uppercase;
     }
 
-    h1 {
-      font-size: 4rem;
-    }
+    h1 { font-size: 5rem; }
+    h2 { font-size: 3.6rem; }
+    h3 { font-size: 2.6rem; }
+    h4 { font-size: 1rem; font-weight: 700; }
 
-    h2 {
-      font-size: 2.5rem;
-    }
-
-    h3 {
-      font-size: 1.5rem;
-    }
-
-    h4 {
-      font-size: 1.1rem;
-      font-weight: 700;
-    }
-
-    p {
-      margin-bottom: 1.2em;
-    }
+    p { margin-bottom: 0.8em; }
 
     /* Links */
-    a {
-      color: var(--blue);
-      text-decoration: none;
-    }
-
-    a:visited {
-      color: var(--blue);
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: var(--blue); text-decoration: none; }
+    a:visited { color: var(--blue); }
 
     /* Lists */
-    ul, ol {
-      margin-bottom: 1.2em;
-      padding-left: 1.5em;
-    }
-
-    li {
-      margin-bottom: 0.4em;
-    }
+    ul, ol { margin-bottom: 0.8em; padding-left: 1.2em; }
+    li { margin-bottom: 0.3em; }
 
     /* Blockquotes */
     blockquote {
-      border-left: 3px solid var(--blue);
-      padding-left: 1.2em;
-      margin: 1.5em 0;
+      border-left: 2px solid var(--blue);
+      padding-left: 1em;
+      margin: 1em 0;
       font-style: italic;
       color: #333;
     }
@@ -175,447 +208,155 @@ for (const article of allArticles) {
       max-width: 100%;
       width: 100%;
       height: auto;
-      margin: 1.5em 0;
+      margin: 1em 0;
     }
 
-    /* Figures */
-    figure {
-      margin: 1.5em 0;
-    }
-
-    figure img {
-      margin: 0;
-    }
+    figure { margin: 1em 0; }
+    figure img { margin: 0; }
 
     /* Code */
     code {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       font-size: 0.85em;
       background: #f4f4f4;
-      padding: 0.15em 0.4em;
-      border-radius: 3px;
+      padding: 0.1em 0.3em;
+      border-radius: 2px;
     }
 
     pre {
       background: #f4f4f4;
-      padding: 1em;
+      padding: 0.8em;
       overflow-x: auto;
-      margin: 1.5em 0;
-      border-radius: 4px;
+      margin: 1em 0;
+      border-radius: 3px;
     }
 
-    pre code {
-      background: none;
-      padding: 0;
-    }
+    pre code { background: none; padding: 0; }
 
-    /* Horizontal rules */
-    hr {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 2.5em 0;
-    }
-
-    /* Meta text - small uppercase labels */
+    /* Meta text */
     .meta {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 0.75rem;
+      font-size: 0.65rem;
       color: #666;
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
 
-    /* Info box - red left border */
+    /* Info box */
     .info-box {
-      border-left: 4px solid var(--red);
-      padding-left: 1.5em;
-      margin: 2em 0;
+      border-left: 3px solid var(--red);
+      padding-left: 1em;
+      margin: 1.5em 0;
     }
 
-    /* Address */
-    address {
-      font-style: normal;
-      margin: 1em 0;
-      color: #444;
-    }
-
-    /* Aside - for abstracts and expert lists */
+    /* Aside */
     aside {
       background: #f8f8f6;
-      padding: 1.2em 1.5em;
-      margin: 1.5em 0;
-      border-left: 3px solid var(--blue);
+      padding: 0.8em 1em;
+      margin: 1em 0;
+      border-left: 2px solid var(--blue);
+      font-size: 0.9em;
     }
 
     aside h3, aside h4 {
       margin-top: 0;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: #555;
     }
 
-    aside p:last-child {
-      margin-bottom: 0;
-    }
+    aside p:last-child { margin-bottom: 0; }
 
     /* Definition lists */
-    dl {
-      margin: 0;
-    }
-
+    dl { margin: 0; }
     dt {
       font-weight: 600;
-      margin-top: 0.5em;
-      font-size: 0.9rem;
+      margin-top: 0.4em;
+      font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
+    dt:first-child { margin-top: 0; }
+    dd { margin-left: 0; margin-bottom: 0.2em; color: #333; }
 
-    dt:first-child {
-      margin-top: 0;
-    }
-
-    dd {
-      margin-left: 0;
-      margin-bottom: 0.3em;
-      color: #333;
-    }
-
-    /* Page header - huge type, left aligned */
-    .page-header {
-      margin-bottom: 2em;
-    }
-
-    .page-header .meta {
-      margin-bottom: 0.5em;
-    }
-
-    .page-header h1 {
-      margin: 0;
-      font-size: 5rem;
-      line-height: 0.95;
-    }
-
+    /* Page header */
+    .page-header { margin-bottom: 1.5em; }
+    .page-header .meta { margin-bottom: 0.3em; }
+    .page-header h1 { margin: 0; font-size: 6rem; line-height: 0.9; }
     .page-header .subtitle {
-      font-size: 2rem;
+      font-size: 3rem;
       color: var(--blue);
-      margin: 0.25em 0 0 0;
+      margin: 0.2em 0 0 0;
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: -0.02em;
     }
 
-    /* Section header - for track pages */
-    .section-header {
-      margin-bottom: 2em;
-    }
+    /* Section header */
+    .section-header { margin-bottom: 1.5em; }
+    .section-header h2 { margin: 0; font-size: 4.4rem; line-height: 0.9; }
+    .section-header .tagline { font-style: italic; margin-top: 0.4em; font-size: 0.95rem; }
 
-    .section-header h2 {
-      margin: 0;
-      font-size: 3.5rem;
-      line-height: 0.95;
-    }
+    /* TOC */
+    .toc-columns { column-count: 2; column-gap: 2rem; column-rule: 1px solid #ddd; margin-top: 1em; }
+    .toc-section { break-inside: avoid; margin-bottom: 1em; }
+    .toc-appendix { column-span: all; margin-top: 1em; padding-top: 0.8em; border-top: 1px solid #ddd; }
+    .toc-section-title { font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4em; }
+    .toc-columns ol { list-style: decimal; padding-left: 1.2em; margin: 0; }
+    .toc-columns li { margin-bottom: 0.5em; font-size: 0.9rem; padding-left: 0.3em; }
+    .toc-columns li a { color: var(--void); }
+    .toc-insight { display: block; font-size: 0.75rem; font-style: italic; color: #555; margin-top: 0.15em; line-height: 1.3; }
 
-    .section-header .tagline {
-      font-style: italic;
-      margin-top: 0.5em;
-      font-size: 1.1rem;
-    }
+    /* Section TOC */
+    .section-toc { margin: 1.5em 0; padding: 1em 1.2em; background: #f8f8f6; }
+    .section-toc h3 { margin: 0 0 0.4em 0; font-size: 1.3rem; }
+    .section-toc .section-abstract { margin-bottom: 1em; font-style: italic; color: #444; }
+    .section-toc ol { list-style: decimal; padding-left: 1.2em; margin: 0; }
+    .section-toc li { margin-bottom: 0.5em; padding-left: 0.3em; }
+    .section-toc li a { color: var(--void); }
 
-    /* Table of Contents - Two Columns */
-    .toc-columns {
-      column-count: 2;
-      column-gap: 3rem;
-      column-rule: 1px solid #ddd;
-      margin-top: 1.5em;
-    }
+    /* Article */
+    article { margin: 1.5em 0; }
+    article header { margin-bottom: 1em; padding-bottom: 0.8em; border-bottom: 1px solid #eee; }
+    article header .meta { margin-bottom: 0.3em; }
+    article header h3 { margin: 0; font-size: 4rem; line-height: 0.95; }
+    article header .key-insight { margin-top: 0.5em; font-weight: 500; font-size: 0.9em; }
 
-    .toc-section {
-      break-inside: avoid;
-      margin-bottom: 1.5em;
-    }
+    /* Two-column article body */
+    .article-body { column-count: 2; column-gap: 1.5rem; column-rule: 1px solid #ddd; }
+    .article-body p, .article-body ul, .article-body ol, .article-body blockquote { break-inside: avoid; }
+    .article-body h1, .article-body h2, .article-body h3, .article-body h4 { break-after: avoid; column-span: all; }
+    .article-body img { break-inside: avoid; }
 
-    /* Appendix section spans full width */
-    .toc-appendix {
-      column-span: all;
-      margin-top: 1.5em;
-      padding-top: 1em;
-      border-top: 1px solid #ddd;
-    }
-
-    .toc-section-title {
-      font-weight: 700;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.5em;
-    }
-
-    .toc-columns ol {
-      list-style: decimal;
-      padding-left: 1.5em;
-      margin: 0;
-    }
-
-    .toc-columns li {
-      margin-bottom: 0.75em;
-      font-size: 1rem;
-      padding-left: 0.5em;
-    }
-
-    .toc-columns li a {
-      color: var(--void);
-    }
-
-    .toc-insight {
-      display: block;
-      font-size: 0.85rem;
-      font-style: italic;
-      color: #555;
-      margin-top: 0.25em;
-      line-height: 1.4;
-    }
-
-    /* Section article list */
-    .section-toc {
-      margin: 2em 0;
-      padding: 1.5em 2em;
-      background: #f8f8f6;
-    }
-
-    .section-toc h3 {
-      margin: 0 0 0.5em 0;
-      font-size: 1.75rem;
-    }
-
-    .section-toc .section-abstract {
-      margin-bottom: 1.5em;
-      font-style: italic;
-      color: #444;
-    }
-
-    .section-toc ol {
-      list-style: decimal;
-      padding-left: 1.5em;
-      margin: 0;
-    }
-
-    .section-toc li {
-      margin-bottom: 0.75em;
-      padding-left: 0.5em;
-    }
-
-    .section-toc li a {
-      color: var(--void);
-    }
-
-    /* Article styling */
-    article {
-      margin: 2em 0;
-    }
-
-    article header {
-      margin-bottom: 1.5em;
-      padding-bottom: 1em;
-      border-bottom: 1px solid #eee;
-    }
-
-    article header .meta {
-      margin-bottom: 0.5em;
-    }
-
-    article header h3 {
-      margin: 0;
-      font-size: 3.5rem;
-      line-height: 1;
-    }
-
-    article header .key-insight {
-      margin-top: 0.75em;
-      font-weight: 500;
-    }
-
-    /* Multi-column layout for article content */
-    .article-body {
-      column-count: 2;
-      column-gap: 2.5rem;
-      column-rule: 1px solid #ddd;
-    }
-
-    .article-body p,
-    .article-body ul,
-    .article-body ol,
-    .article-body blockquote {
-      break-inside: avoid;
-    }
-
-    .article-body h1,
-    .article-body h2,
-    .article-body h3,
-    .article-body h4 {
-      break-after: avoid;
-      column-span: all;
-    }
-
-    .article-body img {
-      break-inside: avoid;
-    }
+    /* State of field / About body */
+    .state-of-field, .about-body { column-count: 2; column-gap: 1.5rem; column-rule: 1px solid #ddd; }
+    .state-of-field p, .about-body p, .about-body ul, .about-body ol, .about-body blockquote { break-inside: avoid; }
+    .about-body h1, .about-body h2, .about-body h3, .about-body h4 { break-after: avoid; column-span: all; }
 
     /* Footer */
-    footer {
-      margin-top: 3em;
-      padding-top: 1.5em;
-      border-top: 1px solid #ddd;
-      font-size: 0.9rem;
-      color: #666;
-    }
+    footer { margin-top: 2em; padding-top: 1em; border-top: 1px solid #ddd; font-size: 0.8rem; color: #666; }
 
-    /* Section footer - appears at bottom of each section */
-    .section-footer {
-      margin-top: 3em;
-      padding-top: 1em;
-      border-top: 1px solid #ddd;
-      font-size: 0.75rem;
-      color: #999;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      display: flex;
-      justify-content: space-between;
-    }
+    /* Page breaks for paged.js */
+    #toc, #leadership, #engineering, #about, #author { break-before: page; }
+    article { break-before: page; break-inside: avoid; }
+    .section-toc + article { break-before: auto; }
+    h2, h3, h4 { break-after: avoid; }
+    figure, img { break-inside: avoid; }
 
-    /* State of the field - two column layout */
-    .state-of-field {
-      column-count: 2;
-      column-gap: 2.5rem;
-      column-rule: 1px solid #ddd;
-    }
+    /* Hide hr elements - paged.js handles page breaks */
+    hr { display: none; }
 
-    .state-of-field p {
-      break-inside: avoid;
-    }
-
-    /* About section - two column layout */
-    .about-body {
-      column-count: 2;
-      column-gap: 2.5rem;
-      column-rule: 1px solid #ddd;
-    }
-
-    .about-body p,
-    .about-body ul,
-    .about-body ol,
-    .about-body blockquote {
-      break-inside: avoid;
-    }
-
-    .about-body h1,
-    .about-body h2,
-    .about-body h3,
-    .about-body h4 {
-      break-after: avoid;
-      column-span: all;
-    }
-
-    /* ============================================
-       PRINT STYLES
-       ============================================ */
-    @media print {
-      @page {
-        size: letter;
-        margin: 0.75in 0.75in 1in 0.75in;
-        @bottom-center {
-          content: counter(page);
-          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-          font-size: 9pt;
-          color: #666;
-        }
-      }
-
-      /* Title page - no page number */
-      @page title-page {
-        @bottom-center { content: none; }
-      }
-
-      #title {
-        page: title-page;
-      }
-
-      html {
-        font-size: 11pt;
-      }
-
-      body {
-        max-width: none;
-        padding: 0;
-      }
-
-      /* Hide section footers in print - we have page numbers now */
-      .section-footer {
-        display: none;
-      }
-
-      /* Page breaks - each major section starts on new page */
-      #toc,
-      #leadership,
-      #engineering,
-      #about,
-      #author {
-        page-break-before: always;
-      }
-
-      /* Each article on its own page */
-      article {
-        page-break-before: always;
-        page-break-inside: avoid;
-      }
-
-      /* First article in section doesn't need page break */
-      .section-toc + article {
-        page-break-before: auto;
-      }
-
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-
-      /* Hide hr in print */
-      hr {
-        display: none;
-      }
-
-      /* Ensure images don't break across pages */
-      figure, img {
-        page-break-inside: avoid;
-      }
-    }
-
-    /* Screen-only styles */
-    @media screen {
-      /* Page breaks simulation */
-      #toc,
-      #leadership,
-      #engineering,
-      #about,
-      #author {
-        page-break-before: always;
-      }
-
-      article {
-        page-break-inside: avoid;
-      }
-
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-
+    /* Hide section footers - paged.js adds page numbers */
+    .section-footer { display: none; }
   </style>
 </head>
 <body>
 
   <!-- Title Page -->
   <header id="title">
+    <span class="running-section">Title</span>
+    <span class="running-article"></span>
     <div class="page-header">
       <p class="meta">{aboutFrontmatter.brand} · {CONFERENCE_DETAILS.date} · {CONFERENCE_DETAILS.location}</p>
       <h1>{CONFERENCE_DETAILS.title}</h1>
@@ -626,7 +367,7 @@ for (const article of allArticles) {
       <p>{CONFERENCE_DETAILS.summary}</p>
     </div>
 
-    <div class="info-box" style="margin-top: 2em;">
+    <div class="info-box" style="margin-top: 1.5em;">
       <p>
         <strong>Abstract:</strong> Two days of sessions from experts at the frontier of real world AI engineering
         revealed a clear architecture: the entire software development life cycle is going through a period of massive
@@ -634,16 +375,15 @@ for (const article of allArticles) {
       </p>
     </div>
 
-    <p class="meta" style="margin-top: 3em;">Prepared by Will Schenk · <a href="https://thefocus.ai">thefocus.ai</a></p>
+    <p class="meta" style="margin-top: 2em;">Prepared by Will Schenk · <a href="https://thefocus.ai">thefocus.ai</a></p>
   </header>
-
-  <hr />
 
   <!-- Executive Summary -->
   <section id="executive-summary">
     <div class="section-header">
       <p class="meta">Section 01</p>
-      <h2>Executive Summary</h2>
+      <h2><span class="running-section">Executive Summary</span></h2>
+      <span class="running-article"></span>
     </div>
 
     <h3>State of the Field</h3>
@@ -676,20 +416,14 @@ for (const article of allArticles) {
       </p>
       <p><em>— Will Schenk</em></p>
     </div>
-
-    <div class="section-footer">
-      <span>Executive Summary</span>
-      <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
-    </div>
   </section>
-
-  <hr />
 
   <!-- Table of Contents -->
   <nav id="toc">
     <div class="section-header">
       <p class="meta">Navigation</p>
-      <h2>Contents</h2>
+      <h2><span class="running-section">Contents</span></h2>
+      <span class="running-article"></span>
     </div>
     <div class="toc-columns">
       <div class="toc-section">
@@ -726,20 +460,14 @@ for (const article of allArticles) {
         </ol>
       </div>
     </div>
-
-    <div class="section-footer">
-      <span>Table of Contents</span>
-      <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
-    </div>
   </nav>
-
-  <hr />
 
   <!-- Leadership Track -->
   <section id="leadership">
     <div class="section-header">
       <p class="meta">Track 01 · {leadershipArticles.length} Articles</p>
-      <h2>Leadership Track</h2>
+      <h2><span class="running-section">Leadership</span> Track</h2>
+      <span class="running-article"></span>
       <p class="tagline">AI rewards excellence and punishes mediocrity. Trust grows from infrastructure, not promises.</p>
     </div>
 
@@ -765,7 +493,7 @@ for (const article of allArticles) {
         <article id={`article-${article.id}`}>
           <header>
             <p class="meta">Leadership · Section {article.data.order}</p>
-            <h3>{article.data.title}</h3>
+            <h3><span class="running-article">{article.data.title}</span></h3>
             {article.data.key_insights?.[0] && (
               <p class="key-insight"><strong>Key Insight:</strong> {article.data.key_insights[0]}</p>
             )}
@@ -799,23 +527,17 @@ for (const article of allArticles) {
           <div class="article-body">
             <ArticleContent />
           </div>
-
-          <hr />
         </article>
       );
     })}
-
-    <div class="section-footer">
-      <span>Leadership Track</span>
-      <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
-    </div>
   </section>
 
   <!-- Engineering Track -->
   <section id="engineering">
     <div class="section-header">
       <p class="meta">Track 02 · {engineeringArticles.length} Articles</p>
-      <h2>Engineering Track</h2>
+      <h2><span class="running-section">Engineering</span> Track</h2>
+      <span class="running-article"></span>
       <p class="tagline">The war on "slop" requires human thinking, environments as abstraction, and open data.</p>
     </div>
 
@@ -841,7 +563,7 @@ for (const article of allArticles) {
         <article id={`article-${article.id}`}>
           <header>
             <p class="meta">Engineering · Section {article.data.order}</p>
-            <h3>{article.data.title}</h3>
+            <h3><span class="running-article">{article.data.title}</span></h3>
             {article.data.key_insights?.[0] && (
               <p class="key-insight"><strong>Key Insight:</strong> {article.data.key_insights[0]}</p>
             )}
@@ -875,29 +597,23 @@ for (const article of allArticles) {
           <div class="article-body">
             <ArticleContent />
           </div>
-
-          <hr />
         </article>
       );
     })}
-
-    <div class="section-footer">
-      <span>Engineering Track</span>
-      <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
-    </div>
   </section>
 
   <!-- About Section -->
   <section id="about">
     <div class="section-header">
       <p class="meta">Appendix</p>
-      <h2>About This Report</h2>
+      <h2><span class="running-section">About This Report</span></h2>
+      <span class="running-article"></span>
     </div>
 
     {aboutFrontmatter.diagram && (
-      <figure style="margin: 2em 0;">
+      <figure style="margin: 1.5em 0;">
         <img src={aboutFrontmatter.diagram} alt="Report workflow diagram" />
-        <figcaption style="font-size: 0.85rem; color: #666; text-align: center; margin-top: 0.5em;">How this report was created</figcaption>
+        <figcaption style="font-size: 0.75rem; color: #666; text-align: center; margin-top: 0.4em;">How this report was created</figcaption>
       </figure>
     )}
 
@@ -926,22 +642,18 @@ for (const article of allArticles) {
         {aboutFrontmatter.brand && <>Published by {aboutFrontmatter.brand}</>}
       </p>
     </footer>
-
-    <div class="section-footer">
-      <span>About This Report</span>
-      <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
-    </div>
   </section>
 
   <!-- Author Section -->
   <section id="author">
     <div class="section-header">
       <p class="meta">Appendix</p>
-      <h2>About the Author</h2>
+      <h2><span class="running-section">About the Author</span></h2>
+      <span class="running-article"></span>
     </div>
 
     {bioData.diagram && (
-      <figure style="margin: 2em 0;">
+      <figure style="margin: 1.5em 0;">
         <img src={bioData.diagram} alt="Author diagram" />
       </figure>
     )}
@@ -958,7 +670,7 @@ for (const article of allArticles) {
     </aside>
 
     {bioData.services && bioData.services.length > 0 && (
-      <aside style="margin-top: 1.5em;">
+      <aside style="margin-top: 1em;">
         <h3>Services</h3>
         <ul>
           {bioData.services.map((service: string) => (
@@ -981,11 +693,6 @@ for (const article of allArticles) {
         {bioData.linkedin && <>LinkedIn: <a href={`https://linkedin.com/in/${bioData.linkedin}`}>{bioData.name}</a></>}
       </p>
     </footer>
-
-    <div class="section-footer">
-      <span>About the Author</span>
-      <span>{CONFERENCE_DETAILS.title} {APP_YEAR}</span>
-    </div>
   </section>
 
 <script>
@@ -993,7 +700,6 @@ for (const article of allArticles) {
   document.querySelectorAll('img').forEach(img => {
     img.removeAttribute('width');
     img.removeAttribute('height');
-    // Force style recalc
     img.style.width = '100%';
     img.style.height = 'auto';
   });
