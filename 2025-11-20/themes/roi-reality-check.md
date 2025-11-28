@@ -18,46 +18,36 @@ key_insights:
   - "93% of organizations stuck in 'pilot purgatory' - only 7% believe they're at scale"
   - "AI delivers 35-40% gains on greenfield/low-complexity, but 0-10% on brownfield/high-complexity"
   - "Gap between demo and production is 'so broad' in risk-averse environments"
-  - "2 engineers can create tech debt of 50 engineers through vibe coding"
+  - "Clean code amplifies gains; messy code creates negative feedback loops"
 edited: true
 ---
 
-According to Stanford researcher Yegor Denisov-Blanch, who analyzed over 100,000 engineers across hundreds of companies as part of the [Software Engineering Productivity Research Group](https://softwareengineeringproductivity.stanford.edu/) the actual productivity looks nothing like the demos.  And for the orgs that have it figured out, the differences between organizations effectively adopting AI and those lagging behind is getting wider and wider.
+Stanford researcher Yegor Denisov-Blanch, who analyzed over 100,000 engineers across hundreds of companies as part of the [Software Engineering Productivity Research Group](https://softwareengineeringproductivity.stanford.edu/), delivered the reality check: actual productivity looks nothing like the demos. And the gap between organizations effectively adopting AI and those lagging behind is widening.
 
 ![](slides/2025-11-20-11-41-gemini-edited.jpg)
 
-"AI usage quality means more than quantity," Denisov-Blanch emphasized, presenting findings that reveal a stark productivity divide. On greenfield projects they can deliver 35-40% productivity gains. But brownfield codebases and high-complexity work those gains plummet to 0-10%. If the code base is a mess, the tools end up churning through and reworking code and not refactoring anyway.  Code quality can go down.
+"AI usage quality means more than quantity," Denisov-Blanch emphasized. On greenfield projects, teams can deliver 35-40% productivity gains. But brownfield codebases and high-complexity work? Those gains plummet to 0-10%. If the codebase is a mess, the tools end up churning through and reworking code without actually refactoring. Code quality can go down.
 
-This complexity gap manifests in unexpected ways. Bloomberg's Lei Zhang jokingly defined "vibe coding" as "2 engineers creating the tech debt of 50 engineers."  They have a massive code base and a massive team of 9,000+ engineers, and they've had trouble getting the tools to understand their massive brownfield work.  They have a lot.
-
-![](slides/2025-11-20-14-27-gemini-edited.jpg)
-
-The data is showing how far AI is from the potential. NLW's [pre survey of 3,500 use cases](https://roisurvey.ai/) across eight impact categories revealed that coding is "further ahead" than other domains in delivering measurable ROI. This could be a biased sample -- McKinsey's parallel study of 120,000 developers found that only 7% of organizations believe they're fully at scale with AI development tools. The remaining 93% are stuck in what multiple speakers called the "pilot purgatory"—endless experimentation without production-grade deployment.
-
-Still, ever little counts.
-
-![](slides/2025-11-20-16-12-gemini-edited.jpg)
-
-Asaf Bord from Northwestern Mutual brought this reality into sharp focus when discussing his company's GenBI initiative at the Fortune 100 financial services giant. "The gap between demo and production is so broad," he stated plainly. Working in one of the world's most risk-averse environments—an organization built on 40-50 year client relationships—Bord identified four critical barriers: unknown technology, messy real data, blind-trust bias, and budget impact concerns.
-
-![](slides/2025-11-20-14-11-gemini-edited.jpg)
-
-A surpising critical factor was keeping it real.  "Using actual data instead of synthetic to really understand the mess," Bord explained, Northwestern Mutual brought business stakeholders directly into the research project itself. Getting to the real world edges let them model real questions users were asking their data systems—essentially creating organic evaluation sets from actual workflows. This approach of incremental ROI delivery, step by step, proved far more effective than big-bang transformations.
-
-![](slides/2025-11-20-14-19-gemini-edited.jpg)
-
-Steering these big ships ain't easy, the McKinsey is describing it as "post-Agile" methodologies. Their research revealed that successful AI adoption requires "getting a lot of little things right"—numerous small interventions rather than wholesale process overhauls. Organizations are experimenting with shorter sprints, smaller but more numerous teams.
-
-![](slides/2025-11-20-11-27-gemini-edited.jpg)
-
-Perhaps most counterintuitively, Denisov-Blanch's research identified "environment cleanliness" as a key factor amplifying AI productivity gains. Clean code doesn't just make human developers more effective—it dramatically improves AI tool performance. "Invest in software cleanliness to get the gains," he advised. "Fight the entropy." Once again, best practices remain as significant as they are illusive.
+The research revealed a "rich gets richer effect." The gap between AI-using teams and non-AI teams widened from 4.8% to 19% over two years—a 4x increase. Teams that already maintained clean codebases, established good practices, and invested in systematic tooling are seeing outsized benefits.
 
 ![](slides/2025-11-20-11-43-gemini-edited.jpg)
 
-The research also revealed what Denisov-Blanch called a "rich gets richer effect"—the gap between top and bottom performers is widening, not shrinking, with AI adoption. Teams that already maintained clean codebases, established good practices, and invested in systematic tooling are seeing outsized benefits.  AI tooling isn't especially helping the negative feedback of technical debt and poor process.
+Bloomberg's Lei Zhang put it bluntly: "Vibe coding is where 2 engineers can create the tech debt of 50 engineers." They have a massive codebase and 9,000+ engineers. AI tool usage "dropped really quickly once we moved back from greenfield." They have a lot of brownfield.
 
-Bloomberg's Zhang offered a constantly repeated reframing: AI "changes the cost function of engineering." Rather than asking what AI can do, his team asks what work developers don't want to do. This led to targeted applications like uplift agents for handling patches and rationale documentation, and incident response agents to parse overwhelming alert volumes—unglamorous but high-value use cases that deliver clear ROI.
+NLW's [survey of 3,500 use cases](https://roisurvey.ai/) across eight impact categories revealed that coding is "further ahead" than other domains in delivering measurable ROI. This could be a biased sample—McKinsey's parallel study found only 7% of organizations believe they're fully at scale with AI development tools. The remaining 93% are stuck in "pilot purgatory."
 
-The convergence of these studies points to AI coding tools begin an amplifier of existing organizational capabilities, both for good as well as ill. Success requires working clean with actual messy data, small highly communicative teams of people with problems work with people bringing the solutions,  maintaining code cleanliness, and building trust through incremental delivery. The 35-40% gains are real—but only for organizations willing to get their houses in order first.
+![](slides/2025-11-20-16-12-gemini-edited.jpg)
 
-As NLW's survey showed growing optimism about AI deployment over the course of 2024, the gap between pilot projects and production scale remains the defining challenge. The organizations that will thrive aren't those racing to adopt every new AI tool, but those methodically building the foundations—clean code, clear processes, stakeholder trust—that allow those tools to actually deliver value. The ROI is earned through discipline.
+Asaf Bord from [Northwestern Mutual](https://www.northwesternmutual.com/) brought enterprise reality into focus. "The gap between demo and production is so broad," he stated plainly. Working in one of the world's most risk-averse environments—an organization built on 40-50 year client relationships—Bord identified four barriers: unknown technology, messy real data, blind-trust bias, and budget impact concerns.
+
+![](slides/2025-11-20-14-19-gemini-edited.jpg)
+
+Bord's strategy for building trust: sandbox development with PII-masked data, "crawl → walk → run" rollout starting with data-savvy SMEs, reusing certified content to prevent hallucinations, and expectation alignment—"cut 80% lookup drudgery, not analyst jobs." Early critics surface issues; later users inherit stability.
+
+![](slides/2025-11-20-14-11-gemini-edited.jpg)
+
+McKinsey (Martin Harrysson, Natasha Maniar) describes it as "post-Agile" methodologies. Different types of work require different human-agent operating models. Modernization can leverage "agentic factories" with agents working continuously under human supervision. Greenfield becomes an "AI co-creator innovation lab." Brownfield and infrastructure work stays human-led with copilots—higher risk requires higher oversight.
+
+![](slides/2025-11-20-11-27-gemini-edited.jpg)
+
+The 35-40% gains are real—but only for organizations willing to get their houses in order first. The ROI is earned through discipline.

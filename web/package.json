@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate-pdf": "node scripts/generate-pdf.js"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
@@ -22,5 +23,8 @@
     "sharp": "^0.34.5",
     "tailwindcss": "^4.1.17",
     "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
   }
 }

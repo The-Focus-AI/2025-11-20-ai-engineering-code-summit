@@ -1,42 +1,58 @@
 ---
-title: "Model Quality Over Scaffolding: The Death of Clever Engineering"
+title: "Model Quality Over Scaffolding: Minimalism in Agent Architecture"
 order: 4
 header_image: /headers/model-quality-over-scaffolding.png
 topics:
   - "Model Capability"
   - "Minimalism"
   - "Agent Architecture"
-  - "Benchmarks & Training"
+  - "Multi-Model Systems"
 key_speakers:
-  - "Nik Pash (Cline)"
   - "Lee Robinson (Cursor)"
   - "Beyang Liu (Amp Code)"
   - "Joel Becker (METR)"
 key_insights:
-  - "Agents aren't bottlenecked by clever tricks anymore - model strength is the main thing"
-  - "Terminus beats everything with minimal tool design and no clever tool calling"
-  - "Capability beats scaffolding - minimalism wins"
-  - "Models only get better when labs train on something hard"
+  - "Use smart models to plan, fast models to execute - deploy the right capability at the right time"
+  - "Subagents exist to manage context, not compensate for model weakness"
+  - "Tool calls eat up context - clean interfaces should disappear when better models arrive"
+  - "Benchmarks determine what frontier models do best - everything traces back to training environments"
 edited: true
 ---
-"Agents aren't bottlenecked by clever tricks anymore," said Nik Pash, creator of Cline. After years of elaborate tool architectures and sophisticated scaffolding, the realization: the models are so smart now we should just get out of their way.
 
-[Terminus](https://www.tbench.ai/terminus) works with just a bash tool, and that's enough. (Phrases like bash-pilled were thrown around on the conference floor.) "Capability beats scaffolding," Pash emphasized. The agents that win aren't the ones with sophisticated architectures—they're the ones running on the best base models.
+The shift away from elaborate agent scaffolding is already visible in production systems. As base models improve, the architectural patterns that compensate for their limitations become unnecessary overhead. The question for agent builders: what's the minimum viable architecture?
 
-"I'm tired of all the little hacks," Pash confessed. The endless tweaking, prompt engineering tricks, architectural workarounds—all compensating for model limitations. As models improve, these hacks become unnecessary. Worse, they become technical debt.
+## Cursor: Smart Planning, Fast Execution
 
-Lee Robinson from Cursor described Composer—a faster frontier model built with reinforcement learning—operating at "similar intelligence" but with better speed. The key insight: use smart models to make the plan, then let Composer "rip through the code." Deploy the right capability at the right time.
+Lee Robinson from [Cursor](https://cursor.com/) described their approach with Composer—a faster frontier model built with reinforcement learning. Composer operates at "similar intelligence" to larger models but with dramatically better speed.
 
-Amp Code, led by Beyang Liu, runs a dual-model system: a "smart" agent for careful reasoning and review, a "rush" agent for speed. But even this architecture exists to manage context, not compensate for model weakness. Liu noted that "tool calls themselves eat up context." The subagents are clean interfaces—the moment a better base model makes them unnecessary, they should disappear.
+The key insight: **use smart models to make the plan, then let Composer "rip through the code."** Deploy the right capability at the right time. Planning requires careful reasoning; execution can be fast once the path is clear.
 
-Joel Becker from [METR](https://metr.org/) connected this to how models improve. Benchmarks determine what frontier models do best: "Everything traces back to the environments they've been training against." A benchmark is an environment, a starting state, and a verifier—conceptually identical to RL environments, except one measures and the other improves.
+![](slides/2025-11-21-11-42-gemini-edited.jpg)
+
+This isn't about choosing between intelligence and speed—it's about recognizing that different phases of work have different requirements. The architectural decision is when to invoke which capability.
+
+## Amp Code: Subagents for Context, Not Capability
+
+[Amp Code](https://ampcode.com/), led by Beyang Liu, runs a dual-model system: a "smart" agent for careful reasoning and review, a "rush" agent for speed. But Liu was explicit about the purpose: this architecture exists to **manage context, not compensate for model weakness**.
+
+![](slides/2025-11-21-14-29-gemini-edited.jpg)
+
+"Tool calls themselves eat up context," Liu noted. Each tool invocation consumes tokens that could otherwise hold problem context. Amp's four specialized subagents—Finder (codebase search), Oracle (reasoning), Librarian (library use), Kraken (refactoring)—are clean interfaces that isolate concerns.
+
+The telling detail: "The moment a better base model makes them unnecessary, they should disappear." The architecture is provisional, designed to be obsoleted by model improvements.
+
+## METR: Benchmarks Shape Models
+
+Joel Becker from [METR](https://metr.org/) connected architectural choices to how models improve. "Benchmarks determine what frontier models do best," he observed. "Everything traces back to the environments they've been training against."
 
 ![](slides/2025-11-21-16-42-gemini-edited.jpg)
 
-Pash is building an "RL environments factory" at Cline—subagents that qualify tasks and create training environments. His tea kettle example: A good verifier asks "Is it whistling?" A bad verifier asks "Is the burner set to high? Has five minutes elapsed? Is the kettle on the front left?" Outcome-driven verification versus procedural checking. Good benchmarks test outcomes; bad benchmarks encode assumptions about methods.
+This creates a feedback loop. The benchmarks we build determine what capabilities frontier models develop. If we benchmark for elaborate tool use, models optimize for elaborate tool use. If we benchmark for simple, effective solutions, models optimize for simplicity.
 
-![](slides/2025-11-21-16-36-gemini-edited.jpg)
+The implication for agent builders: the scaffolding we build today may be training signal for tomorrow's models. Build what you want models to learn.
 
-"Models only get better when labs train on something hard," Pash argued. The bottleneck is model quality. Model quality depends on training data. So the critical resource isn't engineering talent—it's quality data from real engineering work. Pash's answer: [Cline-bench](https://github.com/cline/cline-bench), an open-source benchmark built from opt-in user data. "Keeping datasets closed slows down research."
+## The Minimalist Thesis
 
-We're building agents to collect data that trains better models that make our scaffolding unnecessary. The bottleneck shifts from engineering to collecting quality tests. Building better base models matters more than clever tricks around mediocre ones. "The model strength is the main thing," Pash said. Everything else is commentary.
+The pattern across these production systems is clear: architecture should be minimal and provisional. Use multiple models when context management requires it, not because any single model is inadequate. Build clean interfaces that can disappear. Recognize that today's workarounds become tomorrow's technical debt.
+
+The agents that win aren't the ones with sophisticated architectures—they're the ones that deploy the right model capability at the right moment, with the minimum structure required to manage context effectively.

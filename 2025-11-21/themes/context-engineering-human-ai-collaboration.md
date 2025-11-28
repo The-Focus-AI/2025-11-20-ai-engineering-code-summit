@@ -45,6 +45,8 @@ He speed ran through some complexity greatest hits -- riffing off No Silver Bull
 
 What systems could we put in place to apply resistance to bad architectural systems? We're losing the distinction between refactoring and mere rework. "When things are complex, everything touches everything else," Nations observed. He described watching an AI agent struggle with a codebase where business logic and authentication had become so intertwined that "it couldn't find the path between them." Technical debt, he noted, "doesn't register as debt—it just registers as code."
 
+![](slides/2025-11-21-15-03-gemini-edited.jpg)
+
 You need to think about how to pull things apart in the planning stages, and the humans always are the ones deciding what to build. 
 
 The root of the problem lies in a fundamental misunderstanding about what makes software development hard.  Dex was honing in on succesful techniques on multiple levels of software architecture.  "Subagents for controlling features" not also much for grand unified Silver Bullets.  Nations was highlighting successful ways of dealing with archictectual complexity.
@@ -57,7 +59,9 @@ Horthy's prescription was specific: "Build your entire plan around context workf
 
 Nations described Netflix's approach with their 5-million-line codebase: "No context window has access that can hold it." His team developed a three-phase process: research (feeding everything upfront—architecture diagrams, design docs, Slack threads, runbooks—then compressing it into a single research document), planning (specifying exact function signatures, type definitions, which files to modify), and only then implementation. "This phase should be pretty simple," Nations noted, "because you have a clear spec."
 
-The technical mechanism for maintaining context control, according to Horthy, is subagents. "They are for controlling context," he emphasized. "Go find how this works." Beyang Liu from Amp Code echoed this approach, describing how his team built four specialized subagents (Finder for codebase search, Oracle for reasoning, Librarian for library use, Kraken for refactoring) specifically because "tool calls themselves eat up context." By isolating different concerns in separate agents, you prevent the context confusion that leads to incomprehensible output.
+![](slides/2025-11-21-09-50-gemini-edited.jpg)
+
+The technical mechanism for maintaining context control, according to Horthy, is subagents. "They are for controlling context," he emphasized. "Go find how this works." Beyang Liu from Amp Code echoed this: subagents isolate different concerns to prevent context confusion. (See [Model Quality Over Scaffolding](./model-quality-over-scaffolding) for Amp's full architecture.)
 
 Horthy framed the entire practice as "hardness engineering"—deliberately making the AI's job harder by forcing human thinking upfront. "The code is like assembling now, just focus on the markdown." 
 

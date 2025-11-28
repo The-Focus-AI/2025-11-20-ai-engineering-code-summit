@@ -54,7 +54,7 @@ Applied Compute (Rhythm Garg, Linden Li) makes training fast: pipeline RL with i
 
 ![](slides/2025-11-21-11-22-gemini-edited.jpg)
 
-Prime Intellect's Will Brown focuses on environments. "Environments are the webapps of research"—they define what you're training for. His [verifiers toolkit](https://github.com/PrimeIntellect-ai/verifiers) packages task specs, evaluation harnesses, and reward signals. The Environments Hub makes these shareable. For long-running agents, he's tackling multi-turn RL with turn-level credit assignment—figuring out which actions mattered across multi-hour tasks.
+Prime Intellect's Will Brown focuses on environments as first-class abstractions. His [verifiers toolkit](https://github.com/PrimeIntellect-ai/verifiers) packages task specs, evaluation harnesses, and reward signals. The Environments Hub makes these shareable. For long-running agents, he's tackling multi-turn RL with turn-level credit assignment—figuring out which actions mattered across multi-hour tasks. (See [Environments as Universal Abstraction](./environments-universal-abstraction) for the full framework.)
 
 ## Code World Models: Learning from Execution
 

@@ -15,13 +15,13 @@ key_speakers:
   - "Joel Becker (METR)"
 key_insights:
   - "Agents are collecting good data but not sharing it - keeping datasets closed slows research"
-  - "1000 examples can yield 10-point improvements - data quality >> data quantity"
+  - "Small, high-quality datasets yield outsized gains - data quality >> data quantity"
   - "Cline-bench: open-source real-world agent coding benchmark from opt-in user data"
-  - "Environments hub democratizes AI research like webapps democratized software"
+  - "Real-world production trajectories are the gold standard for training data"
 edited: true
 ---
 
-"1000 examples can yield 10-point improvements" — OpenAI. 1,000 trajectories of code edit planning yielded a 10-point improvement — Cognition. 100 PyTorch examples got up to a 72% improvement over frontier models — Mako. 150 system-prompt iterations yielded up to a 15% improvement on benchmarks — Arize. Across the board, quality training data for post-training tuning is yielding outsized gains.
+Post-training with small, high-quality datasets yields outsized gains—the pattern is consistent across OpenAI, Cognition, Mako, and Arize. Hundreds of examples can move benchmarks by double digits. (See [Reinforcement Learning for Specialized Models](./reinforcement-learning-specialized-models) for specific results.)
 
 OpenAI's [ARFT approach](https://platform.openai.com/docs/guides/reinforcement-fine-tuning) requires four things: well-specified tasks, evals that mirror production, performance that scales with tries, and unhackable rewards. That last one is tricky—Mako's model initially gamed the system until they added judge LLMs. But when the reward function is right, the payoff is transformative.
 
@@ -37,9 +37,7 @@ Years of elaborate scaffolding were symptoms of compensating for model limitatio
 
 ## Verification is the Unlock
 
-Pash: "A benchmark is an environment, a starting state, and a verifier." Same as an RL environment. The only difference? One measures, one improves. Build good verifiers and you get both evaluation and training.
-
-The tea kettle example nails it. Goal: boil water. The kettle whistles when it's boiling. Good verifier: is it whistling? Bad verifiers: Is the burner on high? Has five minutes elapsed? Is the lid positioned correctly? Outcome-driven verification doesn't care how you got there—just whether you did.
+Verification unlocks both evaluation and training. Pash's framework—outcome-driven verification rather than process-driven—applies equally to benchmarks and RL environments. Build good verifiers and you get both. (See [Environments as Universal Abstraction](./environments-universal-abstraction) for the full verification framework.)
 
 ## Real-world Trajectories are the Gold
 
@@ -55,7 +53,9 @@ Pash's answer: [Cline-bench](https://github.com/cline/cline-bench). Open source,
 
 ## The Environments Hub
 
-This dovetails with [Will Brown](https://willcb.com)'s work at [Prime Intellect](https://www.primeintellect.ai/). "Environments are the webapps of research," he said. His environments hub provides infrastructure to turn trajectories into training environments anyone can use. Their environments hub lets anyone create, share, and run RL training environments.
+This dovetails with [Will Brown](https://willcb.com)'s work at [Prime Intellect](https://www.primeintellect.ai/). His environments hub provides infrastructure to turn trajectories into training environments anyone can use. (See [Environments as Universal Abstraction](./environments-universal-abstraction) for how this fits the broader environments-as-abstraction thesis.)
+
+![](slides/2025-11-21-11-44-gemini-edited.jpg)
 
 ![](slides/2025-11-21-11-40-gemini-edited.jpg)
 
@@ -64,5 +64,7 @@ Prime Intellect's thesis: scaling AI means scaling talent, not just compute. Inc
 ## The Open Science Call
 
 The pieces are in place. Small datasets yield big gains. Verification is understood. Infrastructure exists. But Pash delivered a "truth nuke": agents are collecting good data and not sharing it. Keeping datasets closed slows down research.
+
+![](slides/2025-11-21-16-38-gemini-edited.jpg)
 
 Models only get better when trained on something hard. The hardest data—real-world production trajectories—is sitting unused. Pash's bet is on openness. The question is whether the rest of the community will follow.

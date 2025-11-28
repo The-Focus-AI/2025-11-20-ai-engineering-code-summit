@@ -16,3 +16,7 @@ run = "cd web && npm run build"
 [tasks.thefocus]
 description = "Build and deploy to thefocus-landing"
 run = "cd web && DEPLOY=thefocus npm run build && rsync -rv --delete dist/ ../../thefocus-landing/public/reports/aiecode-2025-11/"
+
+[tasks.pdf]
+description = "Generate PDF from /paged route using Playwright"
+run = "cd web && npm run generate-pdf"
