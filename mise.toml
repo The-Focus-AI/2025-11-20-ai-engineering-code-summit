@@ -13,6 +13,23 @@ run = "cd web && npm run dev"
 description = "Build website for production"
 run = "cd web && npm run build"
 
+[tasks.build-site]
+description = "Build with base path and copy to outdir"
+usage = '''
+arg "<base>" help="Base path for the site (e.g., /reports/aiecode-2025-11/)"
+arg "<outdir>" help="Output directory to copy built files to"
+'''
+run = '''
+echo "Building site with base ${usage_base} and outdir ${usage_outdir}"
+cd web
+npm install
+npx astro build --base "${usage_base}"
+echo "Copying site to ${usage_outdir}"
+mkdir -p "${usage_outdir}"
+cp -r dist/* "${usage_outdir}"
+'''
+
+
 [tasks.thefocus]
 description = "Build and deploy to thefocus-landing"
 run = "cd web && DEPLOY=thefocus npm run build && rsync -rv --delete dist/ ../../thefocus-landing/public/reports/aiecode-2025-11/"
