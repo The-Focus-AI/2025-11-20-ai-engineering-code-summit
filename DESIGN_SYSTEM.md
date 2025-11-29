@@ -2,15 +2,122 @@
 
 > **For AI Tools**: This document defines the visual language for this project. Use these tokens, patterns, and guidelines to generate consistent, on-brand code.
 
+---
+
+## Brand Brief
+
+### Parent Brand Relationship
+
+This is a **Focus.AI Labs** project. Labs is a distinct sub-brand under [The Focus.AI](https://thefocus.ai).
+
+| | Focus.AI (Parent) | Focus.AI Labs |
+|---|---|---|
+| **What it is** | Technology studio, client services | Content, reports, analysis, experiments |
+| **Audience** | Organizations needing AI transformation | AI practitioners + credibility for parent |
+| **Palette** | Paper, Ink, Petrol, Graphite | Paper, Void, Rand-Blue, Alert-Red |
+| **Shared DNA** | "Distill the signal from the noise" | Demonstrates distillation in practice |
+
+### What Focus.AI Labs Is
+
+Labs projects are **things we're exploring and sharing publicly** — not client deliverables, not polished products. They're experiments, analyses, and reports that we find interesting and think others might too.
+
+The "Future Systems Report" aesthetic (Bell Labs / RAND Corporation) is the **shared visual language for all Labs projects**. This conference analysis is one instance; future Labs projects will share this aesthetic.
+
+### Vision
+
+Open doors, don't close them. A Labs project succeeds when the reader thinks: **"That was really cool, and now I have so many more ideas of things to explore."**
+
+### Audience
+
+- **Primary**: Peer AI practitioners — engineers, builders, people in the arena
+- **Secondary**: Potential Focus.AI clients — establishing credibility through demonstrated expertise
+
+We write *with* the audience, not *at* them. They're peers, not students.
+
+---
+
+## Brand Pillars
+
+| Pillar | Focus.AI Labs | How It Shows Up |
+|--------|---------------|-----------------|
+| **Purpose** | Share what we find interesting; open doors for exploration | Generous with insights, transparent about process |
+| **Positioning** | Experiments in public — distillation demonstrated, not described | "Here's what we did" not "here's what you should do" |
+| **Personality** | Curious, Wry, Generous | Questions over answers; dry observations; no gatekeeping |
+| **Perception** | Interesting people doing interesting things | Not thought leaders, not gurus — just folks who dig in |
+| **Promotion** | The work speaks; aesthetic is distinctive | Bell Labs visual identity; GitHub-first distribution |
+
+---
+
+## Voice & Tone
+
+### Core Voice Traits
+
+**Curious** — "We found this interesting and dug in"
+- Lead with questions and observations
+- Show the rabbit holes, not just the conclusions
+- It's okay to not have all the answers
+
+**Wry** — Dry observations, not taking ourselves too seriously
+- Humor through understatement, not jokes
+- Notice the absurd without belaboring it
+- Self-aware about the experiment
+
+**Generous** — Sharing what we learned, not gatekeeping
+- Give the reader everything they need
+- Credit sources and speakers fully
+- Make it useful, not just impressive
+
+### What We Sound Like
+
+- A curious colleague sharing notes over coffee
+- Someone who went down the rabbit hole and came back with stories
+- Bell Labs memo from 1972, if those researchers had Twitter
+
+### What We Don't Sound Like
+
+- A consultant pitching services
+- A thought leader building a personal brand
+- An academic paper (rigorous but lifeless)
+- A conference recap blog ("and then the next speaker said...")
+
+### Anti-Patterns (Never Do This)
+
+| Pattern | Example | Why It's Wrong |
+|---------|---------|----------------|
+| **Corporate/salesy** | "Leverage these insights to unlock value" | We're sharing, not selling |
+| **Breathless hype** | "Revolutionary! Game-changing! The future is here!" | Exhausting and empty |
+| **"Well actually"** | "While the speaker said X, technically..." | Pedantic, shows off knowledge |
+| **Condescending** | "For those unfamiliar with transformers..." | Audience knows; don't explain basics |
+| **Hot takes** | "Here's why everyone is wrong about agents" | Opinions without substance |
+| **Self-promotional** | "As leaders in AI transformation, we noticed..." | The work should speak |
+
+### Example Transformations
+
+| Don't Write | Write Instead |
+|-------------|---------------|
+| "This groundbreaking talk revolutionized our understanding of AI agents!" | "Zhang's framing of 'computer use' — treating the model as a user, not a programmer — reframes the whole agent question." |
+| "For those unfamiliar with RAG pipelines, here's a quick primer..." | "The RAG discussion assumed chunking is solved. It isn't." |
+| "We were thrilled to attend this prestigious event..." | "Two days. 25 sessions. Here's what stuck." |
+| "In conclusion, these insights will transform how enterprises approach AI." | "Recurring pattern: scaffolding is tech debt. Invest in model capability instead." |
+| "The speaker made an interesting point, although technically speaking the architecture they described isn't quite accurate because..." | "Interesting claim about context windows. Worth testing." |
+
+---
+
 ## Brand Concept
 
 **"Future Systems Report"** — A retro-tech aesthetic inspired by Bell Labs research documents, RAND Corporation reports, and 1960s-70s technical publications. Professional authority meets vintage computing warmth.
 
-### Voice & Tone
-- Authoritative but accessible
-- Technical precision with human warmth
-- Confident without being corporate
-- Nostalgic futurism — "the future as imagined by the past"
+### Why This Aesthetic?
+
+The Bell Labs / RAND aesthetic was chosen because:
+
+- **Authority without corporate sterility** — These institutions shipped real breakthroughs
+- **Visual distinctiveness** — Stands out from generic tech blogs and AI slop
+- **Warmth and tactility** — Paper tones and monospace type feel human
+- **Nostalgic futurism** — "The future as imagined by the past" — appropriate for documenting a moment when the future is being actively negotiated
+- **Signals experimentation** — Research reports, not marketing collateral
+
+This aesthetic is shared across all Focus.AI Labs projects.
 
 ---
 
@@ -368,14 +475,26 @@ For tool interoperability, here are the tokens in W3C DTCG format:
 
 ## Quick Reference for AI Prompts
 
-When generating code for this project:
+When generating code or content for this project:
 
-1. **Stack**: Astro + React + Tailwind CSS v4
-2. **Colors**: paper (bg), void (text/borders), rand-blue (accents), alert-red (decorative numbers)
-3. **Fonts**: Inter for UI, Courier Prime for metadata
-4. **Aesthetic**: Retro Bell Labs / RAND Corporation technical documents
-5. **Key patterns**:
-   - `font-mono text-xs` for labels
-   - `font-sans font-black` for headlines
-   - `border-void` for structure
-   - Warm backgrounds, never pure white
+### Technical Stack
+- **Framework**: Astro + React + Tailwind CSS v4
+- **Colors**: paper (bg), void (text/borders), rand-blue (accents), alert-red (decorative numbers)
+- **Fonts**: Inter for UI, Courier Prime for metadata
+- **Key patterns**: `font-mono text-xs` for labels, `font-sans font-black` for headlines, `border-void` for structure, warm backgrounds (never pure white)
+
+### Brand Context
+- **Parent**: Focus.AI Labs (sub-brand of The Focus.AI)
+- **Aesthetic**: "Future Systems Report" — Bell Labs / RAND Corporation retro-tech
+- **Voice**: Curious, Wry, Generous
+- **Audience**: Peer AI practitioners (primary), potential clients (secondary)
+
+### Content Guidelines
+- Write *with* the reader, not *at* them — they're peers
+- Lead with observations and questions, not conclusions
+- Show rabbit holes, not just takeaways
+- Credit speakers and sources fully
+- **Never**: corporate speak, breathless hype, "well actually", condescending explanations
+
+### Success Metric
+Reader thinks: "That was really cool, and now I have so many more ideas to explore."

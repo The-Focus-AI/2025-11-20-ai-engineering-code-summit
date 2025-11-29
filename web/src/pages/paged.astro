@@ -306,6 +306,21 @@ for (const article of allArticles) {
     .toc-columns ol { list-style: decimal; padding-left: 1.2em; margin: 0; }
     .toc-columns li { margin-bottom: 0.5em; font-size: 0.9rem; padding-left: 0.3em; }
     .toc-columns li a { color: var(--void); }
+
+    /* TOC page numbers using paged.js target-counter */
+    .toc-columns li a {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .toc-columns li a::after {
+      content: leader(dotted) " " target-counter(attr(href), page);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.8em;
+      color: #666;
+      flex-shrink: 0;
+      margin-left: 0.5em;
+    }
     .toc-insight { display: block; font-size: 0.75rem; font-style: italic; color: #555; margin-top: 0.15em; line-height: 1.3; }
 
     /* Section TOC */
@@ -314,7 +329,15 @@ for (const article of allArticles) {
     .section-toc .section-abstract { margin-bottom: 1em; font-style: italic; color: #444; }
     .section-toc ol { list-style: decimal; padding-left: 1.2em; margin: 0; }
     .section-toc li { margin-bottom: 0.5em; padding-left: 0.3em; }
-    .section-toc li a { color: var(--void); }
+    .section-toc li a { color: var(--void); display: flex; justify-content: space-between; align-items: baseline; }
+    .section-toc li a::after {
+      content: leader(dotted) " " target-counter(attr(href), page);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.8em;
+      color: #666;
+      flex-shrink: 0;
+      margin-left: 0.5em;
+    }
 
     /* Article */
     article { margin: 1.5em 0; }
