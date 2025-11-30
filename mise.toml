@@ -23,7 +23,7 @@ run = '''
 echo "Building site with base ${usage_base} and outdir ${usage_outdir}"
 cd web
 npm install
-npx astro build --base "${usage_base}"
+BASE_PATH="${usage_base}" npx astro build
 echo "Copying site to ${usage_outdir}"
 mkdir -p "${usage_outdir}"
 cp -r dist/* "${usage_outdir}"
