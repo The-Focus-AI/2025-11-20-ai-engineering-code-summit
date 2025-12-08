@@ -108,7 +108,12 @@ if (articleEntry.data.key_speakers && Array.isArray(articleEntry.data.key_speake
 }
 ---
 
-<BaseLayout title={`${article.title} - AI Engineering Code Summit`}>
+<BaseLayout
+  title={`${article.title} - AI Engineering Code Summit`}
+  description={article.subtitle}
+  image={articleEntry.data.header_image}
+  url={`/article/${articleId}`}
+>
   <div class="w-full min-h-screen bg-paper pb-20 animate-in fade-in duration-300">
 
     <div class="max-w-4xl mx-auto bg-[#fdfdfc] border-x border-void min-h-screen shadow-lg relative">

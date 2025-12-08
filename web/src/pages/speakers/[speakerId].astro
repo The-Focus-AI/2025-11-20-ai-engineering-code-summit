@@ -78,7 +78,12 @@ const relatedArticles = allArticles
   .sort((a: any, b: any) => a.order - b.order);
 ---
 
-<BaseLayout title={`${speaker.name} - AI Engineering Code Summit`}>
+<BaseLayout
+  title={`${speaker.name} - AI Engineering Code Summit`}
+  description={`${speaker.name}, ${speaker.role} at ${speaker.company}. Speaker at the AI Engineering Code Summit.`}
+  image={speaker.imageUrl}
+  url={`/speakers/${speakerId}`}
+>
   <div class="w-full min-h-screen bg-paper pb-20">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row border-x border-void bg-[#fdfdfc] min-h-screen">
 

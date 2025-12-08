@@ -59,7 +59,11 @@ const getTrackDescription = () => {
 };
 ---
 
-<BaseLayout title={`${track} - AI Engineering Code Summit`}>
+<BaseLayout
+  title={`${track} Track - AI Engineering Code Summit`}
+  description={getTrackDescription()}
+  url={`/track/${trackId}`}
+>
   <div class="w-full min-h-screen bg-paper animate-in fade-in duration-500 pb-20">
 
     <!-- Magazine Cover Header -->
