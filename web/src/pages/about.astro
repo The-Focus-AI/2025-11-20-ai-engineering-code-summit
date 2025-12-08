@@ -9,6 +9,9 @@ const aboutEntry = aboutCollection[0];
 const { Content } = await render(aboutEntry);
 const frontmatter = aboutEntry.data;
 
+// Strip leading slash from diagram path to make it relative (works with base path)
+const diagramPath = frontmatter.diagram?.replace(/^\//, '') || null;
+
 // Load bio content from collection (reads from ../bio.md)
 const bioCollection = await getCollection('bio');
 const bioEntry = bioCollection[0];
@@ -52,10 +55,10 @@ const bioData = bioEntry.data;
         </div>
 
         <!-- Workflow Diagram -->
-        {frontmatter.diagram && (
+        {diagramPath && (
           <div class="my-8">
             <img
-              src={frontmatter.diagram}
+              src={diagramPath}
               alt="Report workflow diagram"
               class="w-full rounded-lg border border-gray-200"
             />

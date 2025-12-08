@@ -20,11 +20,13 @@ function remarkFixSlidePaths() {
 // https://astro.build/config
 export default defineConfig({
   site: 'https://the-focus-ai.github.io',
-  base: process.env.DEPLOY === 'github-pages'
-    ? '/2025-11-20-ai-engineering-code-summit'
-    : process.env.DEPLOY === 'thefocus'
-      ? '/reports/aiecode-2025-11/'
-      : '/',
+  base: process.env.BASE_PATH
+    ? process.env.BASE_PATH
+    : process.env.DEPLOY === 'github-pages'
+      ? '/2025-11-20-ai-engineering-code-summit'
+      : process.env.DEPLOY === 'thefocus'
+        ? '/reports/aiecode-2025-11/'
+        : '/',
   markdown: {
     remarkPlugins: [remarkFixSlidePaths],
   },
