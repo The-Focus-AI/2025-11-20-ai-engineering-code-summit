@@ -19,7 +19,9 @@ function remarkFixSlidePaths() {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://the-focus-ai.github.io',
+  site: process.env.BASE_PATH || process.env.DEPLOY === 'thefocus'
+    ? 'https://thefocus.ai'
+    : 'https://the-focus-ai.github.io',
   base: process.env.BASE_PATH
     ? process.env.BASE_PATH
     : process.env.DEPLOY === 'github-pages'
